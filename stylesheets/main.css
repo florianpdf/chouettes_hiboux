@@ -30,7 +30,19 @@ $font-grey__________#f1f1f1;
 /*-----------------------------------------------------*\
        $FONT         FONT        FONT        FONT  
 \*-----------------------------------------------------*/
-/* line 34, ../sass/_general.scss */
+/*-----------------------------------------------------*\
+       GENERAL      GENERAL      GENERAL     GENERAL  
+\*-----------------------------------------------------*/
+/* line 1, ../sass/_navbar.scss */
+BLOCK CITATION
 .citations {
   font-family: 'Dancing Script', cursive;
+}
+
+/*FOOTER*/
+/* line 3, ../sass/_footer.scss */
+footer.page-footer {
+  margin-top: 500px !important;
+  padding-top: 0px;
+  border: 2px solid black;
 }
