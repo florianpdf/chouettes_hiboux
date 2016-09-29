@@ -39,8 +39,13 @@ $font-grey__________#f1f1f1;
 }
 
 /* line 9, ../sass/_navbar.scss */
+.brand-logo {
+  padding-top: -2000px !important;
+}
+
+/* line 14, ../sass/_navbar.scss */
 nav ul a {
-  color: red !important;
+  color: green !important;
 }
 
 /*FOOTER*/
