@@ -34,3 +34,8 @@ $font-grey__________#f1f1f1;
 .citations {
   font-family: 'Dancing Script', cursive;
 }
+
+/* line 1, ../sass/_header_page.scss */
+nav ul a {
+  color: red !important;
+}

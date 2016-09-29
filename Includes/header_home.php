@@ -4,14 +4,12 @@
 <head>
 
 <meta charset="UTF-8">
-
-
- <link href="stylesheets/main.css" type="text/css" rel="stylesheets"/>
   
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.css">
 
+ <link rel="stylesheets/main.css" type="text/css" rel="stylesheets"/>
   
   <!-- Police -->
 
