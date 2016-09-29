@@ -1,3 +1,7 @@
-<?php include('Includes/header_page.php');?>
+<?php include('includes/header_page.php');?>
 
-<?php include('Includes/footer.php');?>
+
+<?php include('includes/navbar.php');?>
+
+
+<?php include('includes/footer.php');?>
