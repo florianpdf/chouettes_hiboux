@@ -115,10 +115,315 @@ nav {
   font-weight: bold;
 }
 
+/* line 1, ../sass/_patchwork_page.scss */
+.imglg {
+  display: block;
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+}
+
+/* line 9, ../sass/_patchwork_page.scss */
+.thumbs {
+  max-height: 250px;
+  /*max-width: 250px;*/
+  /*width: auto;*/
+  height: 25%;
+}
+
+/* line 16, ../sass/_patchwork_page.scss */
+.og-grid {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 24, ../sass/_patchwork_page.scss */
+.og-grid li {
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+  vertical-align: top;
+  height: 250px;
+}
+
+/* line 31, ../sass/_patchwork_page.scss */
+.og-grid li > a,
+.og-grid li > a img {
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+}
+
+/* line 39, ../sass/_patchwork_page.scss */
+.og-grid li.og-expanded > a::after {
+  top: auto;
+  border: solid transparent;
+  content: " ";
+  height: 100%;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #ddd;
+  border-width: 15px;
+  left: 50%;
+  margin: -20px 0 0 -15px;
+}
+
+/* line 53, ../sass/_patchwork_page.scss */
+.og-expander {
+  position: absolute;
+  background: #ddd;
+  top: auto;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 65, ../sass/_patchwork_page.scss */
+.og-expander-inner {
+  padding: 50px 30px;
+  height: 100%;
+}
+
+/* line 70, ../sass/_patchwork_page.scss */
+.og-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* line 79, ../sass/_patchwork_page.scss */
+.og-close::before,
+.og-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: #888;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 92, ../sass/_patchwork_page.scss */
+.og-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 98, ../sass/_patchwork_page.scss */
+.og-close:hover::before,
+.og-close:hover::after {
+  background: #333;
+}
+
+/* line 103, ../sass/_patchwork_page.scss */
+.og-fullimg,
+.og-details {
+  width: 50%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 112, ../sass/_patchwork_page.scss */
+.og-details {
+  padding: 0 40px 0 20px;
+}
+
+/* line 116, ../sass/_patchwork_page.scss */
+.og-fullimg {
+  text-align: center;
+}
+
+/* line 120, ../sass/_patchwork_page.scss */
+.og-fullimg img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* line 126, ../sass/_patchwork_page.scss */
+.og-details h3 {
+  font-weight: 300;
+  font-size: 52px;
+  padding: 40px 0 10px;
+  margin-bottom: 10px;
+  font-family: 'Dancing Script';
+  color: #0894af;
+}
+
+/* line 135, ../sass/_patchwork_page.scss */
+.og-details p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999;
+}
+
+/* line 142, ../sass/_patchwork_page.scss */
+.og-details a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 3px solid #333;
+  display: inline-block;
+  margin: 30px 0 0;
+  outline: none;
+}
+
+/* line 155, ../sass/_patchwork_page.scss */
+.og-details a::before {
+  content: '\2192';
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 161, ../sass/_patchwork_page.scss */
+.og-details a:hover {
+  border-color: #999;
+  color: #999;
+}
+
+/* line 166, ../sass/_patchwork_page.scss */
+.og-loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  -webkit-animation: loader 0.5s infinite ease-in-out both;
+  -moz-animation: loader 0.5s infinite ease-in-out both;
+  animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+@-moz-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+@keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+@media screen and (max-width: 830px) {
+  /* line 201, ../sass/_patchwork_page.scss */
+  .og-expander h3 {
+    font-size: 32px;
+  }
+
+  /* line 202, ../sass/_patchwork_page.scss */
+  .og-expander p {
+    font-size: 13px;
+  }
+
+  /* line 203, ../sass/_patchwork_page.scss */
+  .og-expander a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 209, ../sass/_patchwork_page.scss */
+  .og-fullimg {
+    display: none;
+  }
+
+  /* line 210, ../sass/_patchwork_page.scss */
+  .og-details {
+    float: none;
+    width: 100%;
+  }
+}
 /*FOOTER*/
 /* line 3, ../sass/_footer.scss */
 footer.page-footer {
-  margin-top: 500px !important;
+  margin-top: 10px;
   padding-top: 0px;
-  border: 2px solid black;
+  background-image: url("https://s18.postimg.org/lmcvfezy1/Les_hiboux.gif");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: -20px;
+  background-color: #ACEDC1;
+}
+
+/* line 13, ../sass/_footer.scss */
+#row-footer {
+  margin-left: 80px;
+}
+
+/* line 18, ../sass/_footer.scss */
+h5.brown-text {
+  font-size: 20px;
+}
+
+/* line 22, ../sass/_footer.scss */
+.footer-copyright {
+  font-color: brown-text text-lighten-3;
+}
+
+/*RETOUR EN HAUT*/
+/* line 27, ../sass/_footer.scss */
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: url("../images/noun2.png") no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
