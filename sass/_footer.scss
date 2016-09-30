@@ -1,8 +1,40 @@
 /*FOOTER*/
 
 footer.page-footer {
-	margin-top: 500px !important;
+	margin-top: 10px;
 	padding-top: 0px;
-	border: 2px solid black;
+	background-image: url("https://s18.postimg.org/lmcvfezy1/Les_hiboux.gif");
+	background-repeat:no-repeat;
+	background-position:right;
+	margin-right:-20px;
+	background-color: #ACEDC1;
 }
 
+#row-footer{
+	margin-left:80px;
+
+}
+
+h5.brown-text{
+	font-size:20px;
+}
+
+.footer-copyright{
+	font-color:brown-text text-lighten-3;
+}
+
+/*RETOUR EN HAUT*/
+a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: url("../images/noun2.png") no-repeat center 43%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
