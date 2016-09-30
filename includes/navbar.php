@@ -2,11 +2,11 @@
 
 
 <header>
-    <div class="navbar-fixed">
+    <div>
         <nav class="transparent">
             <div class="nav-wrapper">
                 <a href="../bleau_S2_2016_chouette_hibou/index.php" class="brand-logo chouetteHibouxLogo">
-                    <img src="../../Chouette-hiboux-logo2.gif" alt="Chouettes Hiboux Doudous">
+                    <img src="./images/logo.gif" alt="Chouettes Hiboux Doudous" class="nb_navbar_logo">
                 </a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse">
                     <i class="large material-icons grey-text text-darken-3">menu</i>
