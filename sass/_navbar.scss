@@ -6,12 +6,37 @@
 
 // NAV BAR 
 
-.brand-logo
-{
-	padding-top: -2000px !important;
+nav  {
+	height: 85px !important;
+	// background-color: white;
+}
+.chouetteHibouxLogo {
+	padding-left: 20px !important;
 }
 
-nav ul a {
-	color: green !important;
+
+.full_nav a{
+	color: grey !important;
+	font-size : 22px !important;
+	font-weight: bold !important;
+	font-family: 'roboto';
+	padding-left: 30px !important;
+	text-align: center !important;
+	padding-top: 20px;
+	padding-bottom:7px;
+	padding-right: 40px;
 }
 
+
+.material-icons{
+	font-size: 40px !important;
+}
+
+// NAV-MOBILE
+
+#mobile-demo a {
+	font-size: 20px !important;
+	padding-top: 20px;
+	padding-bottom: 70px;
+
+}
