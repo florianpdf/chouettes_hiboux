@@ -1,5 +1,6 @@
 <?php include('includes/header.php');?>
 <?php include('includes/navbar.php');?>
+<?php include('includes/citation.php');?>
 
 
 <div style="margin:25px; margin-left: 200px" class="container">
