@@ -12,7 +12,7 @@
                     <i class="large material-icons grey-text text-darken-3">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down full_nav">
-                    <li><a href="./doudous.php" class="grey-text text-darken-3">Doudous</a></li>
+                    <li><a href="./doudous.php">Doudous</a></li>
                     <li><a href="./bijoux.php" class="grey-text text-darken-3"
                     ">Bijoux</a></li>
                     <li><a href="./accessoires.php" class="grey-text text-darken-3">Accessoires</a></li>

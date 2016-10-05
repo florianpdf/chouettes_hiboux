@@ -10,40 +10,49 @@ CONTACT____________Style page : Formulaire
 ABOUT ____________ Style page : About
 
 
-\*-----------------------------------------
+\*-----------------------------------------*/
 
-       PALLETTE DE COULEUR             
+       // PALLETTE DE COULEUR             
 
-$intense-orange_____#f9a02e;
-$pastel-orange______#fba858;
-$light-orange_______#ffdea5;
-$intense-blue_______#1fa597;
-$pastel-blue________#58c4b8;
-$light-blue_________#80cbc4;
-$red-contrast_______#b9184d;
-$text_______________#35383a;
-$text2______________#7b7b7b;
-$font-grey__________#f1f1f1;
+$brown:rgb(185,71,59);
+$red:rgb(236,46,82);
+$blue:rgb(54,191,194);
+$purple:rgb(115,64,155);
+$mauve:rgb(206,76,154);
+$yellow:rgb(235,216,29);
+$green:rgb(68,134,60);
+$blue-title:rgb(8,148,175);
+$grey-text:rgb(66,66,66);
 
-\*----------------------------------------*/
 
 /*-----------------------------------------------------*\
        $FONT         FONT        FONT        FONT  
 \*-----------------------------------------------------*/
 
+$font-body: 16px 'Didact Gothic';
 
 
+// @font-face {
+// font-family: 'butterfly';
+// src: url('./font-family/DK-Butterfly-Ball.otf');
+// font-weight: normal;
+// font-style: normal;
+// }
 
+@import "compass/css3/font-face";
+@include font-face('butterfly', font-files('DK-Butterfly-Ball.otf'));
+$font-titre:22px 'butterfly';
+
+
+// @mixin fontandline{
+// 	font-family:'Didact Gothic' sans-serif;
+// 	font-size:16px;
+// 	line-height:22px;
+// }
 
 
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
 \*-----------------------------------------------------*/
 
-body { 
-  
-}
 
-h1 { 
- font-size: 30px;
-}

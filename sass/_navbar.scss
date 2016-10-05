@@ -16,12 +16,11 @@ nav  {
 
 
 .full_nav a{
-	color: grey !important;
-	font-size : 22px !important;
-	font-weight: bold !important;
-	font-family: 'roboto';
-	padding-left: 30px !important;
-	text-align: center !important;
+	color: $grey-text;
+	font: $font-titre;
+	// font-weight: bold;
+	padding-left: 30px;
+	text-align: center;
 	padding-top: 20px;
 	padding-bottom:7px;
 	padding-right: 40px;

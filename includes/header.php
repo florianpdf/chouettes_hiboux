@@ -15,7 +15,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-
+  	<!-- <link href="http://www.fontspace.com/david-kerkhoff/dk-butterfly-ball?text=" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"> 
+	
 	<!-- Police -->
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
