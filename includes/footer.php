@@ -47,7 +47,6 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/modernizr.custom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script>
     
     <!-- create the back to top button -->
     <script> 
