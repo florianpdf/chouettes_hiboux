@@ -16,12 +16,29 @@ ABOUT ____________ Style page : About
        $FONT         FONT        FONT        FONT  
 \*-----------------------------------------------------*/
 @font-face {
-  font-family: "butterfly";
-  src: url('/fonts/DK-Butterfly-Ball.otf?1475684900') format('opentype');
+  font-family: 'butterfly';
+  src: local("butterfly"), url("../fonts/DK-Butterfly-Ball.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
 \*-----------------------------------------------------*/
+/* line 71, ../sass/_general.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 75, ../sass/_general.scss */
+section {
+  min-height: 100%;
+}
+
+/* line 79, ../sass/_general.scss */
+.container {
+  min-height: 100%;
+}
+
 /* line 3, ../sass/_navbar.scss */
 .citations {
   font-family: 'Dancing Script', cursive;
@@ -30,6 +47,7 @@ ABOUT ____________ Style page : About
 /* line 9, ../sass/_navbar.scss */
 nav {
   height: 85px !important;
+  background-color: white;
 }
 
 /* line 13, ../sass/_navbar.scss */
@@ -40,7 +58,7 @@ nav {
 /* line 18, ../sass/_navbar.scss */
 .full_nav a {
   color: #424242;
-  font: 22px "butterfly";
+  font: 2vw "butterfly";
   padding-left: 30px;
   text-align: center;
   padding-top: 20px;
@@ -62,8 +80,7 @@ nav {
 
 /* line 1, ../sass/_citation.scss */
 blockquote {
-  display: block;
-  background: #fff;
+  background: transparent !important;
   padding: 15px 20px 15px 45px;
   margin: 20px 20px;
   position: relative;
@@ -129,6 +146,11 @@ blockquote em {
 }
 
 /* line 11, ../sass/_index.scss */
+body {
+  background-color: rgba(54, 191, 194, 0.35);
+}
+
+/* line 15, ../sass/_index.scss */
 #main {
   /*margin: 40px auto 10px auto;*/
   /*min-height: 400px;*/
@@ -138,7 +160,7 @@ blockquote em {
   margin-top: 10px;
 }
 
-/* line 20, ../sass/_index.scss */
+/* line 24, ../sass/_index.scss */
 .frame {
   float: left;
   height: 250px;
@@ -148,14 +170,14 @@ blockquote em {
   margin-left: 10px;
 }
 
-/* line 29, ../sass/_index.scss */
+/* line 33, ../sass/_index.scss */
 .frame a {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-/* line 35, ../sass/_index.scss */
+/* line 39, ../sass/_index.scss */
 .frame img {
   border: 2px red;
   display: block;
@@ -168,13 +190,13 @@ blockquote em {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* line 47, ../sass/_index.scss */
+/* line 51, ../sass/_index.scss */
 .frame:nth-child(2) img {
   /*top: -90%;
   left: -70%;*/
 }
 
-/* line 51, ../sass/_index.scss */
+/* line 55, ../sass/_index.scss */
 .frame:nth-child(3) img {
   /*top: -90%;*/
 }
@@ -182,7 +204,7 @@ blockquote em {
 /**************/
 /* Zone texte */
 /**************/
-/* line 58, ../sass/_index.scss */
+/* line 62, ../sass/_index.scss */
 .frame a .caption {
   border-radius: 3px 3px 0 0;
   background-color: rgba(0, 0, 0, 0.4);
@@ -202,14 +224,14 @@ blockquote em {
   z-index: 10;
 }
 
-/* line 76, ../sass/_index.scss */
+/* line 80, ../sass/_index.scss */
 .frame a:hover .caption {
   top: 0;
   transition: all 2s;
 }
 
 /* titre zone texte*/
-/* line 81, ../sass/_index.scss */
+/* line 85, ../sass/_index.scss */
 .frame a .caption h2 {
   color: #E41698;
   font-size: 2.3em;
@@ -219,7 +241,7 @@ blockquote em {
   font-weight: bold;
 }
 
-/* line 90, ../sass/_index.scss */
+/* line 94, ../sass/_index.scss */
 .frame a .caption p {
   color: white;
   display: none;
@@ -228,13 +250,13 @@ blockquote em {
   width: 90%;
 }
 
-/* line 98, ../sass/_index.scss */
+/* line 102, ../sass/_index.scss */
 .frame a:hover .caption p {
   display: block;
   margin-bottom: 20px;
 }
 
-/* line 103, ../sass/_index.scss */
+/* line 107, ../sass/_index.scss */
 .desc {
   font-family: 'Comfortaa', cursive;
 }
@@ -242,7 +264,7 @@ blockquote em {
 /******************/
 /*   Effet flip   */
 /******************/
-/* line 111, ../sass/_index.scss */
+/* line 115, ../sass/_index.scss */
 .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -251,7 +273,7 @@ blockquote em {
   /*border: 1px solid #ccc;*/
 }
 
-/* line 120, ../sass/_index.scss */
+/* line 124, ../sass/_index.scss */
 .flip-container:hover .flipper,
 .flip-container.hover .flipper {
   -webkit-transform: rotateY(180deg);
@@ -260,13 +282,13 @@ blockquote em {
   transform: rotateY(180deg);
 }
 
-/* line 128, ../sass/_index.scss */
+/* line 132, ../sass/_index.scss */
 .flip-container, .front, .back {
   width: 300px;
   height: 250px;
 }
 
-/* line 133, ../sass/_index.scss */
+/* line 137, ../sass/_index.scss */
 .flipper {
   -webkit-transition: 0.6s;
   -webkit-transform-style: preserve-3d;
@@ -279,7 +301,7 @@ blockquote em {
   position: relative;
 }
 
-/* line 149, ../sass/_index.scss */
+/* line 153, ../sass/_index.scss */
 .front, .back {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -290,20 +312,20 @@ blockquote em {
   left: 0;
 }
 
-/* line 160, ../sass/_index.scss */
+/* line 164, ../sass/_index.scss */
 .front {
   /*background: url(./Doudous/girafe.png) 0 0 no-repeat;*/
   /*background: url(./Doudous/girafe.png);*/
   z-index: 2;
 }
 
-/* line 166, ../sass/_index.scss */
+/* line 170, ../sass/_index.scss */
 .front img {
   width: 300px;
   height: 250px;
 }
 
-/* line 171, ../sass/_index.scss */
+/* line 175, ../sass/_index.scss */
 .back {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -313,7 +335,7 @@ blockquote em {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* line 181, ../sass/_index.scss */
+/* line 185, ../sass/_index.scss */
 .back img {
   width: 300px;
   height: 250px;
@@ -337,7 +359,7 @@ blockquote em {
   -o-transform: rotate(-20deg);
   transform: rotate(-20deg);
 }*/
-/* line 205, ../sass/_index.scss */
+/* line 209, ../sass/_index.scss */
 .back-logo {
   position: absolute;
   top: 40px;
@@ -347,7 +369,7 @@ blockquote em {
   background: url(http://davidwalsh.name/demo/logo.png) 0 0 no-repeat;
 }
 
-/* line 214, ../sass/_index.scss */
+/* line 218, ../sass/_index.scss */
 .back-title {
   font-weight: bold;
   color: #00304a;
@@ -361,7 +383,7 @@ blockquote em {
   font-size: 2em;
 }
 
-/* line 227, ../sass/_index.scss */
+/* line 231, ../sass/_index.scss */
 .back p {
   position: absolute;
   bottom: 40px;
@@ -647,15 +669,16 @@ blockquote em {
 
 /* line 8, ../sass/_about.scss */
 .about_page h2 {
-  font: 22px "butterfly";
+  font: 2vw "butterfly";
   margin-left: 120px;
   margin-top: 50px;
 }
 
 /* line 14, ../sass/_about.scss */
 .about_page h3 {
-  font: 22px "butterfly";
-  font-size: 22px;
+  font-family: 'Didact Gothic';
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /* line 19, ../sass/_about.scss */
@@ -683,31 +706,32 @@ blockquote em {
 /* line 3, ../sass/_footer.scss */
 footer.page-footer {
   margin-top: 10px;
+  margin-bottom: 0px;
   padding-top: 0px;
-  /*background-image: url("https://s18.postimg.org/lmcvfezy1/Les_hiboux.gif");
-  background-repeat:no-repeat;
-  background-position:right;*/
+  background-image: url("https://s18.postimg.org/lmcvfezy1/Les_hiboux.gif");
+  background-repeat: no-repeat;
+  background-position: right;
   margin-right: -20px;
-  background-color: #ACEDC1;
+  background: white;
 }
 
-/* line 13, ../sass/_footer.scss */
+/* line 20, ../sass/_footer.scss */
 #row-footer {
   margin-left: 80px;
 }
 
-/* line 17, ../sass/_footer.scss */
+/* line 24, ../sass/_footer.scss */
 h5.brown-text {
-  font-size: 20px;
+  font: 2vw "butterfly";
 }
 
-/* line 21, ../sass/_footer.scss */
+/* line 28, ../sass/_footer.scss */
 .footer-copyright {
   font-color: brown-text text-lighten-3;
 }
 
 /*RETOUR EN HAUT*/
-/* line 26, ../sass/_footer.scss */
+/* line 33, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
