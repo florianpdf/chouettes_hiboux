@@ -3,7 +3,7 @@
 
 <header>
     <div>
-        <nav class="transparent">
+        <nav>
             <div class="nav-wrapper">
                 <a href="../bleau_S2_2016_chouette_hibou/index.php" class="brand-logo chouetteHibouxLogo">
                     <img src="./images/logo.gif" alt="Chouettes Hiboux Doudous" class="nb_navbar_logo">

@@ -12,8 +12,8 @@
 }
 
 .about_page h3 {
-	font: $font-titre;
-	font-size: 22px;
+	@include fontandline();
+	// font-size: 22px;
 }
 
 .about_p {

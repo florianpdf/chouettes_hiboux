@@ -16,43 +16,66 @@ ABOUT ____________ Style page : About
 
 $brown:rgb(185,71,59);
 $red:rgb(236,46,82);
-$blue:rgb(54,191,194);
+$blue:rgba(54,191,194,0.35);
 $purple:rgb(115,64,155);
 $mauve:rgb(206,76,154);
 $yellow:rgb(235,216,29);
 $green:rgb(68,134,60);
 $blue-title:rgb(8,148,175);
 $grey-text:rgb(66,66,66);
+// $filter-gradient:filter-gradient(#f0f9ff, #a1dbff, vertical);
 
+
+
+// @mixin blue-gradient(){
+// 	background-color: rgb(240,249,255); // Old browsers
+// 	@include filter-gradient(#f0f9ff, #a1dbff, vertical); // IE6-9
+// 	@include background-image(linear-gradient(top, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%));
+// }
 
 /*-----------------------------------------------------*\
        $FONT         FONT        FONT        FONT  
 \*-----------------------------------------------------*/
 
+
+@font-face {
+font-family: 'butterfly';
+src: local('butterfly'), url('../fonts/DK-Butterfly-Ball.otf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+// @import "compass/css3/";
+// @include font-face('butterfly', font-files('DK-Butterfly-Ball.otf'));
 $font-body: 16px 'Didact Gothic';
+$font-titre: 2vw 'butterfly';
 
 
-// @font-face {
-// font-family: 'butterfly';
-// src: url('./font-family/DK-Butterfly-Ball.otf');
-// font-weight: normal;
-// font-style: normal;
-// }
-
-@import "compass/css3/font-face";
-@include font-face('butterfly', font-files('DK-Butterfly-Ball.otf'));
-$font-titre:22px 'butterfly';
+@mixin fontandline() {
+	font-family:'Didact Gothic';
+	font-size:16px;
+	line-height:22px;
+}
 
 
-// @mixin fontandline{
-// 	font-family:'Didact Gothic' sans-serif;
-// 	font-size:16px;
-// 	line-height:22px;
-// }
+
+.h1{
+
+}
 
 
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
 \*-----------------------------------------------------*/
 
+html, body{
+	height: 100%;
+}
 
+section{
+	min-height:100%;
+}
+
+.container{
+	min-height:100%;
+}
