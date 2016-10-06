@@ -17,7 +17,7 @@ ABOUT ____________ Style page : About
 \*-----------------------------------------------------*/
 @font-face {
   font-family: "butterfly";
-  src: url('/fonts/DK-Butterfly-Ball.otf?1438676416') format('opentype');
+  src: url('/fonts/DK-Butterfly-Ball.otf?1475684900') format('opentype');
 }
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
@@ -696,18 +696,18 @@ footer.page-footer {
   margin-left: 80px;
 }
 
-/* line 18, ../sass/_footer.scss */
+/* line 17, ../sass/_footer.scss */
 h5.brown-text {
   font-size: 20px;
 }
 
-/* line 22, ../sass/_footer.scss */
+/* line 21, ../sass/_footer.scss */
 .footer-copyright {
   font-color: brown-text text-lighten-3;
 }
 
 /*RETOUR EN HAUT*/
-/* line 27, ../sass/_footer.scss */
+/* line 26, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
