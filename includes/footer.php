@@ -24,7 +24,7 @@
                     </ul>
                 </div>
                  <div class="col l6 s12">
-                    <h5 class="white-text"></h5>
+                    <img src="https://s18.postimg.org/lmcvfezy1/Les_hiboux.gif" alt="branche">
                 </div>
 
            
@@ -47,7 +47,6 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/modernizr.custom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script>
     
     <!-- create the back to top button -->
     <script> 

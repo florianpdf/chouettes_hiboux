@@ -11,33 +11,17 @@ CONTACT____________Style page : Formulaire
 ABOUT ____________ Style page : About
 
 
-\*-----------------------------------------
-
-       PALLETTE DE COULEUR             
-
-$intense-orange_____#f9a02e;
-$pastel-orange______#fba858;
-$light-orange_______#ffdea5;
-$intense-blue_______#1fa597;
-$pastel-blue________#58c4b8;
-$light-blue_________#80cbc4;
-$red-contrast_______#b9184d;
-$text_______________#35383a;
-$text2______________#7b7b7b;
-$font-grey__________#f1f1f1;
-
-\*----------------------------------------*/
+\*-----------------------------------------*/
 /*-----------------------------------------------------*\
        $FONT         FONT        FONT        FONT  
 \*-----------------------------------------------------*/
+@font-face {
+  font-family: "butterfly";
+  src: url('/fonts/DK-Butterfly-Ball.otf?1475684900') format('opentype');
+}
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
 \*-----------------------------------------------------*/
-/* line 47, ../sass/_general.scss */
-h1 {
-  font-size: 30px;
-}
-
 /* line 3, ../sass/_navbar.scss */
 .citations {
   font-family: 'Dancing Script', cursive;
@@ -55,23 +39,21 @@ nav {
 
 /* line 18, ../sass/_navbar.scss */
 .full_nav a {
-  color: grey !important;
-  font-size: 22px !important;
-  font-weight: bold !important;
-  font-family: 'roboto';
-  padding-left: 30px !important;
-  text-align: center !important;
+  color: #424242;
+  font: 22px "butterfly";
+  padding-left: 30px;
+  text-align: center;
   padding-top: 20px;
   padding-bottom: 7px;
   padding-right: 40px;
 }
 
-/* line 31, ../sass/_navbar.scss */
+/* line 30, ../sass/_navbar.scss */
 .material-icons {
   font-size: 40px !important;
 }
 
-/* line 37, ../sass/_navbar.scss */
+/* line 36, ../sass/_navbar.scss */
 #mobile-demo a {
   font-size: 20px !important;
   padding-top: 20px;
@@ -545,12 +527,10 @@ blockquote em {
 /* line 135, ../sass/_patchwork_page.scss */
 .og-details p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
   color: #999;
 }
 
-/* line 142, ../sass/_patchwork_page.scss */
+/* line 143, ../sass/_patchwork_page.scss */
 .og-details a {
   font-weight: 700;
   font-size: 16px;
@@ -564,20 +544,20 @@ blockquote em {
   outline: none;
 }
 
-/* line 155, ../sass/_patchwork_page.scss */
+/* line 156, ../sass/_patchwork_page.scss */
 .og-details a::before {
   content: '\2192';
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 161, ../sass/_patchwork_page.scss */
+/* line 162, ../sass/_patchwork_page.scss */
 .og-details a:hover {
   border-color: #999;
   color: #999;
 }
 
-/* line 166, ../sass/_patchwork_page.scss */
+/* line 167, ../sass/_patchwork_page.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -633,28 +613,28 @@ blockquote em {
   }
 }
 @media screen and (max-width: 830px) {
-  /* line 201, ../sass/_patchwork_page.scss */
+  /* line 202, ../sass/_patchwork_page.scss */
   .og-expander h3 {
     font-size: 32px;
   }
 
-  /* line 202, ../sass/_patchwork_page.scss */
+  /* line 203, ../sass/_patchwork_page.scss */
   .og-expander p {
     font-size: 13px;
   }
 
-  /* line 203, ../sass/_patchwork_page.scss */
+  /* line 204, ../sass/_patchwork_page.scss */
   .og-expander a {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 209, ../sass/_patchwork_page.scss */
+  /* line 210, ../sass/_patchwork_page.scss */
   .og-fullimg {
     display: none;
   }
 
-  /* line 210, ../sass/_patchwork_page.scss */
+  /* line 211, ../sass/_patchwork_page.scss */
   .og-details {
     float: none;
     width: 100%;
@@ -667,31 +647,33 @@ blockquote em {
 
 /* line 8, ../sass/_about.scss */
 .about_page h2 {
-  font-family: 'Dancing Script', cursive;
-}
-
-/* line 12, ../sass/_about.scss */
-.about_page h2 {
+  font: 22px "butterfly";
   margin-left: 120px;
   margin-top: 50px;
 }
 
-/* line 17, ../sass/_about.scss */
+/* line 14, ../sass/_about.scss */
 .about_page h3 {
+  font: 22px "butterfly";
   font-size: 22px;
 }
 
-/* line 21, ../sass/_about.scss */
+/* line 19, ../sass/_about.scss */
+.about_p {
+  font: 16px "Didact Gothic";
+}
+
+/* line 23, ../sass/_about.scss */
 .container {
   text-align: justify;
 }
 
-/* line 29, ../sass/_about.scss */
+/* line 31, ../sass/_about.scss */
 .container p {
   font-size: 16px;
 }
 
-/* line 33, ../sass/_about.scss */
+/* line 35, ../sass/_about.scss */
 .expression {
   font-style: italic;
   font-weight: bold;
@@ -702,9 +684,9 @@ blockquote em {
 footer.page-footer {
   margin-top: 10px;
   padding-top: 0px;
-  background-image: url("https://s18.postimg.org/lmcvfezy1/Les_hiboux.gif");
-  background-repeat: no-repeat;
-  background-position: right;
+  /*background-image: url("https://s18.postimg.org/lmcvfezy1/Les_hiboux.gif");
+  background-repeat:no-repeat;
+  background-position:right;*/
   margin-right: -20px;
   background-color: #ACEDC1;
 }
@@ -714,18 +696,18 @@ footer.page-footer {
   margin-left: 80px;
 }
 
-/* line 18, ../sass/_footer.scss */
+/* line 17, ../sass/_footer.scss */
 h5.brown-text {
   font-size: 20px;
 }
 
-/* line 22, ../sass/_footer.scss */
+/* line 21, ../sass/_footer.scss */
 .footer-copyright {
   font-color: brown-text text-lighten-3;
 }
 
 /*RETOUR EN HAUT*/
-/* line 27, ../sass/_footer.scss */
+/* line 26, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
