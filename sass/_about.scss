@@ -6,16 +6,18 @@
 }
 
 .about_page h2 {
-	font-family: 'Dancing Script', cursive;
-}
-
-.about_page h2 {
+	font: $font-titre;
 	margin-left: 120px;
 	margin-top: 50px;
 }
 
 .about_page h3 {
-	font-size: 22px;
+	@include fontandline();
+	// font-size: 22px;
+}
+
+.about_p {
+	font: $font-body;
 }
 
 .container {	

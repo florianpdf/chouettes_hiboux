@@ -12,7 +12,7 @@
       <h3 class="h3BoxMenu">Doudous</h3>
         <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <div class="viewThisResult">
-            <a href="doudous.php"><i class="fa fa-long-arrow-right"></i> Doudous</a>
+            <a href="doudous.php"><i class="fa fa-chevron-circle-right fa-2x"></i></a>
         </div>  
       </div>      
     </div> <!-- End col l4 m3 s1-->

@@ -3,7 +3,7 @@
     <footer class="page-footer">
         <div class="container-footer">
             <div class="row" id="row-footer">
-                <div class="col l2 s12">
+                <div class="col l3 s12">
                     <h5 class="brown-text text-lighten-2">Catégories</h5>
                    <ul>
                         <li><a class="brown-text text-lighten-3" href="./doudous.php">Les doudous</a></li>
@@ -11,22 +11,24 @@
                         <li><a class="brown-text text-lighten-3" href="./accessoires.php">Les accessoires</a></li>
                     </ul>
                 </div>
-                <div class="col l2 s12">
+                <div class="col l3 s12">
                     <h5 class="brown-text text-lighten-2">A propos</h5>
                     <ul>
                         <li><a class="brown-text text-lighten-3" href="./about.php">Qui suis-je ?</a></li>
                     </ul>
                 </div>
-                <div class="col l2 s12">
+                <div class="col l3 s12">
                     <h5 class="brown-text text-lighten-2">Contact</h5>
                     <ul>
                         <li><a class="brown-text text-lighten-3" href="./form.php">Formulaire de contact</a></li>
                     </ul>
                 </div>
-                 <div class="col l6 s12">
-                    <h5 class="white-text"></h5>
+                 <div class="col l3 s12">
+                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
                 </div>
 
+                
            
 <!--            <div class="col l6 s12" id="logos_reseaux_sociaux">
                     <img src="https://s18.postimg.org/lmcvfezy1/Les_hiboux.gif" alt="icone1" width="500px" />
@@ -47,7 +49,6 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/modernizr.custom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script> 
     <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
     
 
