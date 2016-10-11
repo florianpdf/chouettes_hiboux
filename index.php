@@ -1,5 +1,6 @@
 <?php include('includes/header.php');?>
 <?php include('includes/navbar.php');?>
+<?php include('includes/citation.php');?>
 
 <!-- DEBUT Block 9 images -->
 <div class="container">

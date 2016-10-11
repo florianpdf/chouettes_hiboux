@@ -78,11 +78,76 @@ nav {
   padding-bottom: 70px;
 }
 
+<<<<<<< HEAD
 /****************************/
 /****************************/
 /*        Logo              */
 /****************************/
 /****************************/
+=======
+/* line 1, ../sass/_citation.scss */
+blockquote {
+  display: block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 20px 20px;
+  position: relative;
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  /*Borders - (Optional)*/
+  border-left: 15px solid #0894af;
+  border-right: 2px solid #0894af;
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+/* line 25, ../sass/_citation.scss */
+blockquote::before {
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+/* line 40, ../sass/_citation.scss */
+blockquote::after {
+  /*Reset to make sure*/
+  content: "";
+}
+
+/* line 45, ../sass/_citation.scss */
+blockquote a {
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #0069AC;
+}
+
+/* line 53, ../sass/_citation.scss */
+blockquote a:hover {
+  color: #666;
+}
+
+/* line 57, ../sass/_citation.scss */
+blockquote em {
+  font-style: italic;
+}
+
+>>>>>>> origin/dev
 /* line 6, ../sass/_index.scss */
 .nb_navbar_logo {
   width: 70%;
@@ -5699,8 +5764,8 @@ nav {
 /* line 9, ../sass/_patchwork_page.scss */
 .thumbs {
   max-height: 250px;
-  /*max-width: 250px;*/
-  /*width: auto;*/
+  max-width: 250px;
+  width: auto;
   height: 25%;
 }
 
