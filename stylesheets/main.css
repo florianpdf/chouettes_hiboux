@@ -25,16 +25,17 @@ ABOUT ____________ Style page : About
        GENERAL      GENERAL      GENERAL     GENERAL  
 \*-----------------------------------------------------*/
 /* line 71, ../sass/_general.scss */
-html, body {
+body {
   height: 100%;
+  background-color: rgba(54, 191, 194, 0.5);
 }
 
-/* line 75, ../sass/_general.scss */
+/* line 76, ../sass/_general.scss */
 section {
   min-height: 100%;
 }
 
-/* line 79, ../sass/_general.scss */
+/* line 80, ../sass/_general.scss */
 .container {
   min-height: 100%;
 }
@@ -6058,35 +6059,53 @@ blockquote em {
 }
 
 /*FOOTER*/
-/* line 3, ../sass/_footer.scss */
+/* line 2, ../sass/_footer.scss */
 footer.page-footer {
+  background-color: white;
+}
+
+/* line 6, ../sass/_footer.scss */
+.container-footer {
   margin-top: 10px;
   margin-bottom: 0px;
   padding-top: 0px;
-  background-image: url("https://s18.postimg.org/lmcvfezy1/Les_hiboux.gif");
+  background-image: url("../images/Les-hiboux.gif");
   background-repeat: no-repeat;
   background-position: right;
   margin-right: -20px;
-  background: white;
+  background-size: 39%;
 }
 
 /* line 20, ../sass/_footer.scss */
+.fa-facebook-square {
+  margin-left: 11.5px;
+  margin-top: 73px;
+}
+
+/* line 25, ../sass/_footer.scss */
+.fa-instagram {
+  margin-left: 12.5px;
+  margin-top: 65px;
+}
+
+/* line 30, ../sass/_footer.scss */
 #row-footer {
   margin-left: 80px;
 }
 
-/* line 24, ../sass/_footer.scss */
+/* line 34, ../sass/_footer.scss */
 h5.brown-text {
   font: 2vw "butterfly";
 }
 
-/* line 28, ../sass/_footer.scss */
+/* line 38, ../sass/_footer.scss */
 .footer-copyright {
   font-color: brown-text text-lighten-3;
 }
 
+/*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 33, ../sass/_footer.scss */
+/* line 45, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
@@ -6101,3 +6120,5 @@ a.back-to-top {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
+
+/*FIN RETOUR EN HAUT*/
