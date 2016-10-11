@@ -45,11 +45,23 @@
 
     <!--  Scripts-->
     <!-- Compiled and minified JavaScript -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
     
+
+    <!-- index.php 
+    Hauteur éléments ROW identique
+    Class des élements row -->
+    <script> 
+        $(function() {
+          /*$('.column').matchHeight();*/
+          $('.block').matchHeight('.row');
+        });
+    </script>
+
     <!-- create the back to top button -->
     <script> 
         $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
