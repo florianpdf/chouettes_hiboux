@@ -1,119 +1,134 @@
 <?php include('includes/header.php');?>
 <?php include('includes/navbar.php');?>
 
+<!-- DEBUT Block 9 images -->
+<div class="container">
+  <!-- DEBUT PREMIERE LIGNE -->
+  <div class="row rowCustom">
+    
+    <div class="col l4 m2 s12">
+      <div class="resultContainer mobile block">
+      <h3 class="h3BoxMenu">Doudous</h3>
+        <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="viewThisResult">
+            <a href="doudous.php"><i class="fa fa-long-arrow-right"></i> Doudous</a>
+        </div>  
+      </div>      
+    </div> <!-- End col l4 m3 s1-->
 
-<div style="margin:25px; margin-left: 200px" class="container">
-      <section id="main" class="row">
-      <!-- <div class="frame col s4">
-      	<a href="https://www.facebook.com/leshibouxdesophie/photos" target="_blank">
-        	<span class="caption col s12">
-        		<h2>L'éléphant rose</h2>
-            <p class="desc col s12">Man of Steel is a 2013 American superhero film directed by Zack Snyder, produced by Christopher Nolan, and written by David S. Goyer. Based on the DC Comics character Superman, the film is a reboot of the Superman film series that portrays the character's origin story.</p>
-        	</span>
-          <img src="./Doudous/elephant.png">
-        </a>
-      </div> -->
-      
-      <div class="flip-container col l3 m6 s12" ontouchstart="this.classList.toggle('hover');">
-        <div class="flipper">
-          <div class="front">
-            <img src="./images/lapin.jpg">
-            <!-- <span class="name">David Walsh</span> -->
-          </div>
-          <a href="https://www.google.fr" target="_blank">
-          <div class="back">
-          <img src="./images/lapin.jpg">
-            <!-- <div class="back-logo"></div> -->
-            <!-- <div class="back-title">@davidwalshblog</div>
-            <p>Mozilla Web Developer, MooTools & jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p> -->
-          </div>
-          </a>
-        </div>
-      </div>
+    <div class="col l4 m2 s12">
+      <div class="ih-item square effect15 top_to_bottom block" style="width: 100%;">
+          <a href="#">
+            <div>
+              <img src="images/araigne.jpg" alt="img">
+            </div>
+            <div class="info">
+              <h3>Heading here</h3>
+              <p>Description goes here</p>
+            </div>
+              </a>
+        </div> <!-- End h-item square effect15 top_to_bottom -->  
+    </div>
 
+    <div class="col l4 m2 s12">
+      <div class="resultContainer mobile block">
+        <h3 class="h3BoxMenu">Bijoux</h3>
+        <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="viewThisResult">
+            <a href="bijoux.php"><i class="fa fa-long-arrow-right"></i> bijoux</a>
+        </div>  
+      </div>      
+    </div> <!-- End col l4 m3 s1-->
 
-      <div class="frame col l4 m3 s1">
-				<a href="#">
-        	<span class="caption >
-        		<h2>La girafe</h2>
-            <p class="desc col s12">Spider-Man is a fictional character, a comic book superhero that appears in comic books published by Marvel Comics. Created by writer-editor Stan Lee and writer-artist Steve Ditko, he first appeared in Amazing Fantasy #15 (cover-dated Aug. 1962).</p>
-        	</span>
-        	<img src="./images/mignon.jpg">
-        	</a>
-        </div>
-      <div class="frame col l4 m3 s1">
-        <a href="#">
-        	<span class="caption">
-        		<h2>La grenouille</h2>
-            <p class="desc col s1é">Atomic Robo is an American comic book series depicting the adventures of the eponymous character, a self-aware robot built by a fictional version of Nikola Tesla, created by 8-Bit Theater writer Brian Clevinger and artist Scott Wegener.</p>
-        	</span>
-      	<img src="./images/hochet.jpg">
-        </a>  
-      </div>
-    </section>
+  </div> <!-- End ROW -->
+  <!-- FIN PREMIERE LIGNE -->
 
-    <section id="main" class="row">
-      <div class="frame col l4 m3 s1">
-        <a href="#">
-          <span class="caption">
-            <h2>L'éléphant rose</h2>
-            <p class="desc">Man of Steel is a 2013 American superhero film directed by Zack Snyder, produced by Christopher Nolan, and written by David S. Goyer. Based on the DC Comics character Superman, the film is a reboot of the Superman film series that portrays the character's origin story.</p>
-          </span>
-          <img src="./images/girafe1.jpg">
-        </a>
-      </div>
-      
-      <div class="frame col l4 m3 s1">
-        <a href="#">
-          <span class="caption">
-            <h2>La girafe</h2>
-            <p class="desc">Spider-Man is a fictional character, a comic book superhero that appears in comic books published by Marvel Comics. Created by writer-editor Stan Lee and writer-artist Steve Ditko, he first appeared in Amazing Fantasy #15 (cover-dated Aug. 1962).</p>
-          </span>
-          <img src="./images/hibouxxx.jpg">
-          </a>
-        </div>
-      <div class="frame col l4 m3 s1">
-        <a href="#">
-          <span class="caption">
-            <h2>La grenouille</h2>
-            <p class="desc">Atomic Robo is an American comic book series depicting the adventures of the eponymous character, a self-aware robot built by a fictional version of Nikola Tesla, created by 8-Bit Theater writer Brian Clevinger and artist Scott Wegener.</p>
-          </span>
-        <img src="./images/hochet.jpg">
-        </a>  
-      </div>
-    </section>
+  <!-- DEBUT DEUXIEME LIGNE -->
+  <div class="row rowCustom">
 
-    <section id="main" class="row">
-      <div class="frame col l4 m3 s1">
-        <a href="#">
-          <span class="caption">
-            <h2>L'éléphant rose</h2>
-            <p class="desc">Man of Steel is a 2013 American superhero film directed by Zack Snyder, produced by Christopher Nolan, and written by David S. Goyer. Based on the DC Comics character Superman, the film is a reboot of the Superman film series that portrays the character's origin story.</p>
-          </span>
-          <img src="./images/duo.jpg">
-        </a>
-      </div>
-      
-      <div class="frame col l4 m3 s1">
-        <a href="#">
-          <span class="caption">
-            <h2>La girafe</h2>
-            <p class="desc">Spider-Man is a fictional character, a comic book superhero that appears in comic books published by Marvel Comics. Created by writer-editor Stan Lee and writer-artist Steve Ditko, he first appeared in Amazing Fantasy #15 (cover-dated Aug. 1962).</p>
-          </span>
-          <img src="./images/girafe.png">
-          </a>
-        </div>
-      <div class="frame col l4 m3 s1">
-        <a href="#">
-          <span class="caption">
-            <h2>La grenouille</h2>
-            <p class="desc">Atomic Robo is an American comic book series depicting the adventures of the eponymous character, a self-aware robot built by a fictional version of Nikola Tesla, created by 8-Bit Theater writer Brian Clevinger and artist Scott Wegener.</p>
-          </span>
-        <img src="./images/grenouille.jpg">
-        </a>  
-      </div>
-    </section>
-  </div>
+    <div class="col l4 m2 s12">
+      <div class="ih-item square effect15 top_to_bottom block" style="width: 100%;">
+          <a href="#">
+            <div>
+              <img src="images/araigne.jpg" alt="img">
+            </div>
+            <div class="info">
+              <h3>Heading here</h3>
+              <p>Description goes here</p>
+            </div>
+              </a>
+        </div> <!-- End h-item square effect15 top_to_bottom -->  
+    </div>
+
+    <div class="col l4 m2 s12">
+      <div class="resultContainer mobile block">
+        <h3 class="h3BoxMenu">Accessoires</h3>
+        <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="viewThisResult">
+            <a href="Accessoires.php"><i class="fa fa-long-arrow-right"></i> Accessoires</a>
+        </div>  
+      </div>      
+    </div> <!-- End col l4 m3 s1-->
+
+    <div class="col l4 m2 s12">
+      <div class="ih-item square effect15 top_to_bottom block" style="width: 100%;">
+          <a href="#">
+            <div>
+              <img src="images/araigne.jpg" alt="img">
+            </div>
+            <div class="info">
+              <h3>Heading here</h3>
+              <p>Description goes here</p>
+            </div>
+              </a>
+        </div> <!-- End h-item square effect15 top_to_bottom -->  
+    </div>
+
+  </div> <!-- End ROW -->
+  <!-- FIN DEUXIEME LIGNE -->
+
+  <!-- DEBUT TROISIEME LIGNE -->
+  <div class="row rowCustom">
+    
+    <div class="col l4 m2 s12">
+      <div class="resultContainer mobile block">
+      <h3 class="h3BoxMenu">Contact</h3>
+        <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="viewThisResult">
+            <a href="form.php"><i class="fa fa-long-arrow-right"></i> Contact</a>
+        </div>  
+      </div>      
+    </div> <!-- End col l4 m3 s1-->
+
+    <div class="col l4 m2 s12">
+      <div class="ih-item square effect15 top_to_bottom block" style="width: 100%;">
+          <a href="#">
+            <div>
+              <img src="images/araigne.jpg" alt="img">
+            </div>
+            <div class="info">
+              <h3>Heading here</h3>
+              <p>Description goes here</p>
+            </div>
+              </a>
+        </div> <!-- End h-item square effect15 top_to_bottom -->  
+    </div>
+
+    <div class="col l4 m2 s12">
+      <div class="resultContainer mobile block">
+        <h3 class="h3BoxMenu">Qui suis je</h3>
+        <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="viewThisResult">
+            <a href="about.php"><i class="fa fa-long-arrow-right"></i> Qui suis-je</a>
+        </div>  
+      </div>      
+    </div> <!-- End col l4 m3 s1-->
+
+  </div> <!-- End ROW -->
+  <!-- FIN TROISIEME LIGNE -->
+</div>  <!-- End container -->
+<!-- FIN Block 9 images -->
+
 </body>	
 
 <?php include('includes/footer.php');?>

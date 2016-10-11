@@ -1,236 +1,110 @@
-//* { 
-//-moz-box-sizing: border-box; 
-//box-sizing: border-box;
-//}
-
+/****************************/
+/****************************/
+/*        Logo              */
+/****************************/
+/****************************/
 .nb_navbar_logo {
   width: 70%;
   height: 70%;
 }
 
-#main {
-	/*margin: 40px auto 10px auto;*/
-  /*min-height: 400px;*/
-  width: 960px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 10px;
+/****************************/
+/****************************/
+/*        row               */
+/****************************/
+/****************************/
+.rowCustom {
+    margin-top: 20px;
+}
+/***************************/
+/***************************/
+/* BLOCK avec texte = menu */
+/***************************/
+/***************************/
+.resultContainer {
+    background-color:#dedede;
+    margin-top: 20px;
+    /*border: 1px solid #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);*/
 }
 
-.frame {
-  float: left;
+/* Gestion affichage bouton */
+.resultContainer .viewThisResult {
+    display: none;
+}
+.resultContainer:hover .viewThisResult {
+    display: inline;;
+}
+
+/* Zone élément cliquable*/
+/* non survolé */
+.viewThisResult a {
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding: 9px 34px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    /**/
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 2px;
+    border: 3px solid #333;
+    /*margin: 30px 0 0;*/
+    margin-bottom: -300%;
+    margin-left: 25%;
+    outline: none;
+}
+
+/* Zone élément cliquable*/
+/* survolé */
+.viewThisResult a:hover {
+    border-color: #999;
+    color: #999;
+    margin-left: auto;
+    margin-bottom: -300%;
+    margin-left: 25%;
+}
+
+/* Titre de la box */
+.h3BoxMenu {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: bold;
+    font-weight: 80%;
+}   
+
+/* paragraphe de la box */
+.pBoxMenu {
+    text-align: justify;
+    font-weight: 60%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/****************************/
+/****************************/
+/* BLOCK avec photo + effet */
+/****************************/
+/****************************/
+
+/* SURCHARGE framework ihover */
+.ih-item.square {
+  margin-top: 20px;
+  /*width: 316px;*/
   height: 250px;
- 	overflow: hidden;
-  position: relative;
-  width: 300px;
-  margin-left: 10px;
+  border: 0px solid #fff !important;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
-.frame a {
-  display: block;
-	height: 100%;
-  width: 100%;
-}
-
-.frame img {
-  border: 2px red;
-  display: block;
-  position: absolute;
-  /*top: -125%;
-  left: -50%;*/
-	width: 300px;
-  height: 250px;
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.frame:nth-child(2) img {
-  /*top: -90%;
-  left: -70%;*/
-}
-.frame:nth-child(3) img {
-  /*top: -90%;*/
-}
-
-/**************/
-/* Zone texte */
-/**************/
-.frame a .caption {
-  border-radius: 3px 3px 0 0; 
-	background-color: rgba(0, 0, 0, 0.4);
-	display: block;
-  overflow: hidden;
-  padding: 10px;
-  position: absolute;
-  text-align: center;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 190px; /* début zone texte par rapport haut */
-	transition-property: top;
-  transition-duration: 0.2s;  
-  width: 100%;  
-  z-index: 10;
-}
-
-.frame a:hover .caption {
-	top: 0;
-  transition: all 2s;
-}
-/* titre zone texte*/
-.frame a .caption h2 {
-  color: #E41698;
-  font-size: 2.3em;
-	margin-bottom: 20px;
-  /*font-family: 'Baloo Bhai', cursive;*/
-  font-family: 'Sacramento', cursive;
-  font-weight:bold;
-}
-
-.frame a .caption p {
-  color: white;
-  display: none;
-  line-height: 150%;
-  transition: all 0.2s;  
-  width: 90%;
-}
-
-.frame a:hover .caption p {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.desc {
-  font-family: 'Comfortaa', cursive;
-}
-
-/******************/
-/*   Effet flip   */
-/******************/
-
-.flip-container {
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -o-perspective: 1000;
-  perspective: 1000;
-
-  /*border: 1px solid #ccc;*/
-}
-
-  .flip-container:hover .flipper,  
-  .flip-container.hover .flipper {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+@media screen and (max-width: 1000px) {
+  .mobile{
+    height: 250px;
   }
-
-.flip-container, .front, .back {
-  width: 300px;
-  height: 250px;
-}
-
-.flipper {
-  -webkit-transition: 0.6s;
-  -webkit-transform-style: preserve-3d;
-
-  -moz-transition: 0.6s;
-  -moz-transform-style: preserve-3d;
-  
-  -o-transition: 0.6s;
-  -o-transform-style: preserve-3d;
-
-  transition: 0.6s;
-  transform-style: preserve-3d;
-
-  position: relative;
-}
-
-.front, .back {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.front {
-  /*background: url(./Doudous/girafe.png) 0 0 no-repeat;*/
-  /*background: url(./Doudous/girafe.png);*/
-  z-index: 2;
-}
-
-.front img {
-  width: 300px;
-  height: 250px;
-}
-
-.back {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-
-  /*background: #f8f8f8;*/
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.back img {
-  width: 300px;
-  height: 250px;
-}
-
-/*.front .name {
-  font-size: 2em;
-  display: inline-block;
-  background: rgba(33, 33, 33, 0.9);
-  color: #f8f8f8;
-  font-family: Courier;
-  padding: 5px 10px;
-  border-radius: 5px;
-  bottom: 60px;
-  left: 25%;
-  position: absolute;
-  text-shadow: 0.1em 0.1em 0.05em #333;
-
-  -webkit-transform: rotate(-20deg);
-  -moz-transform: rotate(-20deg);
-  -o-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-}*/
-
-.back-logo {
-  position: absolute;
-  top: 40px;
-  left: 90px;
-  width: 160px;
-  height: 117px;
-  background: url(http://davidwalsh.name/demo/logo.png) 0 0 no-repeat;
-}
-
-.back-title {
-  font-weight: bold;
-  color: #00304a;
-  position: absolute;
-  top: 180px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  text-shadow: 0.1em 0.1em 0.05em #acd7e5;
-  font-family: Courier;
-  font-size: 2em;
-}
-
-.back p {
-  position: absolute;
-  bottom: 40px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 0 20px;
-  font-family: arial;
-  line-height: 2em;
 }

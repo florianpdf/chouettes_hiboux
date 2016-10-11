@@ -12,6 +12,8 @@
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
