@@ -5763,9 +5763,7 @@ blockquote em {
 /* line 9, ../sass/_patchwork_page.scss */
 .thumbs {
   max-height: 250px;
-  max-width: 250px;
   width: auto;
-  height: 25%;
 }
 
 /* line 16, ../sass/_patchwork_page.scss */
