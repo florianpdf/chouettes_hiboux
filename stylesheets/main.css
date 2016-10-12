@@ -163,18 +163,16 @@ nav {
 /****************************/
 /* line 20, ../sass/_index.scss */
 .rowCustom {
-  /*margin-top: 20px;*/
   padding: 0px !important;
-  /*margin-left: 0px !important;
-  margin-bottom: 0px !important;*/
   margin: 0px !important;
 }
 
-/* line 28, ../sass/_index.scss */
+/* line 25, ../sass/_index.scss */
 .colCustom {
   padding: 0px !important;
   margin: 0px;
   height: 100%;
+  background-color: #dedede;
 }
 
 /***************************/
@@ -184,20 +182,19 @@ nav {
 /***************************/
 /* Modification hauteur div */
 @media screen and (max-width: 1000px) {
-  /* line 42, ../sass/_index.scss */
+  /* line 40, ../sass/_index.scss */
   .mobile {
     height: 200px;
   }
 }
 /* div container contenant titre, text + zone icone visible / non visible */
-/* line 48, ../sass/_index.scss */
+/* line 46, ../sass/_index.scss */
 .resultContainer {
-  background-color: #dedede;
   position: relative;
 }
 
 /* div contenant l'icone */
-/* line 54, ../sass/_index.scss */
+/* line 51, ../sass/_index.scss */
 .viewThisResult {
   position: absolute;
   margin-left: 38%;
@@ -205,19 +202,19 @@ nav {
 }
 
 /* Gestion affichage icone */
-/* line 61, ../sass/_index.scss */
+/* line 58, ../sass/_index.scss */
 .resultContainer .viewThisResult {
   display: none;
 }
 
-/* line 64, ../sass/_index.scss */
+/* line 61, ../sass/_index.scss */
 .resultContainer:hover .viewThisResult {
   display: inline;
 }
 
 /* Zone élément cliquable*/
 /* non survolé */
-/* line 70, ../sass/_index.scss */
+/* line 67, ../sass/_index.scss */
 .viewThisResult a {
   cursor: pointer;
   display: inline-block;
@@ -228,24 +225,24 @@ nav {
 
 /* Zone élément cliquable*/
 /* survolé */
-/* line 80, ../sass/_index.scss */
+/* line 77, ../sass/_index.scss */
 .viewThisResult a:hover {
   color: #999;
 }
 
 /* Titre de la box */
-/* line 85, ../sass/_index.scss */
+/* line 82, ../sass/_index.scss */
 .h3BoxMenu {
   text-transform: uppercase;
   text-align: center;
   font-size: bold;
   font-weight: 80%;
-  padding-top: 15px;
+  padding-top: 35px;
   font-family: butterfly;
 }
 
 /* paragraphe de la box */
-/* line 95, ../sass/_index.scss */
+/* line 92, ../sass/_index.scss */
 .pBoxMenu {
   text-align: justify;
   font-family: Didact Gothic;
@@ -262,7 +259,7 @@ nav {
 /****************************/
 /****************************/
 /* SURCHARGE framework ihover */
-/* line 112, ../sass/_index.scss */
+/* line 109, ../sass/_index.scss */
 .ih-item.square {
   width: 100% !important;
   height: 99% !important;

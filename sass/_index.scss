@@ -18,10 +18,7 @@ nav {
 /****************************/
 /****************************/
 .rowCustom {
-  /*margin-top: 20px;*/
   padding: 0px !important;
-  /*margin-left: 0px !important;
-  margin-bottom: 0px !important;*/
   margin: 0px !important;
 }
 
@@ -29,6 +26,7 @@ nav {
   padding:0px !important;
   margin:0px;
   height: 100%;
+  background-color:#dedede;
 }
 
 /***************************/
@@ -46,7 +44,6 @@ nav {
 
 /* div container contenant titre, text + zone icone visible / non visible */
 .resultContainer {
-    background-color:#dedede;
     position: relative;
 }
 
@@ -87,7 +84,7 @@ nav {
     text-align: center;
     font-size: bold;
     font-weight: 80%;
-    padding-top: 15px;
+    padding-top: 35px;
     font-family: butterfly;
 }   
 
