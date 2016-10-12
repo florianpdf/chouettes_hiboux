@@ -124,16 +124,16 @@
 }
 
 .og-details h3 {
-	font-weight: 300;
-	font-size: 52px;
+	font: $font-titre;
+	letter-spacing: 3px;
 	padding: 40px 0 10px;
 	margin-bottom: 10px;
-	font-family: 'Dancing Script';
+	text-transform: uppercase;
 	color: #0894af;
 }
 
 .og-details p {
-	// @include fontandline;
+	font: $font-body;
 	font-weight: 400;
 	// font-size: 16px;
 	// line-height: 22px;
