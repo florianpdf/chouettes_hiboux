@@ -4,30 +4,60 @@
 /****************************/
 /****************************/
 .nb_navbar_logo {
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
+}
+
+nav {
+  height: 120px !important;
 }
 
 /****************************/
 /****************************/
-/*        row               */
+/*        row  & col        */
 /****************************/
 /****************************/
 .rowCustom {
-    margin-top: 20px;
+  /*margin-top: 20px;*/
+  padding: 0px !important;
+  /*margin-left: 0px !important;
+  margin-bottom: 0px !important;*/
+  margin: 0px !important;
 }
+
+.colCustom {
+  padding:0px !important;
+  margin:0px;
+  height: 100%;
+}
+
 /***************************/
 /***************************/
 /* BLOCK avec texte = menu */
 /***************************/
 /***************************/
+
+/* Modification hauteur div */
+@media screen and (max-width: 1000px) {
+  .mobile{
+    height: 200px;
+  }
+}
+
+/* div container contenant titre, text + zone icone visible / non visible */
 .resultContainer {
     background-color:#dedede;
-    margin-top: 20px;
     position: relative;
 }
 
-/* Gestion affichage bouton */
+/* div contenant l'icone */
+.viewThisResult {
+    position: absolute;
+    margin-left: 38%;
+    padding-top: 25%; 
+}
+
+/* Gestion affichage icone */
 .resultContainer .viewThisResult {
     display: none;
 }
@@ -40,35 +70,15 @@
 .viewThisResult a {
     cursor: pointer;
     display: inline-block;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    padding: 9px 34px;
-    position: absolute;
-    vertical-align: bottom;
-    text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
-    /**/
-    font-weight: 500;
-    font-size: 16px;
     color: #333;
-    /*letter-spacing: 2px;
-    border: 3px solid #333;*/
-    /*margin-bottom: -350%;*/
-    /*margin-left: 25%;*/
-    margin:auto;
     outline: none;
 }
 
 /* Zone élément cliquable*/
 /* survolé */
 .viewThisResult a:hover {
-    border-color: #999;
     color: #999;
-    margin-left: auto;
-    /*margin-bottom: -300%;*/
-    margin:auto;
-    position: absolute;
 }
 
 /* Titre de la box */
@@ -77,12 +87,14 @@
     text-align: center;
     font-size: bold;
     font-weight: 80%;
-    padding-top: 5px;
+    padding-top: 15px;
+    font-family: butterfly;
 }   
 
 /* paragraphe de la box */
 .pBoxMenu {
     text-align: justify;
+    font-family: Didact Gothic;
     font-weight: 60%;
     padding-left: 15px;
     padding-right: 15px;
@@ -98,15 +110,9 @@
 
 /* SURCHARGE framework ihover */
 .ih-item.square {
-  margin-top: 20px;
-  /*width: 316px;*/
+  width: 100% !important;
+  height: 99% !important;
   /* Suppression bordure shadow */
   border: 0px solid #fff !important;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3) !important;
-}
-
-@media screen and (max-width: 1000px) {
-  .mobile{
-    height: 250px;
-  }
 }
