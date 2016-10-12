@@ -24,10 +24,10 @@ ABOUT ____________ Style page : About
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
 \*-----------------------------------------------------*/
-/* line 71, ../sass/_general.scss */
+/* line 72, ../sass/_general.scss */
 body {
   height: 100%;
-  background-color: rgba(185, 232, 233, 0.35);
+  background-image: url("../images/wood.jpg");
 }
 
 /* line 77, ../sass/_general.scss */
@@ -57,22 +57,22 @@ nav {
 }
 
 /* line 18, ../sass/_navbar.scss */
-.full_nav a {
+.full_nav a, .side-nav a {
   color: #424242;
   font: 2vw "butterfly";
   padding-left: 30px;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 7px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-right: 40px;
 }
 
-/* line 30, ../sass/_navbar.scss */
+/* line 29, ../sass/_navbar.scss */
 .material-icons {
   font-size: 40px !important;
 }
 
-/* line 36, ../sass/_navbar.scss */
+/* line 35, ../sass/_navbar.scss */
 #mobile-demo a {
   font-size: 20px !important;
   padding-top: 20px;
@@ -81,7 +81,7 @@ nav {
 
 /* line 1, ../sass/_citation.scss */
 blockquote {
-  background: transparent !important;
+  background: white !important;
   padding: 15px 20px 15px 45px;
   margin: 20px 20px;
   position: relative;
@@ -5770,7 +5770,7 @@ nav {
   width: auto;
 }
 
-/* line 16, ../sass/_patchwork_page.scss */
+/* line 14, ../sass/_patchwork_page.scss */
 .og-grid {
   list-style: none;
   padding: 20px 0;
@@ -5779,7 +5779,7 @@ nav {
   width: 100%;
 }
 
-/* line 24, ../sass/_patchwork_page.scss */
+/* line 22, ../sass/_patchwork_page.scss */
 .og-grid li {
   display: inline-block;
   margin: 10px 5px 0 5px;
@@ -5787,7 +5787,7 @@ nav {
   height: 250px;
 }
 
-/* line 31, ../sass/_patchwork_page.scss */
+/* line 29, ../sass/_patchwork_page.scss */
 .og-grid li > a,
 .og-grid li > a img {
   border: none;
@@ -5796,7 +5796,7 @@ nav {
   position: relative;
 }
 
-/* line 39, ../sass/_patchwork_page.scss */
+/* line 37, ../sass/_patchwork_page.scss */
 .og-grid li.og-expanded > a::after {
   top: auto;
   border: solid transparent;
@@ -5811,7 +5811,7 @@ nav {
   margin: -20px 0 0 -15px;
 }
 
-/* line 53, ../sass/_patchwork_page.scss */
+/* line 51, ../sass/_patchwork_page.scss */
 .og-expander {
   position: absolute;
   background: #ddd;
@@ -5824,13 +5824,13 @@ nav {
   overflow: hidden;
 }
 
-/* line 65, ../sass/_patchwork_page.scss */
+/* line 63, ../sass/_patchwork_page.scss */
 .og-expander-inner {
   padding: 50px 30px;
   height: 100%;
 }
 
-/* line 70, ../sass/_patchwork_page.scss */
+/* line 68, ../sass/_patchwork_page.scss */
 .og-close {
   position: absolute;
   width: 40px;
@@ -5840,7 +5840,7 @@ nav {
   cursor: pointer;
 }
 
-/* line 79, ../sass/_patchwork_page.scss */
+/* line 77, ../sass/_patchwork_page.scss */
 .og-close::before,
 .og-close::after {
   content: '';
@@ -5854,20 +5854,20 @@ nav {
   transform: rotate(45deg);
 }
 
-/* line 92, ../sass/_patchwork_page.scss */
+/* line 90, ../sass/_patchwork_page.scss */
 .og-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-/* line 98, ../sass/_patchwork_page.scss */
+/* line 96, ../sass/_patchwork_page.scss */
 .og-close:hover::before,
 .og-close:hover::after {
   background: #333;
 }
 
-/* line 103, ../sass/_patchwork_page.scss */
+/* line 101, ../sass/_patchwork_page.scss */
 .og-fullimg,
 .og-details {
   width: 50%;
@@ -5877,40 +5877,41 @@ nav {
   position: relative;
 }
 
-/* line 112, ../sass/_patchwork_page.scss */
+/* line 110, ../sass/_patchwork_page.scss */
 .og-details {
   padding: 0 40px 0 20px;
 }
 
-/* line 116, ../sass/_patchwork_page.scss */
+/* line 114, ../sass/_patchwork_page.scss */
 .og-fullimg {
   text-align: center;
 }
 
-/* line 120, ../sass/_patchwork_page.scss */
+/* line 118, ../sass/_patchwork_page.scss */
 .og-fullimg img {
   display: inline-block;
   max-height: 100%;
   max-width: 100%;
 }
 
-/* line 126, ../sass/_patchwork_page.scss */
+/* line 124, ../sass/_patchwork_page.scss */
 .og-details h3 {
-  font-weight: 300;
-  font-size: 52px;
+  font: 2vw "butterfly";
+  letter-spacing: 3px;
   padding: 40px 0 10px;
   margin-bottom: 10px;
-  font-family: 'Dancing Script';
+  text-transform: uppercase;
   color: #0894af;
 }
 
-/* line 135, ../sass/_patchwork_page.scss */
+/* line 133, ../sass/_patchwork_page.scss */
 .og-details p {
+  font: 16px "Didact Gothic";
   font-weight: 400;
   color: #999;
 }
 
-/* line 143, ../sass/_patchwork_page.scss */
+/* line 141, ../sass/_patchwork_page.scss */
 .og-details a {
   font-weight: 700;
   font-size: 16px;
@@ -5924,20 +5925,20 @@ nav {
   outline: none;
 }
 
-/* line 156, ../sass/_patchwork_page.scss */
+/* line 154, ../sass/_patchwork_page.scss */
 .og-details a::before {
   content: '\2192';
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 162, ../sass/_patchwork_page.scss */
+/* line 160, ../sass/_patchwork_page.scss */
 .og-details a:hover {
   border-color: #999;
   color: #999;
 }
 
-/* line 167, ../sass/_patchwork_page.scss */
+/* line 165, ../sass/_patchwork_page.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -5993,28 +5994,28 @@ nav {
   }
 }
 @media screen and (max-width: 830px) {
-  /* line 202, ../sass/_patchwork_page.scss */
+  /* line 200, ../sass/_patchwork_page.scss */
   .og-expander h3 {
     font-size: 32px;
   }
 
-  /* line 203, ../sass/_patchwork_page.scss */
+  /* line 201, ../sass/_patchwork_page.scss */
   .og-expander p {
     font-size: 13px;
   }
 
-  /* line 204, ../sass/_patchwork_page.scss */
+  /* line 202, ../sass/_patchwork_page.scss */
   .og-expander a {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 210, ../sass/_patchwork_page.scss */
+  /* line 208, ../sass/_patchwork_page.scss */
   .og-fullimg {
     display: none;
   }
 
-  /* line 211, ../sass/_patchwork_page.scss */
+  /* line 209, ../sass/_patchwork_page.scss */
   .og-details {
     float: none;
     width: 100%;
@@ -6064,10 +6065,6 @@ nav {
 /* line 2, ../sass/_footer.scss */
 footer.page-footer {
   background-color: white;
-}
-
-/* line 6, ../sass/_footer.scss */
-.container-footer {
   margin-top: 10px;
   margin-bottom: 0px;
   padding-top: 0px;
@@ -6078,36 +6075,39 @@ footer.page-footer {
   background-size: 39%;
 }
 
-/* line 20, ../sass/_footer.scss */
-.fa-facebook-square {
-  margin-left: 11.5px;
-  margin-top: 73px;
+/*.fa-facebook-square{
+    margin-left:11.5px;
+    margin-top:73px;
 }
 
-/* line 25, ../sass/_footer.scss */
+.fa-instagram{
+    margin-left:12.5px;
+    margin-top:65px;
+}
+*/
+/* line 28, ../sass/_footer.scss */
 .fa-instagram {
-  margin-left: 12.5px;
-  margin-top: 65px;
+  margin-left: 10%;
 }
 
-/* line 30, ../sass/_footer.scss */
+/* line 32, ../sass/_footer.scss */
 #row-footer {
   margin-left: 80px;
 }
 
-/* line 34, ../sass/_footer.scss */
+/* line 36, ../sass/_footer.scss */
 h5.brown-text {
   font: 2vw "butterfly";
 }
 
-/* line 38, ../sass/_footer.scss */
+/* line 40, ../sass/_footer.scss */
 .footer-copyright {
   font-color: brown-text text-lighten-3;
 }
 
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 45, ../sass/_footer.scss */
+/* line 47, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
