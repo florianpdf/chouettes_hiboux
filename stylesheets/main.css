@@ -62,17 +62,17 @@ nav {
   font: 2vw "butterfly";
   padding-left: 30px;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 7px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-right: 40px;
 }
 
-/* line 30, ../sass/_navbar.scss */
+/* line 29, ../sass/_navbar.scss */
 .material-icons {
   font-size: 40px !important;
 }
 
-/* line 36, ../sass/_navbar.scss */
+/* line 35, ../sass/_navbar.scss */
 #mobile-demo a {
   font-size: 20px !important;
   padding-top: 20px;
