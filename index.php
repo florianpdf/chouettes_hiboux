@@ -24,24 +24,21 @@
 <div class="container">
   <!-- DEBUT PREMIERE LIGNE -->
   <div class="row rowCustom">
-    
-    <a href="doudous.php">
     <div class="col l4 m2 s12 colCustom block">
-      <div class="resultContainer mobile">
+      <div class="resultContainer mobile block">
       <h3 class="h3BoxMenu">Doudous</h3>
         <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <div class="viewThisResult">
-            <i class="fa fa-sign-in fa-3x"></i>
+            <a href="doudous.php"><i class="fa fa-sign-in fa-3x"></i></a>
         </div>  
-      </div>      
+      </div>       
     </div> <!-- End col l4 m3 s1-->
-    </a> 
 
     <div class="col l4 m2 s12 colCustom block">
-      <div class="ih-item square effect15 top_to_bottom">
+      <div class="ih-item square effect15 top_to_bottom block">
           <a href="#">
             <div>
-              <img src="images/toutous.jpg" alt="img">
+              <img src="images/toutous.jpg" alt="img" class="block">
             </div>
             <div class="info">
               <h3>Heading here</h3>
@@ -52,7 +49,7 @@
     </div>
 
     <div class="col l4 m2 s12 colCustom block">
-      <div class="resultContainer mobile">
+      <div class="resultContainer mobile block">
         <h3 class="h3BoxMenu">Bijoux</h3>
         <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <div class="viewThisResult">
