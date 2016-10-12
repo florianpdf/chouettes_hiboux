@@ -57,7 +57,7 @@ nav {
 }
 
 /* line 18, ../sass/_navbar.scss */
-.full_nav a {
+.full_nav a, .side-nav a {
   color: #424242;
   font: 2vw "butterfly";
   padding-left: 30px;
