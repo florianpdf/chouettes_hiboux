@@ -27,7 +27,7 @@ ABOUT ____________ Style page : About
 /* line 71, ../sass/_general.scss */
 body {
   height: 100%;
-  background-color: rgba(185, 232, 233, 0.35);
+  background-image: url("../images/wood.jpg");
 }
 
 /* line 77, ../sass/_general.scss */
@@ -81,7 +81,7 @@ nav {
 
 /* line 1, ../sass/_citation.scss */
 blockquote {
-  background: transparent !important;
+  background: white !important;
   padding: 15px 20px 15px 45px;
   margin: 20px 20px;
   position: relative;
@@ -5899,16 +5899,17 @@ nav {
 
 /* line 126, ../sass/_patchwork_page.scss */
 .og-details h3 {
-  font-weight: 300;
-  font-size: 52px;
+  font: 2vw "butterfly";
+  letter-spacing: 3px;
   padding: 40px 0 10px;
   margin-bottom: 10px;
-  font-family: 'Dancing Script';
+  text-transform: uppercase;
   color: #0894af;
 }
 
 /* line 135, ../sass/_patchwork_page.scss */
 .og-details p {
+  font: 16px "Didact Gothic";
   font-weight: 400;
   color: #999;
 }
