@@ -18,7 +18,7 @@
                     </ul>
                 </div>
                 <div class="col l2 s12">
-                    <h5 class="brown-text text-lighten-2">Contact</h5>
+                    <h5 class="brown-text text-lighten-2">Contacts</h5>
                     <ul>
                         <li><a class="brown-text text-lighten-3" href="./form.php">Formulaire de contact</a></li>
                     </ul>
