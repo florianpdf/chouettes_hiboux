@@ -1,20 +1,30 @@
 /*FOOTER*/
+footer.page-footer{
+    background-color:white;
+}
 
-footer.page-footer {
+.container-footer {
 	margin-top: 10px;
     margin-bottom:0px;
 	padding-top: 0px;
-	background-image: url("https://s18.postimg.org/lmcvfezy1/Les_hiboux.gif");
+	background-image: url("../images/Les-hiboux.gif");
 	background-repeat:no-repeat;
 	background-position:right;
 	margin-right:-20px;
-    background:white;
+    background-size: 39%;
+    // z-index: -10000;
     // background: linear-gradient(#1DB1DD, #FFF) !important;
 }
 
 
-.fa-facebook{
-    
+.fa-facebook-square{
+    margin-left:11.5px;
+    margin-top:73px;
+}
+
+.fa-instagram{
+    margin-left:12.5px;
+    margin-top:65px;
 }
 
 #row-footer{
@@ -28,6 +38,8 @@ h5.brown-text{
 .footer-copyright{
 	font-color:brown-text text-lighten-3;
 }
+
+/*FIN FOOTER*/
 
 /*RETOUR EN HAUT*/
 a.back-to-top {
@@ -44,3 +56,4 @@ a.back-to-top {
     -moz-border-radius: 30px;
     border-radius: 30px;
 }
+/*FIN RETOUR EN HAUT*/
