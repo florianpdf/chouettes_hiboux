@@ -27,15 +27,15 @@ ABOUT ____________ Style page : About
 /* line 71, ../sass/_general.scss */
 body {
   height: 100%;
-  background-color: rgba(54, 191, 194, 0.5);
+  background-color: rgba(185, 232, 233, 0.35);
 }
 
-/* line 76, ../sass/_general.scss */
+/* line 77, ../sass/_general.scss */
 section {
   min-height: 100%;
 }
 
-/* line 80, ../sass/_general.scss */
+/* line 81, ../sass/_general.scss */
 .container {
   min-height: 100%;
 }
@@ -147,18 +147,34 @@ blockquote em {
 /****************************/
 /* line 6, ../sass/_index.scss */
 .nb_navbar_logo {
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
+}
+
+/* line 11, ../sass/_index.scss */
+nav {
+  height: 120px !important;
 }
 
 /****************************/
 /****************************/
-/*        row               */
+/*        row  & col        */
 /****************************/
 /****************************/
-/* line 16, ../sass/_index.scss */
+/* line 20, ../sass/_index.scss */
 .rowCustom {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
+  padding: 0px !important;
+  /*margin-left: 0px !important;
+  margin-bottom: 0px !important;*/
+  margin: 0px !important;
+}
+
+/* line 28, ../sass/_index.scss */
+.colCustom {
+  padding: 0px !important;
+  margin: 0px;
+  height: 100%;
 }
 
 /***************************/
@@ -166,76 +182,73 @@ blockquote em {
 /* BLOCK avec texte = menu */
 /***************************/
 /***************************/
-/* line 24, ../sass/_index.scss */
+/* Modification hauteur div */
+@media screen and (max-width: 1000px) {
+  /* line 42, ../sass/_index.scss */
+  .mobile {
+    height: 200px;
+  }
+}
+/* div container contenant titre, text + zone icone visible / non visible */
+/* line 48, ../sass/_index.scss */
 .resultContainer {
   background-color: #dedede;
-  margin-top: 20px;
   position: relative;
 }
 
-/* Gestion affichage bouton */
-/* line 31, ../sass/_index.scss */
+/* div contenant l'icone */
+/* line 54, ../sass/_index.scss */
+.viewThisResult {
+  position: absolute;
+  margin-left: 38%;
+  padding-top: 25%;
+}
+
+/* Gestion affichage icone */
+/* line 61, ../sass/_index.scss */
 .resultContainer .viewThisResult {
   display: none;
 }
 
-/* line 34, ../sass/_index.scss */
+/* line 64, ../sass/_index.scss */
 .resultContainer:hover .viewThisResult {
   display: inline;
 }
 
 /* Zone élément cliquable*/
 /* non survolé */
-/* line 40, ../sass/_index.scss */
+/* line 70, ../sass/_index.scss */
 .viewThisResult a {
   cursor: pointer;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  padding: 9px 34px;
-  position: absolute;
-  vertical-align: bottom;
-  text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
-  /**/
-  font-weight: 500;
-  font-size: 16px;
   color: #333;
-  /*letter-spacing: 2px;
-  border: 3px solid #333;*/
-  /*margin-bottom: -350%;*/
-  /*margin-left: 25%;*/
-  margin: auto;
   outline: none;
 }
 
 /* Zone élément cliquable*/
 /* survolé */
-/* line 65, ../sass/_index.scss */
+/* line 80, ../sass/_index.scss */
 .viewThisResult a:hover {
-  border-color: #999;
   color: #999;
-  margin-left: auto;
-  /*margin-bottom: -300%;*/
-  margin: auto;
-  position: absolute;
 }
 
 /* Titre de la box */
-/* line 75, ../sass/_index.scss */
+/* line 85, ../sass/_index.scss */
 .h3BoxMenu {
   text-transform: uppercase;
   text-align: center;
   font-size: bold;
   font-weight: 80%;
-  padding-top: 5px;
+  padding-top: 15px;
+  font-family: butterfly;
 }
 
 /* paragraphe de la box */
-/* line 84, ../sass/_index.scss */
+/* line 95, ../sass/_index.scss */
 .pBoxMenu {
   text-align: justify;
+  font-family: Didact Gothic;
   font-weight: 60%;
   padding-left: 15px;
   padding-right: 15px;
@@ -249,21 +262,15 @@ blockquote em {
 /****************************/
 /****************************/
 /* SURCHARGE framework ihover */
-/* line 100, ../sass/_index.scss */
+/* line 112, ../sass/_index.scss */
 .ih-item.square {
-  margin-top: 20px;
-  /*width: 316px;*/
+  width: 100% !important;
+  height: 99% !important;
   /* Suppression bordure shadow */
   border: 0px solid #fff !important;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3) !important;
 }
 
-@media screen and (max-width: 1000px) {
-  /* line 109, ../sass/_index.scss */
-  .mobile {
-    height: 250px;
-  }
-}
 /* line 1, ../sass/_ihover.scss */
 .ih-item {
   position: relative;
