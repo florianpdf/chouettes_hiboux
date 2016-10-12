@@ -24,18 +24,18 @@ ABOUT ____________ Style page : About
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
 \*-----------------------------------------------------*/
-/* line 71, ../sass/_general.scss */
+/* line 72, ../sass/_general.scss */
 body {
   height: 100%;
   background-color: rgba(54, 191, 194, 0.5);
 }
 
-/* line 76, ../sass/_general.scss */
+/* line 77, ../sass/_general.scss */
 section {
   min-height: 100%;
 }
 
-/* line 80, ../sass/_general.scss */
+/* line 81, ../sass/_general.scss */
 .container {
   min-height: 100%;
 }
@@ -6060,10 +6060,6 @@ blockquote em {
 /* line 2, ../sass/_footer.scss */
 footer.page-footer {
   background-color: white;
-}
-
-/* line 6, ../sass/_footer.scss */
-.container-footer {
   margin-top: 10px;
   margin-bottom: 0px;
   padding-top: 0px;
@@ -6074,36 +6070,39 @@ footer.page-footer {
   background-size: 39%;
 }
 
-/* line 20, ../sass/_footer.scss */
-.fa-facebook-square {
-  margin-left: 11.5px;
-  margin-top: 73px;
+/*.fa-facebook-square{
+    margin-left:11.5px;
+    margin-top:73px;
 }
 
-/* line 25, ../sass/_footer.scss */
+.fa-instagram{
+    margin-left:12.5px;
+    margin-top:65px;
+}
+*/
+/* line 28, ../sass/_footer.scss */
 .fa-instagram {
-  margin-left: 12.5px;
-  margin-top: 65px;
+  margin-left: 10%;
 }
 
-/* line 30, ../sass/_footer.scss */
+/* line 32, ../sass/_footer.scss */
 #row-footer {
   margin-left: 80px;
 }
 
-/* line 34, ../sass/_footer.scss */
+/* line 36, ../sass/_footer.scss */
 h5.brown-text {
   font: 2vw "butterfly";
 }
 
-/* line 38, ../sass/_footer.scss */
+/* line 40, ../sass/_footer.scss */
 .footer-copyright {
   font-color: brown-text text-lighten-3;
 }
 
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 45, ../sass/_footer.scss */
+/* line 47, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;

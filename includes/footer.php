@@ -21,9 +21,11 @@
                     <h5 class="brown-text text-lighten-2">Contacts</h5>
                     <ul>
                         <li><a class="brown-text text-lighten-3" href="./form.php">Formulaire de contact</a></li>
+                        <li><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+                            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></li>
                     </ul>
                 </div>
-                 <div class="col l4 s12">
+<!--                  <div class="col l4 s12">
                     <div class="row">
                         <div class="col offset-l3 l1 s12">
                             <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
@@ -32,7 +34,7 @@
                             <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>        
         </div>
 
