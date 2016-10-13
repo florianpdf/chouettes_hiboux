@@ -51,16 +51,16 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/modernizr.custom.js"></script>
-    <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
     
 
     <!-- index.php 
     Hauteur éléments ROW identique
-    Class des élements row -->
-    <script> 
+    Class des élements colCustom -->
+    <script>
         $(function() {
-          /*$('.column').matchHeight();*/
-          $('.block').matchHeight('.row');
+            var $heightDiv = $('.colCustom').css('width');
+            $('.colCustom').css("height", $heightDiv);
+            $('img').css("height", $heightDiv).css("width", $heightDiv);;   
         });
     </script>
 

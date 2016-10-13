@@ -147,13 +147,13 @@ blockquote em {
 
 /****************************/
 /****************************/
-/*        Logo              */
+/*        Logo & navBar     */
 /****************************/
 /****************************/
 /* line 6, ../sass/_index.scss */
 .nb_navbar_logo {
-  width: 50%;
-  height: 50%;
+  width: 50% !important;
+  height: 50% !important;
 }
 
 /* line 11, ../sass/_index.scss */
@@ -176,7 +176,6 @@ nav {
 .colCustom {
   padding: 0px !important;
   margin: 0px;
-  height: 100%;
   background-color: #dedede;
 }
 
@@ -185,42 +184,20 @@ nav {
 /* BLOCK avec texte = menu */
 /***************************/
 /***************************/
-/* Modification hauteur div */
-@media screen and (max-width: 1000px) {
-  /* line 40, ../sass/_index.scss */
-  .mobile {
-    height: 200px;
-  }
-}
-/* div container contenant titre, text + zone icone visible / non visible */
-/* line 46, ../sass/_index.scss */
-.resultContainer {
-  position: relative;
-}
-
-/* div contenant l'icone */
-/* line 51, ../sass/_index.scss */
-.viewThisResult {
-  position: absolute;
-  margin-left: 38%;
-  padding-top: 25%;
-}
-
-/* Gestion affichage icone */
-/* line 58, ../sass/_index.scss */
-.resultContainer .viewThisResult {
-  display: none;
-}
-
-/* line 61, ../sass/_index.scss */
-.resultContainer:hover .viewThisResult {
+/* line 36, ../sass/_index.scss */
+.colCustom:hover .iMasque {
   display: inline;
+}
+
+/* line 40, ../sass/_index.scss */
+.iMasque {
+  display: none;
 }
 
 /* Zone élément cliquable*/
 /* non survolé */
-/* line 67, ../sass/_index.scss */
-.viewThisResult a {
+/* line 46, ../sass/_index.scss */
+a {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
@@ -230,13 +207,13 @@ nav {
 
 /* Zone élément cliquable*/
 /* survolé */
-/* line 77, ../sass/_index.scss */
-.viewThisResult a:hover {
+/* line 56, ../sass/_index.scss */
+.iMasque:hover {
   color: #999;
 }
 
 /* Titre de la box */
-/* line 82, ../sass/_index.scss */
+/* line 61, ../sass/_index.scss */
 .h3BoxMenu {
   text-transform: uppercase;
   text-align: center;
@@ -247,7 +224,7 @@ nav {
 }
 
 /* paragraphe de la box */
-/* line 92, ../sass/_index.scss */
+/* line 71, ../sass/_index.scss */
 .pBoxMenu {
   text-align: justify;
   font-family: Didact Gothic;
@@ -264,10 +241,10 @@ nav {
 /****************************/
 /****************************/
 /* SURCHARGE framework ihover */
-/* line 109, ../sass/_index.scss */
+/* line 87, ../sass/_index.scss */
 .ih-item.square {
   width: 100% !important;
-  height: 99% !important;
+  height: 100% !important;
   /* Suppression bordure shadow */
   border: 0px solid #fff !important;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3) !important;

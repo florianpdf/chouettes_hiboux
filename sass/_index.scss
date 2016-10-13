@@ -1,11 +1,11 @@
 /****************************/
 /****************************/
-/*        Logo              */
+/*        Logo & navBar     */
 /****************************/
 /****************************/
 .nb_navbar_logo {
-  width: 50%;
-  height: 50%;
+  width: 50% !important;
+  height: 50% !important;
 }
 
 nav {
@@ -25,7 +25,6 @@ nav {
 .colCustom {
   padding:0px !important;
   margin:0px;
-  height: 100%;
   background-color:#dedede;
 }
 
@@ -34,48 +33,28 @@ nav {
 /* BLOCK avec texte = menu */
 /***************************/
 /***************************/
-
-/* Modification hauteur div */
-@media screen and (max-width: 1000px) {
-  .mobile{
-    height: 200px;
-  }
+.colCustom:hover .iMasque {
+  display: inline;
 }
 
-/* div container contenant titre, text + zone icone visible / non visible */
-.resultContainer {
-    position: relative;
-}
-
-/* div contenant l'icone */
-.viewThisResult {
-    position: absolute;
-    margin-left: 38%;
-    padding-top: 25%; 
-}
-
-/* Gestion affichage icone */
-.resultContainer .viewThisResult {
-    display: none;
-}
-.resultContainer:hover .viewThisResult {
-    display: inline;
+.iMasque {
+  display: none;
 }
 
 /* Zone élément cliquable*/
 /* non survolé */
-.viewThisResult a {
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    color: #333;
-    outline: none;
+a {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  outline: none;
 }
 
 /* Zone élément cliquable*/
 /* survolé */
-.viewThisResult a:hover {
-    color: #999;
+.iMasque:hover {
+  color: #999;
 }
 
 /* Titre de la box */
@@ -104,12 +83,12 @@ nav {
 /* BLOCK avec photo + effet */
 /****************************/
 /****************************/
-
 /* SURCHARGE framework ihover */
 .ih-item.square {
   width: 100% !important;
-  height: 99% !important;
+  height: 100% !important;
   /* Suppression bordure shadow */
   border: 0px solid #fff !important;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3) !important;
 }
+
