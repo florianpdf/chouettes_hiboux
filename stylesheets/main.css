@@ -21,6 +21,11 @@ ABOUT ____________ Style page : About
   font-weight: normal;
   font-style: normal;
 }
+/* line 63, ../sass/_general.scss */
+.h1 {
+  font: 2vw "butterfly";
+}
+
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
 \*-----------------------------------------------------*/
@@ -30,12 +35,12 @@ body {
   background-image: url("../images/wood.jpg");
 }
 
-/* line 77, ../sass/_general.scss */
+/* line 78, ../sass/_general.scss */
 section {
   min-height: 100%;
 }
 
-/* line 81, ../sass/_general.scss */
+/* line 82, ../sass/_general.scss */
 .container {
   min-height: 100%;
 }
@@ -5901,7 +5906,7 @@ nav {
   padding: 40px 0 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: #0894af;
+  color: #3FBFC1;
 }
 
 /* line 133, ../sass/_patchwork_page.scss */
@@ -6059,6 +6064,100 @@ nav {
 .expression {
   font-style: italic;
   font-weight: bold;
+}
+
+/* line 1, ../sass/_form.scss */
+h1 {
+  font: 2vw "butterfly";
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #3FBFC1;
+  text-align: center;
+}
+
+/* line 11, ../sass/_form.scss */
+.contact {
+  background-color: RGBA(255, 255, 255, 0.8);
+  margin-top: 15px;
+  height: 100%;
+  padding: 15px;
+}
+
+/* line 18, ../sass/_form.scss */
+.row {
+  padding: 5px;
+}
+
+/* line 22, ../sass/_form.scss */
+.material-icons {
+  color: #3FBFC1;
+}
+
+/* line 26, ../sass/_form.scss */
+.send {
+  color: white;
+}
+
+/* line 30, ../sass/_form.scss */
+.select-wrapper span.caret {
+  color: #3FBFC1;
+  font-size: 20px !important;
+  top: 10px !important;
+}
+
+/* line 36, ../sass/_form.scss */
+.select-wrapper input.select-dropdown {
+  color: #3FBFC1;
+}
+
+/* line 40, ../sass/_form.scss */
+.select-wrapper + label {
+  font-size: 1rem;
+}
+
+/* line 44, ../sass/_form.scss */
+.input-field label {
+  font-size: 1rem;
+}
+
+/* label color */
+/* line 49, ../sass/_form.scss */
+.input-field label {
+  color: #3FBFC1;
+}
+
+/* label focus color */
+/* line 53, ../sass/_form.scss */
+.input-field input[type=text]:focus + label {
+  color: #3FBFC1;
+}
+
+/* label underline focus color */
+/* line 57, ../sass/_form.scss */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #3FBFC1;
+  box-shadow: 0 1px 0 0 #3FBFC1;
+}
+
+/* valid color */
+/* line 62, ../sass/_form.scss */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #3FBFC1;
+  box-shadow: 0 1px 0 0 #3FBFC1;
+}
+
+/* invalid color */
+/* line 67, ../sass/_form.scss */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #3FBFC1;
+  box-shadow: 0 1px 0 0 #3FBFC1;
+}
+
+/* icon prefix focus color */
+/* line 72, ../sass/_form.scss */
+.input-field .prefix.active {
+  color: #3FBFC1;
 }
 
 /*FOOTER*/
