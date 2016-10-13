@@ -6,7 +6,7 @@
     <div>
         <nav>
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo center">
+                <a href="../bleau_S2_2016_chouette_hibou/index.php" class="brand-logo center">
                     <img src="./images/newLogo.png" alt="Chouettes Hiboux Doudous" class="nb_navbar_logo">
                 </a>
             </div>
@@ -23,6 +23,7 @@
 <!-- DEBUT Block 9 images -->
 <div class="container">
   <!-- DEBUT PREMIERE LIGNE -->
+
   <div class="row rowCustom">
     <div class="col l4 m2 s12 colCustom">
     <a href="doudous.php">
@@ -66,10 +67,11 @@
   <!-- FIN PREMIERE LIGNE -->
 
   <!-- DEBUT DEUXIEME LIGNE -->
-  <div class="row rowCustom">
+  <div class="row rowCustom block">
 
     <div class="col l4 m2 s12 colCustom">
       <div class="ih-item square effect13 top_to_bottom">
+
           <a href="#">
             <div>
               <img src="images/grandDoudou.jpg" alt="img">
@@ -112,7 +114,7 @@
   <!-- FIN DEUXIEME LIGNE -->
 
   <!-- DEBUT TROISIEME LIGNE -->
-  <div class="row rowCustom">
+  <div class="row rowCustom block">
     
     <div class="col l4 m2 s12 colCustom">
     <a href="form.php">

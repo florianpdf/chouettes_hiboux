@@ -21,21 +21,26 @@ ABOUT ____________ Style page : About
   font-weight: normal;
   font-style: normal;
 }
+/* line 62, ../sass/_general.scss */
+h1 {
+  font: 2vw "butterfly";
+}
+
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
 \*-----------------------------------------------------*/
-/* line 71, ../sass/_general.scss */
+/* line 81, ../sass/_general.scss */
 body {
   height: 100%;
   background-image: url("../images/wood.jpg");
 }
 
-/* line 77, ../sass/_general.scss */
+/* line 87, ../sass/_general.scss */
 section {
   min-height: 100%;
 }
 
-/* line 81, ../sass/_general.scss */
+/* line 91, ../sass/_general.scss */
 .container {
   min-height: 100%;
 }
@@ -5747,7 +5752,7 @@ a {
   width: auto;
 }
 
-/* line 16, ../sass/_patchwork_page.scss */
+/* line 14, ../sass/_patchwork_page.scss */
 .og-grid {
   list-style: none;
   padding: 20px 0;
@@ -5756,7 +5761,7 @@ a {
   width: 100%;
 }
 
-/* line 24, ../sass/_patchwork_page.scss */
+/* line 22, ../sass/_patchwork_page.scss */
 .og-grid li {
   display: inline-block;
   margin: 10px 5px 0 5px;
@@ -5764,7 +5769,7 @@ a {
   height: 250px;
 }
 
-/* line 31, ../sass/_patchwork_page.scss */
+/* line 29, ../sass/_patchwork_page.scss */
 .og-grid li > a,
 .og-grid li > a img {
   border: none;
@@ -5773,7 +5778,7 @@ a {
   position: relative;
 }
 
-/* line 39, ../sass/_patchwork_page.scss */
+/* line 37, ../sass/_patchwork_page.scss */
 .og-grid li.og-expanded > a::after {
   top: auto;
   border: solid transparent;
@@ -5788,7 +5793,7 @@ a {
   margin: -20px 0 0 -15px;
 }
 
-/* line 53, ../sass/_patchwork_page.scss */
+/* line 51, ../sass/_patchwork_page.scss */
 .og-expander {
   position: absolute;
   background: #ddd;
@@ -5801,13 +5806,13 @@ a {
   overflow: hidden;
 }
 
-/* line 65, ../sass/_patchwork_page.scss */
+/* line 63, ../sass/_patchwork_page.scss */
 .og-expander-inner {
   padding: 50px 30px;
   height: 100%;
 }
 
-/* line 70, ../sass/_patchwork_page.scss */
+/* line 68, ../sass/_patchwork_page.scss */
 .og-close {
   position: absolute;
   width: 40px;
@@ -5817,7 +5822,7 @@ a {
   cursor: pointer;
 }
 
-/* line 79, ../sass/_patchwork_page.scss */
+/* line 77, ../sass/_patchwork_page.scss */
 .og-close::before,
 .og-close::after {
   content: '';
@@ -5831,20 +5836,20 @@ a {
   transform: rotate(45deg);
 }
 
-/* line 92, ../sass/_patchwork_page.scss */
+/* line 90, ../sass/_patchwork_page.scss */
 .og-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-/* line 98, ../sass/_patchwork_page.scss */
+/* line 96, ../sass/_patchwork_page.scss */
 .og-close:hover::before,
 .og-close:hover::after {
   background: #333;
 }
 
-/* line 103, ../sass/_patchwork_page.scss */
+/* line 101, ../sass/_patchwork_page.scss */
 .og-fullimg,
 .og-details {
   width: 50%;
@@ -5854,41 +5859,41 @@ a {
   position: relative;
 }
 
-/* line 112, ../sass/_patchwork_page.scss */
+/* line 110, ../sass/_patchwork_page.scss */
 .og-details {
   padding: 0 40px 0 20px;
 }
 
-/* line 116, ../sass/_patchwork_page.scss */
+/* line 114, ../sass/_patchwork_page.scss */
 .og-fullimg {
   text-align: center;
 }
 
-/* line 120, ../sass/_patchwork_page.scss */
+/* line 118, ../sass/_patchwork_page.scss */
 .og-fullimg img {
   display: inline-block;
   max-height: 100%;
   max-width: 100%;
 }
 
-/* line 126, ../sass/_patchwork_page.scss */
+/* line 124, ../sass/_patchwork_page.scss */
 .og-details h3 {
   font: 2vw "butterfly";
   letter-spacing: 3px;
   padding: 40px 0 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: #0894af;
+  color: #3FBFC1;
 }
 
-/* line 135, ../sass/_patchwork_page.scss */
+/* line 133, ../sass/_patchwork_page.scss */
 .og-details p {
   font: 16px "Didact Gothic";
   font-weight: 400;
   color: #999;
 }
 
-/* line 143, ../sass/_patchwork_page.scss */
+/* line 141, ../sass/_patchwork_page.scss */
 .og-details a {
   font-weight: 700;
   font-size: 16px;
@@ -5902,20 +5907,20 @@ a {
   outline: none;
 }
 
-/* line 156, ../sass/_patchwork_page.scss */
+/* line 154, ../sass/_patchwork_page.scss */
 .og-details a::before {
   content: '\2192';
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 162, ../sass/_patchwork_page.scss */
+/* line 160, ../sass/_patchwork_page.scss */
 .og-details a:hover {
   border-color: #999;
   color: #999;
 }
 
-/* line 167, ../sass/_patchwork_page.scss */
+/* line 165, ../sass/_patchwork_page.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -5971,28 +5976,28 @@ a {
   }
 }
 @media screen and (max-width: 830px) {
-  /* line 202, ../sass/_patchwork_page.scss */
+  /* line 200, ../sass/_patchwork_page.scss */
   .og-expander h3 {
     font-size: 32px;
   }
 
-  /* line 203, ../sass/_patchwork_page.scss */
+  /* line 201, ../sass/_patchwork_page.scss */
   .og-expander p {
     font-size: 13px;
   }
 
-  /* line 204, ../sass/_patchwork_page.scss */
+  /* line 202, ../sass/_patchwork_page.scss */
   .og-expander a {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 210, ../sass/_patchwork_page.scss */
+  /* line 208, ../sass/_patchwork_page.scss */
   .og-fullimg {
     display: none;
   }
 
-  /* line 211, ../sass/_patchwork_page.scss */
+  /* line 209, ../sass/_patchwork_page.scss */
   .og-details {
     float: none;
     width: 100%;
@@ -6038,14 +6043,104 @@ a {
   font-weight: bold;
 }
 
+/* line 1, ../sass/_form.scss */
+h1 {
+  font: 2vw "butterfly";
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #3FBFC1;
+  text-align: center;
+}
+
+/* line 11, ../sass/_form.scss */
+.contact {
+  background-color: RGBA(255, 255, 255, 0.8);
+  margin-top: 15px;
+  height: 100%;
+  padding: 15px;
+}
+
+/* line 18, ../sass/_form.scss */
+.row {
+  padding: 5px;
+}
+
+/* line 22, ../sass/_form.scss */
+.material-icons {
+  color: #3FBFC1;
+}
+
+/* line 26, ../sass/_form.scss */
+.send {
+  color: white;
+}
+
+/* line 30, ../sass/_form.scss */
+.select-wrapper span.caret {
+  color: #3FBFC1;
+  font-size: 20px !important;
+  top: 10px !important;
+}
+
+/* line 36, ../sass/_form.scss */
+.select-wrapper input.select-dropdown {
+  color: #3FBFC1;
+}
+
+/* line 40, ../sass/_form.scss */
+.select-wrapper + label {
+  font-size: 1rem;
+}
+
+/* line 44, ../sass/_form.scss */
+.input-field label {
+  font-size: 1rem;
+}
+
+/* label color */
+/* line 49, ../sass/_form.scss */
+.input-field label {
+  color: #3FBFC1;
+}
+
+/* label focus color */
+/* line 53, ../sass/_form.scss */
+.input-field input[type=text]:focus + label {
+  color: #3FBFC1;
+}
+
+/* label underline focus color */
+/* line 57, ../sass/_form.scss */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #3FBFC1;
+  box-shadow: 0 1px 0 0 #3FBFC1;
+}
+
+/* valid color */
+/* line 62, ../sass/_form.scss */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #3FBFC1;
+  box-shadow: 0 1px 0 0 #3FBFC1;
+}
+
+/* invalid color */
+/* line 67, ../sass/_form.scss */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #3FBFC1;
+  box-shadow: 0 1px 0 0 #3FBFC1;
+}
+
+/* icon prefix focus color */
+/* line 72, ../sass/_form.scss */
+.input-field .prefix.active {
+  color: #3FBFC1;
+}
+
 /*FOOTER*/
 /* line 2, ../sass/_footer.scss */
 footer.page-footer {
   background-color: white;
-}
-
-/* line 6, ../sass/_footer.scss */
-.container-footer {
   margin-top: 10px;
   margin-bottom: 0px;
   padding-top: 0px;
@@ -6053,39 +6148,52 @@ footer.page-footer {
   background-repeat: no-repeat;
   background-position: right;
   margin-right: -20px;
-  background-size: 39%;
+  background-size: 38%;
 }
 
-/* line 20, ../sass/_footer.scss */
-.fa-facebook-square {
-  margin-left: 11.5px;
-  margin-top: 73px;
+/* line 16, ../sass/_footer.scss */
+.row {
+  margin-bottom: 1px;
 }
 
-/* line 25, ../sass/_footer.scss */
+/*.fa-facebook-square{
+    margin-left:11.5px;
+    margin-top:73px;
+}
+
+.fa-instagram{
+    margin-left:12.5px;
+    margin-top:65px;
+}
+*/
+/* line 29, ../sass/_footer.scss */
+.fa {
+  margin-top: 10px;
+}
+
+/* line 33, ../sass/_footer.scss */
 .fa-instagram {
-  margin-left: 12.5px;
-  margin-top: 65px;
+  margin-left: 10%;
 }
 
-/* line 30, ../sass/_footer.scss */
+/* line 37, ../sass/_footer.scss */
 #row-footer {
   margin-left: 80px;
 }
 
-/* line 34, ../sass/_footer.scss */
+/* line 41, ../sass/_footer.scss */
 h5.brown-text {
   font: 2vw "butterfly";
 }
 
-/* line 38, ../sass/_footer.scss */
-.footer-copyright {
-  font-color: brown-text text-lighten-3;
+/* line 45, ../sass/_footer.scss */
+footer.page-footer .footer-copyright {
+  color: rgba(87, 73, 73, 0.8);
 }
 
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 45, ../sass/_footer.scss */
+/* line 53, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
@@ -6094,7 +6202,7 @@ a.back-to-top {
   position: fixed;
   z-index: 999;
   right: 20px;
-  bottom: 20px;
+  bottom: 91px;
   background: url("../images/noun2.png") no-repeat center 43%;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
