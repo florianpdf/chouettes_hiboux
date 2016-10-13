@@ -171,7 +171,9 @@ nav {
 .colCustom {
   padding: 0px !important;
   margin: 0px;
-  height: 100%;
+  /*height: 100%;*/
+  widows: 206px;
+  height: 206px;
   background-color: #dedede;
 }
 
@@ -182,40 +184,39 @@ nav {
 /***************************/
 /* Modification hauteur div */
 @media screen and (max-width: 1000px) {
-  /* line 40, ../sass/_index.scss */
+  /* line 42, ../sass/_index.scss */
   .mobile {
     height: 200px;
   }
 }
 /* div container contenant titre, text + zone icone visible / non visible */
-/* line 46, ../sass/_index.scss */
-.resultContainer {
-  position: relative;
-}
-
+/*.resultContainer {
+    position: relative;
+}*/
 /* div contenant l'icone */
-/* line 51, ../sass/_index.scss */
-.viewThisResult {
-  position: absolute;
-  margin-left: 38%;
-  padding-top: 25%;
-}
-
+/*.viewThisResult {
+    position: absolute;
+    margin-left: 38%;
+    padding-top: 25%; 
+}*/
 /* Gestion affichage icone */
-/* line 58, ../sass/_index.scss */
-.resultContainer .viewThisResult {
-  display: none;
+/*.colCustom .iMasque {
+    display: none;
+}*/
+/* line 64, ../sass/_index.scss */
+.colCustom:hover .iMasque {
+  display: inline;
 }
 
-/* line 61, ../sass/_index.scss */
-.resultContainer:hover .viewThisResult {
-  display: inline;
+/* line 69, ../sass/_index.scss */
+.iMasque {
+  display: none;
 }
 
 /* Zone élément cliquable*/
 /* non survolé */
-/* line 67, ../sass/_index.scss */
-.viewThisResult a {
+/* line 75, ../sass/_index.scss */
+a {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
@@ -225,13 +226,13 @@ nav {
 
 /* Zone élément cliquable*/
 /* survolé */
-/* line 77, ../sass/_index.scss */
-.viewThisResult a:hover {
+/* line 85, ../sass/_index.scss */
+a:hover {
   color: #999;
 }
 
 /* Titre de la box */
-/* line 82, ../sass/_index.scss */
+/* line 90, ../sass/_index.scss */
 .h3BoxMenu {
   text-transform: uppercase;
   text-align: center;
@@ -242,7 +243,7 @@ nav {
 }
 
 /* paragraphe de la box */
-/* line 92, ../sass/_index.scss */
+/* line 100, ../sass/_index.scss */
 .pBoxMenu {
   text-align: justify;
   font-family: Didact Gothic;
@@ -259,7 +260,7 @@ nav {
 /****************************/
 /****************************/
 /* SURCHARGE framework ihover */
-/* line 109, ../sass/_index.scss */
+/* line 117, ../sass/_index.scss */
 .ih-item.square {
   width: 100% !important;
   height: 99% !important;

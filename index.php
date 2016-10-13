@@ -24,38 +24,42 @@
 <div class="container">
   <!-- DEBUT PREMIERE LIGNE -->
   <div class="row rowCustom">
-    <div class="col l4 m2 s12 colCustom block">
-      <div class="resultContainer mobile block">
-      <h3 class="h3BoxMenu">Doudous</h3>
+    <div class="col l4 m2 s12 colCustom">
+    <a href="doudous.php">
+      <div>
+        <h3 class="h3BoxMenu">Doudous</h3>
         <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <div class="viewThisResult">
-            <a href="doudous.php"><i class="fa fa-sign-in fa-3x"></i></a>
+        <div class="center">
+            <i class="fa fa-sign-in fa-3x iMasque"></i>
         </div>  
-      </div>       
+      </div> 
+    </a>       
     </div> <!-- End col l4 m3 s1-->
 
-    <div class="col l4 m2 s12 colCustom block">
-      <div class="ih-item square effect15 top_to_bottom block">
+    <div class="col l4 m2 s12 colCustom">
+      <div class="ih-item square effect13 top_to_bottom">
           <a href="#">
             <div>
-              <img src="images/toutous.jpg" alt="img" class="block">
+              <img src="images/petitDoudou.jpg" alt="img">
             </div>
             <div class="info">
-              <h3>Heading here</h3>
-              <p>Description goes here</p>
+              <h3>Petits doudous</h3>
+              <p>Modèle d'après un tuto d'amigurumi, en laine acrylique , bourrage en ouatine synthétique</p>
             </div>
               </a>
         </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
-    <div class="col l4 m2 s12 colCustom block">
-      <div class="resultContainer mobile block">
+    <div class="col l4 m2 s12 colCustom">
+    <a href="bijoux.php">
+      <div>
         <h3 class="h3BoxMenu">Bijoux</h3>
         <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <div class="viewThisResult">
-            <a href="bijoux.php"><i class="fa fa-sign-in fa-3x"></i></a>
-        </div>  
-      </div>      
+        <div class="center">
+            <i class="fa fa-sign-in fa-3x iMasque"></i>
+        </div> 
+      </div>
+    </a>       
     </div> <!-- End col l4 m3 s1-->
 
   </div> <!-- End ROW -->
@@ -64,39 +68,41 @@
   <!-- DEBUT DEUXIEME LIGNE -->
   <div class="row rowCustom">
 
-    <div class="col l4 m2 s12 colCustom block">
-      <div class="ih-item square effect15 top_to_bottom">
+    <div class="col l4 m2 s12 colCustom">
+      <div class="ih-item square effect13 top_to_bottom">
           <a href="#">
             <div>
-              <img src="images/araigne.jpg" alt="img">
+              <img src="images/grandDoudou.jpg" alt="img">
             </div>
             <div class="info">
-              <h3>Heading here</h3>
-              <p>Description goes here</p>
+              <h3>Grands doudous</h3>
+              <p>Modèle d'après la revue "Tricot Mag Les doudous de Sophie", en peine acrylique et bourrage en ouatine synthétique.</p>
             </div>
               </a>
         </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
-    <div class="col l4 m2 s12 colCustom block">
-      <div class="resultContainer mobile">
+    <div class="col l4 m2 s12 colCustom">
+    <a href="Accessoires.php">
+      <div>
         <h3 class="h3BoxMenu">Accessoires</h3>
         <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <div class="viewThisResult">
-            <a href="Accessoires.php"><i class="fa fa-sign-in fa-3x"></i></a>
+        <div class="center">
+            <i class="fa fa-sign-in fa-3x iMasque"></i>
         </div>  
-      </div>      
+      </div> 
+    </a>     
     </div> <!-- End col l4 m3 s1-->
 
-    <div class="col l4 m2 s12 colCustom block">
-      <div class="ih-item square effect15 top_to_bottom">
+    <div class="col l4 m2 s12 colCustom">
+      <div class="ih-item square effect13 top_to_bottom">
           <a href="#">
             <div>
-              <img src="images/araigne.jpg" alt="img">
+              <img src="images/accessoire.jpg" alt="img">
             </div>
             <div class="info">
-              <h3>Heading here</h3>
-              <p>Description goes here</p>
+              <h3>Bijoux</h3>
+              <p>Sautoir d'après un modèle de La Droguerie, matériel acheté dans leur boutique à Paris.</p>
             </div>
               </a>
         </div> <!-- End h-item square effect15 top_to_bottom -->  
@@ -108,38 +114,42 @@
   <!-- DEBUT TROISIEME LIGNE -->
   <div class="row rowCustom">
     
-    <div class="col l4 m2 s12 colCustom block">
-      <div class="resultContainer mobile ">
+    <div class="col l4 m2 s12 colCustom">
+    <a href="form.php">
+      <div>
       <h3 class="h3BoxMenu">Contact</h3>
         <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <div class="viewThisResult">
-            <a href="form.php"><i class="fa fa-sign-in fa-3x"></i></a>
+        <div class="center">
+            <i class="fa fa-sign-in fa-3x iMasque"></i>
         </div>  
-      </div>      
+      </div>
+    </a>      
     </div> <!-- End col l4 m3 s1-->
 
-    <div class="col l4 m2 s12 colCustom block">
-      <div class="ih-item square effect15 top_to_bottom">
+    <div class="col l4 m2 s12 colCustom">
+      <div class="ih-item square effect13 top_to_bottom">
           <a href="#">
             <div>
-              <img src="images/araigne.jpg" alt="img">
+              <img src="images/accessoires.jpg" alt="img">
             </div>
             <div class="info">
-              <h3>Heading here</h3>
-              <p>Description goes here</p>
+              <h3>Accessoires</h3>
+              <p>modèle créé d'après une photo, en tissu coton, feutrine, boutons et fil de coton.</p>
             </div>
               </a>
         </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
-    <div class="col l4 m2 s12 colCustom block">
-      <div class="resultContainer mobile ">
+    <div class="col l4 m2 s12 colCustom">
+    <a href="about.php">
+      <div>
         <h3 class="h3BoxMenu">Qui suis je</h3>
         <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <div class="viewThisResult">
-            <a href="about.php"><i class="fa fa-sign-in fa-3x"></i></a>
+        <div class="center">
+            <i class="fa fa-sign-in fa-3x iMasque"></i>
         </div>  
-      </div>      
+      </div>
+    </a>     
     </div> <!-- End col l4 m3 s1-->
 
   </div> <!-- End ROW -->

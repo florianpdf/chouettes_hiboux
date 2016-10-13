@@ -25,7 +25,9 @@ nav {
 .colCustom {
   padding:0px !important;
   margin:0px;
-  height: 100%;
+  /*height: 100%;*/
+  widows: 206px;
+  height: 206px;
   background-color:#dedede;
 }
 
@@ -42,29 +44,35 @@ nav {
   }
 }
 
+
 /* div container contenant titre, text + zone icone visible / non visible */
-.resultContainer {
+/*.resultContainer {
     position: relative;
-}
+}*/
 
 /* div contenant l'icone */
-.viewThisResult {
+/*.viewThisResult {
     position: absolute;
     margin-left: 38%;
     padding-top: 25%; 
-}
+}*/
 
 /* Gestion affichage icone */
-.resultContainer .viewThisResult {
+/*.colCustom .iMasque {
     display: none;
-}
-.resultContainer:hover .viewThisResult {
+}*/
+.colCustom:hover .iMasque {
     display: inline;
+}
+
+
+.iMasque {
+  display: none;
 }
 
 /* Zone élément cliquable*/
 /* non survolé */
-.viewThisResult a {
+a {
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
@@ -74,7 +82,7 @@ nav {
 
 /* Zone élément cliquable*/
 /* survolé */
-.viewThisResult a:hover {
+a:hover {
     color: #999;
 }
 
@@ -113,3 +121,4 @@ nav {
   border: 0px solid #fff !important;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3) !important;
 }
+
