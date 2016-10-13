@@ -21,26 +21,26 @@ ABOUT ____________ Style page : About
   font-weight: normal;
   font-style: normal;
 }
-/* line 63, ../sass/_general.scss */
-.h1 {
+/* line 62, ../sass/_general.scss */
+h1 {
   font: 2vw "butterfly";
 }
 
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
 \*-----------------------------------------------------*/
-/* line 72, ../sass/_general.scss */
+/* line 81, ../sass/_general.scss */
 body {
   height: 100%;
   background-image: url("../images/wood.jpg");
 }
 
-/* line 78, ../sass/_general.scss */
+/* line 87, ../sass/_general.scss */
 section {
   min-height: 100%;
 }
 
-/* line 82, ../sass/_general.scss */
+/* line 91, ../sass/_general.scss */
 .container {
   min-height: 100%;
 }
@@ -6171,7 +6171,12 @@ footer.page-footer {
   background-repeat: no-repeat;
   background-position: right;
   margin-right: -20px;
-  background-size: 39%;
+  background-size: 38%;
+}
+
+/* line 16, ../sass/_footer.scss */
+.row {
+  margin-bottom: 1px;
 }
 
 /*.fa-facebook-square{
@@ -6184,29 +6189,34 @@ footer.page-footer {
     margin-top:65px;
 }
 */
-/* line 28, ../sass/_footer.scss */
+/* line 29, ../sass/_footer.scss */
+.fa {
+  margin-top: 10px;
+}
+
+/* line 33, ../sass/_footer.scss */
 .fa-instagram {
   margin-left: 10%;
 }
 
-/* line 32, ../sass/_footer.scss */
+/* line 37, ../sass/_footer.scss */
 #row-footer {
   margin-left: 80px;
 }
 
-/* line 36, ../sass/_footer.scss */
+/* line 41, ../sass/_footer.scss */
 h5.brown-text {
   font: 2vw "butterfly";
 }
 
-/* line 40, ../sass/_footer.scss */
-.footer-copyright {
-  font-color: brown-text text-lighten-3;
+/* line 45, ../sass/_footer.scss */
+footer.page-footer .footer-copyright {
+  color: rgba(87, 73, 73, 0.8);
 }
 
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 47, ../sass/_footer.scss */
+/* line 53, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
@@ -6215,7 +6225,7 @@ a.back-to-top {
   position: fixed;
   z-index: 999;
   right: 20px;
-  bottom: 20px;
+  bottom: 91px;
   background: url("../images/noun2.png") no-repeat center 43%;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
