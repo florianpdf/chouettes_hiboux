@@ -9,18 +9,6 @@ footer.page-footer{
     margin-bottom: 1px;
 }
 
-.fa{
-    margin-top: 10px;
-}
-
-.fa-instagram{
-    margin-left: 10%;
-}
-
-#row-footer{
-	margin-left:80px;
-}
-
 h5{
 	font: $font-titre;
     color: rgba(87, 73, 73, 0.8);
@@ -34,30 +22,35 @@ footer.page-footer .footer-copyright{
     color: #E93255;
     font: $font-body;
     font-size: 25px;
+    font-weight: bold;
 }
 
 .bijoux {
     color: #724399;
     font: $font-body;
     font-size: 25px;
+    font-weight: bold;
 }
 
 .accessoires {
     color: #468540;
     font: $font-body;
     font-size: 25px;
+    font-weight: bold;
 }
 
 .whoami {
     color:#B7483F;
     font: $font-body;
     font-size: 25px;
+    font-weight: bold;
 }
 
 .contactme {
     color:#3FBFC1;
     font: $font-body;
     font-size: 25px;
+    font-weight: bold;
 }
 
 .social {
@@ -76,7 +69,7 @@ a.back-to-top {
     position: fixed;
     z-index: 999;
     right: 20px;
-    bottom: 91px;
+    bottom: 20px;
     background: url("../images/noun2.png") no-repeat center 43%;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;

@@ -98,6 +98,7 @@ blockquote {
   /*Font*/
   font: 16px "Didact Gothic";
   text-align: justify;
+  font-size: 18px !important;
   /*Borders - (Optional)*/
   border-left: 15px solid #0894af;
   border-right: 2px solid #0894af;
@@ -107,7 +108,7 @@ blockquote {
   box-shadow: 2px 2px 15px #ccc;
 }
 
-/* line 21, ../sass/_citation.scss */
+/* line 22, ../sass/_citation.scss */
 blockquote::before {
   content: "\201C";
   /*Unicode for Left Double Quote*/
@@ -122,13 +123,13 @@ blockquote::before {
   top: 5px;
 }
 
-/* line 36, ../sass/_citation.scss */
+/* line 37, ../sass/_citation.scss */
 blockquote::after {
   /*Reset to make sure*/
   content: "";
 }
 
-/* line 41, ../sass/_citation.scss */
+/* line 42, ../sass/_citation.scss */
 blockquote a {
   text-decoration: none;
   background: #eee;
@@ -137,12 +138,12 @@ blockquote a {
   color: #0069AC;
 }
 
-/* line 49, ../sass/_citation.scss */
+/* line 50, ../sass/_citation.scss */
 blockquote a:hover {
   color: #666;
 }
 
-/* line 53, ../sass/_citation.scss */
+/* line 54, ../sass/_citation.scss */
 blockquote em {
   font-style: italic;
 }
@@ -5892,10 +5893,11 @@ a {
 .og-details p {
   font: 16px "Didact Gothic";
   font-weight: 400;
+  font-size: 20px;
   color: #999;
 }
 
-/* line 141, ../sass/_patchwork_page.scss */
+/* line 140, ../sass/_patchwork_page.scss */
 .og-details a {
   font-weight: 700;
   font-size: 16px;
@@ -5909,20 +5911,20 @@ a {
   outline: none;
 }
 
-/* line 154, ../sass/_patchwork_page.scss */
+/* line 153, ../sass/_patchwork_page.scss */
 .og-details a::before {
   content: '\2192';
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 160, ../sass/_patchwork_page.scss */
+/* line 159, ../sass/_patchwork_page.scss */
 .og-details a:hover {
   border-color: #999;
   color: #999;
 }
 
-/* line 165, ../sass/_patchwork_page.scss */
+/* line 164, ../sass/_patchwork_page.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -5978,28 +5980,28 @@ a {
   }
 }
 @media screen and (max-width: 830px) {
-  /* line 200, ../sass/_patchwork_page.scss */
+  /* line 199, ../sass/_patchwork_page.scss */
   .og-expander h3 {
     font-size: 32px;
   }
 
-  /* line 201, ../sass/_patchwork_page.scss */
+  /* line 200, ../sass/_patchwork_page.scss */
   .og-expander p {
     font-size: 13px;
   }
 
-  /* line 202, ../sass/_patchwork_page.scss */
+  /* line 201, ../sass/_patchwork_page.scss */
   .og-expander a {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 208, ../sass/_patchwork_page.scss */
+  /* line 207, ../sass/_patchwork_page.scss */
   .og-fullimg {
     display: none;
   }
 
-  /* line 209, ../sass/_patchwork_page.scss */
+  /* line 208, ../sass/_patchwork_page.scss */
   .og-details {
     float: none;
     width: 100%;
@@ -6030,7 +6032,7 @@ a {
 /* line 22, ../sass/_about.scss */
 .about_page h3 {
   font-family: 'Didact Gothic';
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   font-size: 25px;
 }
@@ -6166,67 +6168,57 @@ footer.page-footer {
 }
 
 /* line 12, ../sass/_footer.scss */
-.fa {
-  margin-top: 10px;
-}
-
-/* line 16, ../sass/_footer.scss */
-.fa-instagram {
-  margin-left: 10%;
-}
-
-/* line 20, ../sass/_footer.scss */
-#row-footer {
-  margin-left: 80px;
-}
-
-/* line 24, ../sass/_footer.scss */
 h5 {
   font: 2vw "butterfly";
   color: rgba(87, 73, 73, 0.8);
 }
 
-/* line 29, ../sass/_footer.scss */
+/* line 17, ../sass/_footer.scss */
 footer.page-footer .footer-copyright {
   color: rgba(87, 73, 73, 0.8);
 }
 
-/* line 33, ../sass/_footer.scss */
+/* line 21, ../sass/_footer.scss */
 .doudous {
   color: #E93255;
   font: 16px "Didact Gothic";
   font-size: 25px;
+  font-weight: bold;
 }
 
-/* line 39, ../sass/_footer.scss */
+/* line 28, ../sass/_footer.scss */
 .bijoux {
   color: #724399;
   font: 16px "Didact Gothic";
   font-size: 25px;
+  font-weight: bold;
 }
 
-/* line 45, ../sass/_footer.scss */
+/* line 35, ../sass/_footer.scss */
 .accessoires {
   color: #468540;
   font: 16px "Didact Gothic";
   font-size: 25px;
+  font-weight: bold;
 }
 
-/* line 51, ../sass/_footer.scss */
+/* line 42, ../sass/_footer.scss */
 .whoami {
   color: #B7483F;
   font: 16px "Didact Gothic";
   font-size: 25px;
+  font-weight: bold;
 }
 
-/* line 57, ../sass/_footer.scss */
+/* line 49, ../sass/_footer.scss */
 .contactme {
   color: #3FBFC1;
   font: 16px "Didact Gothic";
   font-size: 25px;
+  font-weight: bold;
 }
 
-/* line 63, ../sass/_footer.scss */
+/* line 56, ../sass/_footer.scss */
 .social {
   width: 100% !important;
   height: 100% !important;
@@ -6234,7 +6226,7 @@ footer.page-footer .footer-copyright {
 
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 71, ../sass/_footer.scss */
+/* line 64, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
@@ -6243,7 +6235,7 @@ a.back-to-top {
   position: fixed;
   z-index: 999;
   right: 20px;
-  bottom: 91px;
+  bottom: 20px;
   background: url("../images/noun2.png") no-repeat center 43%;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
