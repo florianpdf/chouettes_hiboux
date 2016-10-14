@@ -51,6 +51,7 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/modernizr.custom.js"></script>
+    <script src="js/grid.js"></script>
     
 
     <!-- index.php 
@@ -107,7 +108,7 @@
 
     </script>
 
-    <script src="js/grid.js"></script>
+    
     <script>
       $(function() {
         Grid.init();

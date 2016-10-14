@@ -12,7 +12,6 @@ footer.page-footer{
 h5{
 	font: $font-titre;
     color: rgba(87, 73, 73, 0.8);
-    font-size:20px;
 }
 
 footer.page-footer .footer-copyright{
@@ -54,24 +53,9 @@ footer.page-footer .footer-copyright{
     font-weight: bold;
 }
 
-// .social {
-//     width: 100% !important;
-//     height: 100% !important;
-// }
-
-@media only screen and (max-width: 320px) {
-    /* styles for narrow screens */
-    .social{
-        width: 1%;
-    }
-}
-
-@media only screen and (max-width: 1800px) {
-    /* styles for MacBook Pro-sized screens and larger */
-    .social{
-        width: 100%;
-        height: auto;
-    }
+.social {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .contactme:hover {
