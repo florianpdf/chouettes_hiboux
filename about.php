@@ -2,11 +2,12 @@
 
 
 <div class="container about_page">
-	<h2 class="about col l12 m10 offset-m1 s12">Qui suis-je?</h2>
+	<h2>Qui suis-je?</h2>
 	<div class="row">
-		<div class="col l10 offset-l1 m10 offset-m1 s12">
-			<img src="../main.gif" alt="mes mains en action" class=" z-depth-5">
-	
+		<div class="col l12 m12 s12 center">
+			<img src="./images/main.gif" alt="mes mains en action" class="z-depth-5 mains responsive-img">
+		</div>
+		<div class="col l12 m12 s12">
 			<h3>Lorem ipsum dolor sit amet.</h3>
 			<p class="about_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nulla laboriosam dolor quo, cupiditate, placeat debitis minus.</p>
 
