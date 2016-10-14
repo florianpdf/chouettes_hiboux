@@ -58,9 +58,26 @@
         $(function() {
             var $heightDiv = $('.colCustom').css('width');
             $('.colCustom').css("height", $heightDiv);
-            $('img').css("height", $heightDiv).css("width", $heightDiv);;   
+            $('.imgDamier').css("height", $heightDiv).css("width", $heightDiv);;   
         });
     </script>
+
+    <!-- Changement photo chouette menu -->
+    <script>
+    var sourceSwap = function () {
+        var $this = $(this);
+        var newSource = $this.data('alt-src');
+        $this.data('alt-src', $this.attr('src'));
+        $this.attr('src', newSource);
+    }
+
+    $(function() {
+        $('img[data-alt-src]').each(function() { 
+            new Image().src = $(this).data('alt-src'); 
+        }).hover(sourceSwap, sourceSwap); 
+    });
+    </script>
+
 
     <!-- create the back to top button -->
     <script> 
