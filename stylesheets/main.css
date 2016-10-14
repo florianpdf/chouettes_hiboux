@@ -46,43 +46,63 @@ section {
 }
 
 /* line 3, ../sass/_navbar.scss */
-.citations {
-  font-family: 'Dancing Script', cursive;
-}
-
-/* line 9, ../sass/_navbar.scss */
 nav {
   height: 85px !important;
   background-color: RGBA(255, 255, 255, 0.6);
 }
 
-/* line 14, ../sass/_navbar.scss */
+/* line 8, ../sass/_navbar.scss */
 .chouetteHibouxLogo {
   padding-left: 20px !important;
 }
 
-/* line 18, ../sass/_navbar.scss */
+/* line 12, ../sass/_navbar.scss */
 .navbar_logo {
   width: 80%;
   height: auto;
 }
 
-/* line 23, ../sass/_navbar.scss */
+/* line 17, ../sass/_navbar.scss */
 .full_nav a, .side-nav a {
   font: 2vw "butterfly";
   padding-left: 30px;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 31px;
   padding-right: 40px;
 }
 
-/* line 32, ../sass/_navbar.scss */
+/* line 26, ../sass/_navbar.scss */
+.accueil:hover {
+  background-color: RGBA(252, 161, 60, 0.3) !important;
+}
+
+/* line 30, ../sass/_navbar.scss */
+.doudous:hover {
+  background-color: RGBA(233, 50, 85, 0.3) !important;
+}
+
+/* line 34, ../sass/_navbar.scss */
+.bijoux:hover {
+  background-color: RGBA(114, 67, 153, 0.3) !important;
+}
+
+/* line 38, ../sass/_navbar.scss */
+.accessoires:hover {
+  background-color: RGBA(70, 133, 64, 0.3) !important;
+}
+
+/* line 42, ../sass/_navbar.scss */
+.whoami:hover {
+  background-color: RGBA(183, 72, 63, 0.3) !important;
+}
+
+/* line 46, ../sass/_navbar.scss */
 .material-icons {
   font-size: 40px !important;
 }
 
-/* line 38, ../sass/_navbar.scss */
+/* line 52, ../sass/_navbar.scss */
 #mobile-demo a {
   font-size: 20px !important;
   padding-top: 20px;
@@ -236,7 +256,7 @@ a {
 /****************************/
 /****************************/
 /* SURCHARGE framework ihover */
-/* line 80, ../sass/_index.scss */
+/* line 79, ../sass/_index.scss */
 .ih-item.square {
   width: 100% !important;
   height: 100% !important;
@@ -245,6 +265,10 @@ a {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3) !important;
 }
 
+/*.ih-item.square.effect13.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}*/
 /* line 1, ../sass/_ihover.scss */
 .ih-item {
   position: relative;
@@ -6004,14 +6028,15 @@ a {
   background-color: RGBA(255, 255, 255, 0.8);
   margin-top: 15px;
   padding: 5px;
+  border-radius: 15px;
 }
 
-/* line 9, ../sass/_about.scss */
+/* line 10, ../sass/_about.scss */
 .about {
   font-size: 50px;
 }
 
-/* line 13, ../sass/_about.scss */
+/* line 14, ../sass/_about.scss */
 .about_page h2 {
   font: 2vw "butterfly";
   letter-spacing: 3px;
@@ -6021,7 +6046,7 @@ a {
   text-align: center;
 }
 
-/* line 22, ../sass/_about.scss */
+/* line 23, ../sass/_about.scss */
 .about_page h3 {
   font-family: 'Didact Gothic';
   font-size: 18px;
@@ -6029,24 +6054,24 @@ a {
   font-size: 25px;
 }
 
-/* line 27, ../sass/_about.scss */
+/* line 28, ../sass/_about.scss */
 .about_p {
   font: 16px "Didact Gothic";
   font-size: 20px !important;
   line-height: 15px !important;
 }
 
-/* line 33, ../sass/_about.scss */
+/* line 34, ../sass/_about.scss */
 .container {
   text-align: justify;
 }
 
-/* line 37, ../sass/_about.scss */
+/* line 38, ../sass/_about.scss */
 .container p {
   font-size: 16px;
 }
 
-/* line 41, ../sass/_about.scss */
+/* line 42, ../sass/_about.scss */
 .expression {
   font-style: italic;
   font-weight: bold;
@@ -6068,80 +6093,91 @@ h1 {
   margin-top: 15px;
   height: 100%;
   padding: 15px;
+  border-radius: 15px;
 }
 
-/* line 17, ../sass/_form.scss */
+/* line 18, ../sass/_form.scss */
 .row {
   padding: 5px;
 }
 
-/* line 21, ../sass/_form.scss */
+/* line 22, ../sass/_form.scss */
 .material-icons {
   color: #3FBFC1;
 }
 
-/* line 25, ../sass/_form.scss */
+/* line 26, ../sass/_form.scss */
+[type="checkbox"] + label {
+  color: #3FBFC1;
+}
+
+/* line 30, ../sass/_form.scss */
+.check {
+  text-align: center;
+}
+
+/* line 34, ../sass/_form.scss */
 .send {
   color: white;
 }
 
-/* line 29, ../sass/_form.scss */
+/* line 38, ../sass/_form.scss */
 .select-wrapper span.caret {
   color: #3FBFC1;
   font-size: 20px !important;
   top: 10px !important;
 }
 
-/* line 35, ../sass/_form.scss */
+/* line 44, ../sass/_form.scss */
 .select-wrapper input.select-dropdown {
   color: #3FBFC1;
 }
 
-/* line 39, ../sass/_form.scss */
+/* line 48, ../sass/_form.scss */
 .select-wrapper + label {
   font-size: 1rem;
 }
 
-/* line 43, ../sass/_form.scss */
+/* line 52, ../sass/_form.scss */
 .input-field label {
   font-size: 1rem;
 }
 
 /* label color */
-/* line 48, ../sass/_form.scss */
+/* line 57, ../sass/_form.scss */
 .input-field label {
   color: #3FBFC1;
 }
 
 /* label focus color */
-/* line 52, ../sass/_form.scss */
+/* line 61, ../sass/_form.scss */
 .input-field input[type=text]:focus + label {
   color: #3FBFC1;
 }
 
 /* label underline focus color */
-/* line 56, ../sass/_form.scss */
+/* line 65, ../sass/_form.scss */
 .input-field input[type=text]:focus {
   border-bottom: 1px solid #3FBFC1;
   box-shadow: 0 1px 0 0 #3FBFC1;
 }
 
 /* valid color */
-/* line 61, ../sass/_form.scss */
+/* line 70, ../sass/_form.scss */
 .input-field input[type=text].valid {
   border-bottom: 1px solid #3FBFC1;
   box-shadow: 0 1px 0 0 #3FBFC1;
 }
 
 /* invalid color */
-/* line 66, ../sass/_form.scss */
+/* line 75, ../sass/_form.scss */
 .input-field input[type=text].invalid {
   border-bottom: 1px solid #3FBFC1;
   box-shadow: 0 1px 0 0 #3FBFC1;
 }
 
 /* icon prefix focus color */
-/* line 71, ../sass/_form.scss */
+/* line 80, ../sass/_form.scss */
 .input-field .prefix.active {
   color: #3FBFC1;
 }
@@ -6226,9 +6262,21 @@ footer.page-footer .footer-copyright {
     height: auto;
   }
 }
+<<<<<<< HEAD
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
 /* line 80, ../sass/_footer.scss */
+=======
+
+/* line 61, ../sass/_footer.scss */
+.contactme:hover {
+  background-color: RGBA(63, 191, 193, 0.3) !important;
+}
+
+/*FIN FOOTER*/
+/*RETOUR EN HAUT*/
+/* line 68, ../sass/_footer.scss */
+>>>>>>> dev
 a.back-to-top {
   display: none;
   width: 60px;
