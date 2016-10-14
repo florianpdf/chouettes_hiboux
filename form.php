@@ -42,7 +42,11 @@
 		        <textarea id="textarea1" class="materialize-textarea"></textarea>
 		        <label for="textarea1">Votre message :</label>
         	</div>
-
+			
+			 <div class="col s12 check">
+      			<input type="checkbox" id="test5" />
+     			<label for="test5">Recevoir une copie du message</label>
+   			</div>
     	</form>
   	</div>
   	
