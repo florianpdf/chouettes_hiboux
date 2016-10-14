@@ -25,8 +25,24 @@ nav  {
 	padding-left: 30px;
 	text-align: center;
 	padding-top: 50px;
-	padding-bottom:50px;
+	padding-bottom:31px;
 	padding-right: 40px;
+}
+
+.doudous:hover {
+	background-color: RGBA(233, 50, 85, 0.3) !important;
+}
+
+.bijoux:hover {
+	background-color: RGBA(114, 67, 153, 0.3) !important;
+}
+
+.accessoires:hover {
+	background-color: RGBA(70, 133, 64, 0.3) !important;
+}
+
+.whoami:hover {
+	background-color: RGBA(183, 72, 63, 0.3) !important;
 }
 
 .material-icons{

@@ -27,10 +27,10 @@
                     <h5>Réseaux sociaux</h5>
                         <div class="row">
                             <div class="col l6 s12">
-                                <img src="./images/chouettefb.png" class="social" /><!-- <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i> -->
+                                <img src="./images/chouettefb.png" class="social" />
                             </div>
                             <div class="col l6 s12">
-                                <img src="./images/chouetteig.png" class="social" /><!-- <i class="fa fa-instagram fa-3x" aria-hidden="true"></i> -->
+                                <img src="./images/chouetteig.png" class="social" />
                             </div>
                         </div>
                 </div>        
