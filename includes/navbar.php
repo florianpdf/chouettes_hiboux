@@ -19,7 +19,8 @@
                 </ul>
 
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="./doudous.php" class="doudousmobile">Doudous</a></li>
+                    <li><a href="../bleau_S2_2016_chouette_hibou/index.php" class="accueil">Accueil</a></li>
+                    <li><a href="./doudous.php" class="doudous">Doudous</a></li>
                     <li><a href="./bijoux.php" class="bijoux">Bijoux</a></li>
                     <li><a href="./accessoires.php" class="accessoires">Accessoires</a></li>
                     <li><a href="./about.php" class="whoami">Qui suis-je ?</a></li>
