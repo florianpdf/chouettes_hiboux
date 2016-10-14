@@ -212,27 +212,19 @@ a {
   color: #999;
 }
 
+/* line 60, ../sass/_index.scss */
+.boxMenu {
+  padding-top: 15%;
+}
+
 /* Titre de la box */
-/* line 61, ../sass/_index.scss */
+/* line 65, ../sass/_index.scss */
 .h3BoxMenu {
   text-transform: uppercase;
   text-align: center;
   font-size: bold;
   font-weight: 80%;
-  padding-top: 35px;
   font-family: butterfly;
-}
-
-/* paragraphe de la box */
-/* line 71, ../sass/_index.scss */
-.pBoxMenu {
-  text-align: justify;
-  font-family: Didact Gothic;
-  font-weight: 60%;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 /****************************/
@@ -241,7 +233,7 @@ a {
 /****************************/
 /****************************/
 /* SURCHARGE framework ihover */
-/* line 87, ../sass/_index.scss */
+/* line 80, ../sass/_index.scss */
 .ih-item.square {
   width: 100% !important;
   height: 100% !important;

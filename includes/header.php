@@ -4,6 +4,7 @@
 <head>
 
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/

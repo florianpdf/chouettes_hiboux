@@ -25,23 +25,22 @@
   <!-- DEBUT PREMIERE LIGNE -->
 
   <div class="row rowCustom">
-    <div class="col l4 m2 s12 colCustom">
-    <a href="doudous.php">
-      <div>
-        <h3 class="h3BoxMenu">Doudous</h3>
-        <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <div class="center">
-            <i class="fa fa-sign-in fa-3x iMasque"></i>
-        </div>  
-      </div> 
-    </a>       
+    <div class="col l4 m4 s12 colCustom center">
+      <a href="doudous.php">
+        <div class="boxMenu">
+          <h3 class="h3BoxMenu">Doudous</h3>
+          <div class="center">
+            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
+          </div>  
+        </div> 
+      </a>       
     </div> <!-- End col l4 m3 s1-->
 
-    <div class="col l4 m2 s12 colCustom">
+    <div class="col l4 m4 s12 colCustom">
       <div class="ih-item square effect13 top_to_bottom">
           <a href="#">
             <div>
-              <img src="images/petitDoudou.jpg" alt="img">
+              <img class='imgDamier' src="images/petitDoudou.jpg" alt="img">
             </div>
             <div class="info">
               <h3>Petits doudous</h3>
@@ -51,13 +50,12 @@
         </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
-    <div class="col l4 m2 s12 colCustom">
+    <div class="col l4 m4 s12 colCustom center">
     <a href="bijoux.php">
-      <div>
+      <div class="boxMenu">
         <h3 class="h3BoxMenu">Bijoux</h3>
-        <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <div class="center">
-            <i class="fa fa-sign-in fa-3x iMasque"></i>
+            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
         </div> 
       </div>
     </a>       
@@ -67,14 +65,14 @@
   <!-- FIN PREMIERE LIGNE -->
 
   <!-- DEBUT DEUXIEME LIGNE -->
-  <div class="row rowCustom block">
+  <div class="row rowCustom">
 
-    <div class="col l4 m2 s12 colCustom">
+    <div class="col l4 m4 s12 colCustom">
       <div class="ih-item square effect13 top_to_bottom">
 
           <a href="#">
             <div>
-              <img src="images/grandDoudou.jpg" alt="img">
+              <img class='imgDamier' src="images/grandDoudou.jpg" alt="img">
             </div>
             <div class="info">
               <h3>Grands doudous</h3>
@@ -84,23 +82,22 @@
         </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
-    <div class="col l4 m2 s12 colCustom">
+    <div class="col l4 m4 s12 colCustom center">
     <a href="Accessoires.php">
-      <div>
+      <div class="boxMenu">
         <h3 class="h3BoxMenu">Accessoires</h3>
-        <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <div class="center">
-            <i class="fa fa-sign-in fa-3x iMasque"></i>
+          <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
         </div>  
       </div> 
     </a>     
     </div> <!-- End col l4 m3 s1-->
 
-    <div class="col l4 m2 s12 colCustom">
+    <div class="col l4 m4 s12 colCustom">
       <div class="ih-item square effect13 top_to_bottom">
           <a href="#">
             <div>
-              <img src="images/accessoire.jpg" alt="img">
+              <img class='imgDamier' src="images/accessoire.jpg" alt="img">
             </div>
             <div class="info">
               <h3>Bijoux</h3>
@@ -114,25 +111,24 @@
   <!-- FIN DEUXIEME LIGNE -->
 
   <!-- DEBUT TROISIEME LIGNE -->
-  <div class="row rowCustom block">
+  <div class="row rowCustom">
     
-    <div class="col l4 m2 s12 colCustom">
+    <div class="col l4 m4 s12 colCustom center">
     <a href="form.php">
-      <div>
+      <div class="boxMenu">
       <h3 class="h3BoxMenu">Contact</h3>
-        <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <div class="center">
-            <i class="fa fa-sign-in fa-3x iMasque"></i>
-        </div>  
+            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
+          </div>   
       </div>
     </a>      
     </div> <!-- End col l4 m3 s1-->
 
-    <div class="col l4 m2 s12 colCustom">
+    <div class="col l4 m4 s12 colCustom">
       <div class="ih-item square effect13 top_to_bottom">
           <a href="#">
             <div>
-              <img src="images/accessoires.jpg" alt="img">
+              <img class='imgDamier' src="images/accessoires.jpg" alt="img">
             </div>
             <div class="info">
               <h3>Accessoires</h3>
@@ -142,16 +138,15 @@
         </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
-    <div class="col l4 m2 s12 colCustom">
+    <div class="col l4 m4 s12 colCustom center">
     <a href="about.php">
-      <div>
-        <h3 class="h3BoxMenu">Qui suis je</h3>
-        <p class="pBoxMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <div class="boxMenu">
+      <h3 class="h3BoxMenu">Qui suis-je</h3>
         <div class="center">
-            <i class="fa fa-sign-in fa-3x iMasque"></i>
-        </div>  
+            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
+          </div>   
       </div>
-    </a>     
+    </a>      
     </div> <!-- End col l4 m3 s1-->
 
   </div> <!-- End ROW -->
