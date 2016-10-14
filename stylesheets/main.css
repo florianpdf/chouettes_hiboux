@@ -73,16 +73,36 @@ nav {
   padding-left: 30px;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 31px;
   padding-right: 40px;
 }
 
 /* line 32, ../sass/_navbar.scss */
+.doudous:hover {
+  background-color: RGBA(233, 50, 85, 0.3) !important;
+}
+
+/* line 36, ../sass/_navbar.scss */
+.bijoux:hover {
+  background-color: RGBA(114, 67, 153, 0.3) !important;
+}
+
+/* line 40, ../sass/_navbar.scss */
+.accessoires:hover {
+  background-color: RGBA(70, 133, 64, 0.3) !important;
+}
+
+/* line 44, ../sass/_navbar.scss */
+.whoami:hover {
+  background-color: RGBA(183, 72, 63, 0.3) !important;
+}
+
+/* line 48, ../sass/_navbar.scss */
 .material-icons {
   font-size: 40px !important;
 }
 
-/* line 38, ../sass/_navbar.scss */
+/* line 54, ../sass/_navbar.scss */
 #mobile-demo a {
   font-size: 20px !important;
   padding-top: 20px;
@@ -6216,9 +6236,14 @@ footer.page-footer .footer-copyright {
   height: 100% !important;
 }
 
+/* line 61, ../sass/_footer.scss */
+.contactme:hover {
+  background-color: RGBA(63, 191, 193, 0.3) !important;
+}
+
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 64, ../sass/_footer.scss */
+/* line 68, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
