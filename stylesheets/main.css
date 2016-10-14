@@ -69,7 +69,6 @@ nav {
 
 /* line 23, ../sass/_navbar.scss */
 .full_nav a, .side-nav a {
-  color: #424242;
   font: 2vw "butterfly";
   padding-left: 30px;
   text-align: center;
@@ -78,12 +77,12 @@ nav {
   padding-right: 40px;
 }
 
-/* line 34, ../sass/_navbar.scss */
+/* line 33, ../sass/_navbar.scss */
 .material-icons {
   font-size: 40px !important;
 }
 
-/* line 40, ../sass/_navbar.scss */
+/* line 39, ../sass/_navbar.scss */
 #mobile-demo a {
   font-size: 20px !important;
   padding-top: 20px;
@@ -6184,7 +6183,7 @@ footer.page-footer {
 /* line 24, ../sass/_footer.scss */
 h5 {
   font: 2vw "butterfly";
-  color: #3FBFC1;
+  color: rgba(87, 73, 73, 0.8);
 }
 
 /* line 29, ../sass/_footer.scss */
