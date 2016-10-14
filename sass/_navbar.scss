@@ -8,12 +8,17 @@
 
 nav  {
 	height: 85px !important;
-	background-color: white;
+	background-color: RGBA(255,255,255,0.6);
 }
+
 .chouetteHibouxLogo {
 	padding-left: 20px !important;
 }
 
+.navbar_logo {
+	width: 80%;
+	height: auto;
+}
 
 .full_nav a, .side-nav a{
 	color: $grey-text;

@@ -1,15 +1,11 @@
 blockquote{
-  // display:block;
-  background: white !important;
+  background: RGBA(255,255,255,0.6) !important;
   padding: 15px 20px 15px 45px;
   margin: 20px 20px;
   position: relative;
   
   /*Font*/
-  font-family: Georgia, serif;
-  font-size: 16px;
-  line-height: 1.2;
-  color: #666;
+  font: $font-body;
   text-align: justify;
   
   /*Borders - (Optional)*/
