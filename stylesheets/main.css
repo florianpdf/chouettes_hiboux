@@ -6163,14 +6163,15 @@ footer.page-footer {
 h5 {
   font: 2vw "butterfly";
   color: rgba(87, 73, 73, 0.8);
+  font-size: 20px;
 }
 
-/* line 17, ../sass/_footer.scss */
+/* line 18, ../sass/_footer.scss */
 footer.page-footer .footer-copyright {
   color: rgba(87, 73, 73, 0.8);
 }
 
-/* line 21, ../sass/_footer.scss */
+/* line 22, ../sass/_footer.scss */
 .doudous {
   color: #E93255;
   font: 16px "Didact Gothic";
@@ -6178,7 +6179,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 28, ../sass/_footer.scss */
+/* line 29, ../sass/_footer.scss */
 .bijoux {
   color: #724399;
   font: 16px "Didact Gothic";
@@ -6186,7 +6187,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 35, ../sass/_footer.scss */
+/* line 36, ../sass/_footer.scss */
 .accessoires {
   color: #468540;
   font: 16px "Didact Gothic";
@@ -6194,7 +6195,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 42, ../sass/_footer.scss */
+/* line 43, ../sass/_footer.scss */
 .whoami {
   color: #B7483F;
   font: 16px "Didact Gothic";
@@ -6202,7 +6203,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 49, ../sass/_footer.scss */
+/* line 50, ../sass/_footer.scss */
 .contactme {
   color: #3FBFC1;
   font: 16px "Didact Gothic";
@@ -6210,15 +6211,24 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 56, ../sass/_footer.scss */
-.social {
-  width: 100% !important;
-  height: 100% !important;
+@media only screen and (max-width: 320px) {
+  /* styles for narrow screens */
+  /* line 64, ../sass/_footer.scss */
+  .social {
+    width: 1%;
+  }
 }
-
+@media only screen and (max-width: 1800px) {
+  /* styles for MacBook Pro-sized screens and larger */
+  /* line 71, ../sass/_footer.scss */
+  .social {
+    width: 100%;
+    height: auto;
+  }
+}
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 64, ../sass/_footer.scss */
+/* line 80, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;

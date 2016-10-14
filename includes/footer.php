@@ -24,13 +24,15 @@
                     </ul>
                 </div>
                 <div class="col l3 s12">
-                    <h5>Réseaux sociaux</h5>
+                    <h5>Me suivre</h5>
                         <div class="row">
                             <div class="col l6 s12">
-                                <img src="./images/chouettefb.png" class="social" /><!-- <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i> -->
+                                <img class="social responsive-img" data-alt-src="https://s21.postimg.org/nyq4jte47/hiboux_yeux_ouverts.png" src="https://s21.postimg.org/5kflfu1tj/hibou_bleu_yruxouverts.png" />
+                                <!-- <img src="./images/chouettefb.png" class="social" /> --><!-- <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i> -->
                             </div>
                             <div class="col l6 s12">
-                                <img src="./images/chouetteig.png" class="social" /><!-- <i class="fa fa-instagram fa-3x" aria-hidden="true"></i> -->
+                                <img class="social" data-alt-src="https://s13.postimg.org/ysmy76ppj/Hiboux_bleu_yeux_fermes2.png" src="https://s13.postimg.org/anm8ph5ev/Hiboux_bleu_yeux_ouverts2.png" />
+                                <!-- <img src="./images/chouetteig.png" class="social" /> --><!-- <i class="fa fa-instagram fa-3x" aria-hidden="true"></i> -->
                             </div>
                         </div>
                 </div>        
