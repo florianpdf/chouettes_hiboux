@@ -21,16 +21,16 @@
 
 
 <!-- DEBUT Block 9 images -->
-<div class="container">
+<div class="container" style="background-color:#DEDEDE; ">
   <!-- DEBUT PREMIERE LIGNE -->
 
   <div class="row rowCustom">
-    <div class="col l4 m4 s12 colCustom center">
-    <a href="doudous.php" class="doudous">
+    <div class="col l4 m4 s12 colCustom center doudous">
+    <a href="doudous.php" >
         <div class="boxMenu">
           <h3 class="h3BoxMenu">Doudous</h3>
           <div class="center">
-            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" class="doudous" />
+            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;"/>
           </div>  
         </div> 
       </a>       
@@ -50,8 +50,8 @@
       </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
-    <div class="col l4 m4 s12 colCustom center">
-      <a href="bijoux.php" class="bijoux">
+    <div class="col l4 m4 s12 colCustom center bijoux">
+      <a href="bijoux.php">
         <div class="boxMenu">
           <h3 class="h3BoxMenu">Bijoux</h3>
           <div class="center">
@@ -82,8 +82,8 @@
       </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
-    <div class="col l4 m4 s12 colCustom center">
-      <a href="Accessoires.php" class="accessoires">
+    <div class="col l4 m4 s12 colCustom center accessoires">
+      <a href="Accessoires.php">
         <div class="boxMenu">
           <h3 class="h3BoxMenu">Accessoires</h3>
           <div class="center">
@@ -113,8 +113,8 @@
   <!-- DEBUT TROISIEME LIGNE -->
   <div class="row rowCustom">
 
-    <div class="col l4 m4 s12 colCustom center">
-      <a href="form.php" class="contactme">
+    <div class="col l4 m4 s12 colCustom center contactme">
+      <a href="form.php">
         <div class="boxMenu">
           <h3 class="h3BoxMenu">Contact</h3>
           <div class="center">
@@ -138,8 +138,8 @@
       </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
-    <div class="col l4 m4 s12 colCustom center">
-      <a href="about.php" class="whoami">
+    <div class="col l4 m4 s12 colCustom center whoami">
+      <a href="about.php">
         <div class="boxMenu">
           <h3 class="h3BoxMenu">Qui suis-je</h3>
           <div class="center">
