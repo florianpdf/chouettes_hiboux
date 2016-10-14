@@ -1,41 +1,39 @@
 
 
     <footer class="page-footer">
-        <div class="container-footer">
+        <div class="container">
             <div class="row" id="row-footer">
-                <div class="col offset-l1 l2 s12">
-                    <h5 class="brown-text text-lighten-2">Catégories</h5>
+                <div class="col l3 s12">
+                    <h5>Catégories</h5>
                    <ul>
-                        <li><a class="brown-text text-lighten-3" href="./doudous.php">Les doudous</a></li>
-                        <li><a class="brown-text text-lighten-3" href="./bijoux.php">Les bijoux</a></li>
-                        <li><a class="brown-text text-lighten-3" href="./accessoires.php">Les accessoires</a></li>
+                        <li><a class="doudous" href="./doudous.php">Les doudous</a></li>
+                        <li><a class="bijoux" href="./bijoux.php">Les bijoux</a></li>
+                        <li><a class="accessoires" href="./accessoires.php">Les accessoires</a></li>
                     </ul>
                 </div>
-                <div class="col l2 s12">
-                    <h5 class="brown-text text-lighten-2">A propos</h5>
+                <div class="col l3 s12">
+                    <h5>A propos</h5>
                     <ul>
-                        <li><a class="brown-text text-lighten-3" href="./about.php">Qui suis-je ?</a></li>
+                        <li><a class="whoami" href="./about.php">Qui suis-je ?</a></li>
                     </ul>
                 </div>
-                <div class="col l2 s12">
-                    <h5 class="brown-text text-lighten-2">Contacts</h5>
+                <div class="col l3 s12">
+                    <h5>Contacts</h5>
                     <ul>
-                        <li><a class="brown-text text-lighten-3" href="./form.php">Formulaire de contact</a></li>
-                        <li><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
-                            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></li>
+                        <li><a class="contactme" href="./form.php">Formulaire de contact</a></li>
                     </ul>
                 </div>
-<!--                  <div class="col l4 s12">
-                    <div class="row">
-                        <div class="col offset-l3 l1 s12">
-                            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                <div class="col l3 s12">
+                    <h5>Réseaux sociaux</h5>
+                        <div class="row">
+                            <div class="col l6 s12">
+                                <img src="./images/chouettefb.png" class="social" /><!-- <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i> -->
+                            </div>
+                            <div class="col l6 s12">
+                                <img src="./images/chouetteig.png" class="social" /><!-- <i class="fa fa-instagram fa-3x" aria-hidden="true"></i> -->
+                            </div>
                         </div>
-                        <div class="col offset-l3 l1 s12">
-                            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div> -->
-            </div>        
+                </div>        
         </div>
 
         <div class="footer-copyright">

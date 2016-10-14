@@ -1,51 +1,62 @@
 /*FOOTER*/
 footer.page-footer{
-    background-color:white;
-	margin-top: 10px;
+    background-color: RGBA(255,255,255,0.6);
     margin-bottom:0px;
 	padding-top: 0px;
-	background-image: url("../images/Les-hiboux.gif");
-	background-repeat:no-repeat;
-	background-position:right;
-	margin-right:-20px;
-    background-size: 38%;
-    // z-index: -10000;
-    // background: linear-gradient(#1DB1DD, #FFF) !important;
 }
 
 .row{
     margin-bottom: 1px;
 }
-/*.fa-facebook-square{
-    margin-left:11.5px;
-    margin-top:73px;
-}
 
-.fa-instagram{
-    margin-left:12.5px;
-    margin-top:65px;
-}
-*/
-.fa{
-    margin-top: 10px;
-}
-
-.fa-instagram{
-    margin-left: 10%;
-}
-
-#row-footer{
-	margin-left:80px;
-}
-
-h5.brown-text{
+h5{
 	font: $font-titre;
+    color: rgba(87, 73, 73, 0.8);
 }
 
 footer.page-footer .footer-copyright{
 	color:rgba(87, 73, 73, 0.8);
 }
 
+.doudous {
+    color: #E93255;
+    font: $font-body;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.bijoux {
+    color: #724399;
+    font: $font-body;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.accessoires {
+    color: #468540;
+    font: $font-body;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.whoami {
+    color:#B7483F;
+    font: $font-body;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contactme {
+    color:#3FBFC1;
+    font: $font-body;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.social {
+    width: 100% !important;
+    height: 100% !important;
+}
 
 /*FIN FOOTER*/
 
@@ -58,7 +69,7 @@ a.back-to-top {
     position: fixed;
     z-index: 999;
     right: 20px;
-    bottom: 91px;
+    bottom: 20px;
     background: url("../images/noun2.png") no-repeat center 43%;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;

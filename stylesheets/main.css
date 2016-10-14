@@ -53,17 +53,22 @@ section {
 /* line 9, ../sass/_navbar.scss */
 nav {
   height: 85px !important;
-  background-color: white;
+  background-color: RGBA(255, 255, 255, 0.6);
 }
 
-/* line 13, ../sass/_navbar.scss */
+/* line 14, ../sass/_navbar.scss */
 .chouetteHibouxLogo {
   padding-left: 20px !important;
 }
 
 /* line 18, ../sass/_navbar.scss */
+.navbar_logo {
+  width: 80%;
+  height: auto;
+}
+
+/* line 23, ../sass/_navbar.scss */
 .full_nav a, .side-nav a {
-  color: #424242;
   font: 2vw "butterfly";
   padding-left: 30px;
   text-align: center;
@@ -72,12 +77,12 @@ nav {
   padding-right: 40px;
 }
 
-/* line 29, ../sass/_navbar.scss */
+/* line 32, ../sass/_navbar.scss */
 .material-icons {
   font-size: 40px !important;
 }
 
-/* line 35, ../sass/_navbar.scss */
+/* line 38, ../sass/_navbar.scss */
 #mobile-demo a {
   font-size: 20px !important;
   padding-top: 20px;
@@ -86,16 +91,14 @@ nav {
 
 /* line 1, ../sass/_citation.scss */
 blockquote {
-  background: white !important;
+  background: RGBA(255, 255, 255, 0.6) !important;
   padding: 15px 20px 15px 45px;
   margin: 20px 20px;
   position: relative;
   /*Font*/
-  font-family: Georgia, serif;
-  font-size: 16px;
-  line-height: 1.2;
-  color: #666;
+  font: 16px "Didact Gothic";
   text-align: justify;
+  font-size: 18px !important;
   /*Borders - (Optional)*/
   border-left: 15px solid #0894af;
   border-right: 2px solid #0894af;
@@ -105,7 +108,7 @@ blockquote {
   box-shadow: 2px 2px 15px #ccc;
 }
 
-/* line 25, ../sass/_citation.scss */
+/* line 22, ../sass/_citation.scss */
 blockquote::before {
   content: "\201C";
   /*Unicode for Left Double Quote*/
@@ -120,13 +123,13 @@ blockquote::before {
   top: 5px;
 }
 
-/* line 40, ../sass/_citation.scss */
+/* line 37, ../sass/_citation.scss */
 blockquote::after {
   /*Reset to make sure*/
   content: "";
 }
 
-/* line 45, ../sass/_citation.scss */
+/* line 42, ../sass/_citation.scss */
 blockquote a {
   text-decoration: none;
   background: #eee;
@@ -135,12 +138,12 @@ blockquote a {
   color: #0069AC;
 }
 
-/* line 53, ../sass/_citation.scss */
+/* line 50, ../sass/_citation.scss */
 blockquote a:hover {
   color: #666;
 }
 
-/* line 57, ../sass/_citation.scss */
+/* line 54, ../sass/_citation.scss */
 blockquote em {
   font-style: italic;
 }
@@ -5882,10 +5885,11 @@ a {
 .og-details p {
   font: 16px "Didact Gothic";
   font-weight: 400;
+  font-size: 20px;
   color: #999;
 }
 
-/* line 141, ../sass/_patchwork_page.scss */
+/* line 140, ../sass/_patchwork_page.scss */
 .og-details a {
   font-weight: 700;
   font-size: 16px;
@@ -5899,20 +5903,20 @@ a {
   outline: none;
 }
 
-/* line 154, ../sass/_patchwork_page.scss */
+/* line 153, ../sass/_patchwork_page.scss */
 .og-details a::before {
   content: '\2192';
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 160, ../sass/_patchwork_page.scss */
+/* line 159, ../sass/_patchwork_page.scss */
 .og-details a:hover {
   border-color: #999;
   color: #999;
 }
 
-/* line 165, ../sass/_patchwork_page.scss */
+/* line 164, ../sass/_patchwork_page.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -5968,68 +5972,81 @@ a {
   }
 }
 @media screen and (max-width: 830px) {
-  /* line 200, ../sass/_patchwork_page.scss */
+  /* line 199, ../sass/_patchwork_page.scss */
   .og-expander h3 {
     font-size: 32px;
   }
 
-  /* line 201, ../sass/_patchwork_page.scss */
+  /* line 200, ../sass/_patchwork_page.scss */
   .og-expander p {
     font-size: 13px;
   }
 
-  /* line 202, ../sass/_patchwork_page.scss */
+  /* line 201, ../sass/_patchwork_page.scss */
   .og-expander a {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 208, ../sass/_patchwork_page.scss */
+  /* line 207, ../sass/_patchwork_page.scss */
   .og-fullimg {
     display: none;
   }
 
-  /* line 209, ../sass/_patchwork_page.scss */
+  /* line 208, ../sass/_patchwork_page.scss */
   .og-details {
     float: none;
     width: 100%;
   }
 }
-/* line 2, ../sass/_about.scss */
+/* line 3, ../sass/_about.scss */
+.about_page {
+  background-color: RGBA(255, 255, 255, 0.8);
+  margin-top: 15px;
+  padding: 5px;
+}
+
+/* line 9, ../sass/_about.scss */
 .about {
   font-size: 50px;
 }
 
-/* line 8, ../sass/_about.scss */
+/* line 13, ../sass/_about.scss */
 .about_page h2 {
   font: 2vw "butterfly";
-  margin-left: 120px;
-  margin-top: 50px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #3FBFC1;
+  text-align: center;
 }
 
-/* line 14, ../sass/_about.scss */
+/* line 22, ../sass/_about.scss */
 .about_page h3 {
   font-family: 'Didact Gothic';
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
+  font-size: 25px;
 }
 
-/* line 19, ../sass/_about.scss */
+/* line 27, ../sass/_about.scss */
 .about_p {
   font: 16px "Didact Gothic";
+  font-size: 20px !important;
+  line-height: 15px !important;
 }
 
-/* line 23, ../sass/_about.scss */
+/* line 33, ../sass/_about.scss */
 .container {
   text-align: justify;
 }
 
-/* line 31, ../sass/_about.scss */
+/* line 37, ../sass/_about.scss */
 .container p {
   font-size: 16px;
 }
 
-/* line 35, ../sass/_about.scss */
+/* line 41, ../sass/_about.scss */
 .expression {
   font-style: italic;
   font-weight: bold;
@@ -6045,7 +6062,7 @@ h1 {
   text-align: center;
 }
 
-/* line 11, ../sass/_form.scss */
+/* line 10, ../sass/_form.scss */
 .contact {
   background-color: RGBA(255, 255, 255, 0.8);
   margin-top: 15px;
@@ -6053,78 +6070,78 @@ h1 {
   padding: 15px;
 }
 
-/* line 18, ../sass/_form.scss */
+/* line 17, ../sass/_form.scss */
 .row {
   padding: 5px;
 }
 
-/* line 22, ../sass/_form.scss */
+/* line 21, ../sass/_form.scss */
 .material-icons {
   color: #3FBFC1;
 }
 
-/* line 26, ../sass/_form.scss */
+/* line 25, ../sass/_form.scss */
 .send {
   color: white;
 }
 
-/* line 30, ../sass/_form.scss */
+/* line 29, ../sass/_form.scss */
 .select-wrapper span.caret {
   color: #3FBFC1;
   font-size: 20px !important;
   top: 10px !important;
 }
 
-/* line 36, ../sass/_form.scss */
+/* line 35, ../sass/_form.scss */
 .select-wrapper input.select-dropdown {
   color: #3FBFC1;
 }
 
-/* line 40, ../sass/_form.scss */
+/* line 39, ../sass/_form.scss */
 .select-wrapper + label {
   font-size: 1rem;
 }
 
-/* line 44, ../sass/_form.scss */
+/* line 43, ../sass/_form.scss */
 .input-field label {
   font-size: 1rem;
 }
 
 /* label color */
-/* line 49, ../sass/_form.scss */
+/* line 48, ../sass/_form.scss */
 .input-field label {
   color: #3FBFC1;
 }
 
 /* label focus color */
-/* line 53, ../sass/_form.scss */
+/* line 52, ../sass/_form.scss */
 .input-field input[type=text]:focus + label {
   color: #3FBFC1;
 }
 
 /* label underline focus color */
-/* line 57, ../sass/_form.scss */
+/* line 56, ../sass/_form.scss */
 .input-field input[type=text]:focus {
   border-bottom: 1px solid #3FBFC1;
   box-shadow: 0 1px 0 0 #3FBFC1;
 }
 
 /* valid color */
-/* line 62, ../sass/_form.scss */
+/* line 61, ../sass/_form.scss */
 .input-field input[type=text].valid {
   border-bottom: 1px solid #3FBFC1;
   box-shadow: 0 1px 0 0 #3FBFC1;
 }
 
 /* invalid color */
-/* line 67, ../sass/_form.scss */
+/* line 66, ../sass/_form.scss */
 .input-field input[type=text].invalid {
   border-bottom: 1px solid #3FBFC1;
   box-shadow: 0 1px 0 0 #3FBFC1;
 }
 
 /* icon prefix focus color */
-/* line 72, ../sass/_form.scss */
+/* line 71, ../sass/_form.scss */
 .input-field .prefix.active {
   color: #3FBFC1;
 }
@@ -6132,60 +6149,76 @@ h1 {
 /*FOOTER*/
 /* line 2, ../sass/_footer.scss */
 footer.page-footer {
-  background-color: white;
-  margin-top: 10px;
+  background-color: RGBA(255, 255, 255, 0.6);
   margin-bottom: 0px;
   padding-top: 0px;
-  background-image: url("../images/Les-hiboux.gif");
-  background-repeat: no-repeat;
-  background-position: right;
-  margin-right: -20px;
-  background-size: 38%;
 }
 
-/* line 16, ../sass/_footer.scss */
+/* line 8, ../sass/_footer.scss */
 .row {
   margin-bottom: 1px;
 }
 
-/*.fa-facebook-square{
-    margin-left:11.5px;
-    margin-top:73px;
-}
-
-.fa-instagram{
-    margin-left:12.5px;
-    margin-top:65px;
-}
-*/
-/* line 29, ../sass/_footer.scss */
-.fa {
-  margin-top: 10px;
-}
-
-/* line 33, ../sass/_footer.scss */
-.fa-instagram {
-  margin-left: 10%;
-}
-
-/* line 37, ../sass/_footer.scss */
-#row-footer {
-  margin-left: 80px;
-}
-
-/* line 41, ../sass/_footer.scss */
-h5.brown-text {
+/* line 12, ../sass/_footer.scss */
+h5 {
   font: 2vw "butterfly";
+  color: rgba(87, 73, 73, 0.8);
 }
 
-/* line 45, ../sass/_footer.scss */
+/* line 17, ../sass/_footer.scss */
 footer.page-footer .footer-copyright {
   color: rgba(87, 73, 73, 0.8);
 }
 
+/* line 21, ../sass/_footer.scss */
+.doudous {
+  color: #E93255;
+  font: 16px "Didact Gothic";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* line 28, ../sass/_footer.scss */
+.bijoux {
+  color: #724399;
+  font: 16px "Didact Gothic";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* line 35, ../sass/_footer.scss */
+.accessoires {
+  color: #468540;
+  font: 16px "Didact Gothic";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* line 42, ../sass/_footer.scss */
+.whoami {
+  color: #B7483F;
+  font: 16px "Didact Gothic";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* line 49, ../sass/_footer.scss */
+.contactme {
+  color: #3FBFC1;
+  font: 16px "Didact Gothic";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* line 56, ../sass/_footer.scss */
+.social {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 53, ../sass/_footer.scss */
+/* line 64, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
@@ -6194,7 +6227,7 @@ a.back-to-top {
   position: fixed;
   z-index: 999;
   right: 20px;
-  bottom: 91px;
+  bottom: 20px;
   background: url("../images/noun2.png") no-repeat center 43%;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
