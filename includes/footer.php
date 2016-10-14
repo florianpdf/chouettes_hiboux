@@ -1,9 +1,9 @@
 
 
     <footer class="page-footer">
-        <div class="container-footer">
+        <div class="container">
             <div class="row" id="row-footer">
-                <div class="col offset-l1 l2 s12">
+                <div class="col l3 s12">
                     <h5>Catégories</h5>
                    <ul>
                         <li><a class="doudous" href="./doudous.php">Les doudous</a></li>
@@ -11,19 +11,19 @@
                         <li><a class="accessoires" href="./accessoires.php">Les accessoires</a></li>
                     </ul>
                 </div>
-                <div class="col l2 s12">
+                <div class="col l3 s12">
                     <h5>A propos</h5>
                     <ul>
                         <li><a class="whoami" href="./about.php">Qui suis-je ?</a></li>
                     </ul>
                 </div>
-                <div class="col l2 s12">
+                <div class="col l3 s12">
                     <h5>Contacts</h5>
                     <ul>
                         <li><a class="contactme" href="./form.php">Formulaire de contact</a></li>
                     </ul>
                 </div>
-                <div class="col l2 s12">
+                <div class="col l3 s12">
                     <h5>Réseaux sociaux</h5>
                         <div class="row">
                             <div class="col l6 s12">
