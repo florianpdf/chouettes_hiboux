@@ -3,15 +3,15 @@
 
 
 <header>
-    <div>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="../bleau_S2_2016_chouette_hibou/index.php" class="brand-logo center">
-                    <img src="./images/newLogo.png" alt="Chouettes Hiboux Doudous" class="nb_navbar_logo">
-                </a>
-            </div>
-        </nav>
-    </div>
+  <div>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="../bleau_S2_2016_chouette_hibou/index.php" class="brand-logo center">
+          <img src="./images/newLogo.png" alt="Chouettes Hiboux Doudous" class="nb_navbar_logo">
+        </a>
+      </div>
+    </nav>
+  </div>
 </header>
 
 </br>
@@ -26,11 +26,11 @@
 
   <div class="row rowCustom">
     <div class="col l4 m4 s12 colCustom center">
-      <a href="doudous.php">
+    <a href="doudous.php" class="doudous">
         <div class="boxMenu">
           <h3 class="h3BoxMenu">Doudous</h3>
           <div class="center">
-            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
+            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" class="doudous" />
           </div>  
         </div> 
       </a>       
@@ -38,27 +38,27 @@
 
     <div class="col l4 m4 s12 colCustom">
       <div class="ih-item square effect13 top_to_bottom">
-          <a href="#">
-            <div>
-              <img class='imgDamier' src="images/petitDoudou.jpg" alt="img">
-            </div>
-            <div class="info">
-              <h3>Petits doudous</h3>
-              <p>Modèle d'après un tuto d'amigurumi, en laine acrylique , bourrage en ouatine synthétique</p>
-            </div>
-              </a>
-        </div> <!-- End h-item square effect15 top_to_bottom -->  
+        <a href="#">
+          <div>
+            <img class='imgDamier' src="images/petitDoudou.jpg" alt="img">
+          </div>
+          <div class="info">
+            <h3>Petits doudous</h3>
+            <p>Modèle d'après un tuto d'amigurumi, en laine acrylique , bourrage en ouatine synthétique</p>
+          </div>
+        </a>
+      </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
     <div class="col l4 m4 s12 colCustom center">
-    <a href="bijoux.php">
-      <div class="boxMenu">
-        <h3 class="h3BoxMenu">Bijoux</h3>
-        <div class="center">
+      <a href="bijoux.php" class="bijoux">
+        <div class="boxMenu">
+          <h3 class="h3BoxMenu">Bijoux</h3>
+          <div class="center">
             <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
-        </div> 
-      </div>
-    </a>       
+          </div> 
+        </div>
+      </a>       
     </div> <!-- End col l4 m3 s1-->
 
   </div> <!-- End ROW -->
@@ -70,41 +70,41 @@
     <div class="col l4 m4 s12 colCustom">
       <div class="ih-item square effect13 top_to_bottom">
 
-          <a href="#">
-            <div>
-              <img class='imgDamier' src="images/grandDoudou.jpg" alt="img">
-            </div>
-            <div class="info">
-              <h3>Grands doudous</h3>
-              <p>Modèle d'après la revue "Tricot Mag Les doudous de Sophie", en peine acrylique et bourrage en ouatine synthétique.</p>
-            </div>
-              </a>
-        </div> <!-- End h-item square effect15 top_to_bottom -->  
+        <a href="#">
+          <div>
+            <img class='imgDamier' src="images/grandDoudou.jpg" alt="img">
+          </div>
+          <div class="info">
+            <h3>Grands doudous</h3>
+            <p>Modèle d'après la revue "Tricot Mag Les doudous de Sophie", en peine acrylique et bourrage en ouatine synthétique.</p>
+          </div>
+        </a>
+      </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
     <div class="col l4 m4 s12 colCustom center">
-    <a href="Accessoires.php">
-      <div class="boxMenu">
-        <h3 class="h3BoxMenu">Accessoires</h3>
-        <div class="center">
-          <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
-        </div>  
-      </div> 
-    </a>     
+      <a href="Accessoires.php" class="accessoires">
+        <div class="boxMenu">
+          <h3 class="h3BoxMenu">Accessoires</h3>
+          <div class="center">
+            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
+          </div>  
+        </div> 
+      </a>     
     </div> <!-- End col l4 m3 s1-->
 
     <div class="col l4 m4 s12 colCustom">
       <div class="ih-item square effect13 top_to_bottom">
-          <a href="#">
-            <div>
-              <img class='imgDamier' src="images/accessoire.jpg" alt="img">
-            </div>
-            <div class="info">
-              <h3>Bijoux</h3>
-              <p>Sautoir d'après un modèle de La Droguerie, matériel acheté dans leur boutique à Paris.</p>
-            </div>
-              </a>
-        </div> <!-- End h-item square effect15 top_to_bottom -->  
+        <a href="#">
+          <div>
+            <img class='imgDamier' src="images/accessoire.jpg" alt="img">
+          </div>
+          <div class="info">
+            <h3>Bijoux</h3>
+            <p>Sautoir d'après un modèle de La Droguerie, matériel acheté dans leur boutique à Paris.</p>
+          </div>
+        </a>
+      </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
   </div> <!-- End ROW -->
@@ -112,41 +112,41 @@
 
   <!-- DEBUT TROISIEME LIGNE -->
   <div class="row rowCustom">
-    
+
     <div class="col l4 m4 s12 colCustom center">
-    <a href="form.php">
-      <div class="boxMenu">
-      <h3 class="h3BoxMenu">Contact</h3>
-        <div class="center">
+      <a href="form.php" class="contactme">
+        <div class="boxMenu">
+          <h3 class="h3BoxMenu">Contact</h3>
+          <div class="center">
             <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
           </div>   
-      </div>
-    </a>      
+        </div>
+      </a>      
     </div> <!-- End col l4 m3 s1-->
 
     <div class="col l4 m4 s12 colCustom">
       <div class="ih-item square effect13 top_to_bottom">
-          <a href="#">
-            <div>
-              <img class='imgDamier' src="images/accessoires.jpg" alt="img">
-            </div>
-            <div class="info">
-              <h3>Accessoires</h3>
-              <p>modèle créé d'après une photo, en tissu coton, feutrine, boutons et fil de coton.</p>
-            </div>
-              </a>
-        </div> <!-- End h-item square effect15 top_to_bottom -->  
+        <a href="#">
+          <div>
+            <img class='imgDamier' src="images/accessoires.jpg" alt="img">
+          </div>
+          <div class="info">
+            <h3>Accessoires</h3>
+            <p>modèle créé d'après une photo, en tissu coton, feutrine, boutons et fil de coton.</p>
+          </div>
+        </a>
+      </div> <!-- End h-item square effect15 top_to_bottom -->  
     </div>
 
     <div class="col l4 m4 s12 colCustom center">
-    <a href="about.php">
-      <div class="boxMenu">
-      <h3 class="h3BoxMenu">Qui suis-je</h3>
-        <div class="center">
+      <a href="about.php" class="whoami">
+        <div class="boxMenu">
+          <h3 class="h3BoxMenu">Qui suis-je</h3>
+          <div class="center">
             <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
           </div>   
-      </div>
-    </a>      
+        </div>
+      </a>      
     </div> <!-- End col l4 m3 s1-->
 
   </div> <!-- End ROW -->
