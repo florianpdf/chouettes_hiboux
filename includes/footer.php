@@ -24,7 +24,7 @@
                     </ul>
                 </div>
                 <div class="col l3 s12">
-                    <h5>Me suivre</h5>
+                    <h5>Me suivre </h5>
                         <div class="row">
                             <div class="col l6 s12">
                                 <img class="social responsive-img" data-alt-src="https://s21.postimg.org/nyq4jte47/hiboux_yeux_ouverts.png" src="https://s21.postimg.org/5kflfu1tj/hibou_bleu_yruxouverts.png" />
