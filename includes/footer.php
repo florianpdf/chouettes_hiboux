@@ -51,15 +51,41 @@
     <script src="js/modernizr.custom.js"></script>
     
 
+    <!-- ************************************************************************ -->
     <!-- index.php 
     Hauteur éléments ROW identique
     Class des élements colCustom -->
     <script>
-        $(function() {
-            var $heightDiv = $('.colCustom').css('width');
-            $('.colCustom').css("height", $heightDiv);
-            $('.imgDamier').css("height", $heightDiv).css("width", $heightDiv);;   
-        });
+    $(document).ready(function() {
+
+    if ( $(window).width() > 739) {      
+      //Add your javascript for large screens here
+      console.log( "ready!" );
+        var heightDiv = $('.colCustom').css('width');
+        $('.colCustom').css("height", heightDiv);
+        $('.imgDamier').css("height", heightDiv).css("width", heightDiv); 
+            $(window).resize(function() {
+                var heightDiv = $('.colCustom').css('width');
+                console.log(heightDiv);
+                $('.colCustom').css("height", heightDiv);
+                $('.imgDamier').css("height", heightDiv).css("width", heightDiv);   
+            }); 
+    } 
+    else {
+      //Add your javascript for small screens here
+      var heightDiv = $('.colCustom').css('width');
+        $('.colCustom').css("height", heightDiv/2);
+        $('.notForSmall').addClass('hide-on-small-only')
+        $('.imgDamier').css("height", heightDiv).css("width", heightDiv); 
+            $(window).resize(function() {
+                var heightDiv = $('.colCustom').css('width');
+                console.log(heightDiv);
+                $('.colCustom').css("height", heightDiv/2);
+                $('.imgDamier').css("height", heightDiv).css("width", heightDiv);   
+            }); 
+    }
+
+    });
     </script>
 
     <!-- Changement photo chouette menu -->
@@ -70,16 +96,18 @@
         $this.data('alt-src', $this.attr('src'));
         $this.attr('src', newSource);
     }
-
-    $(function() {
-        $('img[data-alt-src]').each(function() { 
-            new Image().src = $(this).data('alt-src'); 
-        }).hover(sourceSwap, sourceSwap); 
+    $(document).ready(function() {
+        $(function() {
+            $('img[data-alt-src]').each(function() { 
+                new Image().src = $(this).data('alt-src'); 
+            }).hover(sourceSwap, sourceSwap); 
+        });
     });
     </script>
+    <!-- index.php  -->
+    <!-- ************************************************************************ -->
 
-
-    <!-- create the back to top button -->
+    <!-- create the back to top button
     <script> 
         $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
         var amountScrolled = 300;
