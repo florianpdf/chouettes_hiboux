@@ -1,0 +1,6294 @@
+@charset "UTF-8";
+/*---------------------------------------*\
+            SOMMAIRE
+FONT______________ Font of website
+GENERAL___________ style général
+MENU______________ Style of NavBar (include)
+FOOTER____________ Style of footer (include)
+HOME______________ Style page : Homepage
+DOUDOUS and co_____Style page : Pages
+CONTACT____________Style page : Formulaire
+ABOUT ____________ Style page : About
+
+
+\*-----------------------------------------*/
+/*-----------------------------------------------------*\
+       $FONT         FONT        FONT        FONT  
+\*-----------------------------------------------------*/
+@font-face {
+  font-family: 'butterfly';
+  src: local("butterfly"), url("../fonts/DK-Butterfly-Ball.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 62, ../sass/_general.scss */
+h1 {
+  font: 2vw "butterfly";
+}
+
+/*-----------------------------------------------------*\
+       GENERAL      GENERAL      GENERAL     GENERAL  
+\*-----------------------------------------------------*/
+/* line 81, ../sass/_general.scss */
+body {
+  height: 100%;
+  background-image: url("../images/wood.jpg");
+}
+
+/* line 87, ../sass/_general.scss */
+section {
+  min-height: 100%;
+}
+
+/* line 91, ../sass/_general.scss */
+.container {
+  min-height: 100%;
+}
+
+/* line 3, ../sass/_navbar.scss */
+nav {
+  height: 85px !important;
+  background-color: RGBA(255, 255, 255, 0.6);
+}
+
+/* line 8, ../sass/_navbar.scss */
+.chouetteHibouxLogo {
+  padding-left: 20px !important;
+}
+
+/* line 12, ../sass/_navbar.scss */
+.navbar_logo {
+  width: 80%;
+  height: auto;
+}
+
+/* line 17, ../sass/_navbar.scss */
+.full_nav a, .side-nav a {
+  font: 2vw "butterfly";
+  padding-left: 30px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 31px;
+  padding-right: 40px;
+}
+
+/* line 26, ../sass/_navbar.scss */
+.accueil:hover {
+  background-color: RGBA(252, 161, 60, 0.3) !important;
+}
+
+/* line 30, ../sass/_navbar.scss */
+.doudous:hover {
+  background-color: RGBA(233, 50, 85, 0.3) !important;
+}
+
+/* line 34, ../sass/_navbar.scss */
+.bijoux:hover {
+  background-color: RGBA(114, 67, 153, 0.3) !important;
+}
+
+/* line 38, ../sass/_navbar.scss */
+.accessoires:hover {
+  background-color: RGBA(70, 133, 64, 0.3) !important;
+}
+
+/* line 42, ../sass/_navbar.scss */
+.whoami:hover {
+  background-color: RGBA(183, 72, 63, 0.3) !important;
+}
+
+/* line 46, ../sass/_navbar.scss */
+.material-icons {
+  font-size: 40px !important;
+}
+
+/* line 52, ../sass/_navbar.scss */
+#mobile-demo a {
+  font-size: 20px !important;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+/* line 1, ../sass/_citation.scss */
+blockquote {
+  background: RGBA(255, 255, 255, 0.6) !important;
+  padding: 15px 20px 15px 45px;
+  margin: 20px 20px;
+  position: relative;
+  /*Font*/
+  font: 16px "Didact Gothic";
+  text-align: justify;
+  font-size: 18px !important;
+  /*Borders - (Optional)*/
+  border-left: 15px solid #0894af;
+  border-right: 2px solid #0894af;
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+/* line 22, ../sass/_citation.scss */
+blockquote::before {
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+/* line 37, ../sass/_citation.scss */
+blockquote::after {
+  /*Reset to make sure*/
+  content: "";
+}
+
+/* line 42, ../sass/_citation.scss */
+blockquote a {
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #0069AC;
+}
+
+/* line 50, ../sass/_citation.scss */
+blockquote a:hover {
+  color: #666;
+}
+
+/* line 54, ../sass/_citation.scss */
+blockquote em {
+  font-style: italic;
+}
+
+/****************************/
+/****************************/
+/*        Logo & navBar     */
+/****************************/
+/****************************/
+/* line 6, ../sass/_index.scss */
+.nb_navbar_logo {
+  width: 50% !important;
+  height: 50% !important;
+  min-width: 300px;
+}
+
+/* line 12, ../sass/_index.scss */
+nav {
+  height: 120px !important;
+}
+
+/* line 16, ../sass/_index.scss */
+.bckground {
+  background-color: #DEDEDE;
+}
+
+/****************************/
+/****************************/
+/*        row  & col        */
+/****************************/
+/****************************/
+/* line 25, ../sass/_index.scss */
+.rowCustom {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+/* line 30, ../sass/_index.scss */
+.colCustom {
+  padding: 0px !important;
+  margin: 0px;
+  /*background-color:#dedede;*/
+}
+
+/***************************/
+/***************************/
+/* BLOCK avec texte = menu */
+/***************************/
+/***************************/
+/* line 41, ../sass/_index.scss */
+.colCustom:hover .iMasque {
+  display: inline;
+}
+
+/* line 45, ../sass/_index.scss */
+.iMasque {
+  display: none;
+}
+
+/* Zone élément cliquable*/
+/* non survolé */
+/* line 51, ../sass/_index.scss */
+a {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  outline: none;
+}
+
+/* Zone élément cliquable*/
+/* survolé */
+/* line 61, ../sass/_index.scss */
+.iMasque:hover {
+  color: #999;
+}
+
+/* line 65, ../sass/_index.scss */
+.boxMenu {
+  padding-top: 15%;
+}
+
+/* Titre de la box */
+/* line 70, ../sass/_index.scss */
+.h3BoxMenu {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: bold;
+  font-weight: 80%;
+  font-family: butterfly;
+}
+
+/* line 78, ../sass/_index.scss */
+.imgChouetteAnimee {
+  width: 100%;
+}
+
+/* line 82, ../sass/_index.scss */
+.imgChouetteAnimeeSmall {
+  width: 50%;
+}
+
+/****************************/
+/****************************/
+/* BLOCK avec photo + effet */
+/****************************/
+/****************************/
+/* SURCHARGE framework ihover */
+/* line 91, ../sass/_index.scss */
+.ih-item.square {
+  width: 100% !important;
+  height: 100% !important;
+  /* Suppression bordure shadow */
+  border: 0px solid #fff !important;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+
+/*.ih-item.square.effect13.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}*/
+/* line 1, ../sass/_ihover.scss */
+.ih-item {
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 7, ../sass/_ihover.scss */
+.ih-item,
+.ih-item * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/_ihover.scss */
+.ih-item a {
+  color: #333;
+}
+
+/* line 16, ../sass/_ihover.scss */
+.ih-item a:hover {
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_ihover.scss */
+.ih-item img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 24, ../sass/_ihover.scss */
+.ih-item.circle {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+/* line 30, ../sass/_ihover.scss */
+.ih-item.circle .img {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+/* line 36, ../sass/_ihover.scss */
+.ih-item.circle .img:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 48, ../sass/_ihover.scss */
+.ih-item.circle .img img {
+  border-radius: 50%;
+}
+
+/* line 51, ../sass/_ihover.scss */
+.ih-item.circle .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 63, ../sass/_ihover.scss */
+.ih-item.square {
+  position: relative;
+  width: 316px;
+  height: 216px;
+  border: 8px solid #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 70, ../sass/_ihover.scss */
+.ih-item.square .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 81, ../sass/_ihover.scss */
+.ih-item.circle.effect1 .spinner {
+  width: 230px;
+  height: 230px;
+  border: 10px solid #ecab18;
+  border-right-color: #1ad280;
+  border-bottom-color: #1ad280;
+  border-radius: 50%;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+/* line 92, ../sass/_ihover.scss */
+.ih-item.circle.effect1 .img {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+
+/* line 101, ../sass/_ihover.scss */
+.ih-item.circle.effect1 .img:before {
+  display: none;
+}
+
+/* line 104, ../sass/_ihover.scss */
+.ih-item.circle.effect1.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+
+/* line 108, ../sass/_ihover.scss */
+.ih-item.circle.effect1 .info {
+  top: 10px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+/* line 120, ../sass/_ihover.scss */
+.ih-item.circle.effect1 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 131, ../sass/_ihover.scss */
+.ih-item.circle.effect1 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 139, ../sass/_ihover.scss */
+.ih-item.circle.effect1 a:hover .spinner {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 146, ../sass/_ihover.scss */
+.ih-item.circle.effect1 a:hover .info {
+  opacity: 1;
+}
+
+/* line 150, ../sass/_ihover.scss */
+.ih-item.circle.effect2 .img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 161, ../sass/_ihover.scss */
+.ih-item.circle.effect2.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+
+/* line 165, ../sass/_ihover.scss */
+.ih-item.circle.effect2 .info {
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 174, ../sass/_ihover.scss */
+.ih-item.circle.effect2 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 185, ../sass/_ihover.scss */
+.ih-item.circle.effect2 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 194, ../sass/_ihover.scss */
+.ih-item.circle.effect2.left_to_right .info {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 201, ../sass/_ihover.scss */
+.ih-item.circle.effect2.left_to_right a:hover .img {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+/* line 208, ../sass/_ihover.scss */
+.ih-item.circle.effect2.left_to_right a:hover .info {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 217, ../sass/_ihover.scss */
+.ih-item.circle.effect2.right_to_left .info {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 224, ../sass/_ihover.scss */
+.ih-item.circle.effect2.right_to_left a:hover .img {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 231, ../sass/_ihover.scss */
+.ih-item.circle.effect2.right_to_left a:hover .info {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 240, ../sass/_ihover.scss */
+.ih-item.circle.effect2.top_to_bottom .info {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 247, ../sass/_ihover.scss */
+.ih-item.circle.effect2.top_to_bottom a:hover .img {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+/* line 254, ../sass/_ihover.scss */
+.ih-item.circle.effect2.top_to_bottom a:hover .info {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 263, ../sass/_ihover.scss */
+.ih-item.circle.effect2.bottom_to_top .info {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 270, ../sass/_ihover.scss */
+.ih-item.circle.effect2.bottom_to_top a:hover .img {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 277, ../sass/_ihover.scss */
+.ih-item.circle.effect2.bottom_to_top a:hover .info {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 286, ../sass/_ihover.scss */
+.ih-item.circle.effect3 .img {
+  z-index: 11;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 292, ../sass/_ihover.scss */
+.ih-item.circle.effect3.colored .info {
+  background: #1a4a72;
+}
+
+/* line 295, ../sass/_ihover.scss */
+.ih-item.circle.effect3 .info {
+  background: #333333;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 303, ../sass/_ihover.scss */
+.ih-item.circle.effect3 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 314, ../sass/_ihover.scss */
+.ih-item.circle.effect3 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 323, ../sass/_ihover.scss */
+.ih-item.circle.effect3.left_to_right .img {
+  -webkit-transform: scale(1) translateX(0);
+  -moz-transform: scale(1) translateX(0);
+  -ms-transform: scale(1) translateX(0);
+  -o-transform: scale(1) translateX(0);
+  transform: scale(1) translateX(0);
+}
+
+/* line 330, ../sass/_ihover.scss */
+.ih-item.circle.effect3.left_to_right .info {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 337, ../sass/_ihover.scss */
+.ih-item.circle.effect3.left_to_right a:hover .img {
+  -webkit-transform: scale(0.5) translateX(100%);
+  -moz-transform: scale(0.5) translateX(100%);
+  -ms-transform: scale(0.5) translateX(100%);
+  -o-transform: scale(0.5) translateX(100%);
+  transform: scale(0.5) translateX(100%);
+}
+
+/* line 344, ../sass/_ihover.scss */
+.ih-item.circle.effect3.left_to_right a:hover .info {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 353, ../sass/_ihover.scss */
+.ih-item.circle.effect3.right_to_left .img {
+  -webkit-transform: scale(1) translateX(0);
+  -moz-transform: scale(1) translateX(0);
+  -ms-transform: scale(1) translateX(0);
+  -o-transform: scale(1) translateX(0);
+  transform: scale(1) translateX(0);
+}
+
+/* line 360, ../sass/_ihover.scss */
+.ih-item.circle.effect3.right_to_left .info {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 367, ../sass/_ihover.scss */
+.ih-item.circle.effect3.right_to_left a:hover .img {
+  -webkit-transform: scale(0.5) translateX(-100%);
+  -moz-transform: scale(0.5) translateX(-100%);
+  -ms-transform: scale(0.5) translateX(-100%);
+  -o-transform: scale(0.5) translateX(-100%);
+  transform: scale(0.5) translateX(-100%);
+}
+
+/* line 374, ../sass/_ihover.scss */
+.ih-item.circle.effect3.right_to_left a:hover .info {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 383, ../sass/_ihover.scss */
+.ih-item.circle.effect3.top_to_bottom .img {
+  -webkit-transform: scale(1) translateY(0);
+  -moz-transform: scale(1) translateY(0);
+  -ms-transform: scale(1) translateY(0);
+  -o-transform: scale(1) translateY(0);
+  transform: scale(1) translateY(0);
+}
+
+/* line 390, ../sass/_ihover.scss */
+.ih-item.circle.effect3.top_to_bottom .info {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 397, ../sass/_ihover.scss */
+.ih-item.circle.effect3.top_to_bottom a:hover .img {
+  -webkit-transform: scale(0.5) translateY(100%);
+  -moz-transform: scale(0.5) translateY(100%);
+  -ms-transform: scale(0.5) translateY(100%);
+  -o-transform: scale(0.5) translateY(100%);
+  transform: scale(0.5) translateY(100%);
+}
+
+/* line 404, ../sass/_ihover.scss */
+.ih-item.circle.effect3.top_to_bottom a:hover .info {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 413, ../sass/_ihover.scss */
+.ih-item.circle.effect3.bottom_to_top .img {
+  -webkit-transform: scale(1) translateY(0);
+  -moz-transform: scale(1) translateY(0);
+  -ms-transform: scale(1) translateY(0);
+  -o-transform: scale(1) translateY(0);
+  transform: scale(1) translateY(0);
+}
+
+/* line 420, ../sass/_ihover.scss */
+.ih-item.circle.effect3.bottom_to_top .info {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 427, ../sass/_ihover.scss */
+.ih-item.circle.effect3.bottom_to_top a:hover .img {
+  -webkit-transform: scale(0.5) translateY(-100%);
+  -moz-transform: scale(0.5) translateY(-100%);
+  -ms-transform: scale(0.5) translateY(-100%);
+  -o-transform: scale(0.5) translateY(-100%);
+  transform: scale(0.5) translateY(-100%);
+}
+
+/* line 434, ../sass/_ihover.scss */
+.ih-item.circle.effect3.bottom_to_top a:hover .info {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 443, ../sass/_ihover.scss */
+.ih-item.circle.effect4 .img {
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 449, ../sass/_ihover.scss */
+.ih-item.circle.effect4.colored .info {
+  background: #1a4a72;
+}
+
+/* line 452, ../sass/_ihover.scss */
+.ih-item.circle.effect4 .info {
+  background: #333333;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+/* line 461, ../sass/_ihover.scss */
+.ih-item.circle.effect4 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 472, ../sass/_ihover.scss */
+.ih-item.circle.effect4 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 483, ../sass/_ihover.scss */
+.ih-item.circle.effect4 a:hover .img {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* line 487, ../sass/_ihover.scss */
+.ih-item.circle.effect4 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 492, ../sass/_ihover.scss */
+.ih-item.circle.effect4.left_to_right .img {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 499, ../sass/_ihover.scss */
+.ih-item.circle.effect4.left_to_right .info {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 506, ../sass/_ihover.scss */
+.ih-item.circle.effect4.left_to_right a:hover .img {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 513, ../sass/_ihover.scss */
+.ih-item.circle.effect4.left_to_right a:hover .info {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 521, ../sass/_ihover.scss */
+.ih-item.circle.effect4.right_to_left .img {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 528, ../sass/_ihover.scss */
+.ih-item.circle.effect4.right_to_left .info {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 535, ../sass/_ihover.scss */
+.ih-item.circle.effect4.right_to_left a:hover .img {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 542, ../sass/_ihover.scss */
+.ih-item.circle.effect4.right_to_left a:hover .info {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 550, ../sass/_ihover.scss */
+.ih-item.circle.effect4.top_to_bottom .img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 557, ../sass/_ihover.scss */
+.ih-item.circle.effect4.top_to_bottom .info {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 564, ../sass/_ihover.scss */
+.ih-item.circle.effect4.top_to_bottom a:hover .img {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 571, ../sass/_ihover.scss */
+.ih-item.circle.effect4.top_to_bottom a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 579, ../sass/_ihover.scss */
+.ih-item.circle.effect4.bottom_to_top .img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 586, ../sass/_ihover.scss */
+.ih-item.circle.effect4.bottom_to_top .info {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 593, ../sass/_ihover.scss */
+.ih-item.circle.effect4.bottom_to_top a:hover .img {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 600, ../sass/_ihover.scss */
+.ih-item.circle.effect4.bottom_to_top a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 608, ../sass/_ihover.scss */
+.ih-item.circle.effect5 {
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+}
+
+/* line 613, ../sass/_ihover.scss */
+.ih-item.circle.effect5.colored .info .info-back {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+
+/* line 617, ../sass/_ihover.scss */
+.ih-item.circle.effect5 .info {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 627, ../sass/_ihover.scss */
+.ih-item.circle.effect5 .info .info-back {
+  visibility: hidden;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 642, ../sass/_ihover.scss */
+.ih-item.circle.effect5 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 653, ../sass/_ihover.scss */
+.ih-item.circle.effect5 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 661, ../sass/_ihover.scss */
+.ih-item.circle.effect5 a:hover .info {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg);
+  -moz-transform: rotate3d(0, 1, 0, -180deg);
+  -ms-transform: rotate3d(0, 1, 0, -180deg);
+  -o-transform: rotate3d(0, 1, 0, -180deg);
+  transform: rotate3d(0, 1, 0, -180deg);
+}
+
+/* line 668, ../sass/_ihover.scss */
+.ih-item.circle.effect5 a:hover .info .info-back {
+  visibility: visible;
+}
+
+/* line 672, ../sass/_ihover.scss */
+.ih-item.circle.effect6 .img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 683, ../sass/_ihover.scss */
+.ih-item.circle.effect6.colored .info {
+  background: #1a4a72;
+}
+
+/* line 686, ../sass/_ihover.scss */
+.ih-item.circle.effect6 .info {
+  background: #333333;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 693, ../sass/_ihover.scss */
+.ih-item.circle.effect6 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 704, ../sass/_ihover.scss */
+.ih-item.circle.effect6 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 713, ../sass/_ihover.scss */
+.ih-item.circle.effect6.scale_up .info {
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 720, ../sass/_ihover.scss */
+.ih-item.circle.effect6.scale_up a:hover .img {
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+/* line 728, ../sass/_ihover.scss */
+.ih-item.circle.effect6.scale_up a:hover .info {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 737, ../sass/_ihover.scss */
+.ih-item.circle.effect6.scale_down .info {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+/* line 744, ../sass/_ihover.scss */
+.ih-item.circle.effect6.scale_down a:hover .img {
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 752, ../sass/_ihover.scss */
+.ih-item.circle.effect6.scale_down a:hover .info {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 761, ../sass/_ihover.scss */
+.ih-item.circle.effect6.scale_down_up .info {
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transition: all 0.35s ease-in-out 0.2s;
+  -moz-transition: all 0.35s ease-in-out 0.2s;
+  transition: all 0.35s ease-in-out 0.2s;
+}
+
+/* line 771, ../sass/_ihover.scss */
+.ih-item.circle.effect6.scale_down_up a:hover .img {
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 779, ../sass/_ihover.scss */
+.ih-item.circle.effect6.scale_down_up a:hover .info {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 788, ../sass/_ihover.scss */
+.ih-item.circle.effect7 .img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+
+/* line 799, ../sass/_ihover.scss */
+.ih-item.circle.effect7.colored .info {
+  background: #1a4a72;
+}
+
+/* line 802, ../sass/_ihover.scss */
+.ih-item.circle.effect7 .info {
+  background: #333333;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: all 0.35s ease 0.2s;
+  -moz-transition: all 0.35s ease 0.2s;
+  transition: all 0.35s ease 0.2s;
+}
+
+/* line 811, ../sass/_ihover.scss */
+.ih-item.circle.effect7 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 822, ../sass/_ihover.scss */
+.ih-item.circle.effect7 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 830, ../sass/_ihover.scss */
+.ih-item.circle.effect7 a:hover .img {
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 838, ../sass/_ihover.scss */
+.ih-item.circle.effect7 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 843, ../sass/_ihover.scss */
+.ih-item.circle.effect7.left_to_right .info {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 850, ../sass/_ihover.scss */
+.ih-item.circle.effect7.left_to_right a:hover .info {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 858, ../sass/_ihover.scss */
+.ih-item.circle.effect7.right_to_left .info {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 865, ../sass/_ihover.scss */
+.ih-item.circle.effect7.right_to_left a:hover .info {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 873, ../sass/_ihover.scss */
+.ih-item.circle.effect7.top_to_bottom .info {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 880, ../sass/_ihover.scss */
+.ih-item.circle.effect7.top_to_bottom a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 888, ../sass/_ihover.scss */
+.ih-item.circle.effect7.bottom_to_top .info {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 895, ../sass/_ihover.scss */
+.ih-item.circle.effect7.bottom_to_top a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 903, ../sass/_ihover.scss */
+.ih-item.circle.effect8.colored .info {
+  background: #1a4a72;
+}
+
+/* line 906, ../sass/_ihover.scss */
+.ih-item.circle.effect8 .img-container {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 916, ../sass/_ihover.scss */
+.ih-item.circle.effect8 .img-container .img {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  transition: all 0.3s ease-in-out 0.3s;
+}
+
+/* line 922, ../sass/_ihover.scss */
+.ih-item.circle.effect8 .info-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  transition: all 0.3s ease-in-out 0.3s;
+}
+
+/* line 936, ../sass/_ihover.scss */
+.ih-item.circle.effect8 .info {
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  pointer-events: none;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transition: all 0.35s ease-in-out 0.6s;
+  -moz-transition: all 0.35s ease-in-out 0.6s;
+  transition: all 0.35s ease-in-out 0.6s;
+}
+
+/* line 950, ../sass/_ihover.scss */
+.ih-item.circle.effect8 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 45px 0 0 0;
+  height: 140px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 960, ../sass/_ihover.scss */
+.ih-item.circle.effect8 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 968, ../sass/_ihover.scss */
+.ih-item.circle.effect8 a:hover .img-container {
+  pointer-events: none;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 976, ../sass/_ihover.scss */
+.ih-item.circle.effect8 a:hover .img-container .img {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* line 980, ../sass/_ihover.scss */
+.ih-item.circle.effect8 a:hover .info-container {
+  opacity: 1;
+}
+
+/* line 983, ../sass/_ihover.scss */
+.ih-item.circle.effect8 a:hover .info-container .info {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 991, ../sass/_ihover.scss */
+.ih-item.circle.effect8.left_to_right .img-container .img {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 998, ../sass/_ihover.scss */
+.ih-item.circle.effect8.left_to_right .info-container {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 1005, ../sass/_ihover.scss */
+.ih-item.circle.effect8.left_to_right a:hover .img-container .img {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 1012, ../sass/_ihover.scss */
+.ih-item.circle.effect8.left_to_right a:hover .info-container {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 1020, ../sass/_ihover.scss */
+.ih-item.circle.effect8.right_to_left .img-container .img {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 1027, ../sass/_ihover.scss */
+.ih-item.circle.effect8.right_to_left .info-container {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 1034, ../sass/_ihover.scss */
+.ih-item.circle.effect8.right_to_left a:hover .img-container .img {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 1041, ../sass/_ihover.scss */
+.ih-item.circle.effect8.right_to_left a:hover .info-container {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 1049, ../sass/_ihover.scss */
+.ih-item.circle.effect8.top_to_bottom .img-container .img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 1056, ../sass/_ihover.scss */
+.ih-item.circle.effect8.top_to_bottom .info-container {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 1063, ../sass/_ihover.scss */
+.ih-item.circle.effect8.top_to_bottom a:hover .img-container .img {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 1070, ../sass/_ihover.scss */
+.ih-item.circle.effect8.top_to_bottom a:hover .info-container {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 1078, ../sass/_ihover.scss */
+.ih-item.circle.effect8.bottom_to_top .img-container .img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 1085, ../sass/_ihover.scss */
+.ih-item.circle.effect8.bottom_to_top .info-container {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 1092, ../sass/_ihover.scss */
+.ih-item.circle.effect8.bottom_to_top a:hover .img-container .img {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 1099, ../sass/_ihover.scss */
+.ih-item.circle.effect8.bottom_to_top a:hover .info-container {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 1107, ../sass/_ihover.scss */
+.ih-item.circle.effect9 .img {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+
+/* line 1113, ../sass/_ihover.scss */
+.ih-item.circle.effect9.colored .info {
+  background: #1a4a72;
+}
+
+/* line 1116, ../sass/_ihover.scss */
+.ih-item.circle.effect9 .info {
+  background: #333333;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transition: all 0.35s ease 0.2s;
+  -moz-transition: all 0.35s ease 0.2s;
+  transition: all 0.35s ease 0.2s;
+}
+
+/* line 1130, ../sass/_ihover.scss */
+.ih-item.circle.effect9 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 1141, ../sass/_ihover.scss */
+.ih-item.circle.effect9 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 1149, ../sass/_ihover.scss */
+.ih-item.circle.effect9 a:hover .img {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 1158, ../sass/_ihover.scss */
+.ih-item.circle.effect9 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 1168, ../sass/_ihover.scss */
+.ih-item.circle.effect9.left_to_right .img {
+  -webkit-transform: translateX(0) rotate(0);
+  -moz-transform: translateX(0) rotate(0);
+  -ms-transform: translateX(0) rotate(0);
+  -o-transform: translateX(0) rotate(0);
+  transform: translateX(0) rotate(0);
+}
+
+/* line 1175, ../sass/_ihover.scss */
+.ih-item.circle.effect9.left_to_right a:hover .img {
+  -webkit-transform: translateX(100%) rotate(180deg);
+  -moz-transform: translateX(100%) rotate(180deg);
+  -ms-transform: translateX(100%) rotate(180deg);
+  -o-transform: translateX(100%) rotate(180deg);
+  transform: translateX(100%) rotate(180deg);
+}
+
+/* line 1183, ../sass/_ihover.scss */
+.ih-item.circle.effect9.right_to_left .img {
+  -webkit-transform: translateX(0) rotate(0);
+  -moz-transform: translateX(0) rotate(0);
+  -ms-transform: translateX(0) rotate(0);
+  -o-transform: translateX(0) rotate(0);
+  transform: translateX(0) rotate(0);
+}
+
+/* line 1190, ../sass/_ihover.scss */
+.ih-item.circle.effect9.right_to_left a:hover .img {
+  -webkit-transform: translateX(-100%) rotate(-180deg);
+  -moz-transform: translateX(-100%) rotate(-180deg);
+  -ms-transform: translateX(-100%) rotate(-180deg);
+  -o-transform: translateX(-100%) rotate(-180deg);
+  transform: translateX(-100%) rotate(-180deg);
+}
+
+/* line 1198, ../sass/_ihover.scss */
+.ih-item.circle.effect9.top_to_bottom .img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 1205, ../sass/_ihover.scss */
+.ih-item.circle.effect9.top_to_bottom a:hover .img {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 1213, ../sass/_ihover.scss */
+.ih-item.circle.effect9.bottom_to_top .img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 1220, ../sass/_ihover.scss */
+.ih-item.circle.effect9.bottom_to_top a:hover .img {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 1228, ../sass/_ihover.scss */
+.ih-item.circle.effect10 .img {
+  z-index: 11;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 1239, ../sass/_ihover.scss */
+.ih-item.circle.effect10.colored .info {
+  background: #1a4a72;
+}
+
+/* line 1242, ../sass/_ihover.scss */
+.ih-item.circle.effect10 .info {
+  background: #333333;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 1254, ../sass/_ihover.scss */
+.ih-item.circle.effect10 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 1262, ../sass/_ihover.scss */
+.ih-item.circle.effect10 .info p {
+  color: #bbb;
+  font-style: italic;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 1268, ../sass/_ihover.scss */
+.ih-item.circle.effect10 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 1278, ../sass/_ihover.scss */
+.ih-item.circle.effect10.top_to_bottom .info h3 {
+  margin: 0 30px;
+  padding: 25px 0 0 0;
+  height: 78px;
+}
+
+/* line 1283, ../sass/_ihover.scss */
+.ih-item.circle.effect10.top_to_bottom .info p {
+  margin: 0 30px;
+  padding: 5px;
+}
+
+/* line 1287, ../sass/_ihover.scss */
+.ih-item.circle.effect10.top_to_bottom a:hover .img {
+  -webkit-transform: translateY(50px) scale(0.5);
+  -moz-transform: translateY(50px) scale(0.5);
+  -ms-transform: translateY(50px) scale(0.5);
+  -o-transform: translateY(50px) scale(0.5);
+  transform: translateY(50px) scale(0.5);
+}
+
+/* line 1295, ../sass/_ihover.scss */
+.ih-item.circle.effect10.bottom_to_top .info h3 {
+  margin: 95px 30px 0;
+  padding: 25px 0 0 0;
+  height: 78px;
+}
+
+/* line 1300, ../sass/_ihover.scss */
+.ih-item.circle.effect10.bottom_to_top .info p {
+  margin: 0 30px;
+  padding: 5px;
+}
+
+/* line 1304, ../sass/_ihover.scss */
+.ih-item.circle.effect10.bottom_to_top a:hover .img {
+  -webkit-transform: translateY(-50px) scale(0.5);
+  -moz-transform: translateY(-50px) scale(0.5);
+  -ms-transform: translateY(-50px) scale(0.5);
+  -o-transform: translateY(-50px) scale(0.5);
+  transform: translateY(-50px) scale(0.5);
+}
+
+/* line 1312, ../sass/_ihover.scss */
+.ih-item.circle.effect11 {
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+}
+
+/* line 1317, ../sass/_ihover.scss */
+.ih-item.circle.effect11 .img {
+  opacity: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 1328, ../sass/_ihover.scss */
+.ih-item.circle.effect11.colored .info {
+  background: #1a4a72;
+}
+
+/* line 1331, ../sass/_ihover.scss */
+.ih-item.circle.effect11 .info {
+  background: #333333;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.35s ease 0.35s;
+  -moz-transition: all 0.35s ease 0.35s;
+  transition: all 0.35s ease 0.35s;
+}
+
+/* line 1339, ../sass/_ihover.scss */
+.ih-item.circle.effect11 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 1350, ../sass/_ihover.scss */
+.ih-item.circle.effect11 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 1358, ../sass/_ihover.scss */
+.ih-item.circle.effect11 a:hover .img {
+  opacity: 0;
+}
+
+/* line 1361, ../sass/_ihover.scss */
+.ih-item.circle.effect11 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 1366, ../sass/_ihover.scss */
+.ih-item.circle.effect11.left_to_right .img {
+  -webkit-transform: translateZ(0) rotateY(0);
+  -moz-transform: translateZ(0) rotateY(0);
+  -ms-transform: translateZ(0) rotateY(0);
+  -o-transform: translateZ(0) rotateY(0);
+  transform: translateZ(0) rotateY(0);
+}
+
+/* line 1373, ../sass/_ihover.scss */
+.ih-item.circle.effect11.left_to_right .info {
+  -webkit-transform: translateZ(-1000px) rotateY(-90deg);
+  -moz-transform: translateZ(-1000px) rotateY(-90deg);
+  -ms-transform: translateZ(-1000px) rotateY(-90deg);
+  -o-transform: translateZ(-1000px) rotateY(-90deg);
+  transform: translateZ(-1000px) rotateY(-90deg);
+}
+
+/* line 1380, ../sass/_ihover.scss */
+.ih-item.circle.effect11.left_to_right a:hover .img {
+  -webkit-transform: translateZ(-1000px) rotateY(90deg);
+  -moz-transform: translateZ(-1000px) rotateY(90deg);
+  -ms-transform: translateZ(-1000px) rotateY(90deg);
+  -o-transform: translateZ(-1000px) rotateY(90deg);
+  transform: translateZ(-1000px) rotateY(90deg);
+}
+
+/* line 1387, ../sass/_ihover.scss */
+.ih-item.circle.effect11.left_to_right a:hover .info {
+  -webkit-transform: translateZ(0) rotateY(0);
+  -moz-transform: translateZ(0) rotateY(0);
+  -ms-transform: translateZ(0) rotateY(0);
+  -o-transform: translateZ(0) rotateY(0);
+  transform: translateZ(0) rotateY(0);
+}
+
+/* line 1395, ../sass/_ihover.scss */
+.ih-item.circle.effect11.right_to_left .img {
+  -webkit-transform: translateZ(0) rotateY(0);
+  -moz-transform: translateZ(0) rotateY(0);
+  -ms-transform: translateZ(0) rotateY(0);
+  -o-transform: translateZ(0) rotateY(0);
+  transform: translateZ(0) rotateY(0);
+}
+
+/* line 1402, ../sass/_ihover.scss */
+.ih-item.circle.effect11.right_to_left .info {
+  -webkit-transform: translateZ(-1000px) rotateY(90deg);
+  -moz-transform: translateZ(-1000px) rotateY(90deg);
+  -ms-transform: translateZ(-1000px) rotateY(90deg);
+  -o-transform: translateZ(-1000px) rotateY(90deg);
+  transform: translateZ(-1000px) rotateY(90deg);
+}
+
+/* line 1409, ../sass/_ihover.scss */
+.ih-item.circle.effect11.right_to_left a:hover .img {
+  -webkit-transform: translateZ(-1000px) rotateY(-90deg);
+  -moz-transform: translateZ(-1000px) rotateY(-90deg);
+  -ms-transform: translateZ(-1000px) rotateY(-90deg);
+  -o-transform: translateZ(-1000px) rotateY(-90deg);
+  transform: translateZ(-1000px) rotateY(-90deg);
+}
+
+/* line 1416, ../sass/_ihover.scss */
+.ih-item.circle.effect11.right_to_left a:hover .info {
+  -webkit-transform: translateZ(0) rotateY(0);
+  -moz-transform: translateZ(0) rotateY(0);
+  -ms-transform: translateZ(0) rotateY(0);
+  -o-transform: translateZ(0) rotateY(0);
+  transform: translateZ(0) rotateY(0);
+}
+
+/* line 1424, ../sass/_ihover.scss */
+.ih-item.circle.effect11.top_to_bottom .img {
+  -webkit-transform: translateZ(0) rotateX(0);
+  -moz-transform: translateZ(0) rotateX(0);
+  -ms-transform: translateZ(0) rotateX(0);
+  -o-transform: translateZ(0) rotateX(0);
+  transform: translateZ(0) rotateX(0);
+}
+
+/* line 1431, ../sass/_ihover.scss */
+.ih-item.circle.effect11.top_to_bottom .info {
+  -webkit-transform: translateZ(-1000px) rotateX(90deg);
+  -moz-transform: translateZ(-1000px) rotateX(90deg);
+  -ms-transform: translateZ(-1000px) rotateX(90deg);
+  -o-transform: translateZ(-1000px) rotateX(90deg);
+  transform: translateZ(-1000px) rotateX(90deg);
+}
+
+/* line 1438, ../sass/_ihover.scss */
+.ih-item.circle.effect11.top_to_bottom a:hover .img {
+  -webkit-transform: translateZ(-1000px) rotateX(-90deg);
+  -moz-transform: translateZ(-1000px) rotateX(-90deg);
+  -ms-transform: translateZ(-1000px) rotateX(-90deg);
+  -o-transform: translateZ(-1000px) rotateX(-90deg);
+  transform: translateZ(-1000px) rotateX(-90deg);
+}
+
+/* line 1445, ../sass/_ihover.scss */
+.ih-item.circle.effect11.top_to_bottom a:hover .info {
+  -webkit-transform: translateZ(0) rotateX(0);
+  -moz-transform: translateZ(0) rotateX(0);
+  -ms-transform: translateZ(0) rotateX(0);
+  -o-transform: translateZ(0) rotateX(0);
+  transform: translateZ(0) rotateX(0);
+}
+
+/* line 1453, ../sass/_ihover.scss */
+.ih-item.circle.effect11.bottom_to_top .img {
+  -webkit-transform: translateZ(0) rotateX(0);
+  -moz-transform: translateZ(0) rotateX(0);
+  -ms-transform: translateZ(0) rotateX(0);
+  -o-transform: translateZ(0) rotateX(0);
+  transform: translateZ(0) rotateX(0);
+}
+
+/* line 1460, ../sass/_ihover.scss */
+.ih-item.circle.effect11.bottom_to_top .info {
+  -webkit-transform: translateZ(-1000px) rotateX(-90deg);
+  -moz-transform: translateZ(-1000px) rotateX(-90deg);
+  -ms-transform: translateZ(-1000px) rotateX(-90deg);
+  -o-transform: translateZ(-1000px) rotateX(-90deg);
+  transform: translateZ(-1000px) rotateX(-90deg);
+}
+
+/* line 1467, ../sass/_ihover.scss */
+.ih-item.circle.effect11.bottom_to_top a:hover .img {
+  -webkit-transform: translateZ(-1000px) rotateX(90deg);
+  -moz-transform: translateZ(-1000px) rotateX(90deg);
+  -ms-transform: translateZ(-1000px) rotateX(90deg);
+  -o-transform: translateZ(-1000px) rotateX(90deg);
+  transform: translateZ(-1000px) rotateX(90deg);
+}
+
+/* line 1474, ../sass/_ihover.scss */
+.ih-item.circle.effect11.bottom_to_top a:hover .info {
+  -webkit-transform: translateZ(0) rotateX(0);
+  -moz-transform: translateZ(0) rotateX(0);
+  -ms-transform: translateZ(0) rotateX(0);
+  -o-transform: translateZ(0) rotateX(0);
+  transform: translateZ(0) rotateX(0);
+}
+
+/* line 1482, ../sass/_ihover.scss */
+.ih-item.circle.effect12 .img {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 1488, ../sass/_ihover.scss */
+.ih-item.circle.effect12.colored .info {
+  background: #1a4a72;
+}
+
+/* line 1491, ../sass/_ihover.scss */
+.ih-item.circle.effect12 .info {
+  background: #333333;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 1505, ../sass/_ihover.scss */
+.ih-item.circle.effect12 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 1516, ../sass/_ihover.scss */
+.ih-item.circle.effect12 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 1524, ../sass/_ihover.scss */
+.ih-item.circle.effect12 a:hover .img {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* line 1528, ../sass/_ihover.scss */
+.ih-item.circle.effect12 a:hover .info {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 1533, ../sass/_ihover.scss */
+.ih-item.circle.effect12.left_to_right .img {
+  -webkit-transform: translateX(0) rotate(0);
+  -moz-transform: translateX(0) rotate(0);
+  -ms-transform: translateX(0) rotate(0);
+  -o-transform: translateX(0) rotate(0);
+  transform: translateX(0) rotate(0);
+}
+
+/* line 1540, ../sass/_ihover.scss */
+.ih-item.circle.effect12.left_to_right .info {
+  -webkit-transform: translateX(100%) rotate(180deg);
+  -moz-transform: translateX(100%) rotate(180deg);
+  -ms-transform: translateX(100%) rotate(180deg);
+  -o-transform: translateX(100%) rotate(180deg);
+  transform: translateX(100%) rotate(180deg);
+}
+
+/* line 1547, ../sass/_ihover.scss */
+.ih-item.circle.effect12.left_to_right a:hover .img {
+  -webkit-transform: translateX(100%) rotate(180deg);
+  -moz-transform: translateX(100%) rotate(180deg);
+  -ms-transform: translateX(100%) rotate(180deg);
+  -o-transform: translateX(100%) rotate(180deg);
+  transform: translateX(100%) rotate(180deg);
+}
+
+/* line 1554, ../sass/_ihover.scss */
+.ih-item.circle.effect12.left_to_right a:hover .info {
+  -webkit-transform: translateX(0) rotate(0);
+  -moz-transform: translateX(0) rotate(0);
+  -ms-transform: translateX(0) rotate(0);
+  -o-transform: translateX(0) rotate(0);
+  transform: translateX(0) rotate(0);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* line 1565, ../sass/_ihover.scss */
+.ih-item.circle.effect12.right_to_left .img {
+  -webkit-transform: translateX(0) rotate(0);
+  -moz-transform: translateX(0) rotate(0);
+  -ms-transform: translateX(0) rotate(0);
+  -o-transform: translateX(0) rotate(0);
+  transform: translateX(0) rotate(0);
+}
+
+/* line 1572, ../sass/_ihover.scss */
+.ih-item.circle.effect12.right_to_left .info {
+  -webkit-transform: translateX(-100%) rotate(-180deg);
+  -moz-transform: translateX(-100%) rotate(-180deg);
+  -ms-transform: translateX(-100%) rotate(-180deg);
+  -o-transform: translateX(-100%) rotate(-180deg);
+  transform: translateX(-100%) rotate(-180deg);
+}
+
+/* line 1579, ../sass/_ihover.scss */
+.ih-item.circle.effect12.right_to_left a:hover .img {
+  -webkit-transform: translateX(-100%) rotate(-180deg);
+  -moz-transform: translateX(-100%) rotate(-180deg);
+  -ms-transform: translateX(-100%) rotate(-180deg);
+  -o-transform: translateX(-100%) rotate(-180deg);
+  transform: translateX(-100%) rotate(-180deg);
+}
+
+/* line 1586, ../sass/_ihover.scss */
+.ih-item.circle.effect12.right_to_left a:hover .info {
+  -webkit-transform: translateX(0) rotate(0);
+  -moz-transform: translateX(0) rotate(0);
+  -ms-transform: translateX(0) rotate(0);
+  -o-transform: translateX(0) rotate(0);
+  transform: translateX(0) rotate(0);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* line 1597, ../sass/_ihover.scss */
+.ih-item.circle.effect12.top_to_bottom .img {
+  -webkit-transform: translateY(0) rotate(0);
+  -moz-transform: translateY(0) rotate(0);
+  -ms-transform: translateY(0) rotate(0);
+  -o-transform: translateY(0) rotate(0);
+  transform: translateY(0) rotate(0);
+}
+
+/* line 1604, ../sass/_ihover.scss */
+.ih-item.circle.effect12.top_to_bottom .info {
+  -webkit-transform: translateY(-100%) rotate(-180deg);
+  -moz-transform: translateY(-100%) rotate(-180deg);
+  -ms-transform: translateY(-100%) rotate(-180deg);
+  -o-transform: translateY(-100%) rotate(-180deg);
+  transform: translateY(-100%) rotate(-180deg);
+}
+
+/* line 1611, ../sass/_ihover.scss */
+.ih-item.circle.effect12.top_to_bottom a:hover .img {
+  -webkit-transform: translateY(-100%) rotate(-180deg);
+  -moz-transform: translateY(-100%) rotate(-180deg);
+  -ms-transform: translateY(-100%) rotate(-180deg);
+  -o-transform: translateY(-100%) rotate(-180deg);
+  transform: translateY(-100%) rotate(-180deg);
+}
+
+/* line 1618, ../sass/_ihover.scss */
+.ih-item.circle.effect12.top_to_bottom a:hover .info {
+  -webkit-transform: translateY(0) rotate(0);
+  -moz-transform: translateY(0) rotate(0);
+  -ms-transform: translateY(0) rotate(0);
+  -o-transform: translateY(0) rotate(0);
+  transform: translateY(0) rotate(0);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* line 1629, ../sass/_ihover.scss */
+.ih-item.circle.effect12.bottom_to_top .img {
+  -webkit-transform: translateY(0) rotate(0);
+  -moz-transform: translateY(0) rotate(0);
+  -ms-transform: translateY(0) rotate(0);
+  -o-transform: translateY(0) rotate(0);
+  transform: translateY(0) rotate(0);
+}
+
+/* line 1636, ../sass/_ihover.scss */
+.ih-item.circle.effect12.bottom_to_top .info {
+  -webkit-transform: translateY(100%) rotate(180deg);
+  -moz-transform: translateY(100%) rotate(180deg);
+  -ms-transform: translateY(100%) rotate(180deg);
+  -o-transform: translateY(100%) rotate(180deg);
+  transform: translateY(100%) rotate(180deg);
+}
+
+/* line 1643, ../sass/_ihover.scss */
+.ih-item.circle.effect12.bottom_to_top a:hover .img {
+  -webkit-transform: translateY(100%) rotate(180deg);
+  -moz-transform: translateY(100%) rotate(180deg);
+  -ms-transform: translateY(100%) rotate(180deg);
+  -o-transform: translateY(100%) rotate(180deg);
+  transform: translateY(100%) rotate(180deg);
+}
+
+/* line 1650, ../sass/_ihover.scss */
+.ih-item.circle.effect12.bottom_to_top a:hover .info {
+  -webkit-transform: translateY(0) rotate(0);
+  -moz-transform: translateY(0) rotate(0);
+  -ms-transform: translateY(0) rotate(0);
+  -o-transform: translateY(0) rotate(0);
+  transform: translateY(0) rotate(0);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* line 1661, ../sass/_ihover.scss */
+.ih-item.circle.effect13.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+
+/* line 1665, ../sass/_ihover.scss */
+.ih-item.circle.effect13 .info {
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 1674, ../sass/_ihover.scss */
+.ih-item.circle.effect13 .info h3 {
+  visibility: hidden;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 1689, ../sass/_ihover.scss */
+.ih-item.circle.effect13 .info p {
+  visibility: hidden;
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 1701, ../sass/_ihover.scss */
+.ih-item.circle.effect13 a:hover .info {
+  opacity: 1;
+}
+
+/* line 1704, ../sass/_ihover.scss */
+.ih-item.circle.effect13 a:hover h3 {
+  visibility: visible;
+}
+
+/* line 1707, ../sass/_ihover.scss */
+.ih-item.circle.effect13 a:hover p {
+  visibility: visible;
+}
+
+/* line 1711, ../sass/_ihover.scss */
+.ih-item.circle.effect13.from_left_and_right .info h3 {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 1718, ../sass/_ihover.scss */
+.ih-item.circle.effect13.from_left_and_right .info p {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 1725, ../sass/_ihover.scss */
+.ih-item.circle.effect13.from_left_and_right a:hover h3 {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 1732, ../sass/_ihover.scss */
+.ih-item.circle.effect13.from_left_and_right a:hover p {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 1740, ../sass/_ihover.scss */
+.ih-item.circle.effect13.top_to_bottom .info h3 {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 1747, ../sass/_ihover.scss */
+.ih-item.circle.effect13.top_to_bottom .info p {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 1754, ../sass/_ihover.scss */
+.ih-item.circle.effect13.top_to_bottom a:hover h3 {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 1761, ../sass/_ihover.scss */
+.ih-item.circle.effect13.top_to_bottom a:hover p {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 1769, ../sass/_ihover.scss */
+.ih-item.circle.effect13.bottom_to_top .info h3 {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 1776, ../sass/_ihover.scss */
+.ih-item.circle.effect13.bottom_to_top .info p {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 1783, ../sass/_ihover.scss */
+.ih-item.circle.effect13.bottom_to_top a:hover h3 {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 1790, ../sass/_ihover.scss */
+.ih-item.circle.effect13.bottom_to_top a:hover p {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 1798, ../sass/_ihover.scss */
+.ih-item.circle.effect14 {
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+}
+
+/* line 1803, ../sass/_ihover.scss */
+.ih-item.circle.effect14 .img {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+/* line 1810, ../sass/_ihover.scss */
+.ih-item.circle.effect14.colored .info {
+  background: #1a4a72;
+}
+
+/* line 1813, ../sass/_ihover.scss */
+.ih-item.circle.effect14 .info {
+  background: #333333;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.35s ease-in-out 0.3s;
+  -moz-transition: all 0.35s ease-in-out 0.3s;
+  transition: all 0.35s ease-in-out 0.3s;
+}
+
+/* line 1821, ../sass/_ihover.scss */
+.ih-item.circle.effect14 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 1832, ../sass/_ihover.scss */
+.ih-item.circle.effect14 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 1840, ../sass/_ihover.scss */
+.ih-item.circle.effect14 a:hover .img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* line 1844, ../sass/_ihover.scss */
+.ih-item.circle.effect14 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 1849, ../sass/_ihover.scss */
+.ih-item.circle.effect14.left_to_right .img {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+/* line 1861, ../sass/_ihover.scss */
+.ih-item.circle.effect14.left_to_right .info {
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  -o-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+/* line 1873, ../sass/_ihover.scss */
+.ih-item.circle.effect14.left_to_right a:hover .img {
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  -o-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+
+/* line 1880, ../sass/_ihover.scss */
+.ih-item.circle.effect14.left_to_right a:hover .info {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+/* line 1888, ../sass/_ihover.scss */
+.ih-item.circle.effect14.right_to_left .img {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+/* line 1900, ../sass/_ihover.scss */
+.ih-item.circle.effect14.right_to_left .info {
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  -o-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+/* line 1912, ../sass/_ihover.scss */
+.ih-item.circle.effect14.right_to_left a:hover .img {
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  -o-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+/* line 1919, ../sass/_ihover.scss */
+.ih-item.circle.effect14.right_to_left a:hover .info {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+/* line 1927, ../sass/_ihover.scss */
+.ih-item.circle.effect14.top_to_bottom .img {
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+/* line 1939, ../sass/_ihover.scss */
+.ih-item.circle.effect14.top_to_bottom .info {
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+/* line 1951, ../sass/_ihover.scss */
+.ih-item.circle.effect14.top_to_bottom a:hover .img {
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+}
+
+/* line 1958, ../sass/_ihover.scss */
+.ih-item.circle.effect14.top_to_bottom a:hover .info {
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+}
+
+/* line 1966, ../sass/_ihover.scss */
+.ih-item.circle.effect14.bottom_to_top .img {
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+/* line 1978, ../sass/_ihover.scss */
+.ih-item.circle.effect14.bottom_to_top .info {
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+/* line 1990, ../sass/_ihover.scss */
+.ih-item.circle.effect14.bottom_to_top a:hover .img {
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+/* line 1997, ../sass/_ihover.scss */
+.ih-item.circle.effect14.bottom_to_top a:hover .info {
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+}
+
+/* line 2005, ../sass/_ihover.scss */
+.ih-item.circle.effect15 .img {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1) rotate(0);
+  -moz-transform: scale(1) rotate(0);
+  -ms-transform: scale(1) rotate(0);
+  -o-transform: scale(1) rotate(0);
+  transform: scale(1) rotate(0);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2017, ../sass/_ihover.scss */
+.ih-item.circle.effect15.colored .info {
+  background: #1a4a72;
+}
+
+/* line 2020, ../sass/_ihover.scss */
+.ih-item.circle.effect15 .info {
+  background: #333333;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0.5) rotate(-720deg);
+  -moz-transform: scale(0.5) rotate(-720deg);
+  -ms-transform: scale(0.5) rotate(-720deg);
+  -o-transform: scale(0.5) rotate(-720deg);
+  transform: scale(0.5) rotate(-720deg);
+  -webkit-transition: all 0.35s ease-in-out 0.3s;
+  -moz-transition: all 0.35s ease-in-out 0.3s;
+  transition: all 0.35s ease-in-out 0.3s;
+}
+
+/* line 2033, ../sass/_ihover.scss */
+.ih-item.circle.effect15 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 2044, ../sass/_ihover.scss */
+.ih-item.circle.effect15 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 2052, ../sass/_ihover.scss */
+.ih-item.circle.effect15 a:hover .img {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0.5) rotate(720deg);
+  -moz-transform: scale(0.5) rotate(720deg);
+  -ms-transform: scale(0.5) rotate(720deg);
+  -o-transform: scale(0.5) rotate(720deg);
+  transform: scale(0.5) rotate(720deg);
+}
+
+/* line 2061, ../sass/_ihover.scss */
+.ih-item.circle.effect15 a:hover .info {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1) rotate(0);
+  -moz-transform: scale(1) rotate(0);
+  -ms-transform: scale(1) rotate(0);
+  -o-transform: scale(1) rotate(0);
+  transform: scale(1) rotate(0);
+}
+
+/* line 2071, ../sass/_ihover.scss */
+.ih-item.circle.effect16 .img {
+  z-index: 11;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2077, ../sass/_ihover.scss */
+.ih-item.circle.effect16.colored .info {
+  background: #1a4a72;
+}
+
+/* line 2080, ../sass/_ihover.scss */
+.ih-item.circle.effect16 .info {
+  background: #333333;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2086, ../sass/_ihover.scss */
+.ih-item.circle.effect16 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 2097, ../sass/_ihover.scss */
+.ih-item.circle.effect16 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2109, ../sass/_ihover.scss */
+.ih-item.circle.effect16.left_to_right .img {
+  -webkit-transform-origin: 95% 40%;
+  -moz-transform-origin: 95% 40%;
+  -ms-transform-origin: 95% 40%;
+  -o-transform-origin: 95% 40%;
+  transform-origin: 95% 40%;
+}
+
+/* line 2116, ../sass/_ihover.scss */
+.ih-item.circle.effect16.left_to_right .img:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border-radius: 50%;
+  top: 40%;
+  left: 95%;
+  margin: -4px 0 0 -4px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+/* line 2128, ../sass/_ihover.scss */
+.ih-item.circle.effect16.left_to_right a:hover .img {
+  -webkit-transform: rotate(-120deg);
+  -moz-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+}
+
+/* line 2136, ../sass/_ihover.scss */
+.ih-item.circle.effect16.right_to_left .img {
+  -webkit-transform-origin: 5% 40%;
+  -moz-transform-origin: 5% 40%;
+  -ms-transform-origin: 5% 40%;
+  -o-transform-origin: 5% 40%;
+  transform-origin: 5% 40%;
+}
+
+/* line 2143, ../sass/_ihover.scss */
+.ih-item.circle.effect16.right_to_left .img:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border-radius: 50%;
+  top: 40%;
+  left: 5%;
+  margin: -4px 0 0 -4px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+/* line 2155, ../sass/_ihover.scss */
+.ih-item.circle.effect16.right_to_left a:hover .img {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+/* line 2163, ../sass/_ihover.scss */
+.ih-item.circle.effect17 .info {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2174, ../sass/_ihover.scss */
+.ih-item.circle.effect17 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 2185, ../sass/_ihover.scss */
+.ih-item.circle.effect17 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2197, ../sass/_ihover.scss */
+.ih-item.circle.effect17 a:hover .img:before {
+  box-shadow: inset 0 0 0 110px #333333, inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 110px rgba(0, 0, 0, 0.6), inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* line 2201, ../sass/_ihover.scss */
+.ih-item.circle.effect17 a:hover .info {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 2209, ../sass/_ihover.scss */
+.ih-item.circle.effect17 a:hover .info p {
+  opacity: 1;
+}
+
+/* line 2212, ../sass/_ihover.scss */
+.ih-item.circle.effect17.colored a:hover .img:before {
+  box-shadow: inset 0 0 0 110px #1a4a72, inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 110px rgba(26, 74, 114, 0.6), inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* line 2217, ../sass/_ihover.scss */
+.ih-item.circle.effect18 {
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+}
+
+/* line 2222, ../sass/_ihover.scss */
+.ih-item.circle.effect18 .img {
+  z-index: 11;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 2228, ../sass/_ihover.scss */
+.ih-item.circle.effect18.colored .info .info-back {
+  background: #1a4a72;
+}
+
+/* line 2231, ../sass/_ihover.scss */
+.ih-item.circle.effect18 .info {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 2238, ../sass/_ihover.scss */
+.ih-item.circle.effect18 .info .info-back {
+  opacity: 1;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: #333333;
+}
+
+/* line 2245, ../sass/_ihover.scss */
+.ih-item.circle.effect18 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 2256, ../sass/_ihover.scss */
+.ih-item.circle.effect18 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 2265, ../sass/_ihover.scss */
+.ih-item.circle.effect18.bottom_to_top .img {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+/* line 2272, ../sass/_ihover.scss */
+.ih-item.circle.effect18.bottom_to_top a:hover .img {
+  -webkit-transform: rotate3d(1, 0, 0, 180deg);
+  -moz-transform: rotate3d(1, 0, 0, 180deg);
+  -ms-transform: rotate3d(1, 0, 0, 180deg);
+  -o-transform: rotate3d(1, 0, 0, 180deg);
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+
+/* line 2280, ../sass/_ihover.scss */
+.ih-item.circle.effect18.top_to_bottom .img {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+/* line 2287, ../sass/_ihover.scss */
+.ih-item.circle.effect18.top_to_bottom a:hover .img {
+  -webkit-transform: rotate3d(1, 0, 0, -180deg);
+  -moz-transform: rotate3d(1, 0, 0, -180deg);
+  -ms-transform: rotate3d(1, 0, 0, -180deg);
+  -o-transform: rotate3d(1, 0, 0, -180deg);
+  transform: rotate3d(1, 0, 0, -180deg);
+}
+
+/* line 2295, ../sass/_ihover.scss */
+.ih-item.circle.effect18.left_to_right .img {
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+/* line 2302, ../sass/_ihover.scss */
+.ih-item.circle.effect18.left_to_right a:hover .img {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+/* line 2310, ../sass/_ihover.scss */
+.ih-item.circle.effect18.right_to_left .img {
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+/* line 2317, ../sass/_ihover.scss */
+.ih-item.circle.effect18.right_to_left a:hover .img {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg);
+  -moz-transform: rotate3d(0, 1, 0, -180deg);
+  -ms-transform: rotate3d(0, 1, 0, -180deg);
+  -o-transform: rotate3d(0, 1, 0, -180deg);
+  transform: rotate3d(0, 1, 0, -180deg);
+}
+
+/* line 2325, ../sass/_ihover.scss */
+.ih-item.circle.effect19.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+
+/* line 2329, ../sass/_ihover.scss */
+.ih-item.circle.effect19 .info {
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2342, ../sass/_ihover.scss */
+.ih-item.circle.effect19 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 45px 0 0 0;
+  height: 140px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 2352, ../sass/_ihover.scss */
+.ih-item.circle.effect19 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 2360, ../sass/_ihover.scss */
+.ih-item.circle.effect19 a:hover .info {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 2369, ../sass/_ihover.scss */
+.ih-item.circle.effect20 {
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+}
+
+/* line 2374, ../sass/_ihover.scss */
+.ih-item.circle.effect20 .img {
+  -webkit-transition: all 0.35s linear;
+  -moz-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+/* line 2384, ../sass/_ihover.scss */
+.ih-item.circle.effect20.colored .info .info-back {
+  background: #1a4a72;
+}
+
+/* line 2387, ../sass/_ihover.scss */
+.ih-item.circle.effect20 .info {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 2394, ../sass/_ihover.scss */
+.ih-item.circle.effect20 .info .info-back {
+  opacity: 1;
+  visibility: hidden;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  -webkit-transition: all 0.35s linear;
+  -moz-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 2412, ../sass/_ihover.scss */
+.ih-item.circle.effect20 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 2423, ../sass/_ihover.scss */
+.ih-item.circle.effect20 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 2431, ../sass/_ihover.scss */
+.ih-item.circle.effect20 a:hover .img {
+  opacity: 0;
+}
+
+/* line 2434, ../sass/_ihover.scss */
+.ih-item.circle.effect20 a:hover .info .info-back {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 2439, ../sass/_ihover.scss */
+.ih-item.circle.effect20.top_to_bottom .info .info-back {
+  -webkit-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+  -moz-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+  -ms-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+  -o-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+  transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+}
+
+/* line 2446, ../sass/_ihover.scss */
+.ih-item.circle.effect20.top_to_bottom a:hover .img {
+  -webkit-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+  -moz-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+  -ms-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+  -o-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+  transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+}
+
+/* line 2453, ../sass/_ihover.scss */
+.ih-item.circle.effect20.top_to_bottom a:hover .info .info-back {
+  -webkit-transform: rotate3d(1, 0, 0, 0deg);
+  -moz-transform: rotate3d(1, 0, 0, 0deg);
+  -ms-transform: rotate3d(1, 0, 0, 0deg);
+  -o-transform: rotate3d(1, 0, 0, 0deg);
+  transform: rotate3d(1, 0, 0, 0deg);
+}
+
+/* line 2461, ../sass/_ihover.scss */
+.ih-item.circle.effect20.bottom_to_top .info .info-back {
+  -webkit-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+  -moz-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+  -ms-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+  -o-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+  transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+}
+
+/* line 2468, ../sass/_ihover.scss */
+.ih-item.circle.effect20.bottom_to_top a:hover .img {
+  -webkit-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+  -moz-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+  -ms-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+  -o-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+  transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+}
+
+/* line 2475, ../sass/_ihover.scss */
+.ih-item.circle.effect20.bottom_to_top a:hover .info .info-back {
+  -webkit-transform: rotate3d(1, 0, 0, 0deg);
+  -moz-transform: rotate3d(1, 0, 0, 0deg);
+  -ms-transform: rotate3d(1, 0, 0, 0deg);
+  -o-transform: rotate3d(1, 0, 0, 0deg);
+  transform: rotate3d(1, 0, 0, 0deg);
+}
+
+/* line 2483, ../sass/_ihover.scss */
+.ih-item.square.effect1 {
+  overflow: hidden;
+}
+
+/* line 2486, ../sass/_ihover.scss */
+.ih-item.square.effect1.colored .info {
+  background: #1a4a72;
+}
+
+/* line 2489, ../sass/_ihover.scss */
+.ih-item.square.effect1 .img {
+  z-index: 11;
+  position: absolute;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 2501, ../sass/_ihover.scss */
+.ih-item.square.effect1 .info {
+  background: #333333;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2514, ../sass/_ihover.scss */
+.ih-item.square.effect1 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 2524, ../sass/_ihover.scss */
+.ih-item.square.effect1.left_and_right .info h3 {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  margin: 0;
+}
+
+/* line 2534, ../sass/_ihover.scss */
+.ih-item.square.effect1.left_and_right .info p {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  margin: 0;
+  font-style: italic;
+  font-size: 12px;
+  color: #bbb;
+}
+
+/* line 2543, ../sass/_ihover.scss */
+.ih-item.square.effect1.left_and_right a:hover .img {
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+/* line 2551, ../sass/_ihover.scss */
+.ih-item.square.effect1.top_to_bottom .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px 10px 0 4px;
+  margin: 10px 0 0 0;
+}
+
+/* line 2559, ../sass/_ihover.scss */
+.ih-item.square.effect1.top_to_bottom .info p {
+  font-style: italic;
+  font-size: 12px;
+  color: #bbb;
+  padding: 5px;
+  text-align: center;
+}
+
+/* line 2566, ../sass/_ihover.scss */
+.ih-item.square.effect1.top_to_bottom a:hover .img {
+  -webkit-transform: translateY(30px) scale(0.6);
+  -moz-transform: translateY(30px) scale(0.6);
+  -ms-transform: translateY(30px) scale(0.6);
+  -o-transform: translateY(30px) scale(0.6);
+  transform: translateY(30px) scale(0.6);
+}
+
+/* line 2574, ../sass/_ihover.scss */
+.ih-item.square.effect1.bottom_to_top .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px 10px 0 4px;
+  margin: 134px 0 0 0;
+}
+
+/* line 2582, ../sass/_ihover.scss */
+.ih-item.square.effect1.bottom_to_top .info p {
+  font-style: italic;
+  font-size: 12px;
+  color: #bbb;
+  padding: 5px;
+  text-align: center;
+}
+
+/* line 2589, ../sass/_ihover.scss */
+.ih-item.square.effect1.bottom_to_top a:hover .img {
+  -webkit-transform: translateY(-30px) scale(0.6);
+  -moz-transform: translateY(-30px) scale(0.6);
+  -ms-transform: translateY(-30px) scale(0.6);
+  -o-transform: translateY(-30px) scale(0.6);
+  transform: translateY(-30px) scale(0.6);
+}
+
+/* line 2597, ../sass/_ihover.scss */
+.ih-item.square.effect2 {
+  overflow: hidden;
+}
+
+/* line 2600, ../sass/_ihover.scss */
+.ih-item.square.effect2.colored .info {
+  background: #1a4a72;
+}
+
+/* line 2603, ../sass/_ihover.scss */
+.ih-item.square.effect2.colored .info h3 {
+  background: rgba(12, 34, 52, 0.6);
+}
+
+/* line 2606, ../sass/_ihover.scss */
+.ih-item.square.effect2 .img {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: rotate(0deg) scale(1);
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+}
+
+/* line 2617, ../sass/_ihover.scss */
+.ih-item.square.effect2 .info {
+  background: #333333;
+  visibility: hidden;
+  -webkit-transition: all 0.35s 0.3s ease-in-out;
+  -moz-transition: all 0.35s 0.3s ease-in-out;
+  transition: all 0.35s 0.3s ease-in-out;
+}
+
+/* line 2624, ../sass/_ihover.scss */
+.ih-item.square.effect2 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 30px 0 0 0;
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.35s 0.6s ease-in-out;
+  -moz-transition: all 0.35s 0.6s ease-in-out;
+  transition: all 0.35s 0.6s ease-in-out;
+}
+
+/* line 2641, ../sass/_ihover.scss */
+.ih-item.square.effect2 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.35s 0.5s linear;
+  -moz-transition: all 0.35s 0.5s linear;
+  transition: all 0.35s 0.5s linear;
+}
+
+/* line 2657, ../sass/_ihover.scss */
+.ih-item.square.effect2 a:hover .img {
+  -webkit-transform: rotate(720deg) scale(0);
+  -moz-transform: rotate(720deg) scale(0);
+  -ms-transform: rotate(720deg) scale(0);
+  -o-transform: rotate(720deg) scale(0);
+  transform: rotate(720deg) scale(0);
+  opacity: 0;
+}
+
+/* line 2665, ../sass/_ihover.scss */
+.ih-item.square.effect2 a:hover .info {
+  visibility: visible;
+}
+
+/* line 2668, ../sass/_ihover.scss */
+.ih-item.square.effect2 a:hover .info h3,
+.ih-item.square.effect2 a:hover .info p {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 2677, ../sass/_ihover.scss */
+.ih-item.square.effect3 {
+  overflow: hidden;
+}
+
+/* line 2680, ../sass/_ihover.scss */
+.ih-item.square.effect3.colored .info {
+  background: #1a4a72;
+}
+
+/* line 2683, ../sass/_ihover.scss */
+.ih-item.square.effect3 .img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2693, ../sass/_ihover.scss */
+.ih-item.square.effect3 .info {
+  height: 65px;
+  background: #333333;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2701, ../sass/_ihover.scss */
+.ih-item.square.effect3 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px 10px 0 4px;
+  margin: 4px 0 0 0;
+}
+
+/* line 2709, ../sass/_ihover.scss */
+.ih-item.square.effect3 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 5px;
+  text-align: center;
+}
+
+/* line 2717, ../sass/_ihover.scss */
+.ih-item.square.effect3 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2722, ../sass/_ihover.scss */
+.ih-item.square.effect3.bottom_to_top .info {
+  top: auto;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 2730, ../sass/_ihover.scss */
+.ih-item.square.effect3.bottom_to_top a:hover .img {
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+
+/* line 2737, ../sass/_ihover.scss */
+.ih-item.square.effect3.bottom_to_top a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 2745, ../sass/_ihover.scss */
+.ih-item.square.effect3.top_to_bottom .info {
+  bottom: auto;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 2753, ../sass/_ihover.scss */
+.ih-item.square.effect3.top_to_bottom a:hover .img {
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+/* line 2760, ../sass/_ihover.scss */
+.ih-item.square.effect3.top_to_bottom a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 2768, ../sass/_ihover.scss */
+.ih-item.square.effect4 {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 2772, ../sass/_ihover.scss */
+.ih-item.square.effect4.colored .info {
+  background: rgba(12, 34, 52, 0.6);
+}
+
+/* line 2775, ../sass/_ihover.scss */
+.ih-item.square.effect4.colored .mask1,
+.ih-item.square.effect4.colored .mask2 {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+
+/* line 2780, ../sass/_ihover.scss */
+.ih-item.square.effect4 .img {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2785, ../sass/_ihover.scss */
+.ih-item.square.effect4 .mask1,
+.ih-item.square.effect4 .mask2 {
+  position: absolute;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  height: 361px;
+  width: 361px;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2796, ../sass/_ihover.scss */
+.ih-item.square.effect4 .mask1 {
+  left: auto;
+  right: 0;
+  top: 0;
+  -webkit-transform: rotate(56.5deg) translateX(-180px);
+  -moz-transform: rotate(56.5deg) translateX(-180px);
+  -ms-transform: rotate(56.5deg) translateX(-180px);
+  -o-transform: rotate(56.5deg) translateX(-180px);
+  transform: rotate(56.5deg) translateX(-180px);
+  -webkit-transform-origin: 100% 0%;
+  -moz-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  -o-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+}
+
+/* line 2811, ../sass/_ihover.scss */
+.ih-item.square.effect4 .mask2 {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: rotate(56.5deg) translateX(180px);
+  -moz-transform: rotate(56.5deg) translateX(180px);
+  -ms-transform: rotate(56.5deg) translateX(180px);
+  -o-transform: rotate(56.5deg) translateX(180px);
+  transform: rotate(56.5deg) translateX(180px);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+
+/* line 2826, ../sass/_ihover.scss */
+.ih-item.square.effect4 .info {
+  background: #111111;
+  height: 0;
+  visibility: hidden;
+  width: 361px;
+  -webkit-transform: rotate(-33.5deg) translate(-112px, 166px);
+  -moz-transform: rotate(-33.5deg) translate(-112px, 166px);
+  -ms-transform: rotate(-33.5deg) translate(-112px, 166px);
+  -o-transform: rotate(-33.5deg) translate(-112px, 166px);
+  transform: rotate(-33.5deg) translate(-112px, 166px);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transition: all 0.35s ease-in-out 0.35s;
+  -moz-transition: all 0.35s ease-in-out 0.35s;
+  transition: all 0.35s ease-in-out 0.35s;
+}
+
+/* line 2845, ../sass/_ihover.scss */
+.ih-item.square.effect4 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: transparent;
+  margin-top: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out 0.35s;
+  -moz-transition: all 0.35s ease-in-out 0.35s;
+  transition: all 0.35s ease-in-out 0.35s;
+}
+
+/* line 2859, ../sass/_ihover.scss */
+.ih-item.square.effect4 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out 0.35s;
+  -moz-transition: all 0.35s ease-in-out 0.35s;
+  transition: all 0.35s ease-in-out 0.35s;
+}
+
+/* line 2871, ../sass/_ihover.scss */
+.ih-item.square.effect4 a:hover .mask1 {
+  -webkit-transform: rotate(56.5deg) translateX(1px);
+  -moz-transform: rotate(56.5deg) translateX(1px);
+  -ms-transform: rotate(56.5deg) translateX(1px);
+  -o-transform: rotate(56.5deg) translateX(1px);
+  transform: rotate(56.5deg) translateX(1px);
+}
+
+/* line 2878, ../sass/_ihover.scss */
+.ih-item.square.effect4 a:hover .mask2 {
+  -webkit-transform: rotate(56.5deg) translateX(-1px);
+  -moz-transform: rotate(56.5deg) translateX(-1px);
+  -ms-transform: rotate(56.5deg) translateX(-1px);
+  -o-transform: rotate(56.5deg) translateX(-1px);
+  transform: rotate(56.5deg) translateX(-1px);
+}
+
+/* line 2885, ../sass/_ihover.scss */
+.ih-item.square.effect4 a:hover .info {
+  width: 300px;
+  height: 120px;
+  visibility: visible;
+  top: 40px;
+  -webkit-transform: rotate(0deg) translate(0, 0);
+  -moz-transform: rotate(0deg) translate(0, 0);
+  -ms-transform: rotate(0deg) translate(0, 0);
+  -o-transform: rotate(0deg) translate(0, 0);
+  transform: rotate(0deg) translate(0, 0);
+}
+
+/* line 2896, ../sass/_ihover.scss */
+.ih-item.square.effect4 a:hover .info h3,
+.ih-item.square.effect4 a:hover .info p {
+  opacity: 1;
+}
+
+/* line 2901, ../sass/_ihover.scss */
+.ih-item.square.effect5.colored .info {
+  background: #1a4a72;
+}
+
+/* line 2904, ../sass/_ihover.scss */
+.ih-item.square.effect5.colored .info h3 {
+  background: rgba(12, 34, 52, 0.6);
+}
+
+/* line 2907, ../sass/_ihover.scss */
+.ih-item.square.effect5 .img {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 2917, ../sass/_ihover.scss */
+.ih-item.square.effect5 .info {
+  background: #333333;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 2924, ../sass/_ihover.scss */
+.ih-item.square.effect5 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 30px 0 0 0;
+}
+
+/* line 2933, ../sass/_ihover.scss */
+.ih-item.square.effect5 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+}
+
+/* line 2941, ../sass/_ihover.scss */
+.ih-item.square.effect5 a:hover .img {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  transition-delay: 0;
+}
+
+/* line 2951, ../sass/_ihover.scss */
+.ih-item.square.effect5 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(0deg);
+  -moz-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+/* line 2964, ../sass/_ihover.scss */
+.ih-item.square.effect5.left_to_right .info {
+  -webkit-transform: scale(0) rotate(-180deg);
+  -moz-transform: scale(0) rotate(-180deg);
+  -ms-transform: scale(0) rotate(-180deg);
+  -o-transform: scale(0) rotate(-180deg);
+  transform: scale(0) rotate(-180deg);
+}
+
+/* line 2972, ../sass/_ihover.scss */
+.ih-item.square.effect5.right_to_left .info {
+  -webkit-transform: scale(0) rotate(180deg);
+  -moz-transform: scale(0) rotate(180deg);
+  -ms-transform: scale(0) rotate(180deg);
+  -o-transform: scale(0) rotate(180deg);
+  transform: scale(0) rotate(180deg);
+}
+
+/* line 2980, ../sass/_ihover.scss */
+.ih-item.square.effect6 {
+  overflow: hidden;
+}
+
+/* line 2983, ../sass/_ihover.scss */
+.ih-item.square.effect6.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+
+/* line 2987, ../sass/_ihover.scss */
+.ih-item.square.effect6.colored .info h3 {
+  background: rgba(12, 34, 52, 0.6);
+}
+
+/* line 2990, ../sass/_ihover.scss */
+.ih-item.square.effect6 .img {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 3000, ../sass/_ihover.scss */
+.ih-item.square.effect6 .info {
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 3009, ../sass/_ihover.scss */
+.ih-item.square.effect6 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 30px 0 0 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 3021, ../sass/_ihover.scss */
+.ih-item.square.effect6 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+  -webkit-transition: all 0.35s 0.1s linear;
+  -moz-transition: all 0.35s 0.1s linear;
+  transition: all 0.35s 0.1s linear;
+}
+
+/* line 3032, ../sass/_ihover.scss */
+.ih-item.square.effect6 a:hover .img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* line 3039, ../sass/_ihover.scss */
+.ih-item.square.effect6 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 3044, ../sass/_ihover.scss */
+.ih-item.square.effect6.from_top_and_bottom .info h3 {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 3051, ../sass/_ihover.scss */
+.ih-item.square.effect6.from_top_and_bottom .info p {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 3058, ../sass/_ihover.scss */
+.ih-item.square.effect6.from_top_and_bottom a:hover .info h3,
+.ih-item.square.effect6.from_top_and_bottom a:hover .info p {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 3067, ../sass/_ihover.scss */
+.ih-item.square.effect6.from_left_and_right .info h3 {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 3074, ../sass/_ihover.scss */
+.ih-item.square.effect6.from_left_and_right .info p {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 3081, ../sass/_ihover.scss */
+.ih-item.square.effect6.from_left_and_right a:hover .info h3,
+.ih-item.square.effect6.from_left_and_right a:hover .info p {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 3090, ../sass/_ihover.scss */
+.ih-item.square.effect6.top_to_bottom .info h3 {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 3097, ../sass/_ihover.scss */
+.ih-item.square.effect6.top_to_bottom .info p {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 3104, ../sass/_ihover.scss */
+.ih-item.square.effect6.top_to_bottom a:hover .info h3,
+.ih-item.square.effect6.top_to_bottom a:hover .info p {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 3113, ../sass/_ihover.scss */
+.ih-item.square.effect6.bottom_to_top .info h3 {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 3120, ../sass/_ihover.scss */
+.ih-item.square.effect6.bottom_to_top .info p {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 3127, ../sass/_ihover.scss */
+.ih-item.square.effect6.bottom_to_top a:hover .info h3,
+.ih-item.square.effect6.bottom_to_top a:hover .info p {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 3136, ../sass/_ihover.scss */
+.ih-item.square.effect7 {
+  overflow: hidden;
+}
+
+/* line 3139, ../sass/_ihover.scss */
+.ih-item.square.effect7.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+
+/* line 3143, ../sass/_ihover.scss */
+.ih-item.square.effect7.colored .info h3 {
+  background: rgba(12, 34, 52, 0.6);
+}
+
+/* line 3146, ../sass/_ihover.scss */
+.ih-item.square.effect7 .img {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 3156, ../sass/_ihover.scss */
+.ih-item.square.effect7 .info {
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 3165, ../sass/_ihover.scss */
+.ih-item.square.effect7 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 30px 0 0 0;
+  -webkit-transform: scale(4);
+  -moz-transform: scale(4);
+  -ms-transform: scale(4);
+  -o-transform: scale(4);
+  transform: scale(4);
+  -webkit-transition: all 0.35s 0.1s ease-in-out;
+  -moz-transition: all 0.35s 0.1s ease-in-out;
+  transition: all 0.35s 0.1s ease-in-out;
+}
+
+/* line 3182, ../sass/_ihover.scss */
+.ih-item.square.effect7 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+  -webkit-transform: scale(5);
+  -moz-transform: scale(5);
+  -ms-transform: scale(5);
+  -o-transform: scale(5);
+  transform: scale(5);
+  -webkit-transition: all 0.35s 0.3s linear;
+  -moz-transition: all 0.35s 0.3s linear;
+  transition: all 0.35s 0.3s linear;
+}
+
+/* line 3198, ../sass/_ihover.scss */
+.ih-item.square.effect7 a:hover .img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* line 3205, ../sass/_ihover.scss */
+.ih-item.square.effect7 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 3209, ../sass/_ihover.scss */
+.ih-item.square.effect7 a:hover .info h3,
+.ih-item.square.effect7 a:hover .info p {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 3218, ../sass/_ihover.scss */
+.ih-item.square.effect8 {
+  overflow: hidden;
+}
+
+/* line 3221, ../sass/_ihover.scss */
+.ih-item.square.effect8.colored .info {
+  background: #1a4a72;
+}
+
+/* line 3224, ../sass/_ihover.scss */
+.ih-item.square.effect8.colored .info h3 {
+  background: rgba(12, 34, 52, 0.6);
+}
+
+/* line 3227, ../sass/_ihover.scss */
+.ih-item.square.effect8 .img {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 3233, ../sass/_ihover.scss */
+.ih-item.square.effect8 .info {
+  background: #333333;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 3241, ../sass/_ihover.scss */
+.ih-item.square.effect8 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 30px 0 0 0;
+  -webkit-transition: all 0.35s 0.1s ease-in-out;
+  -moz-transition: all 0.35s 0.1s ease-in-out;
+  transition: all 0.35s 0.1s ease-in-out;
+}
+
+/* line 3253, ../sass/_ihover.scss */
+.ih-item.square.effect8 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+  -webkit-transition: all 0.35s 0.15s linear;
+  -moz-transition: all 0.35s 0.15s linear;
+  transition: all 0.35s 0.15s linear;
+}
+
+/* line 3264, ../sass/_ihover.scss */
+.ih-item.square.effect8 a:hover .img {
+  opacity: 0;
+}
+
+/* line 3267, ../sass/_ihover.scss */
+.ih-item.square.effect8 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 3272, ../sass/_ihover.scss */
+.ih-item.square.effect8.scale_up .img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 3279, ../sass/_ihover.scss */
+.ih-item.square.effect8.scale_up .info {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+/* line 3286, ../sass/_ihover.scss */
+.ih-item.square.effect8.scale_up .info h3,
+.ih-item.square.effect8.scale_up .info p {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+/* line 3294, ../sass/_ihover.scss */
+.ih-item.square.effect8.scale_up a:hover .img {
+  -webkit-transform: scale(5);
+  -moz-transform: scale(5);
+  -ms-transform: scale(5);
+  -o-transform: scale(5);
+  transform: scale(5);
+}
+
+/* line 3301, ../sass/_ihover.scss */
+.ih-item.square.effect8.scale_up a:hover .info {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 3308, ../sass/_ihover.scss */
+.ih-item.square.effect8.scale_up a:hover .info h3,
+.ih-item.square.effect8.scale_up a:hover .info p {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 3317, ../sass/_ihover.scss */
+.ih-item.square.effect8.scale_down .img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 3324, ../sass/_ihover.scss */
+.ih-item.square.effect8.scale_down .info {
+  -webkit-transform: scale(5);
+  -moz-transform: scale(5);
+  -ms-transform: scale(5);
+  -o-transform: scale(5);
+  transform: scale(5);
+}
+
+/* line 3331, ../sass/_ihover.scss */
+.ih-item.square.effect8.scale_down .info h3,
+.ih-item.square.effect8.scale_down .info p {
+  -webkit-transform: scale(5);
+  -moz-transform: scale(5);
+  -ms-transform: scale(5);
+  -o-transform: scale(5);
+  transform: scale(5);
+}
+
+/* line 3339, ../sass/_ihover.scss */
+.ih-item.square.effect8.scale_down a:hover .img {
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 3346, ../sass/_ihover.scss */
+.ih-item.square.effect8.scale_down a:hover .info {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 3353, ../sass/_ihover.scss */
+.ih-item.square.effect8.scale_down a:hover .info h3,
+.ih-item.square.effect8.scale_down a:hover .info p {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 3362, ../sass/_ihover.scss */
+.ih-item.square.effect9 {
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+}
+
+/* line 3367, ../sass/_ihover.scss */
+.ih-item.square.effect9.colored .info .info-back {
+  background: #1a4a72;
+}
+
+/* line 3370, ../sass/_ihover.scss */
+.ih-item.square.effect9.colored .info h3 {
+  background: rgba(12, 34, 52, 0.6);
+}
+
+/* line 3373, ../sass/_ihover.scss */
+.ih-item.square.effect9 .img {
+  position: relative;
+  z-index: 11;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 3380, ../sass/_ihover.scss */
+.ih-item.square.effect9 .info {
+  z-index: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 3388, ../sass/_ihover.scss */
+.ih-item.square.effect9 .info .info-back {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  background: #333333;
+}
+
+/* line 3395, ../sass/_ihover.scss */
+.ih-item.square.effect9 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 0;
+}
+
+/* line 3404, ../sass/_ihover.scss */
+.ih-item.square.effect9 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+}
+
+/* line 3413, ../sass/_ihover.scss */
+.ih-item.square.effect9.left_to_right .img {
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+/* line 3420, ../sass/_ihover.scss */
+.ih-item.square.effect9.left_to_right a:hover .img {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+/* line 3428, ../sass/_ihover.scss */
+.ih-item.square.effect9.right_to_left .img {
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+/* line 3435, ../sass/_ihover.scss */
+.ih-item.square.effect9.right_to_left a:hover .img {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg);
+  -moz-transform: rotate3d(0, 1, 0, -180deg);
+  -ms-transform: rotate3d(0, 1, 0, -180deg);
+  -o-transform: rotate3d(0, 1, 0, -180deg);
+  transform: rotate3d(0, 1, 0, -180deg);
+}
+
+/* line 3443, ../sass/_ihover.scss */
+.ih-item.square.effect9.top_to_bottom .img {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+/* line 3450, ../sass/_ihover.scss */
+.ih-item.square.effect9.top_to_bottom a:hover .img {
+  -webkit-transform: rotate3d(1, 0, 0, -180deg);
+  -moz-transform: rotate3d(1, 0, 0, -180deg);
+  -ms-transform: rotate3d(1, 0, 0, -180deg);
+  -o-transform: rotate3d(1, 0, 0, -180deg);
+  transform: rotate3d(1, 0, 0, -180deg);
+}
+
+/* line 3458, ../sass/_ihover.scss */
+.ih-item.square.effect9.bottom_to_top .img {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+/* line 3465, ../sass/_ihover.scss */
+.ih-item.square.effect9.bottom_to_top a:hover .img {
+  -webkit-transform: rotate3d(1, 0, 0, 180deg);
+  -moz-transform: rotate3d(1, 0, 0, 180deg);
+  -ms-transform: rotate3d(1, 0, 0, 180deg);
+  -o-transform: rotate3d(1, 0, 0, 180deg);
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+
+/* line 3473, ../sass/_ihover.scss */
+.ih-item.square.effect10 {
+  overflow: hidden;
+}
+
+/* line 3476, ../sass/_ihover.scss */
+.ih-item.square.effect10.colored .info {
+  background: #1a4a72;
+}
+
+/* line 3479, ../sass/_ihover.scss */
+.ih-item.square.effect10.colored .info h3 {
+  background: rgba(12, 34, 52, 0.6);
+}
+
+/* line 3482, ../sass/_ihover.scss */
+.ih-item.square.effect10 .img {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 3487, ../sass/_ihover.scss */
+.ih-item.square.effect10 .info {
+  background: #333333;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 3495, ../sass/_ihover.scss */
+.ih-item.square.effect10 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 30px 0 0 0;
+}
+
+/* line 3504, ../sass/_ihover.scss */
+.ih-item.square.effect10 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+}
+
+/* line 3512, ../sass/_ihover.scss */
+.ih-item.square.effect10 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 3517, ../sass/_ihover.scss */
+.ih-item.square.effect10.left_to_right .img {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 3524, ../sass/_ihover.scss */
+.ih-item.square.effect10.left_to_right .info {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 3531, ../sass/_ihover.scss */
+.ih-item.square.effect10.left_to_right a:hover .img {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 3538, ../sass/_ihover.scss */
+.ih-item.square.effect10.left_to_right a:hover .info {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 3546, ../sass/_ihover.scss */
+.ih-item.square.effect10.right_to_left .img {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 3553, ../sass/_ihover.scss */
+.ih-item.square.effect10.right_to_left .info {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 3560, ../sass/_ihover.scss */
+.ih-item.square.effect10.right_to_left a:hover .img {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 3567, ../sass/_ihover.scss */
+.ih-item.square.effect10.right_to_left a:hover .info {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 3575, ../sass/_ihover.scss */
+.ih-item.square.effect10.top_to_bottom .img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 3582, ../sass/_ihover.scss */
+.ih-item.square.effect10.top_to_bottom .info {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 3589, ../sass/_ihover.scss */
+.ih-item.square.effect10.top_to_bottom a:hover .img {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 3596, ../sass/_ihover.scss */
+.ih-item.square.effect10.top_to_bottom a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 3604, ../sass/_ihover.scss */
+.ih-item.square.effect10.bottom_to_top .img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 3611, ../sass/_ihover.scss */
+.ih-item.square.effect10.bottom_to_top .info {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 3618, ../sass/_ihover.scss */
+.ih-item.square.effect10.bottom_to_top a:hover .img {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 3625, ../sass/_ihover.scss */
+.ih-item.square.effect10.bottom_to_top a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 3633, ../sass/_ihover.scss */
+.ih-item.square.effect11 {
+  overflow: hidden;
+}
+
+/* line 3636, ../sass/_ihover.scss */
+.ih-item.square.effect11.colored .info {
+  background: #1a4a72;
+}
+
+/* line 3639, ../sass/_ihover.scss */
+.ih-item.square.effect11.colored .info h3 {
+  background: rgba(12, 34, 52, 0.6);
+}
+
+/* line 3642, ../sass/_ihover.scss */
+.ih-item.square.effect11 .img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 3653, ../sass/_ihover.scss */
+.ih-item.square.effect11 .info {
+  background: #333333;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease 0.2s;
+  -moz-transition: all 0.35s ease 0.2s;
+  transition: all 0.35s ease 0.2s;
+}
+
+/* line 3661, ../sass/_ihover.scss */
+.ih-item.square.effect11 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 30px 0 0 0;
+}
+
+/* line 3670, ../sass/_ihover.scss */
+.ih-item.square.effect11 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+}
+
+/* line 3678, ../sass/_ihover.scss */
+.ih-item.square.effect11 a:hover .img {
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 3686, ../sass/_ihover.scss */
+.ih-item.square.effect11 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 3691, ../sass/_ihover.scss */
+.ih-item.square.effect11.left_to_right .info {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 3698, ../sass/_ihover.scss */
+.ih-item.square.effect11.left_to_right a:hover .info {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 3706, ../sass/_ihover.scss */
+.ih-item.square.effect11.right_to_left .info {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 3713, ../sass/_ihover.scss */
+.ih-item.square.effect11.right_to_left a:hover .info {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 3721, ../sass/_ihover.scss */
+.ih-item.square.effect11.top_to_bottom .info {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 3728, ../sass/_ihover.scss */
+.ih-item.square.effect11.top_to_bottom a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 3736, ../sass/_ihover.scss */
+.ih-item.square.effect11.bottom_to_top .info {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 3743, ../sass/_ihover.scss */
+.ih-item.square.effect11.bottom_to_top a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 3751, ../sass/_ihover.scss */
+.ih-item.square.effect12 {
+  overflow: hidden;
+}
+
+/* line 3754, ../sass/_ihover.scss */
+.ih-item.square.effect12.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+
+/* line 3758, ../sass/_ihover.scss */
+.ih-item.square.effect12.colored .info h3 {
+  background: rgba(12, 34, 52, 0.6);
+}
+
+/* line 3761, ../sass/_ihover.scss */
+.ih-item.square.effect12 .img {
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+
+/* line 3766, ../sass/_ihover.scss */
+.ih-item.square.effect12 .info {
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+
+/* line 3775, ../sass/_ihover.scss */
+.ih-item.square.effect12 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 30px 0 0 0;
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+
+/* line 3787, ../sass/_ihover.scss */
+.ih-item.square.effect12 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+
+/* line 3798, ../sass/_ihover.scss */
+.ih-item.square.effect12 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+/* line 3805, ../sass/_ihover.scss */
+.ih-item.square.effect12 a:hover .info h3 {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+/* line 3810, ../sass/_ihover.scss */
+.ih-item.square.effect12 a:hover .info p {
+  -webkit-transition-delay: 0.25s;
+  -moz-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+/* line 3816, ../sass/_ihover.scss */
+.ih-item.square.effect12.left_to_right .info {
+  -webkit-transform: translate(-460px, -100px) rotate(-180deg);
+  -moz-transform: translate(-460px, -100px) rotate(-180deg);
+  -ms-transform: translate(-460px, -100px) rotate(-180deg);
+  -o-transform: translate(-460px, -100px) rotate(-180deg);
+  transform: translate(-460px, -100px) rotate(-180deg);
+}
+
+/* line 3823, ../sass/_ihover.scss */
+.ih-item.square.effect12.left_to_right .info h3 {
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  transform: translateY(-100px);
+}
+
+/* line 3830, ../sass/_ihover.scss */
+.ih-item.square.effect12.left_to_right .info p {
+  -webkit-transform: translateX(-300px) rotate(-90deg);
+  -moz-transform: translateX(-300px) rotate(-90deg);
+  -ms-transform: translateX(-300px) rotate(-90deg);
+  -o-transform: translateX(-300px) rotate(-90deg);
+  transform: translateX(-300px) rotate(-90deg);
+}
+
+/* line 3837, ../sass/_ihover.scss */
+.ih-item.square.effect12.left_to_right a:hover .info {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+/* line 3844, ../sass/_ihover.scss */
+.ih-item.square.effect12.left_to_right a:hover .info h3 {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* line 3851, ../sass/_ihover.scss */
+.ih-item.square.effect12.left_to_right a:hover .info p {
+  -webkit-transform: translateX(0px) rotate(0deg);
+  -moz-transform: translateX(0px) rotate(0deg);
+  -ms-transform: translateX(0px) rotate(0deg);
+  -o-transform: translateX(0px) rotate(0deg);
+  transform: translateX(0px) rotate(0deg);
+}
+
+/* line 3859, ../sass/_ihover.scss */
+.ih-item.square.effect12.right_to_left .info {
+  -webkit-transform: translate(460px, -100px) rotate(180deg);
+  -moz-transform: translate(460px, -100px) rotate(180deg);
+  -ms-transform: translate(460px, -100px) rotate(180deg);
+  -o-transform: translate(460px, -100px) rotate(180deg);
+  transform: translate(460px, -100px) rotate(180deg);
+}
+
+/* line 3866, ../sass/_ihover.scss */
+.ih-item.square.effect12.right_to_left .info h3 {
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  transform: translateY(-100px);
+}
+
+/* line 3873, ../sass/_ihover.scss */
+.ih-item.square.effect12.right_to_left .info p {
+  -webkit-transform: translateX(300px) rotate(90deg);
+  -moz-transform: translateX(300px) rotate(90deg);
+  -ms-transform: translateX(300px) rotate(90deg);
+  -o-transform: translateX(300px) rotate(90deg);
+  transform: translateX(300px) rotate(90deg);
+}
+
+/* line 3880, ../sass/_ihover.scss */
+.ih-item.square.effect12.right_to_left a:hover .info {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+/* line 3887, ../sass/_ihover.scss */
+.ih-item.square.effect12.right_to_left a:hover .info h3 {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* line 3894, ../sass/_ihover.scss */
+.ih-item.square.effect12.right_to_left a:hover .info p {
+  -webkit-transform: translateX(0px) rotate(0deg);
+  -moz-transform: translateX(0px) rotate(0deg);
+  -ms-transform: translateX(0px) rotate(0deg);
+  -o-transform: translateX(0px) rotate(0deg);
+  transform: translateX(0px) rotate(0deg);
+}
+
+/* line 3902, ../sass/_ihover.scss */
+.ih-item.square.effect12.top_to_bottom .info {
+  -webkit-transform: translate(-265px, -145px) rotate(-45deg);
+  -moz-transform: translate(-265px, -145px) rotate(-45deg);
+  -ms-transform: translate(-265px, -145px) rotate(-45deg);
+  -o-transform: translate(-265px, -145px) rotate(-45deg);
+  transform: translate(-265px, -145px) rotate(-45deg);
+}
+
+/* line 3909, ../sass/_ihover.scss */
+.ih-item.square.effect12.top_to_bottom .info h3 {
+  -webkit-transform: translate(200px, -200px);
+  -moz-transform: translate(200px, -200px);
+  -ms-transform: translate(200px, -200px);
+  -o-transform: translate(200px, -200px);
+  transform: translate(200px, -200px);
+}
+
+/* line 3916, ../sass/_ihover.scss */
+.ih-item.square.effect12.top_to_bottom .info p {
+  -webkit-transform: translate(200px, -200px);
+  -moz-transform: translate(200px, -200px);
+  -ms-transform: translate(200px, -200px);
+  -o-transform: translate(200px, -200px);
+  transform: translate(200px, -200px);
+}
+
+/* line 3923, ../sass/_ihover.scss */
+.ih-item.square.effect12.top_to_bottom a:hover .info {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+/* line 3933, ../sass/_ihover.scss */
+.ih-item.square.effect12.top_to_bottom a:hover .info h3 {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+/* line 3943, ../sass/_ihover.scss */
+.ih-item.square.effect12.top_to_bottom a:hover .info p {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* line 3954, ../sass/_ihover.scss */
+.ih-item.square.effect12.bottom_to_top .info {
+  -webkit-transform: translate(265px, 145px) rotate(45deg);
+  -moz-transform: translate(265px, 145px) rotate(45deg);
+  -ms-transform: translate(265px, 145px) rotate(45deg);
+  -o-transform: translate(265px, 145px) rotate(45deg);
+  transform: translate(265px, 145px) rotate(45deg);
+}
+
+/* line 3961, ../sass/_ihover.scss */
+.ih-item.square.effect12.bottom_to_top .info h3 {
+  -webkit-transform: translate(200px, -200px);
+  -moz-transform: translate(200px, -200px);
+  -ms-transform: translate(200px, -200px);
+  -o-transform: translate(200px, -200px);
+  transform: translate(200px, -200px);
+}
+
+/* line 3968, ../sass/_ihover.scss */
+.ih-item.square.effect12.bottom_to_top .info p {
+  -webkit-transform: translate(-200px, 200px);
+  -moz-transform: translate(-200px, 200px);
+  -ms-transform: translate(-200px, 200px);
+  -o-transform: translate(-200px, 200px);
+  transform: translate(-200px, 200px);
+}
+
+/* line 3975, ../sass/_ihover.scss */
+.ih-item.square.effect12.bottom_to_top a:hover .info {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+/* line 3985, ../sass/_ihover.scss */
+.ih-item.square.effect12.bottom_to_top a:hover .info h3 {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+/* line 3995, ../sass/_ihover.scss */
+.ih-item.square.effect12.bottom_to_top a:hover .info p {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* line 4006, ../sass/_ihover.scss */
+.ih-item.square.effect13 {
+  overflow: hidden;
+}
+
+/* line 4009, ../sass/_ihover.scss */
+.ih-item.square.effect13.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+
+/* line 4013, ../sass/_ihover.scss */
+.ih-item.square.effect13.colored .info h3 {
+  background: rgba(12, 34, 52, 0.6);
+}
+
+/* line 4016, ../sass/_ihover.scss */
+.ih-item.square.effect13 .img {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 4026, ../sass/_ihover.scss */
+.ih-item.square.effect13 .info {
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 4036, ../sass/_ihover.scss */
+.ih-item.square.effect13 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 30px 0 0 0;
+}
+
+/* line 4045, ../sass/_ihover.scss */
+.ih-item.square.effect13 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+}
+
+/* line 4053, ../sass/_ihover.scss */
+.ih-item.square.effect13 a:hover .img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* line 4060, ../sass/_ihover.scss */
+.ih-item.square.effect13 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 4065, ../sass/_ihover.scss */
+.ih-item.square.effect13.left_to_right .info {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 4072, ../sass/_ihover.scss */
+.ih-item.square.effect13.left_to_right a:hover .info {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 4080, ../sass/_ihover.scss */
+.ih-item.square.effect13.right_to_left .info {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 4087, ../sass/_ihover.scss */
+.ih-item.square.effect13.right_to_left a:hover .info {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 4095, ../sass/_ihover.scss */
+.ih-item.square.effect13.top_to_bottom .info {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 4102, ../sass/_ihover.scss */
+.ih-item.square.effect13.top_to_bottom a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 4110, ../sass/_ihover.scss */
+.ih-item.square.effect13.bottom_to_top .info {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 4117, ../sass/_ihover.scss */
+.ih-item.square.effect13.bottom_to_top a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 4125, ../sass/_ihover.scss */
+.ih-item.square.effect14.colored .info {
+  background: #1a4a72;
+}
+
+/* line 4128, ../sass/_ihover.scss */
+.ih-item.square.effect14.colored .info h3 {
+  background: rgba(12, 34, 52, 0.6);
+}
+
+/* line 4131, ../sass/_ihover.scss */
+.ih-item.square.effect14 .img {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 4137, ../sass/_ihover.scss */
+.ih-item.square.effect14 .info {
+  background: #333333;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transition: all 0.35s ease 0.2s;
+  -moz-transition: all 0.35s ease 0.2s;
+  transition: all 0.35s ease 0.2s;
+}
+
+/* line 4151, ../sass/_ihover.scss */
+.ih-item.square.effect14 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 30px 0 0 0;
+}
+
+/* line 4160, ../sass/_ihover.scss */
+.ih-item.square.effect14 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+}
+
+/* line 4168, ../sass/_ihover.scss */
+.ih-item.square.effect14 a:hover .img {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 4177, ../sass/_ihover.scss */
+.ih-item.square.effect14 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 4187, ../sass/_ihover.scss */
+.ih-item.square.effect14.left_to_right .img {
+  -webkit-transform: translateX(0) rotate(0);
+  -moz-transform: translateX(0) rotate(0);
+  -ms-transform: translateX(0) rotate(0);
+  -o-transform: translateX(0) rotate(0);
+  transform: translateX(0) rotate(0);
+}
+
+/* line 4194, ../sass/_ihover.scss */
+.ih-item.square.effect14.left_to_right a:hover .img {
+  -webkit-transform: translateX(100%) rotate(180deg);
+  -moz-transform: translateX(100%) rotate(180deg);
+  -ms-transform: translateX(100%) rotate(180deg);
+  -o-transform: translateX(100%) rotate(180deg);
+  transform: translateX(100%) rotate(180deg);
+}
+
+/* line 4202, ../sass/_ihover.scss */
+.ih-item.square.effect14.right_to_left .img {
+  -webkit-transform: translateX(0) rotate(0);
+  -moz-transform: translateX(0) rotate(0);
+  -ms-transform: translateX(0) rotate(0);
+  -o-transform: translateX(0) rotate(0);
+  transform: translateX(0) rotate(0);
+}
+
+/* line 4209, ../sass/_ihover.scss */
+.ih-item.square.effect14.right_to_left a:hover .img {
+  -webkit-transform: translateX(-100%) rotate(-180deg);
+  -moz-transform: translateX(-100%) rotate(-180deg);
+  -ms-transform: translateX(-100%) rotate(-180deg);
+  -o-transform: translateX(-100%) rotate(-180deg);
+  transform: translateX(-100%) rotate(-180deg);
+}
+
+/* line 4217, ../sass/_ihover.scss */
+.ih-item.square.effect14.top_to_bottom .img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 4224, ../sass/_ihover.scss */
+.ih-item.square.effect14.top_to_bottom a:hover .img {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 4232, ../sass/_ihover.scss */
+.ih-item.square.effect14.bottom_to_top .img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 4239, ../sass/_ihover.scss */
+.ih-item.square.effect14.bottom_to_top a:hover .img {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 4247, ../sass/_ihover.scss */
+.ih-item.square.effect15 {
+  overflow: hidden;
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+}
+
+/* line 4253, ../sass/_ihover.scss */
+.ih-item.square.effect15.colored .info {
+  background: #1a4a72;
+}
+
+/* line 4256, ../sass/_ihover.scss */
+.ih-item.square.effect15 .img {
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 4262, ../sass/_ihover.scss */
+.ih-item.square.effect15 .info {
+  background: #333333;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out 0.3s;
+  -moz-transition: all 0.35s ease-in-out 0.3s;
+  transition: all 0.35s ease-in-out 0.3s;
+}
+
+/* line 4269, ../sass/_ihover.scss */
+.ih-item.square.effect15 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 30px 0 0 0;
+}
+
+/* line 4278, ../sass/_ihover.scss */
+.ih-item.square.effect15 .info p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #bbb;
+  padding: 20px 20px 20px;
+  text-align: center;
+}
+
+/* line 4286, ../sass/_ihover.scss */
+.ih-item.square.effect15 a:hover .img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* line 4290, ../sass/_ihover.scss */
+.ih-item.square.effect15 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 4295, ../sass/_ihover.scss */
+.ih-item.square.effect15.left_to_right .img {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+/* line 4307, ../sass/_ihover.scss */
+.ih-item.square.effect15.left_to_right .info {
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  -o-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+/* line 4319, ../sass/_ihover.scss */
+.ih-item.square.effect15.left_to_right a:hover .img {
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  -o-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+
+/* line 4326, ../sass/_ihover.scss */
+.ih-item.square.effect15.left_to_right a:hover .info {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+/* line 4334, ../sass/_ihover.scss */
+.ih-item.square.effect15.right_to_left .img {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+/* line 4346, ../sass/_ihover.scss */
+.ih-item.square.effect15.right_to_left .info {
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  -o-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+/* line 4358, ../sass/_ihover.scss */
+.ih-item.square.effect15.right_to_left a:hover .img {
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  -o-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+/* line 4365, ../sass/_ihover.scss */
+.ih-item.square.effect15.right_to_left a:hover .info {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+/* line 4373, ../sass/_ihover.scss */
+.ih-item.square.effect15.top_to_bottom .img {
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+/* line 4385, ../sass/_ihover.scss */
+.ih-item.square.effect15.top_to_bottom .info {
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+/* line 4397, ../sass/_ihover.scss */
+.ih-item.square.effect15.top_to_bottom a:hover .img {
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+}
+
+/* line 4404, ../sass/_ihover.scss */
+.ih-item.square.effect15.top_to_bottom a:hover .info {
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+}
+
+/* line 4412, ../sass/_ihover.scss */
+.ih-item.square.effect15.bottom_to_top .img {
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+/* line 4424, ../sass/_ihover.scss */
+.ih-item.square.effect15.bottom_to_top .info {
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+/* line 4436, ../sass/_ihover.scss */
+.ih-item.square.effect15.bottom_to_top a:hover .img {
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+/* line 4443, ../sass/_ihover.scss */
+.ih-item.square.effect15.bottom_to_top a:hover .info {
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+}
+
+/* line 1, ../sass/_patchwork_page.scss */
+.imglg {
+  display: block;
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+}
+
+/* line 9, ../sass/_patchwork_page.scss */
+.thumbs {
+  max-height: 250px;
+  width: auto;
+}
+
+/* line 14, ../sass/_patchwork_page.scss */
+.og-grid {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 22, ../sass/_patchwork_page.scss */
+.og-grid li {
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+  vertical-align: top;
+  height: 250px;
+}
+
+/* line 29, ../sass/_patchwork_page.scss */
+.og-grid li > a,
+.og-grid li > a img {
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+}
+
+/* line 37, ../sass/_patchwork_page.scss */
+.og-grid li.og-expanded > a::after {
+  top: auto;
+  border: solid transparent;
+  content: " ";
+  height: 100%;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #ddd;
+  border-width: 15px;
+  left: 50%;
+  margin: -20px 0 0 -15px;
+}
+
+/* line 51, ../sass/_patchwork_page.scss */
+.og-expander {
+  position: absolute;
+  background: #ddd;
+  top: auto;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 63, ../sass/_patchwork_page.scss */
+.og-expander-inner {
+  padding: 50px 30px;
+  height: 100%;
+}
+
+/* line 68, ../sass/_patchwork_page.scss */
+.og-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* line 77, ../sass/_patchwork_page.scss */
+.og-close::before,
+.og-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: #888;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 90, ../sass/_patchwork_page.scss */
+.og-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 96, ../sass/_patchwork_page.scss */
+.og-close:hover::before,
+.og-close:hover::after {
+  background: #333;
+}
+
+/* line 101, ../sass/_patchwork_page.scss */
+.og-fullimg,
+.og-details {
+  width: 50%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 110, ../sass/_patchwork_page.scss */
+.og-details {
+  padding: 0 40px 0 20px;
+}
+
+/* line 114, ../sass/_patchwork_page.scss */
+.og-fullimg {
+  text-align: center;
+}
+
+/* line 118, ../sass/_patchwork_page.scss */
+.og-fullimg img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* line 124, ../sass/_patchwork_page.scss */
+.og-details h3 {
+  font: 2vw "butterfly";
+  letter-spacing: 3px;
+  padding: 40px 0 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #3FBFC1;
+}
+
+/* line 133, ../sass/_patchwork_page.scss */
+.og-details p {
+  font: 16px "Didact Gothic";
+  font-weight: 400;
+  font-size: 20px;
+  color: #999;
+}
+
+/* line 140, ../sass/_patchwork_page.scss */
+.og-details a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 3px solid #333;
+  display: inline-block;
+  margin: 30px 0 0;
+  outline: none;
+}
+
+/* line 153, ../sass/_patchwork_page.scss */
+.og-details a::before {
+  content: '\2192';
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 159, ../sass/_patchwork_page.scss */
+.og-details a:hover {
+  border-color: #999;
+  color: #999;
+}
+
+/* line 164, ../sass/_patchwork_page.scss */
+.og-loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  -webkit-animation: loader 0.5s infinite ease-in-out both;
+  -moz-animation: loader 0.5s infinite ease-in-out both;
+  animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+@-moz-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+@keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+@media screen and (max-width: 830px) {
+  /* line 199, ../sass/_patchwork_page.scss */
+  .og-expander h3 {
+    font-size: 32px;
+  }
+
+  /* line 200, ../sass/_patchwork_page.scss */
+  .og-expander p {
+    font-size: 13px;
+  }
+
+  /* line 201, ../sass/_patchwork_page.scss */
+  .og-expander a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 207, ../sass/_patchwork_page.scss */
+  .og-fullimg {
+    display: none;
+  }
+
+  /* line 208, ../sass/_patchwork_page.scss */
+  .og-details {
+    float: none;
+    width: 100%;
+  }
+}
+/* line 3, ../sass/_about.scss */
+.about_page {
+  background-color: RGBA(255, 255, 255, 0.8);
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+/* line 10, ../sass/_about.scss */
+.about {
+  font-size: 50px;
+}
+
+/* line 14, ../sass/_about.scss */
+.about_page h2 {
+  font: 2vw "butterfly";
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #3FBFC1;
+  text-align: center;
+}
+
+/* line 23, ../sass/_about.scss */
+.about_page h3 {
+  font-family: 'Didact Gothic';
+  font-size: 18px;
+  line-height: 22px;
+  font-size: 25px;
+}
+
+/* line 28, ../sass/_about.scss */
+.about_p {
+  font: 16px "Didact Gothic";
+  font-size: 20px !important;
+  line-height: 15px !important;
+}
+
+/* line 34, ../sass/_about.scss */
+.container {
+  text-align: justify;
+}
+
+/* line 38, ../sass/_about.scss */
+.container p {
+  font-size: 16px;
+}
+
+/* line 42, ../sass/_about.scss */
+.expression {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 1, ../sass/_form.scss */
+h1 {
+  font: 2vw "butterfly";
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #3FBFC1;
+  text-align: center;
+}
+
+/* line 10, ../sass/_form.scss */
+.contact {
+  background-color: RGBA(255, 255, 255, 0.8);
+  margin-top: 15px;
+  height: 100%;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+/* line 18, ../sass/_form.scss */
+.row {
+  padding: 5px;
+}
+
+/* line 22, ../sass/_form.scss */
+.material-icons {
+  color: #3FBFC1;
+}
+
+/* line 26, ../sass/_form.scss */
+[type="checkbox"] + label {
+  color: #3FBFC1;
+}
+
+/* line 30, ../sass/_form.scss */
+.check {
+  text-align: center;
+}
+
+/* line 34, ../sass/_form.scss */
+.send {
+  color: white;
+}
+
+/* line 38, ../sass/_form.scss */
+.select-wrapper span.caret {
+  color: #3FBFC1;
+  font-size: 20px !important;
+  top: 10px !important;
+}
+
+/* line 44, ../sass/_form.scss */
+.select-wrapper input.select-dropdown {
+  color: #3FBFC1;
+}
+
+/* line 48, ../sass/_form.scss */
+.select-wrapper + label {
+  font-size: 1rem;
+}
+
+/* line 52, ../sass/_form.scss */
+.input-field label {
+  font-size: 1rem;
+}
+
+/* label color */
+/* line 57, ../sass/_form.scss */
+.input-field label {
+  color: #3FBFC1;
+}
+
+/* label focus color */
+/* line 61, ../sass/_form.scss */
+.input-field input[type=text]:focus + label {
+  color: #3FBFC1;
+}
+
+/* label underline focus color */
+/* line 65, ../sass/_form.scss */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #3FBFC1;
+  box-shadow: 0 1px 0 0 #3FBFC1;
+}
+
+/* valid color */
+/* line 70, ../sass/_form.scss */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #3FBFC1;
+  box-shadow: 0 1px 0 0 #3FBFC1;
+}
+
+/* invalid color */
+/* line 75, ../sass/_form.scss */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #3FBFC1;
+  box-shadow: 0 1px 0 0 #3FBFC1;
+}
+
+/* icon prefix focus color */
+/* line 80, ../sass/_form.scss */
+.input-field .prefix.active {
+  color: #3FBFC1;
+}
+
+/*FOOTER*/
+/* line 2, ../sass/_footer.scss */
+footer.page-footer {
+  background-color: RGBA(255, 255, 255, 0.6);
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+/* line 8, ../sass/_footer.scss */
+.row {
+  margin-bottom: 1px;
+}
+
+/* line 12, ../sass/_footer.scss */
+h5 {
+  font: 2vw "butterfly";
+  color: rgba(87, 73, 73, 0.8);
+}
+
+/* line 17, ../sass/_footer.scss */
+footer.page-footer .footer-copyright {
+  color: rgba(87, 73, 73, 0.8);
+}
+
+/* line 21, ../sass/_footer.scss */
+.doudous {
+  color: #E93255;
+  font: 16px "Didact Gothic";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* line 28, ../sass/_footer.scss */
+.bijoux {
+  color: #724399;
+  font: 16px "Didact Gothic";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* line 35, ../sass/_footer.scss */
+.accessoires {
+  color: #468540;
+  font: 16px "Didact Gothic";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* line 42, ../sass/_footer.scss */
+.whoami {
+  color: #B7483F;
+  font: 16px "Didact Gothic";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* line 49, ../sass/_footer.scss */
+.contactme {
+  color: #3FBFC1;
+  font: 16px "Didact Gothic";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* line 56, ../sass/_footer.scss */
+.social {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* line 61, ../sass/_footer.scss */
+.contactme:hover {
+  background-color: RGBA(63, 191, 193, 0.3) !important;
+}
+
+/*FIN FOOTER*/
+/*RETOUR EN HAUT*/
+/* line 68, ../sass/_footer.scss */
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: url("../images/noun2.png") no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/*FIN RETOUR EN HAUT*/

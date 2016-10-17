@@ -1,0 +1,82 @@
+/*FOOTER*/
+footer.page-footer{
+    background-color: RGBA(255,255,255,0.6);
+    margin-bottom:0px;
+	padding-top: 0px;
+}
+
+.row{
+    margin-bottom: 1px;
+}
+
+h5{
+	font: $font-titre;
+    color: rgba(87, 73, 73, 0.8);
+}
+
+footer.page-footer .footer-copyright{
+	color:rgba(87, 73, 73, 0.8);
+}
+
+.doudous {
+    color: #E93255;
+    font: $font-body;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.bijoux {
+    color: #724399;
+    font: $font-body;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.accessoires {
+    color: #468540;
+    font: $font-body;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.whoami {
+    color:#B7483F;
+    font: $font-body;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contactme {
+    color:#3FBFC1;
+    font: $font-body;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.social {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.contactme:hover {
+    background-color: RGBA(63, 191, 193, 0.3) !important;
+}
+
+/*FIN FOOTER*/
+
+/*RETOUR EN HAUT*/
+a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: url("../images/noun2.png") no-repeat center 43%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+/*FIN RETOUR EN HAUT*/

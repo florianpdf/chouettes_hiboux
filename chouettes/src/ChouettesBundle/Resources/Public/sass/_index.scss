@@ -1,0 +1,102 @@
+/****************************/
+/****************************/
+/*        Logo & navBar     */
+/****************************/
+/****************************/
+.nb_navbar_logo {
+    width: 50% !important;
+    height: 50% !important;
+    min-width: 300px;
+}
+
+nav {
+    height: 120px !important;
+}
+
+.bckground {
+    background-color:#DEDEDE ;
+}
+
+/****************************/
+/****************************/
+/*        row  & col        */
+/****************************/
+/****************************/
+.rowCustom {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.colCustom {
+    padding:0px !important;
+    margin:0px;
+    /*background-color:#dedede;*/
+}
+
+/***************************/
+/***************************/
+/* BLOCK avec texte = menu */
+/***************************/
+/***************************/
+.colCustom:hover .iMasque {
+    display: inline;
+}
+
+.iMasque {
+    display: none;
+}
+
+/* Zone élément cliquable*/
+/* non survolé */
+a {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    outline: none;
+}
+
+/* Zone élément cliquable*/
+/* survolé */
+.iMasque:hover {
+    color: #999;
+}
+
+.boxMenu {
+    padding-top: 15%;
+}
+
+/* Titre de la box */
+.h3BoxMenu {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: bold;
+    font-weight: 80%;
+    font-family: butterfly;
+}   
+
+.imgChouetteAnimee {
+    width: 100%;
+}
+
+.imgChouetteAnimeeSmall {
+     width: 50%;
+}
+/****************************/
+/****************************/
+/* BLOCK avec photo + effet */
+/****************************/
+/****************************/
+/* SURCHARGE framework ihover */
+.ih-item.square {
+    width: 100% !important;
+    height: 100% !important;
+    /* Suppression bordure shadow */
+    border: 0px solid #fff !important;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+
+/*.ih-item.square.effect13.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}*/
