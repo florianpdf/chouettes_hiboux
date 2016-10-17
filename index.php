@@ -21,17 +21,17 @@
 
 
 <!-- DEBUT Block 9 images -->
-<div class="container" style="background-color:#DEDEDE; ">
+<div class="container">
   <!-- DEBUT PREMIERE LIGNE -->
 
   <div class="row rowCustom">
     <div class="col l4 m4 s12 colCustom center doudous">
-    <a href="doudous.php" >
+    <a href="doudous.php">
         <div class="boxMenu">
           <h3 class="h3BoxMenu">Doudous</h3>
-          <div class="center">
-            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;"/>
-          </div>  
+          <div class="center notForSmall">
+            <img class="imgChouetteAnimee" data-alt-src="images/chouette2.png" src="images/chouette1.png"/>
+          </div>
         </div> 
       </a>       
     </div> <!-- End col l4 m3 s1-->
@@ -54,8 +54,8 @@
       <a href="bijoux.php">
         <div class="boxMenu">
           <h3 class="h3BoxMenu">Bijoux</h3>
-          <div class="center">
-            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
+          <div class="center notForSmall">
+            <img  class="imgChouetteAnimee" data-alt-src="images/chouette2.png" src="images/chouette1.png"/>
           </div> 
         </div>
       </a>       
@@ -86,8 +86,8 @@
       <a href="Accessoires.php">
         <div class="boxMenu">
           <h3 class="h3BoxMenu">Accessoires</h3>
-          <div class="center">
-            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
+          <div class="center notForSmall">
+            <img  class="imgChouetteAnimee" data-alt-src="images/chouette2.png" src="images/chouette1.png"/>
           </div>  
         </div> 
       </a>     
@@ -117,8 +117,8 @@
       <a href="form.php">
         <div class="boxMenu">
           <h3 class="h3BoxMenu">Contact</h3>
-          <div class="center">
-            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
+          <div class="center notForSmall">
+            <img class="imgChouetteAnimee" data-alt-src="images/chouette2.png" src="images/chouette1.png"/>
           </div>   
         </div>
       </a>      
@@ -142,8 +142,8 @@
       <a href="about.php">
         <div class="boxMenu">
           <h3 class="h3BoxMenu">Qui suis-je</h3>
-          <div class="center">
-            <img data-alt-src="images/chouette2.png" src="images/chouette1.png" style="width: 100%;" />
+          <div class="center notForSmall">
+            <img class="imgChouetteAnimee" data-alt-src="images/chouette2.png" src="images/chouette1.png"/>
           </div>   
         </div>
       </a>      

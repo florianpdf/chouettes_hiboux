@@ -177,11 +177,17 @@ blockquote em {
 .nb_navbar_logo {
   width: 50% !important;
   height: 50% !important;
+  min-width: 300px;
 }
 
-/* line 11, ../sass/_index.scss */
+/* line 12, ../sass/_index.scss */
 nav {
   height: 120px !important;
+}
+
+/* line 16, ../sass/_index.scss */
+.container {
+  background-color: #DEDEDE;
 }
 
 /****************************/
@@ -189,13 +195,13 @@ nav {
 /*        row  & col        */
 /****************************/
 /****************************/
-/* line 20, ../sass/_index.scss */
+/* line 25, ../sass/_index.scss */
 .rowCustom {
   padding: 0px !important;
   margin: 0px !important;
 }
 
-/* line 25, ../sass/_index.scss */
+/* line 30, ../sass/_index.scss */
 .colCustom {
   padding: 0px !important;
   margin: 0px;
@@ -207,19 +213,19 @@ nav {
 /* BLOCK avec texte = menu */
 /***************************/
 /***************************/
-/* line 36, ../sass/_index.scss */
+/* line 41, ../sass/_index.scss */
 .colCustom:hover .iMasque {
   display: inline;
 }
 
-/* line 40, ../sass/_index.scss */
+/* line 45, ../sass/_index.scss */
 .iMasque {
   display: none;
 }
 
 /* Zone élément cliquable*/
 /* non survolé */
-/* line 46, ../sass/_index.scss */
+/* line 51, ../sass/_index.scss */
 a {
   cursor: pointer;
   display: inline-block;
@@ -230,18 +236,18 @@ a {
 
 /* Zone élément cliquable*/
 /* survolé */
-/* line 56, ../sass/_index.scss */
+/* line 61, ../sass/_index.scss */
 .iMasque:hover {
   color: #999;
 }
 
-/* line 60, ../sass/_index.scss */
+/* line 65, ../sass/_index.scss */
 .boxMenu {
   padding-top: 15%;
 }
 
 /* Titre de la box */
-/* line 65, ../sass/_index.scss */
+/* line 70, ../sass/_index.scss */
 .h3BoxMenu {
   text-transform: uppercase;
   text-align: center;
@@ -250,13 +256,23 @@ a {
   font-family: butterfly;
 }
 
+/* line 78, ../sass/_index.scss */
+.imgChouetteAnimee {
+  width: 100%;
+}
+
+/* line 82, ../sass/_index.scss */
+.imgChouetteAnimeeSmall {
+  width: 50%;
+}
+
 /****************************/
 /****************************/
 /* BLOCK avec photo + effet */
 /****************************/
 /****************************/
 /* SURCHARGE framework ihover */
-/* line 79, ../sass/_index.scss */
+/* line 91, ../sass/_index.scss */
 .ih-item.square {
   width: 100% !important;
   height: 100% !important;

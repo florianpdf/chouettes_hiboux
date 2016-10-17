@@ -6,10 +6,15 @@
 .nb_navbar_logo {
     width: 50% !important;
     height: 50% !important;
+    min-width: 300px;
 }
 
 nav {
     height: 120px !important;
+}
+
+.container {
+    background-color:#DEDEDE ;
 }
 
 /****************************/
@@ -70,6 +75,13 @@ a {
     font-family: butterfly;
 }   
 
+.imgChouetteAnimee {
+    width: 100%;
+}
+
+.imgChouetteAnimeeSmall {
+     width: 50%;
+}
 /****************************/
 /****************************/
 /* BLOCK avec photo + effet */
