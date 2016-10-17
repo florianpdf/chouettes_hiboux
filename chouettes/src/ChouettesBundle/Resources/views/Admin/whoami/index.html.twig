@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Whoami list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Text</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for whoami in whoamis %}
+            <tr>
+                <td><a href="{{ path('whoami_show', { 'id': whoami.id }) }}">{{ whoami.id }}</a></td>
+                <td>{{ whoami.text }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('whoami_show', { 'id': whoami.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('whoami_edit', { 'id': whoami.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('whoami_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+{% endblock %}
