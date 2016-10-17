@@ -21,7 +21,7 @@
 
 
 <!-- DEBUT Block 9 images -->
-<div class="container">
+<div class="container bckground">
   <!-- DEBUT PREMIERE LIGNE -->
 
   <div class="row rowCustom">
