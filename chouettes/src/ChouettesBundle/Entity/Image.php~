@@ -1,0 +1,13 @@
+<?php
+
+namespace ChouettesBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Image
+ */
+class Image
+{
+
+}

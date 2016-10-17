@@ -1,0 +1,3 @@
+chouettes_homepage:
+    path:     /
+    defaults: { _controller: ChouettesBundle:Default:index }

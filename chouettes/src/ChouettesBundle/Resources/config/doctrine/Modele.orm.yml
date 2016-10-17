@@ -1,0 +1,28 @@
+ChouettesBundle\Entity\Modele:
+    type: entity
+    table: null
+    repositoryClass: ChouettesBundle\Repository\ModeleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titre:
+            type: string
+            length: 255
+        contenu:
+            type: text
+        lien:
+            type: text
+        add_block:
+            type: boolean
+
+    manyToOne:
+        categorie:
+            targetEntity: ChouettesBundle\Entity\Categorie
+        image:
+            targetEntity: ChouettesBundle\Entity\Image
+
+    lifecycleCallbacks: {  }
