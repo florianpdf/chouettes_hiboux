@@ -1,0 +1,24 @@
+whoami_index:
+    path:     /
+    defaults: { _controller: "ChouettesBundle:Whoami:index" }
+    methods:  GET
+
+whoami_show:
+    path:     /{id}/show
+    defaults: { _controller: "ChouettesBundle:Whoami:show" }
+    methods:  GET
+
+whoami_new:
+    path:     /new
+    defaults: { _controller: "ChouettesBundle:Whoami:new" }
+    methods:  [GET, POST]
+
+whoami_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ChouettesBundle:Whoami:edit" }
+    methods:  [GET, POST]
+
+whoami_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ChouettesBundle:Whoami:delete" }
+    methods:  DELETE

@@ -1,0 +1,19 @@
+chouettes_citation:
+    resource: "@ChouettesBundle/Resources/config/routing/citation.yml"
+    prefix:   /citation
+
+user_routing:
+    resource: routing/user.yml
+    prefix:   /
+
+chouettes_modele:
+    resource: "@ChouettesBundle/Resources/config/routing/modele.yml"
+    prefix:   /modele
+
+chouettes_categorie:
+    resource: "@ChouettesBundle/Resources/config/routing/categorie.yml"
+    prefix:   /categorie
+
+chouettes_whoami:
+    resource: "@ChouettesBundle/Resources/config/routing/whoami.yml"
+    prefix:   /whoami

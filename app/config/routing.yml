@@ -1,0 +1,5 @@
+chouettes:
+    resource: "@ChouettesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+

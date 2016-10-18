@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Modele list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>Contenu</th>
+                <th>Lien</th>
+                <th>Add_block</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for modele in modeles %}
+            <tr>
+                <td><a href="{{ path('modele_show', { 'id': modele.id }) }}">{{ modele.id }}</a></td>
+                <td>{{ modele.titre }}</td>
+                <td>{{ modele.contenu }}</td>
+                <td>{{ modele.lien }}</td>
+                <td>{% if modele.addblock %}Yes{% else %}No{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('modele_show', { 'id': modele.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('modele_edit', { 'id': modele.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('modele_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+{% endblock %}
