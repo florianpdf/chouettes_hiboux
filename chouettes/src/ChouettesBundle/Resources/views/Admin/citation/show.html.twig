@@ -1,32 +1,38 @@
-{% extends 'base.html.twig' %}
+<blockquote>
+    Morbi placerat risus quis blandit. Ut lobortis elit luctus, feugiat erat vitae, interdum diam. Nam sit amet arcu vitae justo lacinia ultricies nec eget tellus. Curabitur id sapien massa. In hac <a href="#">habitasse</a> platea dictumst. Integer tristique leo consectetur libero pretium pretium. Nunc sed mauris magna. Praesent varius purus id turpis iaculis iaculis. Nulla <em>convallis magna nunc</em>, id rhoncus massa ornare in. Donec et feugiat sem, ac rhoncus mauris. Quisque eget tempor massa.
+</blockquote>
 
-{% block body %}
-    <h1>Citation</h1>
 
-    <table>
-        <tbody>
-        <tr>
-            <th>Id</th>
-            <td>{{ citation.id }}</td>
-        </tr>
-        <tr>
-            <th>Text</th>
-            <td>{{ citation.id }}</td>
-        </tr>
-        </tbody>
-    </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('citation_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('citation_edit', { 'id': citation.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-            <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
-{% endblock %}
+{#{% extends 'base.html.twig' %}#}
+
+{#{% block body %}#}
+    {#<h1>Citation</h1>#}
+
+    {#<table>#}
+        {#<tbody>#}
+        {#<tr>#}
+            {#<th>Id</th>#}
+            {#<td>{{ citation.id }}</td>#}
+        {#</tr>#}
+        {#<tr>#}
+            {#<th>Text</th>#}
+            {#<td>{{ citation.id }}</td>#}
+        {#</tr>#}
+        {#</tbody>#}
+    {#</table>#}
+
+    {#<ul>#}
+        {#<li>#}
+            {#<a href="{{ path('citation_index') }}">Back to the list</a>#}
+        {#</li>#}
+        {#<li>#}
+            {#<a href="{{ path('citation_edit', { 'id': citation.id }) }}">Edit</a>#}
+        {#</li>#}
+        {#<li>#}
+            {#{{ form_start(delete_form) }}#}
+            {#<input type="submit" value="Delete">#}
+            {#{{ form_end(delete_form) }}#}
+        {#</li>#}
+    {#</ul>#}
+{#{% endblock %}#}

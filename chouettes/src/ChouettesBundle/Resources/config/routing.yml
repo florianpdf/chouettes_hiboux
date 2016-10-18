@@ -2,9 +2,9 @@ chouettes_citation:
     resource: "@ChouettesBundle/Resources/config/routing/citation.yml"
     prefix:   /citation
 
-chouettes_homepage:
-    path:     /
-    defaults: { _controller: ChouettesBundle:Default:index }
+user_routing:
+    resource: routing/user.yml
+    prefix:     /
 
 chouettes_modele:
     resource: "@ChouettesBundle/Resources/config/routing/modele.yml"
