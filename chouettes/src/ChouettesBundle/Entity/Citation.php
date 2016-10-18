@@ -9,8 +9,10 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Citation
 {
+
+    
     /**
-     * @var int
+     * @var integer
      */
     private $id;
 

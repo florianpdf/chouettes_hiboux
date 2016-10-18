@@ -24,7 +24,7 @@ class ModeleController extends Controller
 
         $modeles = $em->getRepository('ChouettesBundle:Modele')->findAll();
 
-        return $this->render('modele/index.html.twig', array(
+        return $this->render('@Chouettes/Admin/modele/index.html.twig', array(
             'modeles' => $modeles,
         ));
     }
@@ -47,7 +47,7 @@ class ModeleController extends Controller
             return $this->redirectToRoute('modele_show', array('id' => $modele->getId()));
         }
 
-        return $this->render('modele/new.html.twig', array(
+        return $this->render('@Chouettes/Admin/modele/new.html.twig', array(
             'modele' => $modele,
             'form' => $form->createView(),
         ));
@@ -61,7 +61,7 @@ class ModeleController extends Controller
     {
         $deleteForm = $this->createDeleteForm($modele);
 
-        return $this->render('modele/show.html.twig', array(
+        return $this->render('@Chouettes/Admin/modele/show.html.twig', array(
             'modele' => $modele,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -85,7 +85,7 @@ class ModeleController extends Controller
             return $this->redirectToRoute('modele_edit', array('id' => $modele->getId()));
         }
 
-        return $this->render('modele/edit.html.twig', array(
+        return $this->render('@Chouettes/Admin/modele/edit.html.twig', array(
             'modele' => $modele,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),

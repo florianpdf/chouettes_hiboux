@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('ChouettesBundle:Default:index.html.twig');
+        return $this->render('@Chouettes/Default/index.html.twig');
     }
 }

@@ -24,7 +24,7 @@ class WhoamiController extends Controller
 
         $whoamis = $em->getRepository('ChouettesBundle:Whoami')->findAll();
 
-        return $this->render('whoami/index.html.twig', array(
+        return $this->render('@Chouettes/Admin/whoami/index.html.twig', array(
             'whoamis' => $whoamis,
         ));
     }
@@ -47,7 +47,7 @@ class WhoamiController extends Controller
             return $this->redirectToRoute('whoami_show', array('id' => $whoami->getId()));
         }
 
-        return $this->render('whoami/new.html.twig', array(
+        return $this->render('@Chouettes/Admin/whoami/new.html.twig', array(
             'whoami' => $whoami,
             'form' => $form->createView(),
         ));
@@ -61,7 +61,7 @@ class WhoamiController extends Controller
     {
         $deleteForm = $this->createDeleteForm($whoami);
 
-        return $this->render('whoami/show.html.twig', array(
+        return $this->render('@Chouettes/Admin/whoami/show.html.twig', array(
             'whoami' => $whoami,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -85,7 +85,7 @@ class WhoamiController extends Controller
             return $this->redirectToRoute('whoami_edit', array('id' => $whoami->getId()));
         }
 
-        return $this->render('whoami/edit.html.twig', array(
+        return $this->render('@Chouettes/Admin/whoami/edit.html.twig', array(
             'whoami' => $whoami,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
