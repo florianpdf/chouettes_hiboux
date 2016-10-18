@@ -24,7 +24,7 @@ class CitationController extends Controller
 
         $citations = $em->getRepository('ChouettesBundle:Citation')->findAll();
 
-        return $this->render('citation/index.html.twig', array(
+        return $this->render('@Chouettes/Admin/citation/index.html.twig', array(
             'citations' => $citations,
         ));
     }
@@ -47,7 +47,7 @@ class CitationController extends Controller
             return $this->redirectToRoute('citation_show', array('id' => $citation->getId()));
         }
 
-        return $this->render('citation/new.html.twig', array(
+        return $this->render('@Chouettes/Admin/citation/new.html.twig', array(
             'citation' => $citation,
             'form' => $form->createView(),
         ));
@@ -61,7 +61,7 @@ class CitationController extends Controller
     {
         $deleteForm = $this->createDeleteForm($citation);
 
-        return $this->render('citation/show.html.twig', array(
+        return $this->render('@Chouettes/Admin/citation/show.html.twig', array(
             'citation' => $citation,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -85,7 +85,7 @@ class CitationController extends Controller
             return $this->redirectToRoute('citation_edit', array('id' => $citation->getId()));
         }
 
-        return $this->render('citation/edit.html.twig', array(
+        return $this->render('@Chouettes/Admin/citation/edit.html.twig', array(
             'citation' => $citation,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
