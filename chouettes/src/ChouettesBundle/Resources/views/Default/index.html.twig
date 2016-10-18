@@ -4,7 +4,7 @@
     <div>
         <nav>
             <div class="nav-wrapper">
-                <a href="../bleau_S2_2016_chouette_hibou/index.php" class="brand-logo center">
+                <a href="{{ path ('chouettes_homepage') }}" class="brand-logo center">
                     <img src={{ asset ('bundles/chouettes/images/logo2min.png') }} alt="Chouettes Hiboux Doudous" class="nb_navbar_logo">
                 </a>
             </div>
@@ -48,7 +48,7 @@
         </div>
 
         <div class="col l4 m4 s12 colCustom center bijoux">
-            <a href="bijoux.php">
+            <a href="{{ path ('chouettes_bijoux') }}">
                 <div class="boxMenu">
                     <h3 class="h3BoxMenu">Bijoux</h3>
                     <div class="center notForSmall">
@@ -80,7 +80,7 @@
         </div>
 
         <div class="col l4 m4 s12 colCustom center accessoires">
-            <a href="Accessoires.php">
+            <a href="{{ path ('chouettes_accessoires') }}">
                 <div class="boxMenu">
                     <h3 class="h3BoxMenu">Accessoires</h3>
                     <div class="center notForSmall">
@@ -111,7 +111,7 @@
     <div class="row rowCustom">
 
         <div class="col l4 m4 s12 colCustom center contactme">
-            <a href="form.php">
+            <a href="{{ path ('chouettes_contact') }}">
                 <div class="boxMenu">
                     <h3 class="h3BoxMenu">Contact</h3>
                     <div class="center notForSmall">
@@ -136,7 +136,7 @@
         </div>
 
         <div class="col l4 m4 s12 colCustom center whoami">
-            <a href="about.php">
+            <a href="{{ path ('chouettes_about') }}">
                 <div class="boxMenu">
                     <h3 class="h3BoxMenu">Qui suis-je</h3>
                     <div class="center notForSmall">
