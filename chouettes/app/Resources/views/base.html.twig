@@ -1,13 +1,98 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block stylesheets %}
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/
+	font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset ('bundles/chouettes/stylesheets/main.css') }}"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+        <!-- <link href="http://www.fontspace.com/david-kerkhoff/dk-butterfly-ball?text=" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    {% endblock %}
+
+    <title>{% block title %}Chouettes Hiboux Doudous{% endblock %}</title>
+</head>
+
+
+
+
+{% block header %}
+{% endblock %}
+
+
+{% block body %}
+{%  endblock %}
+
+
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row" id="row-footer">
+            <div class="col l3 s12">
+                <h5>Catégories</h5>
+                <ul>
+                    <li><a class="doudous" href="{{ path ('chouettes_doudous') }}">Les doudous</a></li>
+                    <li><a class="bijoux" href="{{ path ('chouettes_bijoux') }}">Les bijoux</a></li>
+                    <li><a class="accessoires" href="{{ path ('chouettes_accessoires') }}">Les accessoires</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5>A propos</h5>
+                <ul>
+                    <li><a class="whoami" href="{{ path ('chouettes_about') }}">Qui suis-je ?</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5>Contacts</h5>
+                <ul>
+                    <li><a class="contactme" href="{{ path ('chouettes_contact') }}">Formulaire de contact</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5>Me suivre </h5>
+                <div class="row">
+                    <div class="col l6 s12">
+                        <img class="social responsive-img" data-alt-src="https://s21.postimg.org/nyq4jte47/hiboux_yeux_ouverts.png" src="https://s21.postimg.org/5kflfu1tj/hibou_bleu_yruxouverts.png" />
+                        <!-- <img src="./images/chouettefb.png" class="social" /> --><!-- <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i> -->
+                    </div>
+                    <div class="col l6 s12">
+                        <img class="social" data-alt-src="https://s13.postimg.org/ysmy76ppj/Hiboux_bleu_yeux_fermes2.png" src="https://s13.postimg.org/anm8ph5ev/Hiboux_bleu_yeux_ouverts2.png" />
+                        <!-- <img src="./images/chouetteig.png" class="social" /> --><!-- <i class="fa fa-instagram fa-3x" aria-hidden="true"></i> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 All Rights Reserved Chouettes Hiboux Doudous | Design by WCS
+            </div>
+        </div>
+</footer>
+
+{% block javascripts %}
+    <!--  Scripts-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="{{ asset ('bundles/chouettes/js/materialize.js') }}"></script>
+    <script src="{{ asset ('bundles/chouettes/js/init.js') }}"></script>
+    <script src="{{ asset ('bundles/chouettes/js/modernizr.custom.js') }}"></script>
+    <script src="{{ asset ('bundles/chouettes/js/grid.js') }}"></script>
+    <script src="{{ asset ('bundles/chouettes/js/chouettesHiboux.js') }}"></script>
+
+{% endblock %}
+
+
+</body>
 </html>
+

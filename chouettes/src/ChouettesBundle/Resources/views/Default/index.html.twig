@@ -1,22 +1,20 @@
-{% include '@Chouettes/user/header.html.twig' %}
+{% extends 'base.html.twig' %}
 
-{% block header %}
+{% block body %}
     <div>
         <nav>
             <div class="nav-wrapper">
                 <a href="../bleau_S2_2016_chouette_hibou/index.php" class="brand-logo center">
-                    <img src={{ asset ('bundles/images/logo2min.png') }} alt="Chouettes Hiboux Doudous" class="nb_navbar_logo">
+                    <img src={{ asset ('bundles/chouettes/images/logo2min.png') }} alt="Chouettes Hiboux Doudous" class="nb_navbar_logo">
                 </a>
             </div>
         </nav>
     </div>
-{% endblock %}
 
-{#{%  block citations %}#}
-{#{% include '@Chouettes/Admin/citation/show.html.twig' %}#}
-{#{%  endblock %}#}
 
-{% block body %}
+{% include '@Chouettes/Admin/citation/show.html.twig' %}
+
+
 
 <!-- DEBUT Block 9 images -->
 <div class="container bckground">
@@ -24,11 +22,11 @@
 
     <div class="row rowCustom">
         <div class="col l4 m4 s12 colCustom center doudous">
-            <a href="doudous.php">
+            <a href="{{ path('chouettes_doudous') }}">
                 <div class="boxMenu">
                     <h3 class="h3BoxMenu">Doudous</h3>
                     <div class="center notForSmall">
-                        <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/images/chouette2.png') }}" src="{{ asset ('bundles/images/chouette1.png') }}"/>
+                        <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
                     </div>
                 </div>
             </a>
@@ -38,7 +36,7 @@
             <div class="ih-item square effect13 top_to_bottom">
                 <a href="#">
                     <div>
-                        <img class='imgDamier' src="{{ asset ('bundles/images/petitDoudou.jpg') }}" alt="img">
+                        <img class='imgDamier' src="{{ asset ('bundles/chouettes/images/petitDoudou.jpg') }}" alt="img">
                     </div>
                     <div class="info">
                         <h3>Petits doudous</h3>
@@ -53,7 +51,7 @@
                 <div class="boxMenu">
                     <h3 class="h3BoxMenu">Bijoux</h3>
                     <div class="center notForSmall">
-                        <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/images/chouette2.png') }}" src="{{ asset ('bundles/images/chouette1.png') }}"/>
+                        <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
                     </div>
                 </div>
             </a>
@@ -70,7 +68,7 @@
 
                 <a href="#">
                     <div>
-                        <img class='imgDamier' src={{ asset ('bundles/images/grandDoudou.jpg') }} alt="img">
+                        <img class='imgDamier' src={{ asset ('bundles/chouettes/images/grandDoudou.jpg') }} alt="img">
                     </div>
                     <div class="info">
                         <h3>Grands doudous</h3>
@@ -85,7 +83,7 @@
                 <div class="boxMenu">
                     <h3 class="h3BoxMenu">Accessoires</h3>
                     <div class="center notForSmall">
-                        <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/images/chouette2.png') }}" src="{{ asset ('bundles/images/chouette1.png') }}"/>
+                        <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
                     </div>
                 </div>
             </a>
@@ -95,7 +93,7 @@
             <div class="ih-item square effect13 top_to_bottom">
                 <a href="#">
                     <div>
-                        <img class='imgDamier' src="{{ asset ('bundles/images/accessoire.jpg') }}" alt="img">
+                        <img class='imgDamier' src="{{ asset ('bundles/chouettes/images/accessoire.jpg') }}" alt="img">
                     </div>
                     <div class="info">
                         <h3>Bijoux</h3>
@@ -116,7 +114,7 @@
                 <div class="boxMenu">
                     <h3 class="h3BoxMenu">Contact</h3>
                     <div class="center notForSmall">
-                        <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/images/chouette2.png') }}" src="{{ asset ('bundles/images/chouette1.png') }}"/>
+                        <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
                     </div>
                 </div>
             </a>
@@ -126,7 +124,7 @@
             <div class="ih-item square effect13 top_to_bottom">
                 <a href="#">
                     <div>
-                        <img class='imgDamier' src="{{ asset ('bundles/images/accessoires.jpg') }}" alt="img">
+                        <img class='imgDamier' src="{{ asset ('bundles/chouettes/images/accessoires.jpg') }}" alt="img">
                     </div>
                     <div class="info">
                         <h3>Accessoires</h3>
@@ -141,7 +139,7 @@
                 <div class="boxMenu">
                     <h3 class="h3BoxMenu">Qui suis-je</h3>
                     <div class="center notForSmall">
-                        <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/images/chouette2.png') }}" src="{{ asset ('bundles/images/chouette1.png') }}"/>
+                        <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
                     </div>
                 </div>
             </a>
@@ -152,8 +150,3 @@
 </div>  <!-- End container -->
 <!-- FIN Block 9 images -->
 {% endblock %}
-
-
-
-
-{% include '@Chouettes/user/footer.html.twig' %}
