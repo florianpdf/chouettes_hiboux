@@ -1,0 +1,18 @@
+ChouettesBundle\Entity\Whoami:
+    type: entity
+    table: null
+    repositoryClass: ChouettesBundle\Repository\WhoamiRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        text:
+            type: text
+
+    manyToOne:
+        image:
+            targetEntity: ChouettesBundle\Entity\Image
+    lifecycleCallbacks: {  }

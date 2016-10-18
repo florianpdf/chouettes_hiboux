@@ -1,0 +1,14 @@
+ChouettesBundle\Entity\Citation:
+    type: entity
+    table: null
+    repositoryClass: ChouettesBundle\Repository\CitationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        text:
+            type: text
+    lifecycleCallbacks: {  }
