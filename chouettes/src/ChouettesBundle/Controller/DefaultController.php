@@ -8,7 +8,12 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('@Chouettes/Default/index.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $citations=$em->getRepository('ChouettesBundle:Citation')->findAll();
+        $randomcitation=$citations[array_rand($citations)];
+        return $this->render('@Chouettes/Default/index.html.twig', array(
+            'citation'=>$randomcitation
+        ));
     }
 
     public function doudousAction()

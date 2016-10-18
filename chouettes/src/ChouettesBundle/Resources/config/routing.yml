@@ -4,7 +4,7 @@ chouettes_citation:
 
 user_routing:
     resource: routing/user.yml
-    prefix:     /
+    prefix:   /
 
 chouettes_modele:
     resource: "@ChouettesBundle/Resources/config/routing/modele.yml"
