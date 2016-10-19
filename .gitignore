@@ -8,3 +8,5 @@ bin/
 vendor/
 web/bundles/
 .idea
+/composer.lock
+/web/config.php
