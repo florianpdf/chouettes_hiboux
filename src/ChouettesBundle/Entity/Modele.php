@@ -10,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Modele
 {
 
+
     /**
      * @var integer
      */
@@ -49,7 +50,7 @@ class Modele
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -60,6 +61,7 @@ class Modele
      * Set titre
      *
      * @param string $titre
+     *
      * @return Modele
      */
     public function setTitre($titre)
@@ -72,7 +74,7 @@ class Modele
     /**
      * Get titre
      *
-     * @return string 
+     * @return string
      */
     public function getTitre()
     {
@@ -83,6 +85,7 @@ class Modele
      * Set contenu
      *
      * @param string $contenu
+     *
      * @return Modele
      */
     public function setContenu($contenu)
@@ -95,7 +98,7 @@ class Modele
     /**
      * Get contenu
      *
-     * @return string 
+     * @return string
      */
     public function getContenu()
     {
@@ -106,6 +109,7 @@ class Modele
      * Set lien
      *
      * @param string $lien
+     *
      * @return Modele
      */
     public function setLien($lien)
@@ -118,7 +122,7 @@ class Modele
     /**
      * Get lien
      *
-     * @return string 
+     * @return string
      */
     public function getLien()
     {
@@ -126,9 +130,10 @@ class Modele
     }
 
     /**
-     * Set add_block
+     * Set addBlock
      *
      * @param boolean $addBlock
+     *
      * @return Modele
      */
     public function setAddBlock($addBlock)
@@ -139,9 +144,9 @@ class Modele
     }
 
     /**
-     * Get add_block
+     * Get addBlock
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getAddBlock()
     {
@@ -152,6 +157,7 @@ class Modele
      * Set categorie
      *
      * @param \ChouettesBundle\Entity\Categorie $categorie
+     *
      * @return Modele
      */
     public function setCategorie(\ChouettesBundle\Entity\Categorie $categorie = null)
@@ -164,7 +170,7 @@ class Modele
     /**
      * Get categorie
      *
-     * @return \ChouettesBundle\Entity\Categorie 
+     * @return \ChouettesBundle\Entity\Categorie
      */
     public function getCategorie()
     {
@@ -175,6 +181,7 @@ class Modele
      * Set image
      *
      * @param \ChouettesBundle\Entity\Image $image
+     *
      * @return Modele
      */
     public function setImage(\ChouettesBundle\Entity\Image $image = null)
@@ -187,7 +194,7 @@ class Modele
     /**
      * Get image
      *
-     * @return \ChouettesBundle\Entity\Image 
+     * @return \ChouettesBundle\Entity\Image
      */
     public function getImage()
     {

@@ -16,8 +16,8 @@ ChouettesBundle\Entity\Image:
             length: 255
 
     lifecycleCallbacks:
-        prePersist: [ preUpload, setCreatedAtValue, setExpiresAtValue ]
-        preUpdate: [ preUpload, setUpdatedAtValue ]
+        prePersist: [ preUpload ]
+        preUpdate: [ preUpload ]
         postPersist: [ upload ]
         postUpdate: [ upload ]
         postRemove: [ removeUpload ]
