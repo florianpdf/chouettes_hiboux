@@ -9,6 +9,30 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Image
 {
+    public $file;
+
+    protected function getUploadDir()
+    {
+        return 'uploads/images';
+    }
+
+    protected function getUploadRootDir()
+    {
+        return __DIR__.'/../../../web/'.$this->getUploadDir();
+    }
+
+    public function getWebPath()
+    {
+        return null === $this->url ? null : $this->getUploadDir().'/'.$this->url;
+    }
+
+    public function getAbsolutePath()
+    {
+        return null === $this->url ? null : $this->getUploadRootDir().'/'.$this->url;
+    }
+
+    //generated code
+
 
     /**
      * @var integer

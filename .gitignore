@@ -15,3 +15,4 @@ web/bundles/
 /composer.lock
 /web/config.php
 >>>>>>> 2676177b7802fade644813e2625245ac3619383f
+/web/uploads/

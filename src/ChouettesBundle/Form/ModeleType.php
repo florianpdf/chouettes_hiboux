@@ -2,9 +2,11 @@
 
 namespace ChouettesBundle\Form;
 
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+
 
 class ModeleType extends AbstractType
 {
@@ -20,7 +22,9 @@ class ModeleType extends AbstractType
             ->add('lien')
             ->add('add_block')
             ->add('categorie')
-            ->add('image')
+            ->add('image', EntityType::class, array(
+                'class' => 'ChouettesBundle\Entity\Image',
+            ))
         ;
     }
     

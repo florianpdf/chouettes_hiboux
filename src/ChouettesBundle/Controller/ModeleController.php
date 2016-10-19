@@ -2,6 +2,7 @@
 
 namespace ChouettesBundle\Controller;
 
+use ChouettesBundle\Entity\Image;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -36,6 +37,7 @@ class ModeleController extends Controller
     public function newAction(Request $request)
     {
         $modele = new Modele();
+        $image = new Image();
         $form = $this->createForm('ChouettesBundle\Form\ModeleType', $modele);
         $form->handleRequest($request);
 
