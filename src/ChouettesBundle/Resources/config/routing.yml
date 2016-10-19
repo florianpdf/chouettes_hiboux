@@ -1,6 +1,6 @@
 chouettes_citation:
     resource: "@ChouettesBundle/Resources/config/routing/citation.yml"
-    prefix:   /citation
+    prefix:   /admin/citation
 
 user_routing:
     resource: routing/user.yml
@@ -8,12 +8,12 @@ user_routing:
 
 chouettes_modele:
     resource: "@ChouettesBundle/Resources/config/routing/modele.yml"
-    prefix:   /modele
+    prefix:   /admin/modele
 
 chouettes_categorie:
     resource: "@ChouettesBundle/Resources/config/routing/categorie.yml"
-    prefix:   /categorie
+    prefix:   /admin/categorie
 
 chouettes_whoami:
     resource: "@ChouettesBundle/Resources/config/routing/whoami.yml"
-    prefix:   /whoami
+    prefix:   /admin/whoami
