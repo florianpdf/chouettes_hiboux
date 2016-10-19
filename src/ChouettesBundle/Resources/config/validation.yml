@@ -2,4 +2,4 @@ ChouettesBundle\Entity\Image:
     properties:
         # ...
         file:
-            - image: ~
+            - Image: ~

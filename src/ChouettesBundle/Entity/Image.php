@@ -3,7 +3,6 @@
 namespace ChouettesBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * Image
@@ -142,31 +141,5 @@ class Image
     public function getAlt()
     {
         return $this->alt;
-    }
-
-
-    /**
-     * @ORM\PrePersist
-     */
-    public function setCreatedAtValue()
-    {
-        // Add your code here
-    }
-
-    /**
-     * @ORM\PrePersist
-     */
-    public function setExpiresAtValue()
-    {
-        // Add your code here
-    }
-
-
-    /**
-     * @ORM\PreUpdate
-     */
-    public function setUpdatedAtValue()
-    {
-        // Add your code here
     }
 }
