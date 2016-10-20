@@ -9,6 +9,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Categorie
 {
+    public function __toString() {
+        return $this->nom;
+    }
+
+//    GENERATE CODE
 
     /**
      * @var integer
@@ -24,7 +29,7 @@ class Categorie
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -35,6 +40,7 @@ class Categorie
      * Set nom
      *
      * @param string $nom
+     *
      * @return Categorie
      */
     public function setNom($nom)
@@ -47,7 +53,7 @@ class Categorie
     /**
      * Get nom
      *
-     * @return string 
+     * @return string
      */
     public function getNom()
     {
