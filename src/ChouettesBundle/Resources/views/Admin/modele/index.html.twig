@@ -12,6 +12,8 @@
                 <th>Lien</th>
                 <th>Add_block</th>
                 <th>Actions</th>
+                <th>image</th>
+
             </tr>
         </thead>
         <tbody>
@@ -32,6 +34,7 @@
                         </li>
                     </ul>
                 </td>
+                <td><img src="{{ asset('uploads/images/') }}{{ modele.image.url }}" alt="{{ modele.image.alt }}"></td>
             </tr>
         {% endfor %}
         </tbody>

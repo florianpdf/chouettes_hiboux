@@ -12,9 +12,16 @@
     </div>
 
 
-<blockquote>
-    {{ (citation).text }}
-</blockquote>
+
+    {# Si pas de citation dans la base de données le blockquote n'est pas affiché #}
+    {# cf. DefaultController.php #}
+    {% if citation == "" %}
+        <br>
+    {% else %}
+        <blockquote>
+        {{ citation }}
+        </blockquote>
+    {% endif %}
 
 
 <!-- DEBUT Block 9 images -->
@@ -41,7 +48,6 @@
                     </div>
                     <div class="info">
                         <h3>Petits doudous</h3>
-                        <p>Modèle d'après un tuto d'amigurumi, en laine acrylique , bourrage en ouatine synthétique</p>
                     </div>
                 </a>
             </div> <!-- End h-item square effect15 top_to_bottom -->
@@ -73,7 +79,6 @@
                     </div>
                     <div class="info">
                         <h3>Grands doudous</h3>
-                        <p>Modèle d'après la revue "Tricot Mag Les doudous de Sophie", en peine acrylique et bourrage en ouatine synthétique.</p>
                     </div>
                 </a>
             </div> <!-- End h-item square effect15 top_to_bottom -->
@@ -98,7 +103,6 @@
                     </div>
                     <div class="info">
                         <h3>Bijoux</h3>
-                        <p>Sautoir d'après un modèle de La Droguerie, matériel acheté dans leur boutique à Paris.</p>
                     </div>
                 </a>
             </div> <!-- End h-item square effect15 top_to_bottom -->
@@ -129,7 +133,6 @@
                     </div>
                     <div class="info">
                         <h3>Accessoires</h3>
-                        <p>modèle créé d'après une photo, en tissu coton, feutrine, boutons et fil de coton.</p>
                     </div>
                 </a>
             </div> <!-- End h-item square effect15 top_to_bottom -->

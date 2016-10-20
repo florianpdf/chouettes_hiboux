@@ -25,6 +25,10 @@ class ModeleController extends Controller
 
         $modeles = $em->getRepository('ChouettesBundle:Modele')->findAll();
 
+        foreach ($modeles as $modele){
+            $image = $modele->getImage()->getUrl();
+        }
+
         return $this->render('@Chouettes/Admin/modele/index.html.twig', array(
             'modeles' => $modeles,
         ));
@@ -61,6 +65,8 @@ class ModeleController extends Controller
     public function showAction(Modele $modele)
     {
         $deleteForm = $this->createDeleteForm($modele);
+
+        print_r($modele);
 
         return $this->render('@Chouettes/Admin/modele/show.html.twig', array(
             'modele' => $modele,
