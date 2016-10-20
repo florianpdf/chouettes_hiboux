@@ -36,9 +36,12 @@
             <a href="{{ path('modele_edit', { 'id': modele.id }) }}">Edit</a>
         </li>
         <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
+            <a href="{{ path('modele_delete', { 'id' : modele.id }) }}">Delete</a>
         </li>
+        {#<li>#}
+            {#{{ form_start(delete_form) }}#}
+                {#<input type="submit" value="Delete">#}
+            {#{{ form_end(delete_form) }}#}
+        {#</li>#}
     </ul>
 {% endblock %}
