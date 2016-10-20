@@ -91,3 +91,60 @@ section{
 .container{
 	min-height:100%;
 }
+
+/*-----------------------------------------------------*\
+       ADMIN      ADMIN      ADMIN     ADMIN
+\*-----------------------------------------------------*/
+
+.admin {
+	background-color: RGBA(255,255,255,0.8);
+	margin-top: 15px;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+.boutons {
+	text-align: center;
+}
+
+table {
+	font: $font-body;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+tbody tr td {
+	border: 1px solid #848993;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+thead th {
+	border: 1px solid #848993;
+	text-align: center;
+
+}
+
+td > img {
+	max-height: 200px;
+}
+
+button {
+	background: none;
+	border: none;
+}
+
+.citationadmin {
+	color: #E93255;
+	font: $font-titre;
+}
+
+.catdmin {
+	color: #724399;
+	font: $font-titre;
+}
+
+.whoadmin {
+	color: #468540;
+	font: $font-titre;
+}

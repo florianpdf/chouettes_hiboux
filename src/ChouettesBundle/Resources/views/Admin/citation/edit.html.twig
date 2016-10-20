@@ -1,21 +1,28 @@
 {% extends 'base.html.twig' %}
 
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
 {% block body %}
-    <h1>Citation edit</h1>
+<div class="container admin">
+
+<h1 class="citationadmin">Editer la citation</h1>
 
     {{ form_start(edit_form) }}
         {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
+        <button type="submit" title="Editer"><i class="material-icons doudous">done</i></button>
     {{ form_end(edit_form) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('citation_index') }}">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+   <div class="boutons">
+       <div class="row">
+           <div class="col offset-l4 l2">
+            <a href="{{ path('citation_index') }}" title="Revenir à l'accueil"><i class="material-icons doudous">home</i></a>
+           </div>
+           <div class="col l2">
+            {{ form_start(delete_form) }}<button type="submit" title="Effacer"><i class="material-icons doudous">delete</i></button>{{ form_end(delete_form) }}
+           </div>
+       </div>
+   </div>
+</div>
 {% endblock %}

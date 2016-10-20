@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*---------------------------------------*\
             SOMMAIRE
 FONT______________ Font of website
@@ -43,6 +42,71 @@ section {
 /* line 91, ../sass/_general.scss */
 .container {
   min-height: 100%;
+}
+
+/*-----------------------------------------------------*\
+       ADMIN      ADMIN      ADMIN     ADMIN
+\*-----------------------------------------------------*/
+/* line 99, ../sass/_general.scss */
+.admin {
+  background-color: RGBA(255, 255, 255, 0.8);
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* line 106, ../sass/_general.scss */
+.boutons {
+  text-align: center;
+}
+
+/* line 110, ../sass/_general.scss */
+table {
+  font: 16px "Didact Gothic";
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* line 116, ../sass/_general.scss */
+tbody tr td {
+  border: 1px solid #848993;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* line 122, ../sass/_general.scss */
+thead th {
+  border: 1px solid #848993;
+  text-align: center;
+}
+
+/* line 128, ../sass/_general.scss */
+td > img {
+  max-height: 200px;
+}
+
+/* line 132, ../sass/_general.scss */
+button {
+  background: none;
+  border: none;
+}
+
+/* line 137, ../sass/_general.scss */
+.citationadmin {
+  color: #E93255;
+  font: 2vw "butterfly";
+}
+
+/* line 142, ../sass/_general.scss */
+.catdmin {
+  color: #724399;
+  font: 2vw "butterfly";
+}
+
+/* line 147, ../sass/_general.scss */
+.whoadmin {
+  color: #468540;
+  font: 2vw "butterfly";
 }
 
 /* line 3, ../sass/_navbar.scss */
@@ -223,8 +287,8 @@ nav {
   display: none;
 }
 
-/* Zone élément cliquable*/
-/* non survolé */
+/* Zone element cliquable*/
+/* non survole */
 /* line 51, ../sass/_index.scss */
 a {
   cursor: pointer;
@@ -234,8 +298,8 @@ a {
   outline: none;
 }
 
-/* Zone élément cliquable*/
-/* survolé */
+/* Zone element cliquable*/
+/* survole */
 /* line 61, ../sass/_index.scss */
 .iMasque:hover {
   color: #999;
