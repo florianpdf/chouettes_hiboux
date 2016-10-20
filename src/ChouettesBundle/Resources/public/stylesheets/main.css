@@ -109,6 +109,11 @@ button {
   font: 2vw "butterfly";
 }
 
+/* line 152, ../sass/_general.scss */
+.fa {
+  font-size: medium !important;
+}
+
 /* line 3, ../sass/_navbar.scss */
 nav {
   height: 85px !important;
@@ -6282,11 +6287,17 @@ h5 {
 }
 
 /* line 17, ../sass/_footer.scss */
+.footer-copyright {
+  background-color: transparent !important;
+  text-align: center;
+}
+
+/* line 22, ../sass/_footer.scss */
 footer.page-footer .footer-copyright {
   color: rgba(87, 73, 73, 0.8);
 }
 
-/* line 21, ../sass/_footer.scss */
+/* line 26, ../sass/_footer.scss */
 .doudous {
   color: #E93255;
   font: 16px "Didact Gothic";
@@ -6294,7 +6305,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 28, ../sass/_footer.scss */
+/* line 33, ../sass/_footer.scss */
 .bijoux {
   color: #724399;
   font: 16px "Didact Gothic";
@@ -6302,7 +6313,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 35, ../sass/_footer.scss */
+/* line 40, ../sass/_footer.scss */
 .accessoires {
   color: #468540;
   font: 16px "Didact Gothic";
@@ -6310,7 +6321,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 42, ../sass/_footer.scss */
+/* line 47, ../sass/_footer.scss */
 .whoami {
   color: #B7483F;
   font: 16px "Didact Gothic";
@@ -6318,7 +6329,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 49, ../sass/_footer.scss */
+/* line 54, ../sass/_footer.scss */
 .contactme {
   color: #3FBFC1;
   font: 16px "Didact Gothic";
@@ -6326,20 +6337,20 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 56, ../sass/_footer.scss */
+/* line 61, ../sass/_footer.scss */
 .social {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* line 61, ../sass/_footer.scss */
+/* line 66, ../sass/_footer.scss */
 .contactme:hover {
   background-color: RGBA(63, 191, 193, 0.3) !important;
 }
 
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 68, ../sass/_footer.scss */
+/* line 73, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
