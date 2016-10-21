@@ -2,6 +2,7 @@
 
 namespace ChouettesBundle\Controller;
 
+use Doctrine\DBAL\Types\TextType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
@@ -38,6 +39,23 @@ class DefaultController extends Controller
 
     public function contactAction()
     {
-        return $this->render('@Chouettes/user/contact.html.twig');
+        $fisrtname = $lastname = $email = $objet = $message = NULL;
+
+        $contact_error_firstnamemin = NULL;
+
+        $form = $this->createFormBuilder()
+
+            ->add('firstname', TextType::class, array('constraints' => array(new NotBlank(array('message' => 'contact.error.firstname'))
+                                                                            ,new Length(array('min' => 3,
+                                                                                              'max' => 10,
+                                                                                              'minMessage'
+                                                                                              'maxMessage'
+                    ))
+
+            )))
+
+
+
+
     }
 }
