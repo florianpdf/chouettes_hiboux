@@ -21,3 +21,5 @@ chouettes_about:
 chouettes_contact:
     path:     /contact
     defaults: { _controller: ChouettesBundle:Default:contact }
+
+

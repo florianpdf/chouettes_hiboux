@@ -1,16 +1,73 @@
 {% extends 'base.html.twig' %}
 
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
 {% block body %}
-    <h1>Modele creation</h1>
+    <div class="container admin">
+    <h1>Création de modèle</h1>
 
     {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
+
+        <div class="row input-field">
+            {{ form_label(form.titre) }}
+            {{ form_widget(form.titre) }}
+            {{ form_errors(form.titre) }}
+        </div>
+
+        <div class="row textarea">
+            {{ form_label(form.contenu) }}
+            {{ form_widget(form.contenu) }}
+            {{ form_errors(form.contenu) }}
+        </div>
+
+        <div class="row textarea">
+            {{ form_label(form.lien) }}
+            {{ form_widget(form.lien) }}
+            {{ form_errors(form.lien) }}
+        </div>
+
+        <div class="row input-field">
+            {{ form_label(form.categorie) }}
+            {{ form_widget(form.categorie) }}
+            {{ form_errors(form.categorie) }}
+        </div>
+
+        <div class="row file-field input-field">
+            <div class="btn">
+                <span>Image</span>
+                {{ form_widget(form.image.file) }}
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image">
+            </div>
+            {{ form_errors(form.image.file) }}
+        </div>
+
+        <div class="row input-field">
+            {{ form_label(form.image.alt) }}
+            {{ form_widget(form.image.alt) }}
+            {{ form_errors(form.image.alt) }}
+        </div>
+
+        <div class="row input-field">
+            {{ form_widget(form.add_block) }}
+            {{ form_label(form.add_block) }}
+            {{ form_errors(form.add_block) }}
+        </div>
+
+        <div class="row">
+            <button type="submit" title="Valider"><i class="material-icons">done</i></button>
+        </div>
+
     {{ form_end(form) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('modele_index') }}">Back to the list</a>
-        </li>
-    </ul>
+        <div class="boutons">
+
+            <a href="{{ path('modele_index') }}" title="Revenir à l'accueil"><i class="material-icons">arrow_back</i></a>
+            <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons">dashboard</i></a>
+
+        </div>
+    </div>
 {% endblock %}

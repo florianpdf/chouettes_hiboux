@@ -17,3 +17,8 @@ chouettes_categorie:
 chouettes_whoami:
     resource: "@ChouettesBundle/Resources/config/routing/whoami.yml"
     prefix:   /admin/whoami
+
+
+admin_homepage:
+    path:     /admin
+    defaults: { _controller: ChouettesBundle:Default:admin }
