@@ -6,19 +6,21 @@
 
 {% block body %}
 <div class="container admin">
-    <h1 class="whoadmin">Modifier "Qui suis-je?"t</h1>
+    <h1 class="whoadmin">Modifier "Qui suis-je?"</h1>
 
     {{ form_start(edit_form) }}
         {{ form_widget(edit_form) }}
         <button type="submit" title="valider"><i class="material-icons accessoires">done</i></button>
-        {{ form_start(delete_form) }}
-        <button type="submit" title="Effacer"><i class="material-icons accessoires">delete</i></button>
-        {{ form_end(delete_form) }}
     {{ form_end(edit_form) }}
+    {{ form_start(delete_form) }}
+    <button type="submit" title="Effacer"><i class="material-icons accessoires">delete</i></button>
+    {{ form_end(delete_form) }}
+
+
 
     <div class="boutons">
         <div class="row">
-            <a href="{{ path('whoami_index') }}" title="Revenir à l'accueil"><i class="material-icons accessoires">arrow_back</i></a>
+            <a href="{{ path('citation_index') }}" title="Revenir à l'accueil"><i class="material-icons accessoires">arrow_back</i></a>
             <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons accessoires">dashboard</i></a>
         </div>
     </div>
