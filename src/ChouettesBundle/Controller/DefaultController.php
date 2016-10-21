@@ -40,4 +40,31 @@ class DefaultController extends Controller
     {
         return $this->render('@Chouettes/user/contact.html.twig');
     }
+
+    public function messageAction()
+    {
+        require_once '/lib/swift_required.php';
+
+        // Create the Transport
+        $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 25);
+
+        // Create the Mailer using your created Transport
+        $mailer = Swift_Mailer::newInstance($transport);
+
+        // Create a message
+        $message = Swift_Message::newInstance('Wonderful Subject')
+        ->setFrom(array('john@doe.com' => 'John Doe'))
+        ->setTo(array('receiver@domain.org', 'other@domain.org' => 'A name'))
+        ->setFirstName("Here is the sender's first name")
+        ->setLastName("Here is the sender's last name")
+        ->setEmail('Here is user email')
+        ->setBody('Here is the message itself')
+        ;
+
+        // Send the message
+//        $result = $mailer->send($message);
+        $status = $mailer->send($message);
+        if($status) echo "Success!";
+        else echo "Failure";
+    }
 }
