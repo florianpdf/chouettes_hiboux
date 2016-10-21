@@ -44,8 +44,7 @@ class DefaultController extends Controller
     {
         return $this->render('@Chouettes/user/contact.html.twig');
     }
-
-<<<<<<< HEAD
+    
     public function sendAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
