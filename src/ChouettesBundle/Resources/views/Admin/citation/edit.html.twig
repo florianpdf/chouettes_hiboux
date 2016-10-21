@@ -12,10 +12,11 @@
     {{ form_start(edit_form) }}
         {{ form_widget(edit_form) }}
         <button type="submit" title="Editer"><i class="material-icons doudous">done</i></button>
-    {{ form_start(delete_form) }}<button type="submit" title="Effacer"><i class="material-icons doudous">delete</i></button>{{ form_end(delete_form) }}
     {{ form_end(edit_form) }}
+    {{ form_start(delete_form) }}<button type="submit" title="Effacer"><i class="material-icons doudous">delete</i></button>{{ form_end(delete_form) }}
 
-   <div class="boutons">
+
+    <div class="boutons">
        <div class="row">
            <a href="{{ path('citation_index') }}" title="Revenir à l'accueil"><i class="material-icons doudous">arrow_back</i></a>
            <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons doudous">dashboard</i></a>
