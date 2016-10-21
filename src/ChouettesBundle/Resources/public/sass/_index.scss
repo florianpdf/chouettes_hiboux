@@ -73,7 +73,37 @@ a {
     font-size: bold;
     font-weight: 80%;
     font-family: butterfly;
-}   
+}
+
+.doudousindex {
+    font: $font-titre;
+    color: #E93255;
+    font-size: 40px;
+}
+
+.bijouxindex {
+    font: $font-titre;
+    color: #724399;
+    font-size: 40px;
+}
+
+.accessoiresindex {
+    font: $font-titre;
+    color: #468540;
+    font-size: 40px;
+}
+
+.whoamiindex {
+    font: $font-titre;
+    color: #B7483F;
+    font-size: 40px;
+}
+
+.contactindex {
+    font: $font-titre;
+    color: #3FBFC1;
+    font-size: 40px;
+}
 
 .imgChouetteAnimee {
     width: 100%;
