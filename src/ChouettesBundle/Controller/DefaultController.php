@@ -4,6 +4,9 @@ namespace ChouettesBundle\Controller;
 
 use Doctrine\DBAL\Types\TextType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Validator\Constraints\Length;
+use Symfony\Component\Validator\Constraints\NotBlank;
 
 class DefaultController extends Controller
 {
@@ -39,23 +42,40 @@ class DefaultController extends Controller
 
     public function contactAction()
     {
-        $fisrtname = $lastname = $email = $objet = $message = NULL;
-
-        $contact_error_firstnamemin = NULL;
-
-        $form = $this->createFormBuilder()
-
-            ->add('firstname', TextType::class, array('constraints' => array(new NotBlank(array('message' => 'contact.error.firstname'))
-                                                                            ,new Length(array('min' => 3,
-                                                                                              'max' => 10,
-                                                                                              'minMessage'
-                                                                                              'maxMessage'
-                    ))
-
-            )))
-
-
-
-
+        return $this->render('@Chouettes/user/contact.html.twig');
     }
+
+    public function sendAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $emails = $em->getRepository('@Chouettes/user/contact.html.twig')->findAll();
+        foreach ($emails as $email){
+            $mail_ch = $email->getEmailcontact();
+        }
+        $name = $request->request->get('nom');
+        $mail = $request->request->get('email');
+        $sujet = $request->request->get('sujet');
+        $message = $request->request->get('message');
+        $message = \Swift_Message::newInstance()
+            ->setSubject('Contact Chouettes')
+            ->setFrom($mail)
+            ->setTo($mail_ch)
+            ->setBody(
+                $this->renderView(
+                    '@Chouettes/user/contact.html.twig',
+                    array(
+                        'nom' => $name,
+                        'email' => $mail,
+                        'sujet' => $sujet,
+                        'message' => $message
+                    )
+                ),
+                'text/html'
+            )
+        ;
+        $this->get('mailer')->send($message);
+        return $this->render('@Chouettes/user/contact.html.twig');
+    }
+
+
 }
