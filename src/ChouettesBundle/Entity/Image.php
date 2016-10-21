@@ -10,6 +10,11 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
  */
 class Image
 {
+    public function __toString()
+    {
+        return $this->url;
+    }
+
     public $file;
 
     protected function getUploadDir()

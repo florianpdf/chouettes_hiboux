@@ -1,18 +1,24 @@
 {% extends 'base.html.twig' %}
 
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
 {% block body %}
+    <div class="container admin">
     <h1>Modele</h1>
 
     <table>
         <tbody>
             <tr>
-                <th>Id</th>
-                <td>{{ modele.id }}</td>
-            </tr>
-            <tr>
                 <th>Titre</th>
                 <td>{{ modele.titre }}</td>
             </tr>
+            <tr>
+                <th>Image</th>
+                <td><img src="{{ asset('uploads/images/') }}{{ modele.image.url }}" alt="{{ modele.image.alt }}" </td>
+            </tr>
+
             <tr>
                 <th>Contenu</th>
                 <td>{{ modele.contenu }}</td>
@@ -22,26 +28,23 @@
                 <td>{{ modele.lien }}</td>
             </tr>
             <tr>
-                <th>Add_block</th>
+                <th>Ajouter à l'accueil</th>
                 <td>{% if modele.addblock %}Yes{% else %}No{% endif %}</td>
             </tr>
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('modele_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('modele_edit', { 'id': modele.id }) }}">Edit</a>
-        </li>
-        <li>
-            <a href="{{ path('modele_delete', { 'id' : modele.id }) }}">Delete</a>
-        </li>
+    <div class="boutons">
+            <a href="{{ path('modele_index') }}" alt="Accueil"><i class="material-icons">home</i></a>
+            <a href="{{ path('modele_edit', { 'id': modele.id }) }}"><i class="material-icons">edit</i></a>
+            <a href="{{ path('modele_delete', { 'id': modele.id }) }}"><i class="material-icons">delete</i> </a>
+        <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons">dashboard</i></a>
+
+    </div>
         {#<li>#}
             {#{{ form_start(delete_form) }}#}
                 {#<input type="submit" value="Delete">#}
             {#{{ form_end(delete_form) }}#}
         {#</li>#}
-    </ul>
+    </div>
 {% endblock %}
