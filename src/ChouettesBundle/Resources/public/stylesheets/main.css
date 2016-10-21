@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*---------------------------------------*\
             SOMMAIRE
 FONT______________ Font of website
@@ -43,6 +42,76 @@ section {
 /* line 91, ../sass/_general.scss */
 .container {
   min-height: 100%;
+}
+
+/*-----------------------------------------------------*\
+       ADMIN      ADMIN      ADMIN     ADMIN
+\*-----------------------------------------------------*/
+/* line 99, ../sass/_general.scss */
+.admin {
+  background-color: RGBA(255, 255, 255, 0.8);
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* line 106, ../sass/_general.scss */
+.boutons {
+  text-align: center;
+}
+
+/* line 110, ../sass/_general.scss */
+table {
+  font: 16px "Didact Gothic";
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* line 116, ../sass/_general.scss */
+tbody tr td {
+  border: 1px solid #848993;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* line 122, ../sass/_general.scss */
+thead th {
+  border: 1px solid #848993;
+  text-align: center;
+}
+
+/* line 128, ../sass/_general.scss */
+td > img {
+  max-height: 200px;
+}
+
+/* line 132, ../sass/_general.scss */
+button {
+  background: none;
+  border: none;
+}
+
+/* line 137, ../sass/_general.scss */
+.citationadmin {
+  color: #E93255;
+  font: 2vw "butterfly";
+}
+
+/* line 142, ../sass/_general.scss */
+.catdmin {
+  color: #724399;
+  font: 2vw "butterfly";
+}
+
+/* line 147, ../sass/_general.scss */
+.whoadmin {
+  color: #468540;
+  font: 2vw "butterfly";
+}
+
+/* line 152, ../sass/_general.scss */
+.fa {
+  font-size: medium !important;
 }
 
 /* line 3, ../sass/_navbar.scss */
@@ -223,8 +292,8 @@ nav {
   display: none;
 }
 
-/* Zone élément cliquable*/
-/* non survolé */
+/* Zone element cliquable*/
+/* non survole */
 /* line 51, ../sass/_index.scss */
 a {
   cursor: pointer;
@@ -234,8 +303,8 @@ a {
   outline: none;
 }
 
-/* Zone élément cliquable*/
-/* survolé */
+/* Zone element cliquable*/
+/* survole */
 /* line 61, ../sass/_index.scss */
 .iMasque:hover {
   color: #999;
@@ -6218,11 +6287,17 @@ h5 {
 }
 
 /* line 17, ../sass/_footer.scss */
+.footer-copyright {
+  background-color: transparent !important;
+  text-align: center;
+}
+
+/* line 22, ../sass/_footer.scss */
 footer.page-footer .footer-copyright {
   color: rgba(87, 73, 73, 0.8);
 }
 
-/* line 21, ../sass/_footer.scss */
+/* line 26, ../sass/_footer.scss */
 .doudous {
   color: #E93255;
   font: 16px "Didact Gothic";
@@ -6230,7 +6305,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 28, ../sass/_footer.scss */
+/* line 33, ../sass/_footer.scss */
 .bijoux {
   color: #724399;
   font: 16px "Didact Gothic";
@@ -6238,7 +6313,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 35, ../sass/_footer.scss */
+/* line 40, ../sass/_footer.scss */
 .accessoires {
   color: #468540;
   font: 16px "Didact Gothic";
@@ -6246,7 +6321,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 42, ../sass/_footer.scss */
+/* line 47, ../sass/_footer.scss */
 .whoami {
   color: #B7483F;
   font: 16px "Didact Gothic";
@@ -6254,7 +6329,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 49, ../sass/_footer.scss */
+/* line 54, ../sass/_footer.scss */
 .contactme {
   color: #3FBFC1;
   font: 16px "Didact Gothic";
@@ -6262,20 +6337,20 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 56, ../sass/_footer.scss */
+/* line 61, ../sass/_footer.scss */
 .social {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* line 61, ../sass/_footer.scss */
+/* line 66, ../sass/_footer.scss */
 .contactme:hover {
   background-color: RGBA(63, 191, 193, 0.3) !important;
 }
 
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 68, ../sass/_footer.scss */
+/* line 73, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;

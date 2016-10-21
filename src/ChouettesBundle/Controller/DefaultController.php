@@ -40,4 +40,5 @@ class DefaultController extends Controller
     {
         return $this->render('@Chouettes/user/contact.html.twig');
     }
+
 }

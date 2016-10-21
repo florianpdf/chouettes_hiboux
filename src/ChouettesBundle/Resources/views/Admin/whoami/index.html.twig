@@ -1,39 +1,32 @@
 {% extends 'base.html.twig' %}
 
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
 {% block body %}
-    <h1>Whoami list</h1>
+<div class="container admin">
+    <h1 class="whoadmin">Qui suis-je ?</h1>
 
     <table>
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Text</th>
-                <th>Actions</th>
+                <th>Texte</th>
+                <th>Editer</th>
             </tr>
         </thead>
         <tbody>
         {% for whoami in whoamis %}
             <tr>
-                <td><a href="{{ path('whoami_show', { 'id': whoami.id }) }}">{{ whoami.id }}</a></td>
                 <td>{{ whoami.text }}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('whoami_show', { 'id': whoami.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('whoami_edit', { 'id': whoami.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
+                <td><a href="{{ path('whoami_edit', { 'id': whoami.id }) }}" title="Editer"><i class="material-icons accessoires">edit</i></a></td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('whoami_new') }}">Create a new entry</a>
-        </li>
-    </ul>
+        <div class="boutons">
+            <a href="{{ path('whoami_new') }}" title="Créer"><i class="material-icons accessoires">add_circle</i></a>
+        </div>
+    </div>
 {% endblock %}
