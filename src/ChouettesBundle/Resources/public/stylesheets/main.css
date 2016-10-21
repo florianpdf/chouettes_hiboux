@@ -30,24 +30,26 @@ h1 {
 \*-----------------------------------------------------*/
 /* line 81, ../sass/_general.scss */
 body {
-  height: 100%;
+  min-height: 100vh;
   background-image: url("../images/wood.jpg");
+  display: flex;
+  flex-direction: column;
 }
 
-/* line 87, ../sass/_general.scss */
+/* line 89, ../sass/_general.scss */
 section {
   min-height: 100%;
 }
 
-/* line 91, ../sass/_general.scss */
+/* line 93, ../sass/_general.scss */
 .container {
-  min-height: 100%;
+  flex: 1 0 auto;
 }
 
 /*-----------------------------------------------------*\
        ADMIN      ADMIN      ADMIN     ADMIN
 \*-----------------------------------------------------*/
-/* line 99, ../sass/_general.scss */
+/* line 101, ../sass/_general.scss */
 .admin {
   background-color: RGBA(255, 255, 255, 0.8);
   margin-top: 15px;
@@ -55,94 +57,94 @@ section {
   border-radius: 15px;
 }
 
-/* line 106, ../sass/_general.scss */
+/* line 108, ../sass/_general.scss */
 .boutons {
   text-align: center;
 }
 
-/* line 110, ../sass/_general.scss */
+/* line 112, ../sass/_general.scss */
 table {
   font: 16px "Didact Gothic";
   font-size: 18px;
   margin-bottom: 15px;
 }
 
-/* line 116, ../sass/_general.scss */
+/* line 118, ../sass/_general.scss */
 tbody tr td {
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* line 122, ../sass/_general.scss */
+/* line 124, ../sass/_general.scss */
 thead th {
   text-align: center;
 }
 
-/* line 128, ../sass/_general.scss */
+/* line 130, ../sass/_general.scss */
 td > img {
   max-height: 200px;
 }
 
-/* line 132, ../sass/_general.scss */
+/* line 134, ../sass/_general.scss */
 button {
   background: none;
   border: none;
 }
 
-/* line 137, ../sass/_general.scss */
+/* line 139, ../sass/_general.scss */
 .citationadmin {
   color: #E93255;
   font: 2vw "butterfly";
 }
 
-/* line 142, ../sass/_general.scss */
+/* line 144, ../sass/_general.scss */
 .catdmin {
   color: #724399;
   font: 2vw "butterfly";
 }
 
-/* line 147, ../sass/_general.scss */
+/* line 149, ../sass/_general.scss */
 .whoadmin {
   color: #468540;
   font: 2vw "butterfly";
 }
 
-/* line 152, ../sass/_general.scss */
+/* line 154, ../sass/_general.scss */
 .fa {
   font-size: medium !important;
 }
 
-/* line 156, ../sass/_general.scss */
+/* line 158, ../sass/_general.scss */
 .card {
   box-shadow: none;
   background-color: transparent;
 }
 
-/* line 161, ../sass/_general.scss */
+/* line 163, ../sass/_general.scss */
 .contactmeadmin {
   font: 2vw "butterfly";
   color: #3FBFC1;
 }
 
-/* line 166, ../sass/_general.scss */
+/* line 168, ../sass/_general.scss */
 .bijouxadmin {
   font: 2vw "butterfly";
   color: #724399;
 }
 
-/* line 171, ../sass/_general.scss */
+/* line 173, ../sass/_general.scss */
 .doudousadmin {
   font: 2vw "butterfly";
   color: #E93255;
 }
 
-/* line 176, ../sass/_general.scss */
+/* line 178, ../sass/_general.scss */
 .accessoiresadmin {
   font: 2vw "butterfly";
   color: #468540;
 }
 
-/* line 181, ../sass/_general.scss */
+/* line 183, ../sass/_general.scss */
 .card.small {
   padding-top: 100px;
 }
