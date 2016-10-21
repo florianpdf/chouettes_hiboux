@@ -9,11 +9,14 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Categorie
 {
-    public function __toString() {
+    public function __toString()
+    {
         return $this->nom;
     }
 
-//    GENERATE CODE
+
+    //GENERATED CODE//
+
 
     /**
      * @var integer

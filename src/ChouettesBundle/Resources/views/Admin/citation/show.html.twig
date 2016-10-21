@@ -1,32 +1,38 @@
 {% extends 'base.html.twig' %}
 
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
 {% block body %}
-    <h1>Citation</h1>
+    <div class="container admin">
+    <h1>Citations</h1>
 
     <table>
         <tbody>
         <tr>
             <th>Id</th>
-            <td>{{ citation.id }}</td>
+            <th>Text</th>
         </tr>
         <tr>
-            <th>Text</th>
             <td>{{ citation.id }}</td>
+            <td>{{ citation.text }}</td>
         </tr>
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('citation_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('citation_edit', { 'id': citation.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-            <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+        <div class="boutons">
+            <div class="row">
+                <div class="col offset-l3 l2">
+                    <a class="waves-effect waves-light btn" href="{{ path('citation_index') }}">Retour</a>
+                </div>
+                <div class="col l2">
+                    <a class="waves-effect waves-light btn" href="{{ path('citation_edit', { 'id': citation.id }) }}">Editer</a>
+                </div>
+                <div class="col l2">
+                    {{ form_start(delete_form) }}<input class="waves-effect waves-light btn" type="submit" value="Effacer">{{ form_end(delete_form) }}
+                </div>
+            </div>
+        </div>
+        </div>
 {% endblock %}

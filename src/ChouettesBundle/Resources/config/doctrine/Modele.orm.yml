@@ -25,5 +25,4 @@ ChouettesBundle\Entity\Modele:
         image:
             targetEntity: ChouettesBundle\Entity\Image
             cascade: ["persist", "remove"]
-
     lifecycleCallbacks: {  }

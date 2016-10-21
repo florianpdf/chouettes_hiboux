@@ -1,16 +1,22 @@
 {% extends 'base.html.twig' %}
 
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
 {% block body %}
-    <h1>Categorie creation</h1>
+    <div class="container admin">
+        <h1 class="catdmin">Créer une catégorie</h1>
 
-    {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
-    {{ form_end(form) }}
+        {{ form_start(form) }}
+            {{ form_widget(form) }}
+                <button ype="submit" title="Valider"><i class="material-icons bijoux">done</i></button>
+        {{ form_end(form) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('categorie_index') }}">Back to the list</a>
-        </li>
-    </ul>
+        <div class="boutons">
+            <a href="{{ path('categorie_index') }}" title="Revenir à l'accueil"><i class="material-icons bijoux">arrow_back</i> </a>
+            <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons bijoux">dashboard</i></a>
+        </div>
+    </div>
+
 {% endblock %}

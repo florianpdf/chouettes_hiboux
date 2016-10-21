@@ -23,3 +23,5 @@ modele_delete:
     defaults: { _controller: "ChouettesBundle:Modele:delete" }
     requirements:
       id: \d+
+
+

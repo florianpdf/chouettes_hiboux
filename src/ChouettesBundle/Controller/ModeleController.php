@@ -25,6 +25,11 @@ class ModeleController extends Controller
 
         $modeles = $em->getRepository('ChouettesBundle:Modele')->findAll();
 
+        foreach ($modeles as $modele) {
+            $image = $modele->getImage()->getUrl();
+
+        }
+
         return $this->render('@Chouettes/Admin/modele/index.html.twig', array(
             'modeles' => $modeles,
         ));
@@ -45,7 +50,7 @@ class ModeleController extends Controller
             $em->persist($modele);
             $em->flush();
 
-            return $this->redirectToRoute('modele_show', array('id' => $modele->getId()));
+            return $this->redirectToRoute('modele_index', array('id' => $modele->getId()));
         }
 
         return $this->render('@Chouettes/Admin/modele/new.html.twig', array(
@@ -93,6 +98,7 @@ class ModeleController extends Controller
         ));
     }
 
+
     /**
      * Deletes a Modele entity.
      *
@@ -107,18 +113,39 @@ class ModeleController extends Controller
             $em->remove($modele);
             $em->remove($image);
             $em->flush();
+
             return $this->redirectToRoute('modele_index');
         }
         else
             return $this->redirectToRoute('modele_index');
+
     }
+
+//    /**
+//     * Deletes a Modele entity.
+//     *
+//     */
+//    public function deleteAction(Request $request, Modele $modele)
+//    {
+//        $form = $this->createDeleteForm($modele);
+//        $form->handleRequest($request);
 //
-//    /*
-//      Creates a form to delete a Modele entity.
+//        if ($form->isSubmitted() && $form->isValid()) {
+//            $em = $this->getDoctrine()->getManager();
+//            $em->remove($modele);
+//            $em->flush();
+//        }
 //
-//      @param Modele $modele The Modele entity
+//        return $this->redirectToRoute('modele_index');
+//    }
 //
-//      @return \Symfony\Component\Form\Form The form
+//    /**
+//     * Creates a form to delete a Modele entity.
+//     *
+//     * @param Modele $modele The Modele entity
+//     *
+//     * @return \Symfony\Component\Form\Form The form
+
 //     */
 //    private function createDeleteForm(Modele $modele)
 //    {
