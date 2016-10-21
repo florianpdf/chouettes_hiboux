@@ -12,29 +12,32 @@ class DefaultController extends Controller
         // Recupération des données CITATIONS
         $citations=$em->getRepository('ChouettesBundle:Citation')->findAll();
         // Recupération des données MODELE par catégorie
-        $modelesImages=$em->getRepository('ChouettesBundle:Categorie')->findAll();
-        var_dump($modelesImages);
+        $modelesImages=$em->getRepository('ChouettesBundle:Modele')->findAll();
+//        var_dump($modelesImages);
+
 
         // Mise en place random pour afficher aléatoirement les CITATIONS sur la page
         // d'accueil. Si aucune citation existe dans la base de données on renvoi comme contenu un chaine vide
         // Dans Default/index.html.twig
         if(!empty($citations)) {
-            $randomcitation=$citations[array_rand($citations)];
-            return $this->render('@Chouettes/Default/index.html.twig', array(
-                'citation'=>$randomcitation->getText()
-            ));
+            $randomcitation = $citations[array_rand($citations)]->getText();
+//            return $this->render('@Chouettes/Default/index.html.twig', array(
+//                'citation'=>$randomcitation->getText()
+//            ));
         }
         else {
-            return $this->render('@Chouettes/Default/index.html.twig', array(
-                'citation'=>''));
+            $randomcitation = '';
         }
 
         // Mise en place random pour afficher aléatoirement les PHOTOS CATEGORIES sur la page
         // d'accueil.
-        // Dans Default/index.html.twig
 
+        $randomimage = $modelesImages[array_rand($modelesImages)]->getImage()->getUrl();
+
+        // return citation et image dans Default/index.html.twig
         return $this->render('@Chouettes/Default/index.html.twig', array(
-            'categorie'=>$modelesImages->getId()
+            'citation'=> $randomcitation,
+            'image' => $randomimage,
         ));
 
 
@@ -65,4 +68,5 @@ class DefaultController extends Controller
     {
         return $this->render('@Chouettes/user/contact.html.twig');
     }
+
 }

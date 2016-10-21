@@ -1,39 +1,38 @@
 {% extends 'base.html.twig' %}
 
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
 {% block body %}
-    <h1>Citation list</h1>
+
+    <div class="container admin">
+
+<h1 class="citationadmin">Liste des citations</h1>
 
     <table>
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Text</th>
-                <th>Actions</th>
+                <th>Texte</th>
+                <th>Editer</th>
             </tr>
         </thead>
         <tbody>
         {% for citation in citations %}
             <tr>
-                <td><a href="{{ path('citation_show', { 'id': citation.id }) }}">{{ citation.id }}</a></td>
                 <td>{{ citation.text }}</td>
                 <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('citation_show', { 'id': citation.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('citation_edit', { 'id': citation.id }) }}">edit</a>
-                        </li>
-                    </ul>
+                    <div class="boutons">
+                            <a href="{{ path('citation_edit', { 'id': citation.id }) }}" title="Editer"><i class="material-icons doudous">edit</i></a>
+                    </div>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('citation_new') }}">Create a new entry</a>
-        </li>
-    </ul>
+    <div class="boutons">
+            <a href="{{ path('citation_new') }}" title="Créer une nouvelle citation"><i class="material-icons doudous">add_circle</i></a>
+    </div>
+        </div>
 {% endblock %}

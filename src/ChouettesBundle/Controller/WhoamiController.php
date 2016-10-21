@@ -44,7 +44,7 @@ class WhoamiController extends Controller
             $em->persist($whoami);
             $em->flush();
 
-            return $this->redirectToRoute('whoami_show', array('id' => $whoami->getId()));
+            return $this->redirectToRoute('whoami_index', array('id' => $whoami->getId()));
         }
 
         return $this->render('@Chouettes/Admin/whoami/new.html.twig', array(

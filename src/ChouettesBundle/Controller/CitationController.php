@@ -44,7 +44,7 @@ class CitationController extends Controller
             $em->persist($citation);
             $em->flush();
 
-            return $this->redirectToRoute('citation_show', array('id' => $citation->getId()));
+            return $this->redirectToRoute('citation_index', array('id' => $citation->getId()));
         }
 
         return $this->render('@Chouettes/Admin/citation/new.html.twig', array(

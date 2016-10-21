@@ -1,38 +1,37 @@
 {% extends 'base.html.twig' %}
 
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
 {% block body %}
-    <h1>Modele list</h1>
+
+    <div class="container admin">
+    <h1>Liste des modèles</h1>
 
     <table>
         <thead>
             <tr>
-                <th>Id</th>
+                <th>Image</th>
                 <th>Titre</th>
                 <th>Contenu</th>
                 <th>Lien</th>
-                <th>Add_block</th>
-                <th>Actions</th>
-                <th>image</th>
-
+                <th>Ajouter à<br> l'accueil</th>
+                <th>Editer</th>
             </tr>
         </thead>
         <tbody>
         {% for modele in modeles %}
             <tr>
-                <td><a href="{{ path('modele_show', { 'id': modele.id }) }}">{{ modele.id }}</a></td>
+                <td><img src="{{ asset('uploads/images/') }}{{ modele.image }}" alt="{{ modele.image.alt }}"></td>
                 <td>{{ modele.titre }}</td>
                 <td>{{ modele.contenu }}</td>
                 <td>{{ modele.lien }}</td>
                 <td>{% if modele.addblock %}Yes{% else %}No{% endif %}</td>
                 <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('modele_show', { 'id': modele.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('modele_edit', { 'id': modele.id }) }}">edit</a>
-                        </li>
-                    </ul>
+                    <div class="boutons">
+                            <a href="{{ path('modele_edit', { 'id': modele.id }) }}" title="Editer"><i class="material-icons">edit</i></a>
+                    </div>
                 </td>
                 <td><img src="{{ asset('uploads/images/') }}{{ modele.image.url }}" alt="{{ modele.image.alt }}"></td>
             </tr>
@@ -40,9 +39,10 @@
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('modele_new') }}">Create a new entry</a>
-        </li>
-    </ul>
+        <div class="boutons">
+                <a href="{{ path('modele_new') }}" title="Créer un nouveau modèle"><i class="material-icons">add_circle</i></a>
+        </div>
+
+    </div>
+
 {% endblock %}

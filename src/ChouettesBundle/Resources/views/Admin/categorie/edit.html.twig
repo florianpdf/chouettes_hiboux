@@ -1,21 +1,28 @@
 {% extends 'base.html.twig' %}
 
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
 {% block body %}
-    <h1>Categorie edit</h1>
+    <div class="container admin">
+    <h1 class="catdmin">Modifier une catégorie</h1>
 
     {{ form_start(edit_form) }}
         {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
-    {{ form_end(edit_form) }}
+            <button type="submit" title="Valider"><i class="material-icons bijoux">done</i></button>
+        {{ form_end(edit_form) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('categorie_index') }}">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+        <div class="boutons">
+            <div class="row">
+                <div class="col offset-l4 l2">
+                    <a href="{{ path('categorie_index') }}" title="Retour à l'accueil"><i class="material-icons bijoux">home</i></a>
+                </div>
+                <div class="col l2">
+                    {{ form_start(delete_form) }}<button type="submit" title="Effacer"><i class="material-icons bijoux">delete</i></button>{{ form_end(delete_form) }}
+                </div>
+            </div>
+        </div>
+
+    </div>
 {% endblock %}
