@@ -8,7 +8,7 @@
 <div class="container admin">
     <h1 class="whoadmin">Qui suis-je ?</h1>
 
-    <table>
+    <table class="responsive-table bordered striped">
         <thead>
             <tr>
                 <th>Texte</th>
@@ -27,6 +27,7 @@
 
         <div class="boutons">
             <a href="{{ path('whoami_new') }}" title="Créer"><i class="material-icons accessoires">add_circle</i></a>
+            <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons accessoires">dashboard</i></a>
         </div>
     </div>
 {% endblock %}

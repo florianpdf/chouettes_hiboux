@@ -11,19 +11,17 @@
     {{ form_start(edit_form) }}
         {{ form_widget(edit_form) }}
         <button type="submit" title="valider"><i class="material-icons accessoires">done</i></button>
+        {{ form_start(delete_form) }}
+        <button type="submit" title="Effacer"><i class="material-icons accessoires">delete</i></button>
+        {{ form_end(delete_form) }}
     {{ form_end(edit_form) }}
 
     <div class="boutons">
         <div class="row">
-            <div class="col offset-l4 l2">
-                <a href="{{ path('whoami_index') }}" title="Revenir à l'accueil"><i class="material-icons accessoires">home</i></a>
-            </div>
-            <div class="col l2">
-            {{ form_start(delete_form) }}
-                <button type="submit" title="Effacer"><i class="material-icons accessoires">delete</i></button>
-            {{ form_end(delete_form) }}
-            </div>
+            <a href="{{ path('whoami_index') }}" title="Revenir à l'accueil"><i class="material-icons accessoires">arrow_back</i></a>
+            <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons accessoires">dashboard</i></a>
         </div>
     </div>
 </div>
+
 {% endblock %}
