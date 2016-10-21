@@ -114,13 +114,13 @@ table {
 }
 
 tbody tr td {
-	border: 1px solid #848993;
+	//border: 1px solid #848993;
 	margin-bottom: 10px;
 	text-align: center;
 }
 
 thead th {
-	border: 1px solid #848993;
+	//border: 1px solid #848993;
 	text-align: center;
 
 }
@@ -151,4 +151,33 @@ button {
 
 .fa {
 	font-size: medium !important;
+}
+
+.card {
+	box-shadow: none;
+	background-color: transparent;
+}
+
+.contactmeadmin {
+	font: $font-titre;
+	color: #3FBFC1;
+}
+
+.bijouxadmin {
+	font: $font-titre;
+	color: #724399;
+}
+
+.doudousadmin {
+	font: $font-titre;
+	color: #E93255;
+}
+
+.accessoiresadmin {
+	font: $font-titre;
+	color: #468540;
+}
+
+.card.small {
+	padding-top: 100px;
 }

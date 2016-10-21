@@ -69,14 +69,12 @@ table {
 
 /* line 116, ../sass/_general.scss */
 tbody tr td {
-  border: 1px solid #848993;
   margin-bottom: 10px;
   text-align: center;
 }
 
 /* line 122, ../sass/_general.scss */
 thead th {
-  border: 1px solid #848993;
   text-align: center;
 }
 
@@ -112,6 +110,41 @@ button {
 /* line 152, ../sass/_general.scss */
 .fa {
   font-size: medium !important;
+}
+
+/* line 156, ../sass/_general.scss */
+.card {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* line 161, ../sass/_general.scss */
+.contactmeadmin {
+  font: 2vw "butterfly";
+  color: #3FBFC1;
+}
+
+/* line 166, ../sass/_general.scss */
+.bijouxadmin {
+  font: 2vw "butterfly";
+  color: #724399;
+}
+
+/* line 171, ../sass/_general.scss */
+.doudousadmin {
+  font: 2vw "butterfly";
+  color: #E93255;
+}
+
+/* line 176, ../sass/_general.scss */
+.accessoiresadmin {
+  font: 2vw "butterfly";
+  color: #468540;
+}
+
+/* line 181, ../sass/_general.scss */
+.card.small {
+  padding-top: 100px;
 }
 
 /* line 3, ../sass/_navbar.scss */
