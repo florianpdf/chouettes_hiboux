@@ -9,7 +9,7 @@
     <div class="container admin">
     <h1>Liste des modèles</h1>
 
-    <table>
+    <table class="responsive-table bordered striped">
         <thead>
             <tr>
                 <th>Image</th>
@@ -40,6 +40,7 @@
 
         <div class="boutons">
                 <a href="{{ path('modele_new') }}" title="Créer un nouveau modèle"><i class="material-icons">add_circle</i></a>
+                <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons">dashboard</i></a>
         </div>
 
     </div>

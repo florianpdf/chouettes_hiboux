@@ -41,4 +41,9 @@ class DefaultController extends Controller
         return $this->render('@Chouettes/user/contact.html.twig');
     }
 
+    public function adminAction()
+    {
+        return $this->render('@Chouettes/Admin/index.html.twig');
+    }
+
 }

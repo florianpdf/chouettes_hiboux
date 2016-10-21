@@ -10,7 +10,7 @@
 
 <h1 class="citationadmin">Liste des citations</h1>
 
-    <table>
+    <table class="responsive-table bordered striped">
         <thead>
             <tr>
                 <th>Texte</th>
@@ -32,7 +32,8 @@
     </table>
 
     <div class="boutons">
-            <a href="{{ path('citation_new') }}" title="Créer une nouvelle citation"><i class="material-icons doudous">add_circle</i></a>
+        <a href="{{ path('citation_new') }}" title="Créer une nouvelle citation"><i class="material-icons doudous">add_circle</i></a>
+        <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons doudous">dashboard</i></a>
     </div>
         </div>
 {% endblock %}
