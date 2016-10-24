@@ -3,6 +3,7 @@
 namespace ChouettesBundle\Controller;
 
 use Doctrine\DBAL\Types\TextType;
+use ChouettesBundle\ChouettesBundle;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Validator\Constraints\Length;
@@ -22,17 +23,29 @@ class DefaultController extends Controller
 
     public function doudousAction()
     {
-        return $this->render('@Chouettes/user/doudous.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $modeles=$em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 2));
+        return $this->render('@Chouettes/user/doudous.html.twig', array(
+            'modeles'=>$modeles
+        ));
     }
 
     public function bijouxAction()
     {
-        return $this->render('@Chouettes/user/bijoux.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $modeles=$em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 1));
+        return $this->render('@Chouettes/user/bijoux.html.twig', array(
+            'modeles'=>$modeles
+        ));
     }
 
     public function accessoiresAction()
     {
-        return $this->render('@Chouettes/user/accessoires.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $modeles=$em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 3));
+        return $this->render('@Chouettes/user/accessoires.html.twig', array(
+            'modeles'=>$modeles
+        ));
     }
 
     public function aboutAction()
