@@ -72,84 +72,91 @@ table {
   font: 16px "Didact Gothic";
   font-size: 18px;
   margin-bottom: 15px;
+  table-layout: fixed;
 }
 
-/* line 114, ../sass/_general.scss */
+/* line 115, ../sass/_general.scss */
 tbody tr td {
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* line 120, ../sass/_general.scss */
+/* line 121, ../sass/_general.scss */
 thead th {
   text-align: center;
 }
 
-/* line 126, ../sass/_general.scss */
+/* line 127, ../sass/_general.scss */
 td > img {
   max-height: 200px;
+  max-width: 100%;
 }
 
-/* line 130, ../sass/_general.scss */
+/* line 132, ../sass/_general.scss */
+td {
+  word-wrap: break-word;
+}
+
+/* line 136, ../sass/_general.scss */
 button {
   background: none;
   border: none;
 }
 
-/* line 135, ../sass/_general.scss */
+/* line 141, ../sass/_general.scss */
 .citationadmin {
   color: #E93255;
   font: 2vw "butterfly";
 }
 
-/* line 140, ../sass/_general.scss */
+/* line 146, ../sass/_general.scss */
 .catdmin {
   color: #724399;
   font: 2vw "butterfly";
 }
 
-/* line 145, ../sass/_general.scss */
+/* line 151, ../sass/_general.scss */
 .whoadmin {
   color: #468540;
   font: 2vw "butterfly";
 }
 
-/* line 150, ../sass/_general.scss */
+/* line 156, ../sass/_general.scss */
 .fa {
   font-size: medium !important;
 }
 
-/* line 154, ../sass/_general.scss */
+/* line 160, ../sass/_general.scss */
 .card {
   box-shadow: none;
   background-color: transparent;
 }
 
-/* line 159, ../sass/_general.scss */
+/* line 165, ../sass/_general.scss */
 .contactmeadmin {
   font: 2vw "butterfly";
   color: #3FBFC1;
 }
 
-/* line 164, ../sass/_general.scss */
+/* line 170, ../sass/_general.scss */
 .bijouxadmin {
   font: 2vw "butterfly";
   color: #724399;
 }
 
-/* line 169, ../sass/_general.scss */
+/* line 175, ../sass/_general.scss */
 .doudousadmin {
   font: 2vw "butterfly";
   color: #E93255;
 }
 
-/* line 174, ../sass/_general.scss */
+/* line 180, ../sass/_general.scss */
 .accessoiresadmin {
   font: 2vw "butterfly";
   color: #468540;
 }
 
-/* line 179, ../sass/_general.scss */
+/* line 185, ../sass/_general.scss */
 .card.small {
   padding-top: 100px;
 }
