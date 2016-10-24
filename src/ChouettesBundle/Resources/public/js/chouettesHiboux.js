@@ -5,31 +5,31 @@
 //***********************************//
 $(document).ready(function() {
 
-    if ($(window).width() > 739) {      
+    if ($(window).width() > 739) {
     //Add your javascript for large screens here
     // console.log( "ready!" );
     var heightDiv = $('.colCustom').css('width');
     $('.colCustom').css("height", heightDiv);
-    $('.imgDamier').css("height", heightDiv).css("width", heightDiv); 
+    $('.imgDamier').css("height", heightDiv).css("width", heightDiv);
         $(window).resize(function() {
             var heightDiv = $('.colCustom').css('width');
             // console.log(heightDiv);
             $('.colCustom').css("height", heightDiv);
-            $('.imgDamier').css("height", heightDiv).css("width", heightDiv);   
-        });  
-    } // Fin de if 
+            $('.imgDamier').css("height", heightDiv).css("width", heightDiv);
+        });
+    } // Fin de if
     else {
     //Add your javascript for small screens here
         var heightDiv = $('.colCustom').css('width');
         $('.colCustom').css("height", heightDiv/2);
         $('.notForSmall').addClass('hide-on-small-only');
-        $('.imgDamier').css("height", heightDiv).css("width", heightDiv); 
+        $('.imgDamier').css("height", heightDiv).css("width", heightDiv);
             $(window).resize(function() {
                 var heightDiv = $('.colCustom').css('width');
                 // console.log(heightDiv);
                 $('.colCustom').css("height", heightDiv/2);
-                $('.imgDamier').css("height", heightDiv).css("width", heightDiv);   
-            }); 
+                $('.imgDamier').css("height", heightDiv).css("width", heightDiv);
+            });
     }
 });
 
