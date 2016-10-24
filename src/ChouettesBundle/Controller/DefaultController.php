@@ -49,7 +49,7 @@ class DefaultController extends Controller
             'modeles' => $modeles,
             'categorie' => $categorie,
             'citation'=> $randomcitation,
-            'titre' => $titre,
+//            'titre' => $titre,
             'nbElement' => $nbElement
         ));
     }
