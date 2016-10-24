@@ -109,6 +109,7 @@ table {
 	font: $font-body;
 	font-size: 18px;
 	margin-bottom: 15px;
+	table-layout: fixed;
 }
 
 tbody tr td {
@@ -125,6 +126,11 @@ thead th {
 
 td > img {
 	max-height: 200px;
+	max-width: 100%;
+}
+
+td {
+	word-wrap: break-word;
 }
 
 button {

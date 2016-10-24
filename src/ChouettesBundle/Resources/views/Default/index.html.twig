@@ -12,9 +12,27 @@
     </div>
 
 
-<blockquote>
-    {{ (citation).text }}
-</blockquote>
+    {#---------             CITATION ---------------------------------------------#}
+    {# Si pas de citation dans la base de données le blockquote n'est pas affiché #}
+    {# cf. DefaultController.php #}
+    {% if citation == "" %}
+        <br>
+    {% else %}
+        <blockquote>
+        {{ citation }}
+        </blockquote>
+    {% endif %}
+    {#---------             CITATION ---------------------------------------------#}
+
+    {#---------             BLOCK    ---------------------------------------------#}
+
+
+
+    {% for modele in modeles %}
+        {% if modele.categorie.nom == 'Doudous' %}
+            {{ dump(modele.image.url) }}
+        {% endif %}
+    {% endfor %}
 
 
 <!-- DEBUT Block 9 images -->
@@ -22,6 +40,7 @@
     <!-- DEBUT PREMIERE LIGNE -->
 
     <div class="row rowCustom">
+        <!-Ligne 1 cube 1 -->
         <div class="col l4 m4 s12 colCustom center doudous">
             <a href="{{ path('chouettes_doudous') }}">
                 <div class="boxMenu">
@@ -33,20 +52,26 @@
             </a>
         </div> <!-- End col l4 m3 s1-->
 
+        <!- Ligne 1 cube 2 -->
+        {#Bloc photo categorie#}
         <div class="col l4 m4 s12 colCustom">
             <div class="ih-item square effect13 top_to_bottom">
                 <a href="#">
                     <div>
-                        <img class='imgDamier' src="{{ asset ('bundles/chouettes/images/petitDoudou.jpg') }}" alt="img">
-                    </div>
+                        {#affichage aléatoire des images par catégorie#}
+                        {#{% set choix = random(nbElement) %}#}
+                        {#<p>choix : {{ choix }}</p><br><p>Total élément :{{ nbElement }}</p>#}
+                        {#<img class='imgDamier' src="{{asset('uploads/images/')}}{{ modele.url }}" alt="{{ modele.alt }}">#}
+                            </div>
                     <div class="info">
-                        <h3>Petits doudous</h3>
-                        <p>Modèle d'après un tuto d'amigurumi, en laine acrylique , bourrage en ouatine synthétique</p>
+                        {#<h3>Petits doudous</h3>#}
+                        <h3> {{ titre }}</h3>
                     </div>
                 </a>
             </div> <!-- End h-item square effect15 top_to_bottom -->
         </div>
 
+        <!- Ligne 1 cube 3 -->
         <div class="col l4 m4 s12 colCustom center bijoux">
             <a href="{{ path ('chouettes_bijoux') }}">
                 <div class="boxMenu">
@@ -69,11 +94,11 @@
 
                 <a href="#">
                     <div>
-                        <img class='imgDamier' src={{ asset ('bundles/chouettes/images/grandDoudou.jpg') }} alt="img">
+                        {#<img class='imgDamier' src="{{asset('uploads/images/')}}{{modele.image.url }}" alt="{{ modele.image.alt }}">#}
                     </div>
                     <div class="info">
-                        <h3>Grands doudous</h3>
-                        <p>Modèle d'après la revue "Tricot Mag Les doudous de Sophie", en peine acrylique et bourrage en ouatine synthétique.</p>
+                        {#<h3>Grands doudous</h3>#}
+                        <h3> {{ titre }}</h3>
                     </div>
                 </a>
             </div> <!-- End h-item square effect15 top_to_bottom -->
@@ -98,7 +123,6 @@
                     </div>
                     <div class="info">
                         <h3>Bijoux</h3>
-                        <p>Sautoir d'après un modèle de La Droguerie, matériel acheté dans leur boutique à Paris.</p>
                     </div>
                 </a>
             </div> <!-- End h-item square effect15 top_to_bottom -->
@@ -129,7 +153,6 @@
                     </div>
                     <div class="info">
                         <h3>Accessoires</h3>
-                        <p>modèle créé d'après une photo, en tissu coton, feutrine, boutons et fil de coton.</p>
                     </div>
                 </a>
             </div> <!-- End h-item square effect15 top_to_bottom -->
