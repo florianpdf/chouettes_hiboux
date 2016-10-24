@@ -36,21 +36,48 @@ class DefaultController extends Controller
         // 2 - Doudous
         // 3 - Accessoires
         // Récuperation des champs contenus dans la variable $modeles
-        $nbElement = count($modeles);
-        $categorie =array();
+
+        // Initialisation des variables
+        $bijoux = array();
+        $doudou = array();
+        $doudou2 = array();
+        $accessoire = array();
+
+        // Parcours de l'objet modeles
         foreach ($modeles as $modele){
-            // récupération des éléménts MODELE qui seront transmis à la vue
-            $categorie[] = $modele;
-            $titre = $modele->getTitre();
+            if($modele->getCategorie()->getNom()=='Bijoux')
+            {
+                $bijoux[] = $modele;
+            }
+            elseif ($modele->getCategorie()->getNom()=='Doudous')
+            {
+                $doudou[] = $modele;
+            }
+            else
+                {
+                $accessoire[] = $modele;
+            }
+
         }
 
+        $randomBijoux = $bijoux[array_rand($bijoux)];
+        $randomDoudou = $doudou[array_rand($doudou)];
+        $randomDoudou2 = $doudou[array_rand($doudou)];
+        $randomAccessoire = $accessoire[array_rand($accessoire)];
+
+        if($randomDoudou == $randomDoudou) {
+            $randomDoudou2 = $doudou[array_rand($doudou)];
+        }
+
+        // -----------------------------------------------------------------------------------------------------
         // retourne citation et image dans Default/index.html.twig
+        // -----------------------------------------------------------------------------------------------------
         return $this->render('@Chouettes/Default/index.html.twig', array(
-            'modeles' => $modeles,
-            'categorie' => $categorie,
-            'citation'=> $randomcitation,
-            'titre' => $titre,
-            'nbElement' => $nbElement
+            'bijoux' => $randomBijoux,
+            'doudous' => $randomDoudou,
+            'doudous2' => $randomDoudou2,
+            'accessoire' =>$randomAccessoire,
+            'citation'=> $randomcitation
         ));
     }
 

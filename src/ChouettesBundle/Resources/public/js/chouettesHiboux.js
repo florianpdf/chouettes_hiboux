@@ -96,5 +96,3 @@ $(document).ready(function() {
     $('select').material_select();
 });
 
-
-{{ tinymce_init() }}

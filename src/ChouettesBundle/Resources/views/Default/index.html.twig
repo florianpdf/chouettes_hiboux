@@ -28,17 +28,20 @@
 
 
 
-    {% for modele in modeles %}
-        {% if modele.categorie.nom == 'Doudous' %}
-            {{ dump(modele.image.url) }}
-        {% endif %}
-    {% endfor %}
+    {#{% for modele in modeles %}#}
+        {#{% if modele.categorie.nom == 'Doudous' %}#}
+            {#{{ dump(modele.image.url) }}#}
+        {#{% endif %}#}
+    {#{% endfor %}#}
+
 
 
 <!-- DEBUT Block 9 images -->
 <div class="container bckground">
     <!-- DEBUT PREMIERE LIGNE -->
 
+    {{ dump(doudous) }}
+    {{ dump(doudous2) }}
     <div class="row rowCustom">
         <!-Ligne 1 cube 1 -->
         <div class="col l4 m4 s12 colCustom center doudous">
@@ -56,18 +59,18 @@
         {#Bloc photo categorie#}
         <div class="col l4 m4 s12 colCustom">
             <div class="ih-item square effect13 top_to_bottom">
-                <a href="#">
-                    <div>
-                        {#affichage aléatoire des images par catégorie#}
-                        {#{% set choix = random(nbElement) %}#}
-                        {#<p>choix : {{ choix }}</p><br><p>Total élément :{{ nbElement }}</p>#}
-                        {#<img class='imgDamier' src="{{asset('uploads/images/')}}{{ modele.url }}" alt="{{ modele.alt }}">#}
-                            </div>
-                    <div class="info">
-                        {#<h3>Petits doudous</h3>#}
-                        <h3> {{ titre }}</h3>
-                    </div>
-                </a>
+                {#{% for modele in modeles %}#}
+                    <a href="#">
+                        <div>
+                            <img class='imgDamier' src="{{asset('uploads/images/')}}{{ doudous.image.url }}" alt="{{ doudous.image.alt }}">
+                        </div>
+                        <div class="info">
+                            {#<h3>Petits doudous</h3>#}
+                            <h3> {{ doudous.titre }}</h3>
+                        </div>
+                    </a>
+
+                {#{% endfor %}#}
             </div> <!-- End h-item square effect15 top_to_bottom -->
         </div>
 
@@ -94,11 +97,11 @@
 
                 <a href="#">
                     <div>
-                        {#<img class='imgDamier' src="{{asset('uploads/images/')}}{{modele.image.url }}" alt="{{ modele.image.alt }}">#}
+                        <img class='imgDamier' src="{{asset('uploads/images/')}}{{doudous2.image.url }}" alt="{{ doudous2.image.alt }}">
                     </div>
                     <div class="info">
                         {#<h3>Grands doudous</h3>#}
-                        <h3> {{ titre }}</h3>
+                        <h3> {{ doudous2.titre }}</h3>
                     </div>
                 </a>
             </div> <!-- End h-item square effect15 top_to_bottom -->
@@ -119,10 +122,10 @@
             <div class="ih-item square effect13 top_to_bottom">
                 <a href="#">
                     <div>
-                        <img class='imgDamier' src="{{ asset ('bundles/chouettes/images/accessoire.jpg') }}" alt="img">
+                        <img class='imgDamier' src="{{asset('uploads/images/')}}{{bijoux.image.url }}" alt="{{ bijoux.image.alt }}">
                     </div>
                     <div class="info">
-                        <h3>Bijoux</h3>
+                        <h3> {{ bijoux.titre }}</h3>
                     </div>
                 </a>
             </div> <!-- End h-item square effect15 top_to_bottom -->
@@ -149,10 +152,10 @@
             <div class="ih-item square effect13 top_to_bottom">
                 <a href="#">
                     <div>
-                        <img class='imgDamier' src="{{ asset ('bundles/chouettes/images/accessoires.jpg') }}" alt="img">
+                        <img class='imgDamier' src="{{asset('uploads/images/')}}{{accessoire.image.url }}" alt="{{ accessoire.image.alt }}">
                     </div>
                     <div class="info">
-                        <h3>Accessoires</h3>
+                        <h3> {{ accessoire.titre }}</h3>
                     </div>
                 </a>
             </div> <!-- End h-item square effect15 top_to_bottom -->
