@@ -33,3 +33,12 @@ chouettes_citation:
 admin_homepage:
     path:     /admin
     defaults: { _controller: ChouettesBundle:Default:admin }
+
+#-----------------------------------------------------------------------------------------------------
+#Route send mail
+#-----------------------------------------------------------------------------------------------------
+
+send_mail:
+    path:     /mail
+    defaults: { _controller: ChouettesBundle:Default:sendMail }
+    methods: [GET, POST]
