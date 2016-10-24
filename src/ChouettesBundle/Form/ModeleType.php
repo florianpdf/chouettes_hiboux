@@ -17,7 +17,7 @@ class ModeleType extends AbstractType
     {
         $builder
             ->add('titre')
-            ->add('contenu')
+            ->add('contenu', 'textarea', array('attr' => array('class' => 'tinymce', 'data-theme' => 'bbcode')))
             ->add('lien')
             ->add('add_block')
             ->add('categorie')

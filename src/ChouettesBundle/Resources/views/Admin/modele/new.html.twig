@@ -5,6 +5,8 @@
 {% endblock %}
 
 {% block body %}
+    {{ tinymce_init() }}
+
     <div class="container admin">
     <h1>Création de modèle</h1>
 
@@ -16,7 +18,7 @@
             {{ form_errors(form.titre) }}
         </div>
 
-        <div class="row textarea">
+        <div class="row textarea tinymce">
             {{ form_label(form.contenu) }}
             {{ form_widget(form.contenu) }}
             {{ form_errors(form.contenu) }}
@@ -28,8 +30,9 @@
             {{ form_errors(form.lien) }}
         </div>
 
-        <div class="row input-field">
-            {{ form_label(form.categorie) }}
+        <div class="row">
+            {#{{ form_label(form.categorie) }}#}
+            <label>Catégorie :</label>
             {{ form_widget(form.categorie) }}
             {{ form_errors(form.categorie) }}
         </div>
