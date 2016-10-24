@@ -63,12 +63,8 @@ h1{
 	font:$font-titre;
 }
 
-h2{
-
-}
-
-h3{
-
+strong {
+	font-weight: bold;
 }
 
 
@@ -90,7 +86,7 @@ section{
 	min-height:100%;
 }
 
-.container{
+.container, .main {
 	flex: 1 0 auto;
 }
 
