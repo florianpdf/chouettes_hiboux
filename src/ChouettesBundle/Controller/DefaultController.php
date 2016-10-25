@@ -2,9 +2,14 @@
 
 namespace ChouettesBundle\Controller;
 
+use Doctrine\DBAL\Types\TextType;
 use ChouettesBundle\ChouettesBundle;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Validator\Constraints\Length;
+use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\HttpFoundation\Request;
+
 
 class DefaultController extends Controller
 {
@@ -92,6 +97,70 @@ class DefaultController extends Controller
     {
         return $this->render('@Chouettes/user/contact.html.twig');
     }
+    
+    public function sendAction(Request $request)
+    {
+        $name = $request->request->get('nom');
+        $mail = $request->request->get('email');
+        $sujet = $request->request->get('sujet');
+        $message = $request->request->get('message');
+        $message = \Swift_Message::newInstance()
+            ->setSubject('Contact Chouettes')
+            ->setFrom($mail)
+            ->setTo($mail_ch)
+            ->setBody(
+                $this->renderView(
+                    '@Chouettes/user/contact.html.twig',
+                    array(
+                        'nom' => $name,
+                        'email' => $mail,
+                        'sujet' => $sujet,
+                        'message' => $message
+                    )
+                ),
+                'text/html'
+            )
+        ;
+        $this->get('mailer')->send($message);
+        return $this->render('@Chouettes/user/contact.html.twig');
+    }
+
+
+
+    public function messageAction()
+    {
+        require_once '/lib/swift_required.php';
+
+        // Create the Transport
+        $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465);
+
+        // Create the Mailer using your created Transport
+        $mailer = Swift_Mailer::newInstance($transport);
+
+        // Create a message
+        $message = Swift_Message::newInstance('Wonderful Subject')
+        ->setFrom(array('bibouye77@gmail.com' => 'Bibouye'))
+        ->setTo(array('bibouye77@gmail.com'))
+        ->setFirstName("Here is the sender's first name")
+        ->setLastName("Here is the sender's last name")
+        ->setEmail('Here is user email')
+        ->setBody('Here is the message itself')
+        ;
+//
+//        // Send the message
+      $result = $mailer->send($message);
+        $status = $mailer->send($message);
+        if($status)
+        {
+            echo "Success!";
+        }
+
+        else
+        {
+            echo "Failure";
+        }
+//    }
+}
 
     public function adminAction()
     {
@@ -111,3 +180,4 @@ class DefaultController extends Controller
     }
 
 }
+

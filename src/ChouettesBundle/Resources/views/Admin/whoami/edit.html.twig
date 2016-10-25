@@ -5,9 +5,11 @@
 {% endblock %}
 
 {% block body %}
-    {{ tinymce_init() }}
+
+    {{ tinymce_init() }}  {#WYSIWYG#}
 
     <div class="container admin">
+
     <h1 class="whoadmin">Modifier "Qui suis-je?"</h1>
 
     {{ form_start(edit_form) }}

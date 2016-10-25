@@ -77,9 +77,15 @@ class ModeleController extends Controller
         ));
     }
 
+
+    /**
+     * Deletes a Modele entity.
+     *
+     */
+
     public function deleteAction($id)
     {
-        if ($id){
+        if ($id) {
             $em = $this->getDoctrine()->getEntityManager();
             $modele = $em->getRepository('ChouettesBundle:Modele')->findOneById($id);
             $image = $em->getRepository('ChouettesBundle:Image')->findOneById($modele->getImage()->getId());
@@ -88,10 +94,10 @@ class ModeleController extends Controller
             $em->flush();
 
             return $this->redirectToRoute('modele_index');
-        }
-        else
+        } else
             return $this->redirectToRoute('modele_index');
-
 
     }
 }
+
+

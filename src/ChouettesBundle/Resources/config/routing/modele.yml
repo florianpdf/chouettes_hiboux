@@ -17,4 +17,5 @@ modele_delete:
     path:     /{id}/delete
     defaults: { _controller: "ChouettesBundle:Modele:delete" }
     requirements:
-        id: \d+
+      id: \d+
+
