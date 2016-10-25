@@ -75,9 +75,6 @@ class Image
 
     //generated code
 
-
-    
-
     /**
      * @var integer
      */

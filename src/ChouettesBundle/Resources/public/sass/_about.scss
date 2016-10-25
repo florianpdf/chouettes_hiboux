@@ -5,10 +5,7 @@
 	margin-top: 15px;
 	padding: 5px;
 	border-radius: 15px;
-}
-
-.about {
-	font-size: 50px;
+	text-align: justify;
 }
 
 .about_page h2 {
@@ -29,14 +26,6 @@
 	font: $font-body;
 	font-size: 20px !important;
 	line-height: 15px !important;
-}
-
-.container {	
-	text-align: justify;
-}
-
-.container p {
-	font-size: 16px;
 }
 
 .expression {

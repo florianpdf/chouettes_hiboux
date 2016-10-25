@@ -8,7 +8,12 @@ bin/
 vendor/
 web/bundles/
 .idea
+<<<<<<< HEAD
 /composer.lock
 /web/config.php
+=======
+/web/config.php
+/composer.lock
+>>>>>>> dev
 /web/uploads/
 

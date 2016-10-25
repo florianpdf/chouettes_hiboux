@@ -37,6 +37,4 @@ class ImageType extends AbstractType
     {
         return 'chouettesbundle_image';
     }
-
-
 }
