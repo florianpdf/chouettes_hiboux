@@ -6349,7 +6349,7 @@ blockquote em {
 /*FOOTER*/
 /* line 2, ../sass/_footer.scss */
 footer.page-footer {
-  background-color: RGBA(255, 255, 255, 0.6);
+  background-color: red;
   margin-bottom: 0px;
   padding-top: 0px;
 }
