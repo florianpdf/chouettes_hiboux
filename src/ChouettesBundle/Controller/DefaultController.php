@@ -101,21 +101,23 @@ class DefaultController extends Controller
     public function sendAction(Request $request)
     {
         $name = $request->request->get('nom');
-        $mail = $request->request->get('email');
+        $firstname = $request->request->get('prenom');
+        $mail = $request->request->get('mail');
         $sujet = $request->request->get('sujet');
-        $message = $request->request->get('message');
+        $msg = $request->request->get('msg');
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Chouettes')
             ->setFrom($mail)
-            ->setTo($mail_ch)
+            ->setTo('bibouye77@gmail.com')
             ->setBody(
                 $this->renderView(
-                    '@Chouettes/user/contact.html.twig',
+                    '@Chouettes/user/mail.html.twig',
                     array(
                         'nom' => $name,
-                        'email' => $mail,
+                        'prenom' => $firstname,
+                        'mail' => $mail,
                         'sujet' => $sujet,
-                        'message' => $message
+                        'message' => $msg
                     )
                 ),
                 'text/html'
@@ -148,7 +150,7 @@ class DefaultController extends Controller
         ;
 //
 //        // Send the message
-      $result = $mailer->send($message);
+        $result = $mailer->send($message);
         $status = $mailer->send($message);
         if($status)
         {

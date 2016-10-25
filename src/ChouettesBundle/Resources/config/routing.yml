@@ -40,5 +40,5 @@ admin_homepage:
 
 send_mail:
     path:     /mail
-    defaults: { _controller: ChouettesBundle:Default:sendMail }
+    defaults: { _controller: ChouettesBundle:Default:send }
     methods: [GET, POST]

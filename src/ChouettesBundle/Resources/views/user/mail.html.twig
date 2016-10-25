@@ -1,0 +1,12 @@
+{% extends 'DefaultController.php' %}
+
+{#test depuis le site internet*#}
+
+{% block body %}
+Une demande de contact a été envoyée par {{ nom }} {{ prenom }} à {{ "now" | date("d-m-Y H:i") }}.
+
+Adresse mail de l'utilisateur: {{ mail }}
+Sujet : {{ sujet }}
+Message :
+{{ msg }}
+{% endblock body %}
