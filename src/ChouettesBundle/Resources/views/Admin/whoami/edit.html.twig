@@ -5,13 +5,37 @@
 {% endblock %}
 
 {% block body %}
-<div class="container admin">
+    {{ tinymce_init() }}
+
+    <div class="container admin">
     <h1 class="whoadmin">Modifier "Qui suis-je?"</h1>
 
     {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
+        <div class="row textarea tinymce">
+            {{ form_label(edit_form.text) }}
+            {{ form_widget(edit_form.text) }}
+            {{ form_errors(edit_form.text) }}
+        </div>
+
+        <div class="row file-field input-field">
+            <div class="btn">
+                <span>Image</span>
+                {{ form_widget(edit_form.image.file) }}
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image">
+            </div>
+            {{ form_errors(edit_form.image.file) }}
+        </div>
+
+        <div class="row input-field">
+            {{ form_label(edit_form.image.alt) }}
+            {{ form_widget(edit_form.image.alt) }}
+            {{ form_errors(edit_form.image.alt) }}
+        </div>
         <button type="submit" title="valider"><i class="material-icons accessoires">done</i></button>
     {{ form_end(edit_form) }}
+
     {{ form_start(delete_form) }}
     <button type="submit" title="Effacer"><i class="material-icons accessoires">delete</i></button>
     {{ form_end(delete_form) }}
