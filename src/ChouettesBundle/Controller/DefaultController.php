@@ -100,11 +100,6 @@ class DefaultController extends Controller
     
     public function sendAction(Request $request)
     {
-        $em = $this->getDoctrine()->getManager();
-        $emails = $em->getRepository('@Chouettes/user/contact.html.twig')->findAll();
-        foreach ($emails as $email){
-            $mail_ch = $email->getEmailcontact();
-        }
         $name = $request->request->get('nom');
         $mail = $request->request->get('email');
         $sujet = $request->request->get('sujet');
