@@ -60,15 +60,22 @@ $font-titre: 2vw 'butterfly';
 
 
 h1{
-	font:$font-titre;
+	font: $font-titre;
+	letter-spacing: 3px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: #3FBFC1;
+	text-align: center;
 }
 
 strong {
 	font-weight: bold;
 }
 
-
-
+h5{
+	font: $font-titre;
+	color: rgba(87, 73, 73, 0.8);
+}
 
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
@@ -88,6 +95,11 @@ section{
 
 .container, .main {
 	flex: 1 0 auto;
+}
+
+.row{
+	margin-bottom: 1px;
+	padding: 5px;
 }
 
 /*-----------------------------------------------------*\

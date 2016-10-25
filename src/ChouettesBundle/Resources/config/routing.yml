@@ -1,10 +1,14 @@
-chouettes_citation:
-    resource: "@ChouettesBundle/Resources/config/routing/citation.yml"
-    prefix:   /admin/citation
+#-----------------------------------------------------------------------------------------------------
+#Appel route utilisateur/client
+#-----------------------------------------------------------------------------------------------------
 
 user_routing:
     resource: routing/user.yml
     prefix:   /
+
+#-----------------------------------------------------------------------------------------------------
+#Appel route admin
+#-----------------------------------------------------------------------------------------------------
 
 chouettes_modele:
     resource: "@ChouettesBundle/Resources/config/routing/modele.yml"
@@ -18,7 +22,23 @@ chouettes_whoami:
     resource: "@ChouettesBundle/Resources/config/routing/whoami.yml"
     prefix:   /admin/whoami
 
+chouettes_citation:
+    resource: "@ChouettesBundle/Resources/config/routing/citation.yml"
+    prefix:   /admin/citation
+
+#-----------------------------------------------------------------------------------------------------
+#Route accueil admin
+#-----------------------------------------------------------------------------------------------------
 
 admin_homepage:
     path:     /admin
     defaults: { _controller: ChouettesBundle:Default:admin }
+
+#-----------------------------------------------------------------------------------------------------
+#Route send mail
+#-----------------------------------------------------------------------------------------------------
+
+send_mail:
+    path:     /mail
+    defaults: { _controller: ChouettesBundle:Default:sendMail }
+    methods: [GET, POST]
