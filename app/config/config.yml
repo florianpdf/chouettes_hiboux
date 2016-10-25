@@ -77,7 +77,7 @@ stfalcon_tinymce:
             title: "Stfalcon"
             image: "http://stfalcon.com/favicon.ico"
     theme:
-#        # Simple theme: same as default theme
+        ## Simple theme: same as default theme
         simple:
             theme: "modern"
         # Advanced theme with almost all enabled plugins

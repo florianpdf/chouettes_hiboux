@@ -12,7 +12,57 @@
     <h1>Modifier un modèle</h1>
 
     {{ form_start(edit_form) }}
+
+        <div class="row input-field">
+            {{ form_label(edit_form.titre) }}
+            {{ form_widget(edit_form.titre) }}
+            {{ form_errors(edit_form.titre) }}
+        </div>
+
+        <div class="row textarea tinymce">
+            {{ form_label(edit_form.contenu) }}
+            {{ form_widget(edit_form.contenu) }}
+            {{ form_errors(edit_form.contenu) }}
+        </div>
+
+        <div class="row textarea">
+            {{ form_label(edit_form.lien) }}
+            {{ form_widget(edit_form.lien) }}
+            {{ form_errors(edit_form.lien) }}
+        </div>
+
+        <div class="row">
+            {#{{ form_label(form.categorie) }}#}
+            <label>Catégorie :</label>
+            {{ form_widget(edit_form.categorie) }}
+            {{ form_errors(edit_form.categorie) }}
+        </div>
+
+        <div class="row file-field input-field">
+            <div class="btn">
+                <span>Image</span>
+                {{ form_widget(edit_form.image.file) }}
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image">
+            </div>
+            {{ form_errors(edit_form.image.file) }}
+        </div>
+
+        <div class="row input-field">
+            {{ form_label(edit_form.image.alt) }}
+            {{ form_widget(edit_form.image.alt) }}
+            {{ form_errors(edit_form.image.alt) }}
+        </div>
+
+        <div class="row input-field">
+            {{ form_widget(edit_form.add_block) }}
+            {{ form_label(edit_form.add_block) }}
+            {{ form_errors(edit_form.add_block) }}
+        </div>
+        
         {{ form_widget(edit_form) }}
+
         <div class="boutons">
             <button type="submit" title="Valider"><i class="material-icons">check</i></button>
             <a href="{{ path('modele_delete', { 'id': modele.id }) }}" title="Effacer"><i class="material-icons">delete</i> </a>
