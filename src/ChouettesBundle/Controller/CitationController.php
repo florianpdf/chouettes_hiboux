@@ -54,20 +54,6 @@ class CitationController extends Controller
     }
 
     /**
-     * Finds and displays a Citation entity.
-     *
-     */
-    public function showAction(Citation $citation)
-    {
-        $deleteForm = $this->createDeleteForm($citation);
-
-        return $this->render('@Chouettes/Admin/citation/show.html.twig', array(
-            'citation' => $citation,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
-    /**
      * Displays a form to edit an existing Citation entity.
      *
      */

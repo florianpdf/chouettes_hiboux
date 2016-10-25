@@ -3,11 +3,6 @@ citation_index:
     defaults: { _controller: "ChouettesBundle:Citation:index" }
     methods:  GET
 
-citation_show:
-    path:     /{id}/show
-    defaults: { _controller: "ChouettesBundle:Citation:show" }
-    methods:  GET
-
 citation_new:
     path:     /new
     defaults: { _controller: "ChouettesBundle:Citation:new" }

@@ -4,6 +4,7 @@ namespace ChouettesBundle\Controller;
 
 use ChouettesBundle\ChouettesBundle;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
@@ -49,7 +50,7 @@ class DefaultController extends Controller
             'modeles' => $modeles,
             'categorie' => $categorie,
             'citation'=> $randomcitation,
-            'titre' => $titre,
+//            'titre' => $titre,
             'nbElement' => $nbElement
         ));
     }
@@ -95,6 +96,18 @@ class DefaultController extends Controller
     public function adminAction()
     {
         return $this->render('@Chouettes/Admin/index.html.twig');
+    }
+
+
+    public function sendMailAction(Request $request)
+    {
+//        php natif
+        $donnée_via_post = $_POST;
+
+//        methode sous symfony
+        $poiu = $request;
+
+        return $this->render('@Chouettes/user/contact.html.twig');
     }
 
 }

@@ -1,16 +1,12 @@
 /****************************/
 /****************************/
-/*        Logo & navBar     */
+/*  Logo & navBar accueil   */
 /****************************/
 /****************************/
 .nb_navbar_logo {
     width: 50% !important;
     height: 50% !important;
     min-width: 300px;
-}
-
-nav {
-    height: 120px !important;
 }
 
 .bckground {
@@ -48,7 +44,7 @@ nav {
 
 /* Zone element cliquable*/
 /* non survole */
-a {
+.bckground a {
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
@@ -118,6 +114,7 @@ a {
 /****************************/
 /****************************/
 /* SURCHARGE framework ihover */
+
 .ih-item.square {
     width: 100% !important;
     height: 100% !important;

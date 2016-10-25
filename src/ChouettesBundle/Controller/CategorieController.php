@@ -54,20 +54,6 @@ class CategorieController extends Controller
     }
 
     /**
-     * Finds and displays a Categorie entity.
-     *
-     */
-    public function showAction(Categorie $categorie)
-    {
-        $deleteForm = $this->createDeleteForm($categorie);
-
-        return $this->render('@Chouettes/Admin/categorie/show.html.twig', array(
-            'categorie' => $categorie,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
-    /**
      * Displays a form to edit an existing Categorie entity.
      *
      */

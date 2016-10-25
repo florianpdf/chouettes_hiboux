@@ -54,20 +54,6 @@ class WhoamiController extends Controller
     }
 
     /**
-     * Finds and displays a Whoami entity.
-     *
-     */
-    public function showAction(Whoami $whoami)
-    {
-        $deleteForm = $this->createDeleteForm($whoami);
-
-        return $this->render('@Chouettes/Admin/whoami/show.html.twig', array(
-            'whoami' => $whoami,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
-    /**
      * Displays a form to edit an existing Whoami entity.
      *
      */
