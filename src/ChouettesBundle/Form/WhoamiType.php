@@ -15,11 +15,12 @@ class WhoamiType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('text')
-            ->add('image')
+            //{#WYSIWYG#}
+            ->add('text', 'textarea', array('attr' => array('class' => 'tinymce', 'data-theme' => 'bbcode')))
+            ->add('image', ImageType::class)
         ;
     }
-    
+
     /**
      * @param OptionsResolver $resolver
      */

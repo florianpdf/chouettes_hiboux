@@ -15,4 +15,5 @@ ChouettesBundle\Entity\Whoami:
     manyToOne:
         image:
             targetEntity: ChouettesBundle\Entity\Image
+            cascade: ["persist", "remove"]
     lifecycleCallbacks: {  }
