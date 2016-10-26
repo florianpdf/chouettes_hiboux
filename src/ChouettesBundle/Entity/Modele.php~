@@ -11,6 +11,8 @@ class Modele
 {
 
 
+
+//    GENERATED CODE
     /**
      * @var integer
      */
