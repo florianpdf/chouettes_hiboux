@@ -3,11 +3,6 @@ modele_index:
     defaults: { _controller: "ChouettesBundle:Modele:index" }
     methods:  GET
 
-modele_show:
-    path:     /{id}/show
-    defaults: { _controller: "ChouettesBundle:Modele:show" }
-    methods:  GET
-
 modele_new:
     path:     /new
     defaults: { _controller: "ChouettesBundle:Modele:new" }
@@ -22,4 +17,5 @@ modele_delete:
     path:     /{id}/delete
     defaults: { _controller: "ChouettesBundle:Modele:delete" }
     requirements:
-        id: \d+
+      id: \d+
+

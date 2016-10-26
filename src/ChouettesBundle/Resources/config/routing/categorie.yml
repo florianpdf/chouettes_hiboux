@@ -3,11 +3,6 @@ categorie_index:
     defaults: { _controller: "ChouettesBundle:Categorie:index" }
     methods:  GET
 
-categorie_show:
-    path:     /{id}/show
-    defaults: { _controller: "ChouettesBundle:Categorie:show" }
-    methods:  GET
-
 categorie_new:
     path:     /new
     defaults: { _controller: "ChouettesBundle:Categorie:new" }

@@ -3,7 +3,6 @@
 namespace ChouettesBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * Image
@@ -75,9 +74,6 @@ class Image
     }
 
     //generated code
-
-
-    
 
     /**
      * @var integer

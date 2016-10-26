@@ -23,17 +23,28 @@ ABOUT ____________ Style page : About
 /* line 62, ../sass/_general.scss */
 h1 {
   font: 2vw "butterfly";
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #3FBFC1;
+  text-align: center;
 }
 
-/* line 66, ../sass/_general.scss */
+/* line 71, ../sass/_general.scss */
 strong {
   font-weight: bold;
+}
+
+/* line 75, ../sass/_general.scss */
+h5 {
+  font: 2vw "butterfly";
+  color: rgba(87, 73, 73, 0.8);
 }
 
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
 \*-----------------------------------------------------*/
-/* line 77, ../sass/_general.scss */
+/* line 84, ../sass/_general.scss */
 body {
   min-height: 100vh;
   background-image: url("../images/wood.jpg");
@@ -41,20 +52,26 @@ body {
   flex-direction: column;
 }
 
-/* line 85, ../sass/_general.scss */
+/* line 92, ../sass/_general.scss */
 section {
   min-height: 100%;
 }
 
-/* line 89, ../sass/_general.scss */
+/* line 96, ../sass/_general.scss */
 .container, .main {
   flex: 1 0 auto;
+}
+
+/* line 100, ../sass/_general.scss */
+.row {
+  margin-bottom: 1px;
+  padding: 5px;
 }
 
 /*-----------------------------------------------------*\
        ADMIN      ADMIN      ADMIN     ADMIN
 \*-----------------------------------------------------*/
-/* line 97, ../sass/_general.scss */
+/* line 109, ../sass/_general.scss */
 .admin {
   background-color: RGBA(255, 255, 255, 0.8);
   margin-top: 15px;
@@ -62,12 +79,12 @@ section {
   border-radius: 15px;
 }
 
-/* line 104, ../sass/_general.scss */
+/* line 116, ../sass/_general.scss */
 .boutons {
   text-align: center;
 }
 
-/* line 108, ../sass/_general.scss */
+/* line 120, ../sass/_general.scss */
 table {
   font: 16px "Didact Gothic";
   font-size: 18px;
@@ -75,95 +92,95 @@ table {
   table-layout: fixed;
 }
 
-/* line 115, ../sass/_general.scss */
+/* line 127, ../sass/_general.scss */
 tbody tr td {
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* line 121, ../sass/_general.scss */
+/* line 133, ../sass/_general.scss */
 thead th {
   text-align: center;
 }
 
-/* line 127, ../sass/_general.scss */
+/* line 139, ../sass/_general.scss */
 td > img {
   max-height: 200px;
   max-width: 100%;
 }
 
-/* line 132, ../sass/_general.scss */
+/* line 144, ../sass/_general.scss */
 td {
   word-wrap: break-word;
 }
 
-/* line 136, ../sass/_general.scss */
+/* line 148, ../sass/_general.scss */
 button {
   background: none;
   border: none;
 }
 
-/* line 141, ../sass/_general.scss */
+/* line 153, ../sass/_general.scss */
 .citationadmin {
   color: #E93255;
   font: 2vw "butterfly";
 }
 
-/* line 146, ../sass/_general.scss */
+/* line 158, ../sass/_general.scss */
 .catdmin {
   color: #724399;
   font: 2vw "butterfly";
 }
 
-/* line 151, ../sass/_general.scss */
+/* line 163, ../sass/_general.scss */
 .whoadmin {
   color: #468540;
   font: 2vw "butterfly";
 }
 
-/* line 156, ../sass/_general.scss */
+/* line 168, ../sass/_general.scss */
 .fa {
   font-size: medium !important;
 }
 
-/* line 160, ../sass/_general.scss */
+/* line 172, ../sass/_general.scss */
 .card {
   box-shadow: none;
   background-color: transparent;
 }
 
-/* line 165, ../sass/_general.scss */
+/* line 177, ../sass/_general.scss */
 .contactmeadmin {
   font: 2vw "butterfly";
   color: #3FBFC1;
 }
 
-/* line 170, ../sass/_general.scss */
+/* line 182, ../sass/_general.scss */
 .bijouxadmin {
   font: 2vw "butterfly";
   color: #724399;
 }
 
-/* line 175, ../sass/_general.scss */
+/* line 187, ../sass/_general.scss */
 .doudousadmin {
   font: 2vw "butterfly";
   color: #E93255;
 }
 
-/* line 180, ../sass/_general.scss */
+/* line 192, ../sass/_general.scss */
 .accessoiresadmin {
   font: 2vw "butterfly";
   color: #468540;
 }
 
-/* line 185, ../sass/_general.scss */
+/* line 197, ../sass/_general.scss */
 .card.small {
   padding-top: 100px;
 }
 
 /* line 3, ../sass/_navbar.scss */
 nav {
-  height: 85px !important;
+  height: 120px !important;
   background-color: RGBA(255, 255, 255, 0.6);
 }
 
@@ -179,46 +196,61 @@ nav {
 }
 
 /* line 17, ../sass/_navbar.scss */
+nav ul a:hover {
+  background-color: transparent !important;
+}
+
+/* line 21, ../sass/_navbar.scss */
 .full_nav a, .side-nav a {
   font: 2vw "butterfly";
   padding-left: 30px;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 31px;
   padding-right: 40px;
+  margin: auto;
 }
 
-/* line 26, ../sass/_navbar.scss */
-.accueil:hover {
-  background-color: RGBA(252, 161, 60, 0.3) !important;
-}
-
-/* line 30, ../sass/_navbar.scss */
-.doudous:hover {
-  background-color: RGBA(233, 50, 85, 0.3) !important;
+/* line 29, ../sass/_navbar.scss */
+.full_nav {
+  height: 100%;
+  display: flex;
 }
 
 /* line 34, ../sass/_navbar.scss */
-.bijoux:hover {
-  background-color: RGBA(114, 67, 153, 0.3) !important;
+.full_nav li {
+  display: flex;
 }
 
 /* line 38, ../sass/_navbar.scss */
-.accessoires:hover {
-  background-color: RGBA(70, 133, 64, 0.3) !important;
+.li_accueil:hover {
+  background-color: RGBA(252, 161, 60, 0.3) !important;
 }
 
 /* line 42, ../sass/_navbar.scss */
-.whoami:hover {
-  background-color: RGBA(183, 72, 63, 0.3) !important;
+.li_doudous:hover {
+  background-color: RGBA(233, 50, 85, 0.3) !important;
 }
 
 /* line 46, ../sass/_navbar.scss */
+.li_bijoux:hover {
+  background-color: RGBA(114, 67, 153, 0.3) !important;
+}
+
+/* line 50, ../sass/_navbar.scss */
+.li_accessoires:hover {
+  background-color: RGBA(70, 133, 64, 0.3) !important;
+}
+
+/* line 54, ../sass/_navbar.scss */
+.li_whoami:hover {
+  background-color: RGBA(183, 72, 63, 0.3) !important;
+}
+
+/* line 58, ../sass/_navbar.scss */
 .material-icons {
   font-size: 40px !important;
 }
 
-/* line 52, ../sass/_navbar.scss */
+/* line 64, ../sass/_navbar.scss */
 #mobile-demo a {
   font-size: 20px !important;
   padding-top: 20px;
@@ -286,7 +318,7 @@ blockquote em {
 
 /****************************/
 /****************************/
-/*        Logo & navBar     */
+/*  Logo & navBar accueil   */
 /****************************/
 /****************************/
 /* line 6, ../sass/_index.scss */
@@ -297,11 +329,6 @@ blockquote em {
 }
 
 /* line 12, ../sass/_index.scss */
-nav {
-  height: 120px !important;
-}
-
-/* line 16, ../sass/_index.scss */
 .bckground {
   background-color: #DEDEDE;
 }
@@ -311,13 +338,13 @@ nav {
 /*        row  & col        */
 /****************************/
 /****************************/
-/* line 25, ../sass/_index.scss */
+/* line 21, ../sass/_index.scss */
 .rowCustom {
   padding: 0px !important;
   margin: 0px !important;
 }
 
-/* line 30, ../sass/_index.scss */
+/* line 26, ../sass/_index.scss */
 .colCustom {
   padding: 0px !important;
   margin: 0px;
@@ -329,20 +356,20 @@ nav {
 /* BLOCK avec texte = menu */
 /***************************/
 /***************************/
-/* line 41, ../sass/_index.scss */
+/* line 37, ../sass/_index.scss */
 .colCustom:hover .iMasque {
   display: inline;
 }
 
-/* line 45, ../sass/_index.scss */
+/* line 41, ../sass/_index.scss */
 .iMasque {
   display: none;
 }
 
 /* Zone element cliquable*/
 /* non survole */
-/* line 51, ../sass/_index.scss */
-a {
+/* line 47, ../sass/_index.scss */
+.bckground a {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
@@ -352,18 +379,18 @@ a {
 
 /* Zone element cliquable*/
 /* survole */
-/* line 61, ../sass/_index.scss */
+/* line 57, ../sass/_index.scss */
 .iMasque:hover {
   color: #999;
 }
 
-/* line 65, ../sass/_index.scss */
+/* line 61, ../sass/_index.scss */
 .boxMenu {
   padding-top: 15%;
 }
 
 /* Titre de la box */
-/* line 70, ../sass/_index.scss */
+/* line 66, ../sass/_index.scss */
 .h3BoxMenu {
   text-transform: uppercase;
   text-align: center;
@@ -372,47 +399,47 @@ a {
   font-family: butterfly;
 }
 
-/* line 78, ../sass/_index.scss */
+/* line 74, ../sass/_index.scss */
 .doudousindex {
   font: 2vw "butterfly";
   color: #E93255;
   font-size: 40px;
 }
 
-/* line 84, ../sass/_index.scss */
+/* line 80, ../sass/_index.scss */
 .bijouxindex {
   font: 2vw "butterfly";
   color: #724399;
   font-size: 40px;
 }
 
-/* line 90, ../sass/_index.scss */
+/* line 86, ../sass/_index.scss */
 .accessoiresindex {
   font: 2vw "butterfly";
   color: #468540;
   font-size: 40px;
 }
 
-/* line 96, ../sass/_index.scss */
+/* line 92, ../sass/_index.scss */
 .whoamiindex {
   font: 2vw "butterfly";
   color: #B7483F;
   font-size: 40px;
 }
 
-/* line 102, ../sass/_index.scss */
+/* line 98, ../sass/_index.scss */
 .contactindex {
   font: 2vw "butterfly";
   color: #3FBFC1;
   font-size: 40px;
 }
 
-/* line 108, ../sass/_index.scss */
+/* line 104, ../sass/_index.scss */
 .imgChouetteAnimee {
   width: 100%;
 }
 
-/* line 112, ../sass/_index.scss */
+/* line 108, ../sass/_index.scss */
 .imgChouetteAnimeeSmall {
   width: 50%;
 }
@@ -423,7 +450,7 @@ a {
 /****************************/
 /****************************/
 /* SURCHARGE framework ihover */
-/* line 121, ../sass/_index.scss */
+/* line 118, ../sass/_index.scss */
 .ih-item.square {
   width: 100% !important;
   height: 100% !important;
@@ -6212,14 +6239,10 @@ a {
   margin-top: 15px;
   padding: 5px;
   border-radius: 15px;
+  text-align: justify;
 }
 
-/* line 10, ../sass/_about.scss */
-.about {
-  font-size: 50px;
-}
-
-/* line 14, ../sass/_about.scss */
+/* line 11, ../sass/_about.scss */
 .about_page h2 {
   font: 2vw "butterfly";
   letter-spacing: 3px;
@@ -6229,7 +6252,7 @@ a {
   text-align: center;
 }
 
-/* line 23, ../sass/_about.scss */
+/* line 20, ../sass/_about.scss */
 .about_page h3 {
   font-family: 'Didact Gothic';
   font-size: 18px;
@@ -6237,40 +6260,20 @@ a {
   font-size: 25px;
 }
 
-/* line 28, ../sass/_about.scss */
+/* line 25, ../sass/_about.scss */
 .about_p {
   font: 16px "Didact Gothic";
   font-size: 20px !important;
   line-height: 15px !important;
 }
 
-/* line 34, ../sass/_about.scss */
-.container {
-  text-align: justify;
-}
-
-/* line 38, ../sass/_about.scss */
-.container p {
-  font-size: 16px;
-}
-
-/* line 42, ../sass/_about.scss */
+/* line 31, ../sass/_about.scss */
 .expression {
   font-style: italic;
   font-weight: bold;
 }
 
 /* line 1, ../sass/_form.scss */
-h1 {
-  font: 2vw "butterfly";
-  letter-spacing: 3px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  color: #3FBFC1;
-  text-align: center;
-}
-
-/* line 10, ../sass/_form.scss */
 .contact {
   background-color: RGBA(255, 255, 255, 0.8);
   margin-top: 15px;
@@ -6279,88 +6282,83 @@ h1 {
   border-radius: 15px;
 }
 
-/* line 18, ../sass/_form.scss */
-.row {
-  padding: 5px;
-}
-
-/* line 22, ../sass/_form.scss */
+/* line 10, ../sass/_form.scss */
 .material-icons {
   color: #3FBFC1;
 }
 
-/* line 26, ../sass/_form.scss */
+/* line 14, ../sass/_form.scss */
 [type="checkbox"] + label {
   color: #3FBFC1;
 }
 
-/* line 30, ../sass/_form.scss */
+/* line 18, ../sass/_form.scss */
 .check {
   text-align: center;
 }
 
-/* line 34, ../sass/_form.scss */
+/* line 22, ../sass/_form.scss */
 .send {
   color: white;
 }
 
-/* line 38, ../sass/_form.scss */
+/* line 26, ../sass/_form.scss */
 .select-wrapper span.caret {
   color: #3FBFC1;
   font-size: 20px !important;
   top: 10px !important;
 }
 
-/* line 44, ../sass/_form.scss */
+/* line 32, ../sass/_form.scss */
 .select-wrapper input.select-dropdown {
   color: #3FBFC1;
 }
 
-/* line 48, ../sass/_form.scss */
+/* line 36, ../sass/_form.scss */
 .select-wrapper + label {
   font-size: 1rem;
 }
 
-/* line 52, ../sass/_form.scss */
+/* line 40, ../sass/_form.scss */
 .input-field label {
   font-size: 1rem;
 }
 
 /* label color */
-/* line 57, ../sass/_form.scss */
+/* line 45, ../sass/_form.scss */
 .input-field label {
   color: #3FBFC1;
 }
 
 /* label focus color */
-/* line 61, ../sass/_form.scss */
+/* line 49, ../sass/_form.scss */
 .input-field input[type=text]:focus + label {
   color: #3FBFC1;
 }
 
 /* label underline focus color */
-/* line 65, ../sass/_form.scss */
+/* line 53, ../sass/_form.scss */
 .input-field input[type=text]:focus {
   border-bottom: 1px solid #3FBFC1;
   box-shadow: 0 1px 0 0 #3FBFC1;
 }
 
 /* valid color */
-/* line 70, ../sass/_form.scss */
+/* line 58, ../sass/_form.scss */
 .input-field input[type=text].valid {
   border-bottom: 1px solid #3FBFC1;
   box-shadow: 0 1px 0 0 #3FBFC1;
 }
 
 /* invalid color */
-/* line 75, ../sass/_form.scss */
+/* line 63, ../sass/_form.scss */
 .input-field input[type=text].invalid {
   border-bottom: 1px solid #3FBFC1;
   box-shadow: 0 1px 0 0 #3FBFC1;
 }
 
 /* icon prefix focus color */
-/* line 80, ../sass/_form.scss */
+/* line 68, ../sass/_form.scss */
 .input-field .prefix.active {
   color: #3FBFC1;
 }
@@ -6368,34 +6366,23 @@ h1 {
 /*FOOTER*/
 /* line 2, ../sass/_footer.scss */
 footer.page-footer {
-  background-color: RGBA(255, 255, 255, 0.6);
+  background-color: red;
   margin-bottom: 0px;
   padding-top: 0px;
 }
 
 /* line 8, ../sass/_footer.scss */
-.row {
-  margin-bottom: 1px;
-}
-
-/* line 12, ../sass/_footer.scss */
-h5 {
-  font: 2vw "butterfly";
-  color: rgba(87, 73, 73, 0.8);
-}
-
-/* line 17, ../sass/_footer.scss */
 .footer-copyright {
   background-color: transparent !important;
   text-align: center;
 }
 
-/* line 22, ../sass/_footer.scss */
+/* line 13, ../sass/_footer.scss */
 footer.page-footer .footer-copyright {
   color: rgba(87, 73, 73, 0.8);
 }
 
-/* line 26, ../sass/_footer.scss */
+/* line 17, ../sass/_footer.scss */
 .doudous {
   color: #E93255;
   font: 16px "Didact Gothic";
@@ -6403,7 +6390,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 33, ../sass/_footer.scss */
+/* line 24, ../sass/_footer.scss */
 .bijoux {
   color: #724399;
   font: 16px "Didact Gothic";
@@ -6411,7 +6398,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 40, ../sass/_footer.scss */
+/* line 31, ../sass/_footer.scss */
 .accessoires {
   color: #468540;
   font: 16px "Didact Gothic";
@@ -6419,7 +6406,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 47, ../sass/_footer.scss */
+/* line 38, ../sass/_footer.scss */
 .whoami {
   color: #B7483F;
   font: 16px "Didact Gothic";
@@ -6427,7 +6414,7 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 54, ../sass/_footer.scss */
+/* line 45, ../sass/_footer.scss */
 .contactme {
   color: #3FBFC1;
   font: 16px "Didact Gothic";
@@ -6435,20 +6422,20 @@ footer.page-footer .footer-copyright {
   font-weight: bold;
 }
 
-/* line 61, ../sass/_footer.scss */
+/* line 52, ../sass/_footer.scss */
 .social {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* line 66, ../sass/_footer.scss */
+/* line 57, ../sass/_footer.scss */
 .contactme:hover {
   background-color: RGBA(63, 191, 193, 0.3) !important;
 }
 
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 73, ../sass/_footer.scss */
+/* line 64, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;

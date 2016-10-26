@@ -25,7 +25,6 @@ class ModeleController extends Controller
 
         $modeles = $em->getRepository('ChouettesBundle:Modele')->findAll();
 
-
         return $this->render('@Chouettes/Admin/modele/index.html.twig', array(
             'modeles' => $modeles,
         ));
@@ -56,28 +55,11 @@ class ModeleController extends Controller
     }
 
     /**
-     * Finds and displays a Modele entity.
-     *
-     */
-    public function showAction(Modele $modele)
-    {
-//        $deleteForm = $this->createDeleteForm($modele);
-
-        print_r($modele);
-
-        return $this->render('@Chouettes/Admin/modele/show.html.twig', array(
-            'modele' => $modele,
-//            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
-    /**
      * Displays a form to edit an existing Modele entity.
      *
      */
     public function editAction(Request $request, Modele $modele)
     {
-//        $deleteForm = $this->createDeleteForm($modele);
         $editForm = $this->createForm('ChouettesBundle\Form\ModeleType', $modele);
         $editForm->handleRequest($request);
 
@@ -92,13 +74,18 @@ class ModeleController extends Controller
         return $this->render('@Chouettes/Admin/modele/edit.html.twig', array(
             'modele' => $modele,
             'edit_form' => $editForm->createView(),
-//            'delete_form' => $deleteForm->createView(),
         ));
     }
 
+
+    /**
+     * Deletes a Modele entity.
+     *
+     */
+
     public function deleteAction($id)
     {
-        if ($id){
+        if ($id) {
             $em = $this->getDoctrine()->getEntityManager();
             $modele = $em->getRepository('ChouettesBundle:Modele')->findOneById($id);
             $image = $em->getRepository('ChouettesBundle:Image')->findOneById($modele->getImage()->getId());
@@ -107,43 +94,10 @@ class ModeleController extends Controller
             $em->flush();
 
             return $this->redirectToRoute('modele_index');
-        }
-        else
+        } else
             return $this->redirectToRoute('modele_index');
 
-
     }
-//    /**
-//     * Deletes a Modele entity.
-//     *
-//     */
-//    public function deleteAction(Request $request, Modele $modele)
-//    {
-//        $form = $this->createDeleteForm($modele);
-//        $form->handleRequest($request);
-//
-//        if ($form->isSubmitted() && $form->isValid()) {
-//            $em = $this->getDoctrine()->getManager();
-//            $em->remove($modele);
-//            $em->flush();
-//        }
-//
-//        return $this->redirectToRoute('modele_index');
-//    }
-//
-//    /**
-//     * Creates a form to delete a Modele entity.
-//     *
-//     * @param Modele $modele The Modele entity
-//     *
-//     * @return \Symfony\Component\Form\Form The form
-//     */
-//    private function createDeleteForm(Modele $modele)
-//    {
-//        return $this->createFormBuilder()
-//            ->setAction($this->generateUrl('modele_delete', array('id' => $modele->getId())))
-//            ->setMethod('DELETE')
-//            ->getForm()
-//        ;
-//    }
 }
+
+
