@@ -170,7 +170,7 @@ class DefaultController extends Controller
 
     public function adminAction()
     {
-        return $this->render('@Chouettes/Default/index.html.twig');
+        return $this->render('@Chouettes/Admin/index.html.twig');
     }
 
 
