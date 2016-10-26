@@ -42,21 +42,49 @@ class DefaultController extends Controller
         // 2 - Doudous
         // 3 - Accessoires
         // Récuperation des champs contenus dans la variable $modeles
-        $nbElement = count($modeles);
-        $categorie =array();
+
+        // Initialisation des variables
+        $bijoux = array();
+        $doudou = array();
+        $accessoire = array();
+
+        // Parcours de l'objet modeles
         foreach ($modeles as $modele){
-            // récupération des éléménts MODELE qui seront transmis à la vue
-            $categorie[] = $modele;
-            $titre = $modele->getTitre();
+            // Isole les modeles catgorie bijoux
+            if($modele->getCategorie()->getNom()=='Bijoux')
+            {
+                $bijoux[] = $modele;
+            }
+            // Isole les modeles catgorie doudou
+            elseif ($modele->getCategorie()->getNom()=='Doudous')
+            {
+                $doudou[] = $modele;
+            }
+            // Isole les modeles catgorie accessoire
+            else
+                {
+                $accessoire[] = $modele;
+            }
         }
 
-        // retourne citation et image dans Default/index.html.twig
+        // Choix aléatoire des modèles à afficher
+        $randomBijoux = $bijoux[array_rand($bijoux)];
+        $indexElimine = array_rand($doudou);
+        $randomDoudou = $doudou[$indexElimine];
+        // Attention si un seul elt dans $doudou dans le tableau ou tabl vide
+        unset($doudou[$indexElimine]);
+        $randomDoudou2 = $doudou[array_rand($doudou)];
+        $randomAccessoire = $accessoire[array_rand($accessoire)];
+
+        // -----------------------------------------------------------------------------------------------------
+        // retourne citation et images dans Default/index.html.twig
+        // -----------------------------------------------------------------------------------------------------
         return $this->render('@Chouettes/Default/index.html.twig', array(
-            'modeles' => $modeles,
-            'categorie' => $categorie,
-            'citation'=> $randomcitation,
-//            'titre' => $titre,
-            'nbElement' => $nbElement
+            'bijoux' => $randomBijoux,
+            'doudous' => $randomDoudou,
+            'doudous2' => $randomDoudou2,
+            'accessoire' =>$randomAccessoire,
+            'citation'=> $randomcitation
         ));
     }
 

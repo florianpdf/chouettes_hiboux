@@ -5,14 +5,17 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="{{ path ('chouettes_homepage') }}" class="brand-logo center">
-                    <img src={{ asset ('bundles/chouettes/images/logo2min.png') }} alt="Chouettes Hiboux Doudous" class="nb_navbar_logo">
+                    <img src="{{ asset ('bundles/chouettes/images/logo2min.png') }}" alt="Chouettes Hiboux Doudous" class="nb_navbar_logo">
                 </a>
             </div>
         </nav>
     </div>
 
 
-    {#---------             CITATION ---------------------------------------------#}
+
+
+
+    {#--------- CITATION ------------------------------------------------------#}
     {# Si pas de citation dans la base de données le blockquote n'est pas affiché #}
     {# cf. DefaultController.php #}
     {% if citation == "" %}
@@ -22,155 +25,145 @@
         {{ citation }}
         </blockquote>
     {% endif %}
-    {#---------             CITATION ---------------------------------------------#}
 
-    {#---------             BLOCK    ---------------------------------------------#}
+    {#---------  CITATION -----------------------------------------------------#}
 
+    {#---------  BLOCK 9 images   ---------------------------------------------#}
+    <!-- DEBUT Block 9 images -->
+    <div class="container bckground">
+        <!-- DEBUT PREMIERE LIGNE -->
 
-
-    {% for modele in modeles %}
-        {% if modele.categorie.nom == 'Doudous' %}
-            {{ dump(modele.image.url) }}
-        {% endif %}
-    {% endfor %}
-
-
-<!-- DEBUT Block 9 images -->
-<div class="container bckground">
-    <!-- DEBUT PREMIERE LIGNE -->
-
-    <div class="row rowCustom">
-        <!-Ligne 1 cube 1 -->
-        <div class="col l4 m4 s12 colCustom center doudous">
-            <a href="{{ path('chouettes_doudous') }}">
-                <div class="boxMenu">
-                    <h3 class="h3BoxMenu doudousindex">Doudous</h3>
-                    <div class="center notForSmall">
-                        <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
-                    </div>
-                </div>
-            </a>
-        </div> <!-- End col l4 m3 s1-->
-
-        <!- Ligne 1 cube 2 -->
-        {#Bloc photo categorie#}
-        <div class="col l4 m4 s12 colCustom">
-            <div class="ih-item square effect13 top_to_bottom">
-                <a href="#">
-                    <div>
-                        {#affichage aléatoire des images par catégorie#}
-                        {#{% set choix = random(nbElement) %}#}
-                        {#<p>choix : {{ choix }}</p><br><p>Total élément :{{ nbElement }}</p>#}
-                        {#<img class='imgDamier' src="{{asset('uploads/images/')}}{{ modele.url }}" alt="{{ modele.alt }}">#}
-                            </div>
-                    <div class="info">
-                        {#<h3>Petits doudous</h3>#}
-                        {#<h3> {{ titre }}</h3>#}
+        {#{{ dump(doudous) }}#}
+        {#{{ dump(doudous2) }}#}
+        {#{{ index }}#}
+        <div class="row rowCustom">
+            <!-Ligne 1 cube 1 -->
+            <div class="col l4 m4 s12 colCustom center doudous">
+                <a href="{{ path('chouettes_doudous') }}">
+                    <div class="boxMenu">
+                        <h3 class="h3BoxMenu doudousindex">Doudous</h3>
+                        <div class="center notForSmall">
+                            <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
+                        </div>
                     </div>
                 </a>
-            </div> <!-- End h-item square effect15 top_to_bottom -->
-        </div>
+            </div> <!-- End col l4 m3 s1-->
 
-        <!- Ligne 1 cube 3 -->
-        <div class="col l4 m4 s12 colCustom center bijoux">
-            <a href="{{ path ('chouettes_bijoux') }}">
-                <div class="boxMenu">
-                    <h3 class="h3BoxMenu bijouxindex">Bijoux</h3>
-                    <div class="center notForSmall">
-                        <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
-                    </div>
-                </div>
-            </a>
-        </div> <!-- End col l4 m3 s1-->
+            <!- Ligne 1 cube 2 -->
+            {#Bloc photo categorie#}
+            <div class="col l4 m4 s12 colCustom">
+                <div class="ih-item square effect13 top_to_bottom">
+                    <a href="#">
+                        <div>
+                            <img class='imgDamier' src="{{asset('uploads/images/')}}{{ doudous.image.url }}" alt="{{ doudous.image.alt }}">
+                        </div>
+                        <div class="info">
+                            <h3> {{ doudous.titre }}</h3>
+                        </div>
+                    </a>
+                </div> <!-- End h-item square effect15 top_to_bottom -->
+            </div>
 
-    </div> <!-- End ROW -->
-    <!-- FIN PREMIERE LIGNE -->
-
-    <!-- DEBUT DEUXIEME LIGNE -->
-    <div class="row rowCustom">
-
-        <div class="col l4 m4 s12 colCustom">
-            <div class="ih-item square effect13 top_to_bottom">
-
-                <a href="#">
-                    <div>
-                        {#<img class='imgDamier' src="{{asset('uploads/images/')}}{{modele.image.url }}" alt="{{ modele.image.alt }}">#}
-                    </div>
-                    <div class="info">
-                        {#<h3>Grands doudous</h3>#}
-                        {#<h3> {{ titre }}</h3>#}
+            <!- Ligne 1 cube 3 -->
+            <div class="col l4 m4 s12 colCustom center bijoux">
+                <a href="{{ path ('chouettes_bijoux') }}">
+                    <div class="boxMenu">
+                        <h3 class="h3BoxMenu bijouxindex">Bijoux</h3>
+                        <div class="center notForSmall">
+                            <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
+                        </div>
                     </div>
                 </a>
-            </div> <!-- End h-item square effect15 top_to_bottom -->
-        </div>
+            </div> <!-- End col l4 m3 s1-->
 
-        <div class="col l4 m4 s12 colCustom center accessoires">
-            <a href="{{ path ('chouettes_accessoires') }}">
-                <div class="boxMenu">
-                    <h3 class="h3BoxMenu accessoiresindex">Accessoires</h3>
-                    <div class="center notForSmall">
-                        <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
-                    </div>
-                </div>
-            </a>
-        </div> <!-- End col l4 m3 s1-->
+        </div> <!-- End ROW -->
+        <!-- FIN PREMIERE LIGNE -->
 
-        <div class="col l4 m4 s12 colCustom">
-            <div class="ih-item square effect13 top_to_bottom">
-                <a href="#">
-                    <div>
-                        <img class='imgDamier' src="{{ asset ('bundles/chouettes/images/accessoire.jpg') }}" alt="img">
-                    </div>
-                    <div class="info">
-                        <h3>Bijoux</h3>
-                    </div>
-                </a>
-            </div> <!-- End h-item square effect15 top_to_bottom -->
-        </div>
+        <!-- DEBUT DEUXIEME LIGNE -->
+        <div class="row rowCustom">
 
-    </div> <!-- End ROW -->
-    <!-- FIN DEUXIEME LIGNE -->
+            <div class="col l4 m4 s12 colCustom">
+                <div class="ih-item square effect13 top_to_bottom">
 
-    <!-- DEBUT TROISIEME LIGNE -->
-    <div class="row rowCustom">
+                    <a href="#">
+                        <div>
+                            <img class='imgDamier' src="{{asset('uploads/images/')}}{{doudous2.image.url }}" alt="{{ doudous2.image.alt }}">
+                        </div>
+                        <div class="info">
+                            {#<h3>Grands doudous</h3>#}
+                            <h3> {{ doudous2.titre }}</h3>
+                        </div>
+                    </a>
+                </div> <!-- End h-item square effect15 top_to_bottom -->
+            </div>
 
-        <div class="col l4 m4 s12 colCustom center contactme">
-            <a href="{{ path ('chouettes_contact') }}">
-                <div class="boxMenu">
-                    <h3 class="h3BoxMenu contactindex">Contact</h3>
-                    <div class="center notForSmall">
-                        <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
-                    </div>
-                </div>
-            </a>
-        </div> <!-- End col l4 m3 s1-->
-
-        <div class="col l4 m4 s12 colCustom">
-            <div class="ih-item square effect13 top_to_bottom">
-                <a href="#">
-                    <div>
-                        <img class='imgDamier' src="{{ asset ('bundles/chouettes/images/accessoires.jpg') }}" alt="img">
-                    </div>
-                    <div class="info">
-                        <h3>Accessoires</h3>
+            <div class="col l4 m4 s12 colCustom center accessoires">
+                <a href="{{ path ('chouettes_accessoires') }}">
+                    <div class="boxMenu">
+                        <h3 class="h3BoxMenu accessoiresindex">Accessoires</h3>
+                        <div class="center notForSmall">
+                            <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
+                        </div>
                     </div>
                 </a>
-            </div> <!-- End h-item square effect15 top_to_bottom -->
-        </div>
+            </div> <!-- End col l4 m3 s1-->
 
-        <div class="col l4 m4 s12 colCustom center whoami">
-            <a href="{{ path ('chouettes_about') }}">
-                <div class="boxMenu">
-                    <h3 class="h3BoxMenu whoamiindex">Qui suis-je</h3>
-                    <div class="center notForSmall">
-                        <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
+            <div class="col l4 m4 s12 colCustom">
+                <div class="ih-item square effect13 top_to_bottom">
+                    <a href="#">
+                        <div>
+                            <img class='imgDamier' src="{{asset('uploads/images/')}}{{bijoux.image.url }}" alt="{{ bijoux.image.alt }}">
+                        </div>
+                        <div class="info">
+                            <h3> {{ bijoux.titre }}</h3>
+                        </div>
+                    </a>
+                </div> <!-- End h-item square effect15 top_to_bottom -->
+            </div>
+
+        </div> <!-- End ROW -->
+        <!-- FIN DEUXIEME LIGNE -->
+
+        <!-- DEBUT TROISIEME LIGNE -->
+        <div class="row rowCustom">
+
+            <div class="col l4 m4 s12 colCustom center contactme">
+                <a href="{{ path ('chouettes_contact') }}">
+                    <div class="boxMenu">
+                        <h3 class="h3BoxMenu contactindex">Contact</h3>
+                        <div class="center notForSmall">
+                            <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div> <!-- End col l4 m3 s1-->
+                </a>
+            </div> <!-- End col l4 m3 s1-->
 
-    </div> <!-- End ROW -->
-    <!-- FIN TROISIEME LIGNE -->
-</div>  <!-- End container -->
-<!-- FIN Block 9 images -->
+            <div class="col l4 m4 s12 colCustom">
+                <div class="ih-item square effect13 top_to_bottom">
+                    <a href="#">
+                        <div>
+                            <img class='imgDamier' src="{{asset('uploads/images/')}}{{accessoire.image.url }}" alt="{{ accessoire.image.alt }}">
+                        </div>
+                        <div class="info">
+                            <h3> {{ accessoire.titre }}</h3>
+                        </div>
+                    </a>
+                </div> <!-- End h-item square effect15 top_to_bottom -->
+            </div>
+
+            <div class="col l4 m4 s12 colCustom center whoami">
+                <a href="{{ path ('chouettes_about') }}">
+                    <div class="boxMenu">
+                        <h3 class="h3BoxMenu whoamiindex">Qui suis-je</h3>
+                        <div class="center notForSmall">
+                            <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/chouette1.png') }}"/>
+                        </div>
+                    </div>
+                </a>
+            </div> <!-- End col l4 m3 s1-->
+
+        </div> <!-- End ROW -->
+        <!-- FIN TROISIEME LIGNE -->
+    </div>  <!-- End container -->
+    <!-- FIN Block 9 images -->
 {% endblock %}
