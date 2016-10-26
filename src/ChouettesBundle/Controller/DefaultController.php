@@ -122,6 +122,7 @@ class DefaultController extends Controller
 
     public function sendAction(Request $request)
     {
+        $from = $this->getParameter('mailer_user');
         $name = $request->request->get('nom');
         $firstname = $request->request->get('prenom');
         $mail = $request->request->get('mail');
@@ -130,7 +131,7 @@ class DefaultController extends Controller
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Chouettes')
             ->setFrom($mail)
-            ->setCc(array('anthony.menet@gmail.com', $mail))
+            ->setCc(array($from, $mail))
             ->setBody(
                 $this->renderView(
                     '@Chouettes/user/mail.html.twig',
