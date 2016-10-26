@@ -128,41 +128,40 @@ class DefaultController extends Controller
     }
 
 
-
-    public function messageAction()
-    {
-        require_once '/lib/swift_required.php';
-
-        // Create the Transport
-        $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465);
-
-        // Create the Mailer using your created Transport
-        $mailer = Swift_Mailer::newInstance($transport);
-
-        // Create a message
-        $message = Swift_Message::newInstance('Wonderful Subject')
-        ->setFrom(array('bibouye77@gmail.com' => 'Bibouye'))
-        ->setTo(array('bibouye77@gmail.com'))
-        ->setFirstName("Here is the sender's first name")
-        ->setLastName("Here is the sender's last name")
-        ->setEmail('Here is user email')
-        ->setBody('Here is the message itself')
-        ;
 //
-//        // Send the message
-        $result = $mailer->send($message);
-        $status = $mailer->send($message);
-        if($status)
-        {
-            echo "Success!";
-        }
-
-        else
-        {
-            echo "Failure";
-        }
-//    }
-}
+//    public function messageAction()
+//    {
+//        require_once '/lib/swift_required.php';
+//
+//        // Create the Transport
+//        $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465);
+//
+//        // Create the Mailer using your created Transport
+//        $mailer = Swift_Mailer::newInstance($transport);
+//
+//        // Create a message
+//        $message = Swift_Message::newInstance('Wonderful Subject')
+//        ->setFrom(array('bibouye77@gmail.com' => 'Bibouye'))
+//        ->setTo(array('bibouye77@gmail.com'))
+//        ->setFirstName("Here is the sender's first name")
+//        ->setLastName("Here is the sender's last name")
+//        ->setEmail('Here is user email')
+//        ->setBody('Here is the message itself')
+//        ;
+////
+////        // Send the message
+//        $status = $mailer->send($message);
+//        if($status)
+//        {
+//            echo "Success!";
+//        }
+//
+//        else
+//        {
+//            echo "Failure";
+//        }
+////    }
+//}
 
     public function adminAction()
     {
