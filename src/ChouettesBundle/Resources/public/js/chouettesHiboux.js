@@ -95,4 +95,3 @@ $('#og-additems').on( 'click', function() {
 $(document).ready(function() {
     $('select').material_select();
 });
-
