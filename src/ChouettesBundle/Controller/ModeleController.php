@@ -68,7 +68,7 @@ class ModeleController extends Controller
             $em->persist($modele);
             $em->flush();
 
-            return $this->redirectToRoute('modele_edit', array('id' => $modele->getId()));
+            return $this->redirectToRoute('modele_index', array('id' => $modele->getId()));
         }
 
         return $this->render('@Chouettes/Admin/modele/edit.html.twig', array(
