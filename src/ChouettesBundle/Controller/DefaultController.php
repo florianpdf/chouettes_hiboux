@@ -103,7 +103,7 @@ class DefaultController extends Controller
         $name = $request->request->get('nom');
         $firstname = $request->request->get('prenom');
         $mail = $request->request->get('mail');
-        $sujet = $request->request->get('sujet');
+        $sujet = $request->request->get('Sujet');
         $msg = $request->request->get('msg');
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Chouettes')
@@ -124,48 +124,25 @@ class DefaultController extends Controller
             )
         ;
         $this->get('mailer')->send($message);
-        return $this->render('@Chouettes/user/contact.html.twig');
+//        return $this->render('@Chouettes/user/contact.html.twig');
+
+        if($this)
+        {
+            echo "<script type='text/javascript'>alert('Envoyé');</script>";
+            return $this->render('@Chouettes/Default/index.html.twig');
+        }
+
+        else
+        {
+            echo "<script type='text/javascript'>alert('Echec de l'envoi);</script>";
+            return $this->render('@Chouettes/user/contact.html.twig');
+        }
+
     }
-
-
-//
-//    public function messageAction()
-//    {
-//        require_once '/lib/swift_required.php';
-//
-//        // Create the Transport
-//        $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465);
-//
-//        // Create the Mailer using your created Transport
-//        $mailer = Swift_Mailer::newInstance($transport);
-//
-//        // Create a message
-//        $message = Swift_Message::newInstance('Wonderful Subject')
-//        ->setFrom(array('bibouye77@gmail.com' => 'Bibouye'))
-//        ->setTo(array('bibouye77@gmail.com'))
-//        ->setFirstName("Here is the sender's first name")
-//        ->setLastName("Here is the sender's last name")
-//        ->setEmail('Here is user email')
-//        ->setBody('Here is the message itself')
-//        ;
-////
-////        // Send the message
-//        $status = $mailer->send($message);
-//        if($status)
-//        {
-//            echo "Success!";
-//        }
-//
-//        else
-//        {
-//            echo "Failure";
-//        }
-////    }
-//}
 
     public function adminAction()
     {
-        return $this->render('@Chouettes/Admin/index.html.twig');
+        return $this->render('@Chouettes/Default/index.html.twig');
     }
 
 

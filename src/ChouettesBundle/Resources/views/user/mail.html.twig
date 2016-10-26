@@ -1,12 +1,12 @@
-{#{% extends 'DefaultController.php' %}#}
+{#{% extends 'base.html.twig' %}#}
 
-test depuis le site internet*
+{% block body %}
 
-{#{% block body %}#}
-{#Une demande de contact a été envoyée par {{ get('nom') }} {{ get('prenom') }} à {{ "now" | date("d-m-Y H:i") }}.#}
+<p>Une demande de contact a été envoyée par {{ prenom }} {{ nom }} à {{ "now" | date("d-m-Y H:i") }}.</p>
 
-{#Adresse mail de l'utilisateur: {{ get('mail') }}#}
-{#Sujet : {{ get('sujet') }}#}
-{#Message :#}
-{#{{ get('msg') }}#}
-{#{% endblock body %}#}
+<p>Adresse mail de l'utilisateur: {{ mail }}</p>
+<p>Sujet : {{ sujet }}</p>
+<p>Message :</p>
+<p>{{ message }}</p>
+
+{% endblock body %}
