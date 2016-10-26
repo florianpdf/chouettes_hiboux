@@ -130,7 +130,7 @@ class DefaultController extends Controller
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Chouettes')
             ->setFrom($mail)
-            ->setTo('anthony.menet@gmail.com')
+            ->setCc(array('anthony.menet@gmail.com', $mail))
             ->setBody(
                 $this->renderView(
                     '@Chouettes/user/mail.html.twig',
@@ -145,15 +145,7 @@ class DefaultController extends Controller
                 'text/html'
             );
         $this->get('mailer')->send($message);
-//        return $this->render('@Chouettes/user/contact.html.twig');
-
-        if ($this) {
-            echo "<script type='text/javascript'>alert('Envoyé');</script>";
-            return $this->redirectToRoute('chouettes_homepage');
-        } else {
-            echo "<script type='text/javascript'>alert('Echec de l'envoi);</script>";
-            return $this->render('@Chouettes/user/contact.html.twig');
-        }
+        return $this->redirectToRoute('chouettes_homepage');
 
     }
 
