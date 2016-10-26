@@ -66,7 +66,7 @@ class DefaultController extends Controller
                 $accessoire[] = $modele;
             }
         }
-
+//        plop
         // Choix aléatoire des modèles à afficher
         $randomBijoux = $bijoux[array_rand($bijoux)];
         $indexElimine = array_rand($doudou);
