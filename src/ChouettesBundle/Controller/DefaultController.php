@@ -40,37 +40,38 @@ class DefaultController extends Controller
         // Initialisation des variables
         $bijoux = array();
         $doudou = array();
-        $doudou2 = array();
         $accessoire = array();
 
         // Parcours de l'objet modeles
         foreach ($modeles as $modele){
+            // Isole les modeles catgorie bijoux
             if($modele->getCategorie()->getNom()=='Bijoux')
             {
                 $bijoux[] = $modele;
             }
+            // Isole les modeles catgorie doudou
             elseif ($modele->getCategorie()->getNom()=='Doudous')
             {
                 $doudou[] = $modele;
             }
+            // Isole les modeles catgorie accessoire
             else
                 {
                 $accessoire[] = $modele;
             }
-
         }
 
+        // Choix aléatoire des modèles à afficher
         $randomBijoux = $bijoux[array_rand($bijoux)];
-        $randomDoudou = $doudou[array_rand($doudou)];
+        $indexElimine = array_rand($doudou);
+        $randomDoudou = $doudou[$indexElimine];
+        // Attention si un seul elt dans $doudou dans le tableau ou tabl vide
+        unset($doudou[$indexElimine]);
         $randomDoudou2 = $doudou[array_rand($doudou)];
         $randomAccessoire = $accessoire[array_rand($accessoire)];
 
-        if($randomDoudou == $randomDoudou) {
-            $randomDoudou2 = $doudou[array_rand($doudou)];
-        }
-
         // -----------------------------------------------------------------------------------------------------
-        // retourne citation et image dans Default/index.html.twig
+        // retourne citation et images dans Default/index.html.twig
         // -----------------------------------------------------------------------------------------------------
         return $this->render('@Chouettes/Default/index.html.twig', array(
             'bijoux' => $randomBijoux,
