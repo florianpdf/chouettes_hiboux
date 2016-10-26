@@ -18,19 +18,18 @@ class DefaultController extends Controller
         // Connexion à la BdD
         $em = $this->getDoctrine()->getManager();
         // Recupération des données CITATIONS
-        $citations=$em->getRepository('ChouettesBundle:Citation')->findAll();
+        $citations = $em->getRepository('ChouettesBundle:Citation')->findAll();
         // Recupération des données MODELE pour les images affichables sur la pages d'accueil
-        $modeles=$em->getRepository('ChouettesBundle:Modele')->findBy(array('add_block' => true));
+        $modeles = $em->getRepository('ChouettesBundle:Modele')->findBy(array('add_block' => true));
 
         // -----------------------------------------------------------------------------------------------------
         // Mise en place random pour afficher aléatoirement les CITATIONS sur la page
         // d'accueil. Si aucune citation existe dans la base de données on renvoi comme contenu un chaine vide
         // Dans Default/index.html.twig
         // -----------------------------------------------------------------------------------------------------
-        if(!empty($citations)) {
+        if (!empty($citations)) {
             $randomcitation = $citations[array_rand($citations)]->getText();
-        }
-        else {
+        } else {
             $randomcitation = '';
         }
 
@@ -49,20 +48,15 @@ class DefaultController extends Controller
         $accessoire = array();
 
         // Parcours de l'objet modeles
-        foreach ($modeles as $modele){
+        foreach ($modeles as $modele) {
             // Isole les modeles catgorie bijoux
-            if($modele->getCategorie()->getNom()=='Bijoux')
-            {
+            if ($modele->getCategorie()->getNom() == 'Bijoux') {
                 $bijoux[] = $modele;
-            }
-            // Isole les modeles catgorie doudou
-            elseif ($modele->getCategorie()->getNom()=='Doudous')
-            {
+            } // Isole les modeles catgorie doudou
+            elseif ($modele->getCategorie()->getNom() == 'Doudous') {
                 $doudou[] = $modele;
-            }
-            // Isole les modeles catgorie accessoire
-            else
-                {
+            } // Isole les modeles catgorie accessoire
+            else {
                 $accessoire[] = $modele;
             }
         }
@@ -83,8 +77,8 @@ class DefaultController extends Controller
             'bijoux' => $randomBijoux,
             'doudous' => $randomDoudou,
             'doudous2' => $randomDoudou2,
-            'accessoire' =>$randomAccessoire,
-            'citation'=> $randomcitation
+            'accessoire' => $randomAccessoire,
+            'citation' => $randomcitation
         ));
     }
 
@@ -92,27 +86,27 @@ class DefaultController extends Controller
     public function doudousAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $modeles=$em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 2));
+        $modeles = $em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 2));
         return $this->render('@Chouettes/user/doudous.html.twig', array(
-            'modeles'=>$modeles
+            'modeles' => $modeles
         ));
     }
 
     public function bijouxAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $modeles=$em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 1));
+        $modeles = $em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 1));
         return $this->render('@Chouettes/user/bijoux.html.twig', array(
-            'modeles'=>$modeles
+            'modeles' => $modeles
         ));
     }
 
     public function accessoiresAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $modeles=$em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 3));
+        $modeles = $em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 3));
         return $this->render('@Chouettes/user/accessoires.html.twig', array(
-            'modeles'=>$modeles
+            'modeles' => $modeles
         ));
     }
 
@@ -125,7 +119,7 @@ class DefaultController extends Controller
     {
         return $this->render('@Chouettes/user/contact.html.twig');
     }
-    
+
     public function sendAction(Request $request)
     {
         $name = $request->request->get('nom');
@@ -136,7 +130,7 @@ class DefaultController extends Controller
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Chouettes')
             ->setFrom($mail)
-            ->setTo('bibouye77@gmail.com')
+            ->setTo('anthony.menet@gmail.com')
             ->setBody(
                 $this->renderView(
                     '@Chouettes/user/mail.html.twig',
@@ -149,19 +143,14 @@ class DefaultController extends Controller
                     )
                 ),
                 'text/html'
-            )
-        ;
+            );
         $this->get('mailer')->send($message);
 //        return $this->render('@Chouettes/user/contact.html.twig');
 
-        if($this)
-        {
+        if ($this) {
             echo "<script type='text/javascript'>alert('Envoyé');</script>";
-            return $this->render('@Chouettes/Default/index.html.twig');
-        }
-
-        else
-        {
+            return $this->redirectToRoute('chouettes_homepage');
+        } else {
             echo "<script type='text/javascript'>alert('Echec de l'envoi);</script>";
             return $this->render('@Chouettes/user/contact.html.twig');
         }
@@ -170,20 +159,6 @@ class DefaultController extends Controller
 
     public function adminAction()
     {
-        return $this->render('@Chouettes/Default/index.html.twig');
+        return $this->render('@Chouettes/Admin/index.html.twig');
     }
-
-
-    public function sendMailAction(Request $request)
-    {
-//        php natif
-        $donnée_via_post = $_POST;
-
-//        methode sous symfony
-        $poiu = $request;
-
-        return $this->render('@Chouettes/user/contact.html.twig');
-    }
-
 }
-
