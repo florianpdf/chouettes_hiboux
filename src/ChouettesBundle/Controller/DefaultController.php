@@ -125,7 +125,7 @@ class DefaultController extends Controller
         $msg = $request->request->get('msg');
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Chouettes')
-            ->setFrom($mail)
+            ->setFrom(array($from => 'ChouettesHiboux'))
             ->setCc(array($from, $mail))
             ->setBody(
                 $this->renderView(
