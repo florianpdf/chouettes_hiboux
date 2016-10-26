@@ -2,12 +2,7 @@
 
 namespace ChouettesBundle\Controller;
 
-use Doctrine\DBAL\Types\TextType;
-use ChouettesBundle\ChouettesBundle;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
-use Symfony\Component\Validator\Constraints\Length;
-use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\HttpFoundation\Request;
 
 
@@ -122,6 +117,7 @@ class DefaultController extends Controller
 
     public function sendAction(Request $request)
     {
+        $from = $this->getParameter('mailer_user');
         $name = $request->request->get('nom');
         $firstname = $request->request->get('prenom');
         $mail = $request->request->get('mail');
@@ -130,7 +126,7 @@ class DefaultController extends Controller
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Chouettes')
             ->setFrom($mail)
-            ->setCc(array('anthony.menet@gmail.com', $mail))
+            ->setCc(array($from, $mail))
             ->setBody(
                 $this->renderView(
                     '@Chouettes/user/mail.html.twig',
