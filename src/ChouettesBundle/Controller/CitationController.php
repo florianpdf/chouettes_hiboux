@@ -55,7 +55,7 @@ class CitationController extends Controller
 
     /**
      * Displays a form to edit an existing Citation entity.
-     *
+     * 
      */
     public function editAction(Request $request, Citation $citation)
     {
