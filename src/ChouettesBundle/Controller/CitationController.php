@@ -55,7 +55,7 @@ class CitationController extends Controller
 
     /**
      * Displays a form to edit an existing Citation entity.
-     *
+     * 
      */
     public function editAction(Request $request, Citation $citation)
     {
@@ -68,7 +68,7 @@ class CitationController extends Controller
             $em->persist($citation);
             $em->flush();
 
-            return $this->redirectToRoute('citation_edit', array('id' => $citation->getId()));
+            return $this->redirectToRoute('citation_index', array('id' => $citation->getId()));
         }
 
         return $this->render('@Chouettes/Admin/citation/edit.html.twig', array(
