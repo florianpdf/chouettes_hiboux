@@ -6116,7 +6116,7 @@ blockquote em {
 
 /* line 118, ../sass/_patchwork_page.scss */
 .og-fullimg img {
-  display: inline-block;
+  display: inline-block !important;
   max-height: 100%;
   max-width: 100%;
 }
