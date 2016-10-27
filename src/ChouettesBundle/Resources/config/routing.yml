@@ -14,10 +14,6 @@ chouettes_modele:
     resource: "@ChouettesBundle/Resources/config/routing/modele.yml"
     prefix:   /admin/modele
 
-chouettes_categorie:
-    resource: "@ChouettesBundle/Resources/config/routing/categorie.yml"
-    prefix:   /admin/categorie
-
 chouettes_whoami:
     resource: "@ChouettesBundle/Resources/config/routing/whoami.yml"
     prefix:   /admin/whoami
