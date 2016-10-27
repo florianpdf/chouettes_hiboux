@@ -25,7 +25,7 @@
             <tr>
                 <td><img src="{{ asset('uploads/images/') }}{{ modele.image }}" alt="{{ modele.image.alt }}"></td>
                 <td>{{ modele.titre }}</td>
-                <td>{{ modele.contenu }}</td>
+                <td>{{ modele.contenu|raw }}</td>
                 <td wordwrap>{{ modele.lien }}</td>
                 <td>{% if modele.addblock %}Yes{% else %}No{% endif %}</td>
                 <td>
