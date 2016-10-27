@@ -71,9 +71,18 @@
                 </div>
             </div>
         </div>
+        <div class="connect">
+
+        </div>
 
         <div class="footer-copyright">
-            © 2016 All Rights Reserved Chouettes Hiboux Doudous | Design by WCS | <a href="{{ path('admin_homepage') }}"><i class="fa fa-key" aria-hidden="true"></i></a>
+                © 2016 All Rights Reserved Chouettes Hiboux Doudous | Design by WCS | {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+            {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+            <a href="{{ path('fos_user_security_logout') }}"><i class="fa fa-sign-out"" aria-hidden="true"></i>
+            </a>
+        {% else %}
+            <a href="{{ path('admin_homepage') }}"><i class="fa fa-key" aria-hidden="true"></i></a>
+            {% endif %}
         </div>
 </footer>
 

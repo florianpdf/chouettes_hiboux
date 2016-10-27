@@ -13,6 +13,11 @@
                     <li class="li_bijoux"><a href="{{ path ('chouettes_bijoux') }}" class="bijoux">Bijoux</a></li>
                     <li class="li_accessoires"><a href="{{ path ('chouettes_accessoires') }}" class="accessoires">Accessoires</a></li>
                     <li class="li_whoami"><a href="{{ path ('chouettes_about') }}" class="whoami">Qui suis-je ?</a></li>
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    <li class="li_admin"><a href="{{ path('admin_homepage') }}" class="adminlog">Admin</a> </li>
+                    {% else %}
+
+                    {% endif %}
                 </ul>
 
                 <ul class="side-nav" id="mobile-demo">
@@ -21,6 +26,11 @@
                     <li class="li_bijoux"><a href="{{ path ('chouettes_bijoux') }}" class="bijoux">Bijoux</a></li>
                     <li class="li_accessoires"><a href="{{ path ('chouettes_accessoires') }}" class="accessoires">Accessoires</a></li>
                     <li class="li_whoami"><a href="{{ path ('chouettes_about') }}" class="whoami">Qui suis-je ?</a></li>
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                        <li class="li_admin"><a href="{{ path('admin_homepage') }}" class="adminlog">Admin</a> </li>
+                    {% else %}
+
+                    {% endif %}
                 </ul>
             </div>
         </nav>

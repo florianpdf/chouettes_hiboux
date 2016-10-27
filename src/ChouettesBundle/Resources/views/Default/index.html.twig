@@ -7,12 +7,16 @@
                 <a href="{{ path ('chouettes_homepage') }}" class="brand-logo center">
                     <img src="{{ asset ('bundles/chouettes/images/logo2min.png') }}" alt="Chouettes Hiboux Doudous" class="nb_navbar_logo">
                 </a>
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    <div class="logadmin">
+                   <a href="{{ path('admin_homepage') }}" class="adminlog"><i class="fa fa-th fa-3x" aria-hidden="true" title="Accéder à l'administration"></i></a>
+                    </div>
+                {% else %}
+
+                {% endif %}
             </div>
         </nav>
     </div>
-
-
-
 
 
     {#--------- CITATION ------------------------------------------------------#}
@@ -27,6 +31,7 @@
     {% endif %}
 
     {#---------  CITATION -----------------------------------------------------#}
+
 
     {#---------  BLOCK 9 images   ---------------------------------------------#}
     <!-- DEBUT Block 9 images -->
