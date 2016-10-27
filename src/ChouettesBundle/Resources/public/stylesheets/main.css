@@ -178,6 +178,11 @@ button {
   padding-top: 100px;
 }
 
+/* line 201, ../sass/_general.scss */
+.login {
+  font-size: 20px;
+}
+
 /* line 3, ../sass/_navbar.scss */
 nav {
   height: 120px !important;
