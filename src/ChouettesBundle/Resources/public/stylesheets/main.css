@@ -348,18 +348,30 @@ blockquote em {
   background-color: #DEDEDE;
 }
 
+/* line 16, ../sass/_index.scss */
+.logadmin {
+  float: right;
+  padding: 15px;
+}
+
+/* line 21, ../sass/_index.scss */
+.fa-3x {
+  font-size: 25px !important;
+  color: grey;
+}
+
 /****************************/
 /****************************/
 /*        row  & col        */
 /****************************/
 /****************************/
-/* line 21, ../sass/_index.scss */
+/* line 31, ../sass/_index.scss */
 .rowCustom {
   padding: 0px !important;
   margin: 0px !important;
 }
 
-/* line 26, ../sass/_index.scss */
+/* line 36, ../sass/_index.scss */
 .colCustom {
   padding: 0px !important;
   margin: 0px;
@@ -371,19 +383,19 @@ blockquote em {
 /* BLOCK avec texte = menu */
 /***************************/
 /***************************/
-/* line 37, ../sass/_index.scss */
+/* line 47, ../sass/_index.scss */
 .colCustom:hover .iMasque {
   display: inline;
 }
 
-/* line 41, ../sass/_index.scss */
+/* line 51, ../sass/_index.scss */
 .iMasque {
   display: none;
 }
 
 /* Zone element cliquable*/
 /* non survole */
-/* line 47, ../sass/_index.scss */
+/* line 57, ../sass/_index.scss */
 .bckground a {
   cursor: pointer;
   display: inline-block;
@@ -394,18 +406,18 @@ blockquote em {
 
 /* Zone element cliquable*/
 /* survole */
-/* line 57, ../sass/_index.scss */
+/* line 67, ../sass/_index.scss */
 .iMasque:hover {
   color: #999;
 }
 
-/* line 61, ../sass/_index.scss */
+/* line 71, ../sass/_index.scss */
 .boxMenu {
   padding-top: 15%;
 }
 
 /* Titre de la box */
-/* line 66, ../sass/_index.scss */
+/* line 76, ../sass/_index.scss */
 .h3BoxMenu {
   text-transform: uppercase;
   text-align: center;
@@ -414,47 +426,47 @@ blockquote em {
   font-family: butterfly;
 }
 
-/* line 74, ../sass/_index.scss */
+/* line 84, ../sass/_index.scss */
 .doudousindex {
   font: 2vw "butterfly";
   color: #E93255;
   font-size: 40px;
 }
 
-/* line 80, ../sass/_index.scss */
+/* line 90, ../sass/_index.scss */
 .bijouxindex {
   font: 2vw "butterfly";
   color: #724399;
   font-size: 40px;
 }
 
-/* line 86, ../sass/_index.scss */
+/* line 96, ../sass/_index.scss */
 .accessoiresindex {
   font: 2vw "butterfly";
   color: #468540;
   font-size: 40px;
 }
 
-/* line 92, ../sass/_index.scss */
+/* line 102, ../sass/_index.scss */
 .whoamiindex {
   font: 2vw "butterfly";
   color: #B7483F;
   font-size: 40px;
 }
 
-/* line 98, ../sass/_index.scss */
+/* line 108, ../sass/_index.scss */
 .contactindex {
   font: 2vw "butterfly";
   color: #3FBFC1;
   font-size: 40px;
 }
 
-/* line 104, ../sass/_index.scss */
+/* line 114, ../sass/_index.scss */
 .imgChouetteAnimee {
   width: 100%;
 }
 
-/* line 108, ../sass/_index.scss */
+/* line 118, ../sass/_index.scss */
 .imgChouetteAnimeeSmall {
   width: 50%;
 }
@@ -465,7 +477,7 @@ blockquote em {
 /****************************/
 /****************************/
 /* SURCHARGE framework ihover */
-/* line 118, ../sass/_index.scss */
+/* line 128, ../sass/_index.scss */
 .ih-item.square {
   width: 100% !important;
   height: 100% !important;
@@ -474,19 +486,19 @@ blockquote em {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* line 126, ../sass/_index.scss */
+/* line 136, ../sass/_index.scss */
 .ih-item a {
   color: #3FBFC1 !important;
 }
 
-/* line 130, ../sass/_index.scss */
+/* line 140, ../sass/_index.scss */
 .ih-item.square.effect13 .info {
   font: 2vw "butterfly" !important;
   font-size: 40px !important;
   background: rgba(41, 146, 80, 0.6) !important;
 }
 
-/* line 137, ../sass/_index.scss */
+/* line 147, ../sass/_index.scss */
 .ih-item.square.effect13 .info h3 {
   background-color: rgba(26, 210, 128, 0.8) !important;
 }
