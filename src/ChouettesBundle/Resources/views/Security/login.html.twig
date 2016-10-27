@@ -19,16 +19,18 @@
                 <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
                 <div class="row">
-                    <div class="col offset-l4 l4">
-                        <label class="login" for="username">{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}</label>
-                        <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+                    <div class="input-field col offset-l4 l4">
+                        <i class="material-icons prefix">account_circle</i>
+                        <label class="login" for="icon_prefix">{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}</label>
+                        <input type="text" id="icon_prefix" name="_username" value="{{ last_username }}" required="required" />
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col offset-l4 l4">
-                        <label class="login" for="password">{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}</label>
-                        <input type="password" id="password" name="_password" required="required" />
+                    <div class="input-field col offset-l4 l4">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <label class="login" for="icon_prefix">{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}</label>
+                        <input type="password" id="icon_prefix" name="_password" required="required" />
                     </div>
                 </div>
 
