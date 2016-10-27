@@ -2,12 +2,7 @@
 
 namespace ChouettesBundle\Controller;
 
-use Doctrine\DBAL\Types\TextType;
-use ChouettesBundle\ChouettesBundle;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
-use Symfony\Component\Validator\Constraints\Length;
-use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\HttpFoundation\Request;
 
 
@@ -130,7 +125,7 @@ class DefaultController extends Controller
         $msg = $request->request->get('msg');
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Chouettes')
-            ->setFrom($mail)
+            ->setFrom(array($from => 'ChouettesHiboux'))
             ->setCc(array($from, $mail))
             ->setBody(
                 $this->renderView(
