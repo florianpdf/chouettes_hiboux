@@ -183,6 +183,16 @@ button {
   font-size: 20px;
 }
 
+/* line 205, ../sass/_general.scss */
+.adminlog {
+  color: #003E5E;
+}
+
+/* line 209, ../sass/_general.scss */
+.li_admin:hover {
+  background-color: RGBA(0, 62, 94, 0.3) !important;
+}
+
 /* line 3, ../sass/_navbar.scss */
 nav {
   height: 120px !important;
