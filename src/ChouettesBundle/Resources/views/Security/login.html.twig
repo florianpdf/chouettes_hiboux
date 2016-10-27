@@ -1,22 +1,53 @@
-{% extends "ChouettesBundle::layout.html.twig" %}
+{% extends 'base.html.twig' %}
+
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
+{% block body %}
 
 {% block fos_user_content %}
-{% if error %}
-    <div>{{ error|trans({}, 'FOSUserBundle') }}</div>
-{% endif %}
+    <div class="container admin">
+    <h1>Connexion à l'administration</h1>
+        <div class="row login">
+            {% if error %}
+                <div>{{ error|trans({}, 'FOSUserBundle') }}</div>
+            {% endif %}
 
-<form action="{{ path("fos_user_security_check") }}" method="post">
-    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+            <form class="formlog" action="{{ path("fos_user_security_check") }}" method="post">
 
-    <label for="username">{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}</label>
-    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
-    <label for="password">{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}</label>
-    <input type="password" id="password" name="_password" required="required" />
+                <div class="row">
+                    <div class="col offset-l4 l4">
+                        <label class="login" for="username">{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}</label>
+                        <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+                    </div>
+                </div>
 
-    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-    <label for="remember_me">{{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}</label>
+                <div class="row">
+                    <div class="col offset-l4 l4">
+                        <label class="login" for="password">{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}</label>
+                        <input type="password" id="password" name="_password" required="required" />
+                    </div>
+                </div>
 
-    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" />
-</form>
+                <div class="row">
+                    <div class="col offset-l5 l4">
+                         <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                         <label for="remember_me">{{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}</label>
+                     </div>
+                </div>
+
+                <div class="row">
+                    <div class="col offset-l5 l4">
+                         <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" class="waves-effect waves-light btn">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 {% endblock fos_user_content %}
+
+{% endblock %}
+
