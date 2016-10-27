@@ -126,7 +126,7 @@ class DefaultController extends Controller
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Chouettes')
             ->setFrom(array($from => 'ChouettesHiboux'))
-            ->setCc(array($from, $mail))
+            ->setTo($from)
             ->setBody(
                 $this->renderView(
                     '@Chouettes/user/mail.html.twig',
@@ -140,7 +140,26 @@ class DefaultController extends Controller
                 ),
                 'text/html'
             );
+
+        $message2 = \Swift_Message::newInstance()
+            ->setSubject('Copie Contact Chouettes')
+            ->setFrom(array($from => 'ChouettesHiboux'))
+            ->setTo($mail)
+            ->setBody(
+                $this->renderView(
+                    '@Chouettes/user/mail2.html.twig',
+                    array(
+                        'nom' => $name,
+                        'prenom' => $firstname,
+                        'mail' => $mail,
+                        'sujet' => $sujet,
+                        'message' => $msg
+                    )
+                ),
+                'text/html'
+            );
         $this->get('mailer')->send($message);
+        $this->get('mailer')->send($message2);
         return $this->redirectToRoute('chouettes_homepage');
 
     }
