@@ -10,52 +10,139 @@ footer.page-footer{
 }
 
 footer.page-footer .footer-copyright{
-	color:rgba(87, 73, 73, 0.8);
+    color:RGBA(87, 73, 73, 0.8);
 }
 
-.doudous {
+.h5footer{
+    font: $font-titre;
+    color:#724399;
+}
+
+/*MEDIA-QUERIES*/
+
+@media screen and (min-width:1024px){
+    .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
+        font-size:20px!important;
+    }
+    .h5footer{
+        font-size:25px;
+    }
+}
+
+@media screen and (max-width:980px){
+    .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
+        font-size:20px!important;
+    }
+    .h5footer{
+        font-size:25px;
+    }
+    .responsive-img{
+        width: 75%;
+    }
+    .social{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:740px){
+    .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
+        font-size:20px!important;
+    }
+    .h5footer{
+        font-size:25px;
+    }
+    .responsive-img{
+        width: 30%;
+        min-width: 50px;
+    }
+    .social{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
+        font-size:20px!important;
+    }
+    .h5footer{
+        font-size:25px;
+    }
+    .responsive-img{
+        width: 30%;
+        min-width: 50px;
+    }
+    .social{
+        width: 100%;
+    }
+    .chouette2{
+        margin-left:-100px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
+        font-size:20px!important;
+    }
+    .h5footer{
+        font-size:25px;
+    }
+    .responsive-img{
+        width: 30%;
+        min-width: 50px;
+    }
+    .social{
+        width: 100%;
+    }
+    .chouette2{
+        margin-left:-50px;
+    }
+}
+
+/*FIN MEDIA-QUERIES*/
+
+.doudousFooter {
     color: #E93255;
     font: $font-body;
     font-size: 25px;
     font-weight: bold;
 }
 
-.bijoux {
+.bijouxFooter {
     color: #724399;
     font: $font-body;
     font-size: 25px;
     font-weight: bold;
 }
 
-.accessoires {
+.accessoiresFooter {
     color: #468540;
     font: $font-body;
     font-size: 25px;
     font-weight: bold;
 }
 
-.whoami {
+.whoamiFooter {
     color:#B7483F;
     font: $font-body;
     font-size: 25px;
     font-weight: bold;
 }
 
-.contactme {
+.contactmeFooter {
     color:#3FBFC1;
     font: $font-body;
     font-size: 25px;
     font-weight: bold;
 }
 
-.social {
-    width: 100% !important;
-    height: 100% !important;
-}
+//.social {
+//    width: 100% !important;
+//    height: 100% !important;
+//}
 
-.contactme:hover {
-    background-color: RGBA(63, 191, 193, 0.3) !important;
-}
+//.contactme:hover {
+//    background-color: RGBA(63, 191, 193, 0.3) !important;
+//}
 
 /*FIN FOOTER*/
 

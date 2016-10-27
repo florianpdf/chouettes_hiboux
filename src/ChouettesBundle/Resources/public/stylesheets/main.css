@@ -6376,71 +6376,176 @@ footer.page-footer {
   padding-top: 0px;
 }
 
-/* line 8, ../sass/_footer.scss */
+/* line 7, ../sass/_footer.scss */
 .footer-copyright {
   background-color: transparent !important;
   text-align: center;
 }
 
-/* line 13, ../sass/_footer.scss */
+/* line 12, ../sass/_footer.scss */
 footer.page-footer .footer-copyright {
-  color: rgba(87, 73, 73, 0.8);
+  color: RGBA(87, 73, 73, 0.8);
 }
 
-/* line 17, ../sass/_footer.scss */
-.doudous {
+/* line 16, ../sass/_footer.scss */
+.h5footer {
+  font: 2vw "butterfly";
+  color: #724399;
+}
+
+/*MEDIA-QUERIES*/
+@media screen and (min-width: 1024px) {
+  /* line 24, ../sass/_footer.scss */
+  .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
+    font-size: 20px !important;
+  }
+
+  /* line 27, ../sass/_footer.scss */
+  .h5footer {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 980px) {
+  /* line 33, ../sass/_footer.scss */
+  .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
+    font-size: 20px !important;
+  }
+
+  /* line 36, ../sass/_footer.scss */
+  .h5footer {
+    font-size: 25px;
+  }
+
+  /* line 39, ../sass/_footer.scss */
+  .responsive-img {
+    width: 75%;
+  }
+
+  /* line 42, ../sass/_footer.scss */
+  .social {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 740px) {
+  /* line 48, ../sass/_footer.scss */
+  .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
+    font-size: 20px !important;
+  }
+
+  /* line 51, ../sass/_footer.scss */
+  .h5footer {
+    font-size: 25px;
+  }
+
+  /* line 54, ../sass/_footer.scss */
+  .responsive-img {
+    width: 30%;
+    min-width: 50px;
+  }
+
+  /* line 58, ../sass/_footer.scss */
+  .social {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 64, ../sass/_footer.scss */
+  .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
+    font-size: 20px !important;
+  }
+
+  /* line 67, ../sass/_footer.scss */
+  .h5footer {
+    font-size: 25px;
+  }
+
+  /* line 70, ../sass/_footer.scss */
+  .responsive-img {
+    width: 30%;
+    min-width: 50px;
+  }
+
+  /* line 74, ../sass/_footer.scss */
+  .social {
+    width: 100%;
+  }
+
+  /* line 77, ../sass/_footer.scss */
+  .chouette2 {
+    margin-left: -100px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 83, ../sass/_footer.scss */
+  .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
+    font-size: 20px !important;
+  }
+
+  /* line 86, ../sass/_footer.scss */
+  .h5footer {
+    font-size: 25px;
+  }
+
+  /* line 89, ../sass/_footer.scss */
+  .responsive-img {
+    width: 30%;
+    min-width: 50px;
+  }
+
+  /* line 93, ../sass/_footer.scss */
+  .social {
+    width: 100%;
+  }
+
+  /* line 96, ../sass/_footer.scss */
+  .chouette2 {
+    margin-left: -50px;
+  }
+}
+/*FIN MEDIA-QUERIES*/
+/* line 103, ../sass/_footer.scss */
+.doudousFooter {
   color: #E93255;
   font: 16px "Didact Gothic";
   font-size: 25px;
   font-weight: bold;
 }
 
-/* line 24, ../sass/_footer.scss */
-.bijoux {
+/* line 110, ../sass/_footer.scss */
+.bijouxFooter {
   color: #724399;
   font: 16px "Didact Gothic";
   font-size: 25px;
   font-weight: bold;
 }
 
-/* line 31, ../sass/_footer.scss */
-.accessoires {
+/* line 117, ../sass/_footer.scss */
+.accessoiresFooter {
   color: #468540;
   font: 16px "Didact Gothic";
   font-size: 25px;
   font-weight: bold;
 }
 
-/* line 38, ../sass/_footer.scss */
-.whoami {
+/* line 124, ../sass/_footer.scss */
+.whoamiFooter {
   color: #B7483F;
   font: 16px "Didact Gothic";
   font-size: 25px;
   font-weight: bold;
 }
 
-/* line 45, ../sass/_footer.scss */
-.contactme {
+/* line 131, ../sass/_footer.scss */
+.contactmeFooter {
   color: #3FBFC1;
   font: 16px "Didact Gothic";
   font-size: 25px;
   font-weight: bold;
 }
 
-/* line 52, ../sass/_footer.scss */
-.social {
-  width: 100% !important;
-  height: 100% !important;
-}
-
-/* line 57, ../sass/_footer.scss */
-.contactme:hover {
-  background-color: RGBA(63, 191, 193, 0.3) !important;
-}
-
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 64, ../sass/_footer.scss */
+/* line 150, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
