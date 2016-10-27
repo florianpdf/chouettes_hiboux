@@ -21,3 +21,20 @@
 
 
 {% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script>
+        var doudou_id = {{ app.request.get('id') }}
+//        $(function() {
+//            $('#' + doudou_id).click();
+//        });
+
+        $("document").ready(function() {
+            setTimeout(function() {
+                $('#' + doudou_id).trigger('click');
+            },10);
+        });
+    </script>
+{% endblock %}
