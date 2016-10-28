@@ -4,7 +4,7 @@ namespace ChouettesBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-
+use Doctrine\ORM\Query\ResultSetMapping;
 
 class DefaultController extends Controller
 {
@@ -78,10 +78,14 @@ class DefaultController extends Controller
     }
 
 
+
+
     public function doudousAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $modeles = $em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 2));
+//        $modeles = $em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 'Doudous'));
+//        $modeles = $em->('SELECT * FROM categorie LEFT JOIN modele ON categorie.id = modele.categorie_id WHERE nom = "Doudous"')->getResult();
+        $modeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Doudous');
         return $this->render('@Chouettes/user/doudous.html.twig', array(
             'modeles' => $modeles
         ));
@@ -90,7 +94,7 @@ class DefaultController extends Controller
     public function bijouxAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $modeles = $em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 1));
+        $modeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Bijoux');
         return $this->render('@Chouettes/user/bijoux.html.twig', array(
             'modeles' => $modeles
         ));
@@ -99,7 +103,7 @@ class DefaultController extends Controller
     public function accessoiresAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $modeles = $em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 3));
+        $modeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Accessoires');
         return $this->render('@Chouettes/user/accessoires.html.twig', array(
             'modeles' => $modeles
         ));
@@ -107,7 +111,11 @@ class DefaultController extends Controller
 
     public function aboutAction()
     {
-        return $this->render('@Chouettes/user/about.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $whoamis = $em->getRepository("ChouettesBundle:Whoami")->findAll();
+        return $this->render('@Chouettes/user/about.html.twig', array(
+            'whoamis'=>$whoamis
+        ));
     }
 
     public function contactAction()
