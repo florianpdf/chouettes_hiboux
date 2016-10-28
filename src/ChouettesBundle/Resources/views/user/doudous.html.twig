@@ -10,8 +10,8 @@
         <ul id="og-grid" class="og-grid">
             {% for modele in modeles %}
                 <li>
-                    <a href="{{ modele.lien }}" data-largesrc="{{ asset('uploads/images/') }}{{ modele.image }}" class="imglg" data-title="{{ modele.titre }}" data-description="{{ modele.contenu }}">
-                        <img src="{{ asset('uploads/images/') }}{{ modele.image }}" class="thumbs" alt="{{ modele.image.alt }}"/>
+                    <a href="{{ modele.lien }}" data-largesrc="{{ asset('uploads/images/') }}{{ modele.url }}" class="imglg" data-title="{{ modele.titre }}" data-description="{{ modele.contenu }}">
+                        <img src="{{ asset('uploads/images/') }}{{ modele.url }}" class="thumbs" alt="{{ modele.alt }}"/>
                     </a>
                 </li>
             {% endfor %}
@@ -19,3 +19,4 @@
     </div>
 
 {% endblock %}
+
