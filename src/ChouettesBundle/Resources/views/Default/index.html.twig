@@ -55,8 +55,8 @@
             </div> <!-- End col l4 m3 s1-->
 
             <!- Ligne 1 cube 2 -->
-            {#Bloc photo categorie#}
-            <div class="col l4 m4 s12 colCustom">
+            <div class="col l4
+            {#Bloc photo categorie#} m4 s12 colCustom">
                 <div class="ih-item square effect13 top_to_bottom">
                     <a href="{{ path('chouettes_doudous', {'id': doudous.id}) }}">
                         <div>
@@ -90,7 +90,7 @@
             <div class="col l4 m4 s12 colCustom">
                 <div class="ih-item square effect13 top_to_bottom">
 
-                    <a href="#">
+                    <a href="{{ path ('chouettes_doudous') }}">
                         <div>
                             <img class='imgDamier' src="{{asset('uploads/images/')}}{{doudous2.image.url }}" alt="{{ doudous2.image.alt }}">
                         </div>
@@ -115,7 +115,7 @@
 
             <div class="col l4 m4 s12 colCustom">
                 <div class="ih-item square effect13 top_to_bottom">
-                    <a href="#">
+                    <a href="{{ path ('chouettes_bijoux') }}">
                         <div>
                             <img class='imgDamier' src="{{asset('uploads/images/')}}{{bijoux.image.url }}" alt="{{ bijoux.image.alt }}">
                         </div>
@@ -145,7 +145,7 @@
 
             <div class="col l4 m4 s12 colCustom">
                 <div class="ih-item square effect13 top_to_bottom">
-                    <a href="#">
+                    <a href="{{ path ('chouettes_accessoires') }}">
                         <div>
                             <img class='imgDamier' src="{{asset('uploads/images/')}}{{accessoire.image.url }}" alt="{{ accessoire.image.alt }}">
                         </div>
