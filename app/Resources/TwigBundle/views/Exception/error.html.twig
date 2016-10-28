@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
+{% block body %}
+
+    <div class="container admin">
+        <div class="row">
+
+            <div class="col l7 center error500">
+                <h1 class="doudousindex">Erreur</h1>
+                <div class="error">
+                    <p>Un problème est survenu sur cette page... </p>
+                </div>
+            </div>
+
+            <div class="col l5">
+                <img class="errordiv" src="https://c2.staticflickr.com/4/3659/3350646105_e20dee4c5e_b.jpg" />
+            </div>
+
+        </div>
+    </div>
+
+
+{%  endblock %}
+
