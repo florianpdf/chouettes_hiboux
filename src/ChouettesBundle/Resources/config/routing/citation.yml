@@ -16,4 +16,5 @@ citation_edit:
 citation_delete:
     path:     /{id}/delete
     defaults: { _controller: "ChouettesBundle:Citation:delete" }
-    methods:  DELETE
+    requirements:
+          id: \d+

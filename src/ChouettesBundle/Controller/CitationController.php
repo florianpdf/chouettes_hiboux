@@ -82,18 +82,17 @@ class CitationController extends Controller
      * Deletes a Citation entity.
      *
      */
-    public function deleteAction(Request $request, Citation $citation)
+    public function deleteAction($id)
     {
-        $form = $this->createDeleteForm($citation);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
+        if ($id) {
+            $em = $this->getDoctrine()->getEntityManager();
+            $citation = $em->getRepository('ChouettesBundle:Citation')->findOneById($id);
             $em->remove($citation);
             $em->flush();
-        }
 
-        return $this->redirectToRoute('citation_index');
+            return $this->redirectToRoute('citation_index');
+        } else
+            return $this->redirectToRoute('citation_index');
     }
 
     /**

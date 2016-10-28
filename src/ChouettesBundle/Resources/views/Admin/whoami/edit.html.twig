@@ -35,21 +35,17 @@
             {{ form_widget(edit_form.image.alt) }}
             {{ form_errors(edit_form.image.alt) }}
         </div>
-        <button type="submit" title="valider"><i class="material-icons accessoires">done</i></button>
-    {{ form_end(edit_form) }}
-
-    {#{{ form_start(delete_form) }}#}
-    {#<button type="submit" title="Effacer"><i class="material-icons accessoires">delete</i></button>#}
-    {#{{ form_end(delete_form) }}#}
-
-
 
     <div class="boutons">
         <div class="row">
-            <a href="{{ path('citation_index') }}" title="Revenir à l'accueil"><i class="material-icons accessoires">arrow_back</i></a>
+            <button type="submit" title="valider"><i class="material-icons accessoires">done</i></button>
+            <a href="{{ path('whoami_index') }}" title="Revenir à l'accueil"><i class="material-icons accessoires">arrow_back</i></a>
             <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons accessoires">dashboard</i></a>
         </div>
     </div>
-</div>
+
+        {{ form_end(edit_form) }}
+
+    </div>
 
 {% endblock %}

@@ -113,6 +113,11 @@ section{
 	border-radius: 15px;
 }
 
+.adminmodele {
+	width: 90%;
+	max-width: none;
+}
+
 .boutons {
 	text-align: center;
 }
@@ -208,4 +213,8 @@ button {
 
 .li_admin:hover {
 	background-color: RGBA(0, 62, 94, 0.3) !important;
+}
+
+.contactindex:hover {
+	background-color: RGBA(63, 191, 193, 0.3) !important;
 }

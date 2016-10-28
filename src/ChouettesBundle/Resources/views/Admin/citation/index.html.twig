@@ -23,7 +23,8 @@
                 <td>{{ citation.text|raw }}</td>
                 <td>
                     <div class="boutons">
-                            <a href="{{ path('citation_edit', { 'id': citation.id }) }}" title="Editer"><i class="material-icons doudous li_doudous">edit</i></a>
+                        <a href="{{ path('citation_edit', { 'id': citation.id }) }}" title="Editer"><i class="material-icons doudous li_doudous">edit</i></a>
+                        <a href="{{ path('citation_delete', { 'id': citation.id }) }}" title="Effacer"><i class="material-icons li_doudous doudous">delete</i> </a>
                     </div>
                 </td>
             </tr>
