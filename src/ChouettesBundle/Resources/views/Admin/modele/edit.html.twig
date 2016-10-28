@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body %}
-    {{ tinymce_init() }}
+    {{ tinymce_init({'theme': {'simple': {'menubar': false}}}) }}
 
 
     <div class="container admin">
@@ -70,10 +70,5 @@
             <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons">dashboard</i></a>
         </div>
         {{ form_end(edit_form) }}
-        {#<li>#}
-            {#{{ form_start(delete_form) }}#}
-                {#<input type="submit" value="Delete">#}
-            {#{{ form_end(delete_form) }}#}
-        {#</li>#}
     </div>
 {% endblock %}

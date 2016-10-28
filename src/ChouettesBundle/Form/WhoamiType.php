@@ -16,7 +16,7 @@ class WhoamiType extends AbstractType
     {
         $builder
 
-            ->add('text', 'textarea', array('attr' => array('class' => 'tinymce', 'data-theme' => 'bbcode')))
+            ->add('text', 'textarea', array('attr' => array('class' => 'tinymce')))
             ->add('image', ImageType::class)
         ;
     }

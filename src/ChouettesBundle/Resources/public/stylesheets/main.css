@@ -6355,83 +6355,78 @@ blockquote em {
   border-radius: 15px;
 }
 
-/* line 10, ../sass/_form.scss */
-.material-icons {
-  color: #3FBFC1;
-}
-
-/* line 14, ../sass/_form.scss */
+/* line 9, ../sass/_form.scss */
 [type="checkbox"] + label {
   color: #3FBFC1;
 }
 
-/* line 18, ../sass/_form.scss */
+/* line 13, ../sass/_form.scss */
 .check {
   text-align: center;
 }
 
-/* line 22, ../sass/_form.scss */
+/* line 17, ../sass/_form.scss */
 .send {
   color: white;
 }
 
-/* line 26, ../sass/_form.scss */
+/* line 21, ../sass/_form.scss */
 .select-wrapper span.caret {
   color: #3FBFC1;
   font-size: 20px !important;
   top: 10px !important;
 }
 
-/* line 32, ../sass/_form.scss */
+/* line 27, ../sass/_form.scss */
 .select-wrapper input.select-dropdown {
   color: #3FBFC1;
 }
 
-/* line 36, ../sass/_form.scss */
+/* line 31, ../sass/_form.scss */
 .select-wrapper + label {
   font-size: 1rem;
 }
 
-/* line 40, ../sass/_form.scss */
+/* line 35, ../sass/_form.scss */
 .input-field label {
   font-size: 1rem;
 }
 
 /* label color */
-/* line 45, ../sass/_form.scss */
+/* line 40, ../sass/_form.scss */
 .input-field label {
   color: #3FBFC1;
 }
 
 /* label focus color */
-/* line 49, ../sass/_form.scss */
+/* line 44, ../sass/_form.scss */
 .input-field input[type=text]:focus + label {
   color: #3FBFC1;
 }
 
 /* label underline focus color */
-/* line 53, ../sass/_form.scss */
+/* line 48, ../sass/_form.scss */
 .input-field input[type=text]:focus {
   border-bottom: 1px solid #3FBFC1;
   box-shadow: 0 1px 0 0 #3FBFC1;
 }
 
 /* valid color */
-/* line 58, ../sass/_form.scss */
+/* line 53, ../sass/_form.scss */
 .input-field input[type=text].valid {
   border-bottom: 1px solid #3FBFC1;
   box-shadow: 0 1px 0 0 #3FBFC1;
 }
 
 /* invalid color */
-/* line 63, ../sass/_form.scss */
+/* line 58, ../sass/_form.scss */
 .input-field input[type=text].invalid {
   border-bottom: 1px solid #3FBFC1;
   box-shadow: 0 1px 0 0 #3FBFC1;
 }
 
 /* icon prefix focus color */
-/* line 68, ../sass/_form.scss */
+/* line 63, ../sass/_form.scss */
 .input-field .prefix.active {
   color: #3FBFC1;
 }

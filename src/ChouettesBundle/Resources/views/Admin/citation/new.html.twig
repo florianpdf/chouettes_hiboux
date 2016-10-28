@@ -6,7 +6,7 @@
 
 {% block body %}
 
-    {{ tinymce_init() }}  {#WYSIWYG#}
+    {{ tinymce_init({'theme': {'simple': {'menubar': false}}}) }}
 
 <div class="container admin">
 
@@ -14,24 +14,25 @@
 
     {{ form_start(form) }}
 
-        <div class="row textarea tinymce">
+        <div class="row tinymce">
             {{ form_label(form.text) }}
             {{ form_widget(form.text) }}
             {{ form_errors(form.text) }}
         </div>
 
-        <button type="submit" title="Valider"><i class="material-icons doudous">done</i></button>
 
-    {{ form_end(form) }}
+
 
     <div class="boutons">
         <div class="row">
             <div class="col l12">
+                <button type="submit" title="Valider"><i class="material-icons doudous">done</i></button>
                 <a href="{{ path('citation_index') }}" title="Revenir à l'accueil"><i class="material-icons doudous">arrow_back</i></a>
                 <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons doudous">dashboard</i></a>
             </div>
         </div>
     </div>
+    {{ form_end(form) }}
 
 </div>
 {% endblock %}
