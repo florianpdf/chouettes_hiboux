@@ -64,10 +64,10 @@
         {{ form_widget(edit_form) }}
 
         <div class="boutons">
-            <button type="submit" title="Valider"><i class="material-icons">check</i></button>
-            <a href="{{ path('modele_delete', { 'id': modele.id }) }}" title="Effacer"><i class="material-icons">delete</i> </a>
-            <a href="{{ path('modele_index') }}" title="Revenir à l'accueil"><i class="material-icons">arrow_back</i></a>
-            <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons">dashboard</i></a>
+            <button type="submit" title="Valider"><i class="material-icons contactme">check</i></button>
+            <a href="{{ path('modele_delete', { 'id': modele.id }) }}" title="Effacer"><i class="material-icons contactme">delete</i> </a>
+            <a href="{{ path('modele_index') }}" title="Revenir à l'accueil"><i class="material-icons contactme">arrow_back</i></a>
+            <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons contactme">dashboard</i></a>
         </div>
         {{ form_end(edit_form) }}
     </div>
