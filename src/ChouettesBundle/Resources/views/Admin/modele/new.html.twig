@@ -5,7 +5,9 @@
 {% endblock %}
 
 {% block body %}
-    {{ tinymce_init() }}  {#WYSIWYG#}
+    {{ tinymce_init({'theme': {'simple': {'menubar': false}}}) }}
+
+
 
     <div class="container admin">
     <h1>Création de modèle</h1>

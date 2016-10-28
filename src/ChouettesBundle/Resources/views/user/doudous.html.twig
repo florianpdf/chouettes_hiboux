@@ -10,7 +10,7 @@
         <ul id="og-grid" class="og-grid">
             {% for modele in modeles %}
                 <li>
-                    <a href="{{ modele.lien }}" data-largesrc="{{ asset('uploads/images/') }}{{ modele.image }}" class="imglg" data-title="{{ modele.titre }}" data-description="{{ modele.contenu }}">
+                    <a href="{{ modele.lien }}" data-largesrc="{{ asset('uploads/images/') }}{{ modele.image }}" class="imglg" data-title="{{ modele.titre }}" data-description="{{ modele.contenu|raw }}">
                         <img src="{{ asset('uploads/images/') }}{{ modele.image }}" class="thumbs" alt="{{ modele.image.alt }}"/>
                     </a>
                 </li>
