@@ -82,18 +82,17 @@ class WhoamiController extends Controller
      * Deletes a Whoami entity.
      *
      */
-    public function deleteAction(Request $request, Whoami $whoami)
+    public function deleteAction($id)
     {
-        $form = $this->createDeleteForm($whoami);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
+        if ($id) {
+            $em = $this->getDoctrine()->getEntityManager();
+            $whoami = $em->getRepository('ChouettesBundle:Choami')->findOneById($id);
             $em->remove($whoami);
             $em->flush();
-        }
 
-        return $this->redirectToRoute('whoami_index');
+            return $this->redirectToRoute('whoami_index');
+        } else
+            return $this->redirectToRoute('whoami_index');
     }
 
     /**
