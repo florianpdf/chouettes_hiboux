@@ -5,13 +5,23 @@
 {% endblock %}
 
 {% block body %}
+
+    {{ tinymce_init() }}  {#WYSIWYG#}
+
 <div class="container admin">
 
     <h1 class="citationadmin">Créer une citation</h1>
 
     {{ form_start(form) }}
-        {{ form_widget(form) }}
+
+        <div class="row textarea tinymce">
+            {{ form_label(form.text) }}
+            {{ form_widget(form.text) }}
+            {{ form_errors(form.text) }}
+        </div>
+
         <button type="submit" title="Valider"><i class="material-icons doudous">done</i></button>
+
     {{ form_end(form) }}
 
     <div class="boutons">
