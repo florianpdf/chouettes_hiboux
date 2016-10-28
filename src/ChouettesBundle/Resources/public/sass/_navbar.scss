@@ -1,7 +1,7 @@
-// NAV BAR 
+// NAV BAR autre page
 
 nav  {
-	height: 85px !important;
+	height: 120px !important;
 	background-color: RGBA(255,255,255,0.6);
 }
 
@@ -14,33 +14,89 @@ nav  {
 	height: auto;
 }
 
+nav ul a:hover {
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
 .full_nav a, .side-nav a{
 	font: $font-titre;
 	padding-left: 30px;
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom:31px;
 	padding-right: 40px;
+	margin:auto;
 }
 
-.accueil:hover {
+.full_nav{
+	height: 100%;
+	display: flex;
+}
+
+.full_nav li{
+	display: flex;
+}
+
+.doudous {
+	color: #E93255;
+	font: $font-body;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.bijoux {
+	color: #CE4C9A;
+	font: $font-body;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.accessoires {
+	color: #468540;
+	font: $font-body;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.whoami {
+	color:#B7483F;
+	font: $font-body;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.contactme {
+	color:#3FBFC1;
+	font: $font-body;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.social {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.li_accueil:hover {
 	background-color: RGBA(252, 161, 60, 0.3) !important;
 }
 
-.doudous:hover {
+.li_doudous:hover {
 	background-color: RGBA(233, 50, 85, 0.3) !important;
 }
 
-.bijoux:hover {
-	background-color: RGBA(114, 67, 153, 0.3) !important;
+.li_bijoux:hover {
+	background-color: RGBA(206, 76, 154, 0.3) !important;
 }
 
-.accessoires:hover {
+.li_accessoires:hover {
 	background-color: RGBA(70, 133, 64, 0.3) !important;
 }
 
-.whoami:hover {
+.li_whoami:hover {
 	background-color: RGBA(183, 72, 63, 0.3) !important;
+}
+
+.li_contact:hover {
+	background-color: RGBA(63, 191, 193, 0.3) !important;
 }
 
 .material-icons{
@@ -53,5 +109,4 @@ nav  {
 	font-size: 20px !important;
 	padding-top: 20px;
 	padding-bottom: 70px;
-
 }

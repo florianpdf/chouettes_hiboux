@@ -3,8 +3,8 @@ chouettes_homepage:
     defaults: { _controller: ChouettesBundle:Default:index }
 
 chouettes_doudous:
-    path:     /doudous
-    defaults: { _controller: ChouettesBundle:Default:doudous }
+    path:     /doudous/{id}
+    defaults: { _controller: ChouettesBundle:Default:doudous, id: 0 }
 
 chouettes_bijoux:
     path:     /bijoux
@@ -21,3 +21,4 @@ chouettes_about:
 chouettes_contact:
     path:     /contact
     defaults: { _controller: ChouettesBundle:Default:contact }
+

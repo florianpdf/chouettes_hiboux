@@ -9,18 +9,28 @@
                     <i class="large material-icons grey-text text-darken-3">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down full_nav">
-                    <li><a href="{{ path ('chouettes_doudous') }}" class="doudous">Doudous</a></li>
-                    <li><a href="{{ path ('chouettes_bijoux') }}" class="bijoux">Bijoux</a></li>
-                    <li><a href="{{ path ('chouettes_accessoires') }}" class="accessoires">Accessoires</a></li>
-                    <li><a href="{{ path ('chouettes_about') }}" class="whoami">Qui suis-je ?</a></li>
+                    <li class="li_doudous"><a href="{{ path ('chouettes_doudous') }}" class="doudous">Doudous</a></li>
+                    <li class="li_bijoux"><a href="{{ path ('chouettes_bijoux') }}" class="bijoux">Bijoux</a></li>
+                    <li class="li_accessoires"><a href="{{ path ('chouettes_accessoires') }}" class="accessoires">Accessoires</a></li>
+                    <li class="li_whoami"><a href="{{ path ('chouettes_about') }}" class="whoami">Qui suis-je ?</a></li>
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    <li class="li_admin"><a href="{{ path('admin_homepage') }}" class="adminlog">Admin</a> </li>
+                    {% else %}
+
+                    {% endif %}
                 </ul>
 
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="{{ path ('chouettes_homepage') }}" class="accueil">Accueil</a></li>
-                    <li><a href="{{ path ('chouettes_doudous') }}" class="doudous">Doudous</a></li>
-                    <li><a href="{{ path ('chouettes_bijoux') }}" class="bijoux">Bijoux</a></li>
-                    <li><a href="{{ path ('chouettes_accessoires') }}" class="accessoires">Accessoires</a></li>
-                    <li><a href="{{ path ('chouettes_about') }}" class="whoami">Qui suis-je ?</a></li>
+                    <li class="li_accueil"><a href="{{ path ('chouettes_homepage') }}" class="accueil">Accueil</a></li>
+                    <li class="li_doudous"><a href="{{ path ('chouettes_doudous') }}" class="doudous">Doudous</a></li>
+                    <li class="li_bijoux"><a href="{{ path ('chouettes_bijoux') }}" class="bijoux">Bijoux</a></li>
+                    <li class="li_accessoires"><a href="{{ path ('chouettes_accessoires') }}" class="accessoires">Accessoires</a></li>
+                    <li class="li_whoami"><a href="{{ path ('chouettes_about') }}" class="whoami">Qui suis-je ?</a></li>
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                        <li class="li_admin"><a href="{{ path('admin_homepage') }}" class="adminlog">Admin</a> </li>
+                    {% else %}
+
+                    {% endif %}
                 </ul>
             </div>
         </nav>

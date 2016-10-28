@@ -1,21 +1,33 @@
 {% extends 'base.html.twig' %}
 
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
 {% block body %}
-    <h1>Citation edit</h1>
 
-    {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
-    {{ form_end(edit_form) }}
+    {{ tinymce_init({'theme': {'simple': {'menubar': false}}}) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('citation_index') }}">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+    <div class="container admin">
+
+        <h1 class="citationadmin">Editer la citation</h1>
+
+            {{ form_start(edit_form) }}
+
+                <div class="row textarea tinymce">
+                    {{ form_label(edit_form.text) }}
+                    {{ form_widget(edit_form.text) }}
+                    {{ form_errors(edit_form.text) }}
+                </div>
+
+                <div class="boutons">
+                    <div class="row">
+                        <button type="submit" title="Editer"><i class="material-icons li_doudous doudous">done</i></button>
+                        <a href="{{ path('citation_delete', { 'id': citation.id }) }}" title="Effacer"><i class="material-icons li_doudous doudous">delete</i> </a>
+                        <a href="{{ path('citation_index') }}" title="Revenir à l'accueil"><i class="material-icons li_doudous doudous">arrow_back</i></a>
+                        <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons li_doudous doudous">dashboard</i></a>
+                    </div>
+                </div>
+            {{ form_end(edit_form) }}
+    </div>
 {% endblock %}

@@ -1,6 +1,6 @@
 /****************************/
 /****************************/
-/*        Logo & navBar     */
+/*  Logo & navBar accueil   */
 /****************************/
 /****************************/
 .nb_navbar_logo {
@@ -9,12 +9,18 @@
     min-width: 300px;
 }
 
-nav {
-    height: 120px !important;
-}
-
 .bckground {
     background-color:#DEDEDE ;
+}
+
+.logadmin {
+    float: right;
+    padding: 15px;
+}
+
+.fa-3x {
+    font-size: 25px !important;
+    color: grey;
 }
 
 /****************************/
@@ -46,9 +52,9 @@ nav {
     display: none;
 }
 
-/* Zone élément cliquable*/
-/* non survolé */
-a {
+/* Zone element cliquable*/
+/* non survole */
+.bckground a {
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
@@ -56,8 +62,8 @@ a {
     outline: none;
 }
 
-/* Zone élément cliquable*/
-/* survolé */
+/* Zone element cliquable*/
+/* survole */
 .iMasque:hover {
     color: #999;
 }
@@ -72,8 +78,41 @@ a {
     text-align: center;
     font-size: bold;
     font-weight: 80%;
-    font-family: butterfly;
-}   
+}
+
+.doudousindex {
+    font: $font-titre;
+    color: #E93255;
+    font-size: 40px;
+}
+
+.bijouxindex {
+    font: $font-titre;
+    color: #CE4C9A;
+    font-size: 40px;
+}
+
+.accessoiresindex {
+    font: $font-titre;
+    color: #468540;
+    font-size: 40px;
+}
+
+.whoamiindex {
+    font: $font-titre;
+    color: #B7483F;
+    font-size: 40px;
+}
+
+.contactindex {
+    font: $font-titre;
+    color: #3FBFC1;
+    font-size: 40px;
+}
+
+.contactindex:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
 
 .imgChouetteAnimee {
     width: 100%;
@@ -88,6 +127,7 @@ a {
 /****************************/
 /****************************/
 /* SURCHARGE framework ihover */
+
 .ih-item.square {
     width: 100% !important;
     height: 100% !important;
@@ -96,6 +136,21 @@ a {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3) !important;
 }
 
+.ih-item a {
+    color: #3FBFC1 !important;
+}
+
+.ih-item.square.effect13 .info {
+    font: $font-titre !important;
+    font-size: 40px !important;
+    //background-color: #ddddff !important;
+    background: rgba(41, 146, 80, 0.6) !important;
+}
+// Zone titre
+.ih-item.square.effect13 .info h3 {
+    //background-color: #1ad280 !important;
+    background-color: rgba(26, 210, 128, 0.8) !important;
+}
 /*.ih-item.square.effect13.colored .info {
   background: #1a4a72;
   background: rgba(26, 74, 114, 0.6);

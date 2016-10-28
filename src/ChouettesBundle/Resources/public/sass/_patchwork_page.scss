@@ -7,6 +7,7 @@
 }
 
 .thumbs {
+	height: 250px;
 	max-height: 250px;
 	width: auto;
 }
@@ -116,7 +117,7 @@
 }
 
 .og-fullimg img {
-	display: inline-block;
+	display: inline-block !important;
 	max-height: 100%;
 	max-width: 100%;
 }
@@ -132,7 +133,7 @@
 
 .og-details p {
 	font: $font-body;
-	font-weight: 400;
+	//font-weight: 400;
 	font-size: 20px;
 	color: #999;
 }

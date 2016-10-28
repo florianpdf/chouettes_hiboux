@@ -16,6 +16,7 @@ ChouettesBundle\Entity\Modele:
             type: text
         lien:
             type: text
+            nullable: true
         add_block:
             type: boolean
 
@@ -24,5 +25,5 @@ ChouettesBundle\Entity\Modele:
             targetEntity: ChouettesBundle\Entity\Categorie
         image:
             targetEntity: ChouettesBundle\Entity\Image
-
+            cascade: ["persist", "remove"]
     lifecycleCallbacks: {  }

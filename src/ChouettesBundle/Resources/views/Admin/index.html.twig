@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
+{% block body %}
+
+    <div class="row container admin">
+
+    <h1 class="catadmin">Administration</h1>
+
+    <div class="row ">
+        <div class="col s6 center li_contact">
+            <a href={{ path('modele_index') }}>
+                <div class="card small">
+                    <h3 class="contactmeadmin">Modèles</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="col s6 center li_doudous">
+            <a href="{{ path ('citation_index') }}">
+                <div class="card small">
+                    <h3 class="doudousadmin">Citations</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+        <div class="row">
+        <div class="col offset-s3 s6 center li_accessoires">
+            <a href="{{ path('whoami_index') }}">
+                <div class="card small">
+                    <h3 class="accessoiresadmin">Qui suis-je ?</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

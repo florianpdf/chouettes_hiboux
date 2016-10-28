@@ -4,63 +4,147 @@ footer.page-footer{
     margin-bottom:0px;
 	padding-top: 0px;
 }
-
-.row{
-    margin-bottom: 1px;
-}
-
-h5{
-	font: $font-titre;
-    color: rgba(87, 73, 73, 0.8);
+.footer-copyright {
+    background-color: transparent !important;
+    text-align: center;
 }
 
 footer.page-footer .footer-copyright{
-	color:rgba(87, 73, 73, 0.8);
+    color:RGBA(87, 73, 73, 0.8);
 }
 
-.doudous {
+.h5footer{
+    font: $font-titre;
+    color:#724399;
+}
+
+.doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
+    font: $font-titre;
+}
+
+
+/*MEDIA-QUERIES*/
+
+@media screen and (min-width:1024px){
+    .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
+        font-size:27px!important;
+    }
+    .h5footer{
+        font-size:33px;
+    }
+}
+
+@media screen and (max-width:980px){
+    .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
+        font-size:27px!important;
+    }
+    .h5footer{
+        font-size:33px;
+    }
+    .responsive-img{
+        width: 75%;
+    }
+    .social{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:740px){
+    .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
+        font-size:25px!important;
+    }
+    .h5footer{
+        font-size:30px;
+    }
+    .responsive-img{
+        width: 30%;
+        min-width: 50px;
+    }
+    .social{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
+        font-size:25px!important;
+    }
+    .h5footer{
+        font-size:30px;
+    }
+    .responsive-img{
+        width: 30%;
+        min-width: 50px;
+    }
+    .social{
+        width: 100%;
+    }
+    .chouette2{
+        margin-left:-100px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
+        font-size:25px!important;
+    }
+    .h5footer{
+        font-size:30px;
+    }
+    .responsive-img{
+        width: 30%;
+        min-width: 50px;
+    }
+    .social{
+        width: 100%;
+    }
+    .chouette2{
+        margin-left:-50px;
+    }
+}
+
+/*FIN MEDIA-QUERIES*/
+
+.doudousFooter{
     color: #E93255;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
+    //font: $font-body;
+    //font-size: 25px;
 }
 
-.bijoux {
-    color: #724399;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
+
+.bijouxFooter {
+    color: RGB(206,76,154);
+    //font: $font-body;
+    //font-size: 25px;
 }
 
-.accessoires {
+.accessoiresFooter {
     color: #468540;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
+    //font: $font-body;
+    //font-size: 25px;
 }
 
-.whoami {
+.whoamiFooter {
     color:#B7483F;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
+    //font: $font-body;
+    //font-size: 25px;
 }
 
-.contactme {
+.contactmeFooter {
     color:#3FBFC1;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
+    //font: $font-body;
+    //font-size: 25px;
 }
 
-.social {
-    width: 100% !important;
-    height: 100% !important;
-}
+//.social {
+//    width: 100% !important;
+//    height: 100% !important;
+//}
 
-.contactme:hover {
-    background-color: RGBA(63, 191, 193, 0.3) !important;
-}
+//.contactme:hover {
+//    background-color: RGBA(63, 191, 193, 0.3) !important;
+//}
+
 
 /*FIN FOOTER*/
 

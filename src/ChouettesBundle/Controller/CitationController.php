@@ -44,7 +44,7 @@ class CitationController extends Controller
             $em->persist($citation);
             $em->flush();
 
-            return $this->redirectToRoute('citation_show', array('id' => $citation->getId()));
+            return $this->redirectToRoute('citation_index', array('id' => $citation->getId()));
         }
 
         return $this->render('@Chouettes/Admin/citation/new.html.twig', array(
@@ -54,22 +54,8 @@ class CitationController extends Controller
     }
 
     /**
-     * Finds and displays a Citation entity.
-     *
-     */
-    public function showAction(Citation $citation)
-    {
-        $deleteForm = $this->createDeleteForm($citation);
-
-        return $this->render('@Chouettes/Admin/citation/show.html.twig', array(
-            'citation' => $citation,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
-    /**
      * Displays a form to edit an existing Citation entity.
-     *
+     * 
      */
     public function editAction(Request $request, Citation $citation)
     {
@@ -82,7 +68,7 @@ class CitationController extends Controller
             $em->persist($citation);
             $em->flush();
 
-            return $this->redirectToRoute('citation_edit', array('id' => $citation->getId()));
+            return $this->redirectToRoute('citation_index', array('id' => $citation->getId()));
         }
 
         return $this->render('@Chouettes/Admin/citation/edit.html.twig', array(
@@ -96,18 +82,17 @@ class CitationController extends Controller
      * Deletes a Citation entity.
      *
      */
-    public function deleteAction(Request $request, Citation $citation)
+    public function deleteAction($id)
     {
-        $form = $this->createDeleteForm($citation);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
+        if ($id) {
+            $em = $this->getDoctrine()->getEntityManager();
+            $citation = $em->getRepository('ChouettesBundle:Citation')->findOneById($id);
             $em->remove($citation);
             $em->flush();
-        }
 
-        return $this->redirectToRoute('citation_index');
+            return $this->redirectToRoute('citation_index');
+        } else
+            return $this->redirectToRoute('citation_index');
     }
 
     /**

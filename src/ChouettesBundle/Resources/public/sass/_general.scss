@@ -1,7 +1,7 @@
 /*---------------------------------------*\
             SOMMAIRE
 FONT______________ Font of website
-GENERAL___________ style général
+GENERAL___________ style general
 MENU______________ Style of NavBar (include)
 FOOTER____________ Style of footer (include)
 HOME______________ Style page : Homepage
@@ -60,27 +60,32 @@ $font-titre: 2vw 'butterfly';
 
 
 h1{
-	font:$font-titre;
+	font: $font-titre;
+	letter-spacing: 3px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: #3FBFC1;
+	text-align: center;
 }
 
-h2{
-
+strong {
+	font-weight: bold;
 }
 
-h3{
-
+h5{
+	font: $font-titre;
+	color: rgba(87, 73, 73, 0.8);
 }
-
-
-
 
 /*-----------------------------------------------------*\
        GENERAL      GENERAL      GENERAL     GENERAL  
 \*-----------------------------------------------------*/
 
 body{
-	height: 100%;
+	min-height: 100vh;
 	background-image: url('../images/wood.jpg');
+	display: flex;
+	flex-direction: column;
 
 }
 
@@ -88,6 +93,164 @@ section{
 	min-height:100%;
 }
 
-.container{
-	min-height:100%;
+.container, .main {
+	flex: 1 0 auto;
+}
+
+.row{
+	margin-bottom: 1px;
+	padding: 5px;
+}
+
+/*-----------------------------------------------------*\
+       ADMIN      ADMIN      ADMIN     ADMIN
+\*-----------------------------------------------------*/
+
+.admin {
+	background-color: RGBA(255,255,255,0.8);
+	margin-top: 15px;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+.adminmodele {
+	width: 90%;
+	max-width: none;
+}
+
+.boutons {
+	text-align: center;
+}
+
+table {
+	font: $font-body;
+	font-size: 18px;
+	margin-bottom: 15px;
+	table-layout: fixed;
+}
+
+tbody tr td {
+	//border: 1px solid #848993;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+thead th {
+	//border: 1px solid #848993;
+	text-align: center;
+
+}
+
+td > img {
+	max-height: 200px;
+	max-width: 100%;
+}
+
+td {
+	word-wrap: break-word;
+}
+
+button {
+	background: none;
+	border: none;
+}
+
+.citationadmin {
+	color: #E93255;
+	font: $font-titre;
+}
+
+.catdmin {
+	color: #724399;
+	font: $font-titre;
+}
+
+.whoadmin {
+	color: #468540;
+	font: $font-titre;
+}
+
+.fa {
+	font-size: medium !important;
+}
+
+.card {
+	box-shadow: none;
+	background-color: transparent;
+}
+
+.contactmeadmin {
+	font: $font-titre;
+	color: #3FBFC1;
+}
+
+.bijouxadmin {
+	font: $font-titre;
+	color: #724399;
+}
+
+.doudousadmin {
+	font: $font-titre;
+	color: #E93255;
+}
+
+.accessoiresadmin {
+	font: $font-titre;
+	color: #468540;
+}
+
+.card.small {
+	padding-top: 100px;
+}
+
+.login {
+	font-size: 20px;
+}
+
+.adminlog {
+	color: #003E5E;
+}
+
+.li_admin:hover {
+	background-color: RGBA(0, 62, 94, 0.3) !important;
+}
+
+.contactindex:hover {
+	background-color: RGBA(63, 191, 193, 0.3) !important;
+}
+
+/*-----------------------------------------------------*\
+       ERROR      ERROR      ERROR     ERROR
+\*-----------------------------------------------------*/
+
+.error {
+	text-align: center;
+	font: $font-body;
+	font-size: 20px;
+}
+
+.error404 {
+	margin-top: 15%;
+}
+
+.error403 {
+	margin-top: 10%;
+}
+
+.error500 {
+	margin-top: 15%;
+}
+
+.errordiv {
+	max-height: 600px;
+	float: right;
+	padding-right: 0;
+	border-radius: 15px;
+}
+
+img.error {
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }

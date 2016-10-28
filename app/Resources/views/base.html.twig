@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% block stylesheets %}
+        <link href="{{ asset('bundles/chouettes/images/fav.ico')}}" rel="icon" type="image/x-icon" />
         <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/
-	font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.css">
         <link rel="stylesheet" type="text/css" href="{{ asset ('bundles/chouettes/stylesheets/main.css') }}"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,6 +17,7 @@
         <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
         <!-- <link href="http://www.fontspace.com/david-kerkhoff/dk-butterfly-ball?text=" rel="stylesheet"> -->
+
         <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     {% endblock %}
 
@@ -38,45 +39,50 @@
 <footer class="page-footer">
     <div class="container">
         <div class="row" id="row-footer">
-            <div class="col l3 s12">
-                <h5>Catégories</h5>
+            <div class="col l3 m3 s12">
+                <h5 class = "h5footer">Catégories</h5>
                 <ul>
-                    <li><a class="doudous" href="{{ path ('chouettes_doudous') }}">Les doudous</a></li>
-                    <li><a class="bijoux" href="{{ path ('chouettes_bijoux') }}">Les bijoux</a></li>
-                    <li><a class="accessoires" href="{{ path ('chouettes_accessoires') }}">Les accessoires</a></li>
+                    <li><a class="doudousFooter" href="{{ path ('chouettes_doudous') }}">Les doudous</a></li>
+                    <li><a class="bijouxFooter" href="{{ path ('chouettes_bijoux') }}">Les bijoux</a></li>
+                    <li><a class="accessoiresFooter" href="{{ path ('chouettes_accessoires') }}">Les accessoires</a></li>
                 </ul>
             </div>
-            <div class="col l3 s12">
-                <h5>A propos</h5>
+            <div class="col l3 m3 s12">
+                <h5 class = "h5footer">A propos</h5>
                 <ul>
-                    <li><a class="whoami" href="{{ path ('chouettes_about') }}">Qui suis-je ?</a></li>
+                    <li><a class="whoamiFooter" href="{{ path ('chouettes_about') }}">Qui suis-je ?</a></li>
                 </ul>
             </div>
-            <div class="col l3 s12">
-                <h5>Contacts</h5>
+            <div class="col l3 m3 s12">
+                <h5 class = "h5footer">Contacts</h5>
                 <ul>
-                    <li><a class="contactme" href="{{ path ('chouettes_contact') }}">Formulaire de contact</a></li>
+                    <li><a class="contactmeFooter" href="{{ path ('chouettes_contact') }}">Formulaire de contact</a></li>
                 </ul>
             </div>
-            <div class="col l3 s12">
-                <h5>Me suivre </h5>
+            <div class="col l3 m3 s12">
+                <h5 class = "h5footer">Me suivre </h5>
                 <div class="row">
-                    <div class="col l6 s12">
-                        <img class="social responsive-img" data-alt-src="https://s21.postimg.org/nyq4jte47/hiboux_yeux_ouverts.png" src="https://s21.postimg.org/5kflfu1tj/hibou_bleu_yruxouverts.png" />
-                        <!-- <img src="./images/chouettefb.png" class="social" /> --><!-- <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i> -->
+                    <div class="col l6 m6 s6 xs6">
+                        <a class="responsive-img social" href="https://www.facebook.com/leshibouxdesophie/" target = _blank><img class="responsive-img" data-alt-src="{{ asset ('bundles/chouettes/images/chouettefVerteOuvert.png') }}" src="{{ asset ('bundles/chouettes/images/chouettefVerteFerme.png') }}" /></a>
                     </div>
-                    <div class="col l6 s12">
-                        <img class="social" data-alt-src="https://s13.postimg.org/ysmy76ppj/Hiboux_bleu_yeux_fermes2.png" src="https://s13.postimg.org/anm8ph5ev/Hiboux_bleu_yeux_ouverts2.png" />
-                        <!-- <img src="./images/chouetteig.png" class="social" /> --><!-- <i class="fa fa-instagram fa-3x" aria-hidden="true"></i> -->
+                    <div class="col l6 m6 s6 xs6">
+                        <a class="responsive-img social chouette2" href="https://www.facebook.com/leshibouxdesophie/" target = _blank><img class="responsive-img" data-alt-src="{{ asset ('bundles/chouettes/images/chouettefVioletOuvert.png') }}" src="{{ asset ('bundles/chouettes/images/chouettefVioletFerme.png') }}" /></a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="connect">
+
+        </div>
 
         <div class="footer-copyright">
-            <div class="container">
-                © 2016 All Rights Reserved Chouettes Hiboux Doudous | Design by WCS
-            </div>
+                © 2016 All Rights Reserved Chouettes Hiboux Doudous | Design by WCS | {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+            {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+            <a href="{{ path('fos_user_security_logout') }}"><i class="fa fa-sign-out"" aria-hidden="true"></i>
+            </a>
+        {% else %}
+            <a href="{{ path('admin_homepage') }}"><i class="fa fa-key" aria-hidden="true"></i></a>
+            {% endif %}
         </div>
 </footer>
 
@@ -90,9 +96,9 @@
     <script src="{{ asset ('bundles/chouettes/js/grid.js') }}"></script>
     <script src="{{ asset ('bundles/chouettes/js/chouettesHiboux.js') }}"></script>
 
+
 {% endblock %}
 
 
 </body>
 </html>
-
