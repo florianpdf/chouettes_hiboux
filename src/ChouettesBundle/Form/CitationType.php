@@ -15,7 +15,7 @@ class CitationType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('text', 'textarea', array('attr' => array('class' => 'tinymce', 'data-theme' => 'bbcode')))
+            ->add('text', 'textarea', array('attr' => array('class' => 'tinymce')))
         ;
     }
     

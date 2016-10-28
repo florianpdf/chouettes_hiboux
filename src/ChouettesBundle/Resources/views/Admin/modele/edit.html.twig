@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body %}
-    {{ tinymce_init() }}
+    {{ tinymce_init({'theme': {'simple': {'menubar': false}}}) }}
 
 
     <div class="container admin">
@@ -64,16 +64,11 @@
         {{ form_widget(edit_form) }}
 
         <div class="boutons">
-            <button type="submit" title="Valider"><i class="material-icons">check</i></button>
-            <a href="{{ path('modele_delete', { 'id': modele.id }) }}" title="Effacer"><i class="material-icons">delete</i> </a>
-            <a href="{{ path('modele_index') }}" title="Revenir à l'accueil"><i class="material-icons">arrow_back</i></a>
-            <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons">dashboard</i></a>
+            <button type="submit" title="Valider"><i class="material-icons contactme">check</i></button>
+            <a href="{{ path('modele_delete', { 'id': modele.id }) }}" title="Effacer"><i class="material-icons contactme">delete</i> </a>
+            <a href="{{ path('modele_index') }}" title="Revenir à l'accueil"><i class="material-icons contactme">arrow_back</i></a>
+            <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons contactme">dashboard</i></a>
         </div>
         {{ form_end(edit_form) }}
-        {#<li>#}
-            {#{{ form_start(delete_form) }}#}
-                {#<input type="submit" value="Delete">#}
-            {#{{ form_end(delete_form) }}#}
-        {#</li>#}
     </div>
 {% endblock %}

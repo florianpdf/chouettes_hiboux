@@ -6,7 +6,7 @@
 
 {% block body %}
 
-    {{ tinymce_init() }}  {#WYSIWYG#}
+    {{ tinymce_init({'theme': {'simple': {'menubar': false}}}) }}
 
     <div class="container admin">
 
@@ -20,15 +20,15 @@
             {{ form_errors(edit_form.text) }}
         </div>
 
-        <button type="submit" title="Editer"><i class="material-icons doudous">done</i></button>
+        <button type="submit" title="Editer"><i class="material-icons li_doudous doudous">done</i></button>
     {{ form_end(edit_form) }}
-    {{ form_start(delete_form) }}<button type="submit" title="Effacer"><i class="material-icons doudous">delete</i></button>{{ form_end(delete_form) }}
+    {{ form_start(delete_form) }}<button type="submit" title="Effacer"><i class="material-icons li_doudous doudous">delete</i></button>{{ form_end(delete_form) }}
 
 
     <div class="boutons">
        <div class="row">
-           <a href="{{ path('citation_index') }}" title="Revenir à l'accueil"><i class="material-icons doudous">arrow_back</i></a>
-           <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons doudous">dashboard</i></a>
+           <a href="{{ path('citation_index') }}" title="Revenir à l'accueil"><i class="material-icons li_doudous doudous">arrow_back</i></a>
+           <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons li_doudous doudous">dashboard</i></a>
        </div>
    </div>
 </div>

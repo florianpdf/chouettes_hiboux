@@ -12,4 +12,14 @@ use Doctrine\ORM\EntityRepository;
  */
 class CategorieRepository extends EntityRepository
 {
+    public function getDoudouByCateg($categ){
+        $sql = 'SELECT * FROM categorie JOIN modele ON categorie.id = modele.categorie_id JOIN image ON image.id = modele.image_id WHERE nom = :categ';
+        $params = array(
+            'categ' => $categ,
+        );
+
+        return $this->getEntityManager()->getConnection()->executeQuery($sql, $params)->fetchAll();
+
+    }
 }
+//SELECT * FROM categorie LEFT JOIN modele ON categorie.id = modele.categorie_id WHERE nom = "Doudous"
