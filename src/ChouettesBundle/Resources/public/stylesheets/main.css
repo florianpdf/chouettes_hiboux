@@ -6461,159 +6461,149 @@ footer.page-footer .footer-copyright {
   color: #724399;
 }
 
+/* line 21, ../sass/_footer.scss */
+.doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
+  font: 2vw "butterfly";
+}
+
 /*MEDIA-QUERIES*/
 @media screen and (min-width: 1024px) {
-  /* line 25, ../sass/_footer.scss */
+  /* line 29, ../sass/_footer.scss */
   .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
-    font-size: 20px !important;
+    font-size: 25px !important;
   }
 
-  /* line 28, ../sass/_footer.scss */
+  /* line 32, ../sass/_footer.scss */
   .h5footer {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 980px) {
-  /* line 34, ../sass/_footer.scss */
+  /* line 38, ../sass/_footer.scss */
   .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
-    font-size: 20px !important;
+    font-size: 25px !important;
   }
 
-  /* line 37, ../sass/_footer.scss */
+  /* line 41, ../sass/_footer.scss */
   .h5footer {
-    font-size: 25px;
+    font-size: 30px;
   }
 
-  /* line 40, ../sass/_footer.scss */
+  /* line 44, ../sass/_footer.scss */
   .responsive-img {
     width: 75%;
   }
 
-  /* line 43, ../sass/_footer.scss */
+  /* line 47, ../sass/_footer.scss */
   .social {
     width: 100%;
   }
 }
 @media screen and (max-width: 740px) {
-  /* line 49, ../sass/_footer.scss */
+  /* line 53, ../sass/_footer.scss */
   .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
-    font-size: 20px !important;
+    font-size: 25px !important;
   }
 
-  /* line 52, ../sass/_footer.scss */
+  /* line 56, ../sass/_footer.scss */
   .h5footer {
-    font-size: 25px;
+    font-size: 30px;
   }
 
-  /* line 55, ../sass/_footer.scss */
+  /* line 59, ../sass/_footer.scss */
   .responsive-img {
     width: 30%;
     min-width: 50px;
   }
 
-  /* line 59, ../sass/_footer.scss */
+  /* line 63, ../sass/_footer.scss */
   .social {
     width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 65, ../sass/_footer.scss */
+  /* line 69, ../sass/_footer.scss */
   .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
-    font-size: 20px !important;
+    font-size: 25px !important;
   }
 
-  /* line 68, ../sass/_footer.scss */
+  /* line 72, ../sass/_footer.scss */
   .h5footer {
-    font-size: 25px;
+    font-size: 30px;
   }
 
-  /* line 71, ../sass/_footer.scss */
+  /* line 75, ../sass/_footer.scss */
   .responsive-img {
     width: 30%;
     min-width: 50px;
   }
 
-  /* line 75, ../sass/_footer.scss */
+  /* line 79, ../sass/_footer.scss */
   .social {
     width: 100%;
   }
 
-  /* line 78, ../sass/_footer.scss */
+  /* line 82, ../sass/_footer.scss */
   .chouette2 {
     margin-left: -100px;
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 84, ../sass/_footer.scss */
+  /* line 88, ../sass/_footer.scss */
   .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
-    font-size: 20px !important;
+    font-size: 25px !important;
   }
 
-  /* line 87, ../sass/_footer.scss */
+  /* line 91, ../sass/_footer.scss */
   .h5footer {
-    font-size: 25px;
+    font-size: 30px;
   }
 
-  /* line 90, ../sass/_footer.scss */
+  /* line 94, ../sass/_footer.scss */
   .responsive-img {
     width: 30%;
     min-width: 50px;
   }
 
-  /* line 94, ../sass/_footer.scss */
+  /* line 98, ../sass/_footer.scss */
   .social {
     width: 100%;
   }
 
-  /* line 97, ../sass/_footer.scss */
+  /* line 101, ../sass/_footer.scss */
   .chouette2 {
     margin-left: -50px;
   }
 }
 /*FIN MEDIA-QUERIES*/
-/* line 104, ../sass/_footer.scss */
+/* line 108, ../sass/_footer.scss */
 .doudousFooter {
   color: #E93255;
-  font: 16px "Didact Gothic";
-  font-size: 25px;
-  font-weight: bold;
 }
 
-/* line 111, ../sass/_footer.scss */
+/* line 114, ../sass/_footer.scss */
 .bijouxFooter {
-  color: #724399;
-  font: 16px "Didact Gothic";
-  font-size: 25px;
-  font-weight: bold;
+  color: RGB(206, 76, 154);
 }
 
-/* line 118, ../sass/_footer.scss */
+/* line 120, ../sass/_footer.scss */
 .accessoiresFooter {
   color: #468540;
-  font: 16px "Didact Gothic";
-  font-size: 25px;
-  font-weight: bold;
 }
 
-/* line 125, ../sass/_footer.scss */
+/* line 126, ../sass/_footer.scss */
 .whoamiFooter {
   color: #B7483F;
-  font: 16px "Didact Gothic";
-  font-size: 25px;
-  font-weight: bold;
 }
 
 /* line 132, ../sass/_footer.scss */
 .contactmeFooter {
   color: #3FBFC1;
-  font: 16px "Didact Gothic";
-  font-size: 25px;
-  font-weight: bold;
 }
 
 /*FIN FOOTER*/
 /*RETOUR EN HAUT*/
-/* line 152, ../sass/_footer.scss */
+/* line 151, ../sass/_footer.scss */
 a.back-to-top {
   display: none;
   width: 60px;
