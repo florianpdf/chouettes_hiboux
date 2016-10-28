@@ -341,6 +341,7 @@ var Grid = (function() {
 
 	Preview.prototype = {
 		create : function() {
+
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
@@ -384,6 +385,7 @@ var Grid = (function() {
 					title : $itemEl.data( 'title' ),
 					description : $itemEl.data( 'description' )
 				};
+
 
 			this.$title.html( eldata.title );
 			this.$description.html( eldata.description );
