@@ -20,7 +20,7 @@
         <tbody>
         {% for citation in citations %}
             <tr>
-                <td>{{ citation.text }}</td>
+                <td>{{ citation.text|raw }}</td>
                 <td>
                     <div class="boutons">
                             <a href="{{ path('citation_edit', { 'id': citation.id }) }}" title="Editer"><i class="material-icons doudous">edit</i></a>

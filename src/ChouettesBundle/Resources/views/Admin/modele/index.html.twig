@@ -25,9 +25,9 @@
             <tr>
                 <td><img src="{{ asset('uploads/images/') }}{{ modele.image }}" alt="{{ modele.image.alt }}"></td>
                 <td>{{ modele.titre }}</td>
-                <td>{{ modele.contenu }}</td>
+                <td>{{ modele.contenu|raw }}</td>
                 <td wordwrap>{{ modele.lien }}</td>
-                <td>{% if modele.addblock %}Yes{% else %}No{% endif %}</td>
+                <td>{% if modele.addblock %}Oui{% else %}Non{% endif %}</td>
                 <td>
                     <div class="boutons">
                             <a href="{{ path('modele_edit', { 'id': modele.id }) }}" title="Editer"><i class="material-icons">edit</i></a>

@@ -1,6 +1,6 @@
 /*FOOTER*/
 footer.page-footer{
-    background-color: red;
+    background-color: RGBA(255,255,255,0.6);
     margin-bottom:0px;
 	padding-top: 0px;
 }
@@ -12,46 +12,6 @@ footer.page-footer{
 
 footer.page-footer .footer-copyright{
 	color:rgba(87, 73, 73, 0.8);
-}
-
-.doudous {
-    color: #E93255;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.bijoux {
-    color: #724399;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.accessoires {
-    color: #468540;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.whoami {
-    color:#B7483F;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.contactme {
-    color:#3FBFC1;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.social {
-    width: 100% !important;
-    height: 100% !important;
 }
 
 .contactme:hover {
