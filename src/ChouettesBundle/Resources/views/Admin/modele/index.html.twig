@@ -14,7 +14,8 @@
             <tr>
                 <th>Image</th>
                 <th>Titre</th>
-                <th >Contenu</th>
+                <th>Catégorie</th>
+                <th>Contenu</th>
                 <th>Lien</th>
                 <th>Ajouter à<br> l'accueil</th>
                 <th>Editer</th>
@@ -25,6 +26,7 @@
             <tr>
                 <td><img src="{{ asset('uploads/images/') }}{{ modele.image }}" alt="{{ modele.image.alt }}"></td>
                 <td>{{ modele.titre }}</td>
+                <td>{{ modele.categorie|raw }}</td>
                 <td>{{ modele.contenu|raw }}</td>
                 <td wordwrap>{{ modele.lien }}</td>
                 <td>{% if modele.addblock %}Oui{% else %}Non{% endif %}</td>

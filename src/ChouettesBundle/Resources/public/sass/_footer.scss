@@ -18,24 +18,28 @@ footer.page-footer .footer-copyright{
     color:#724399;
 }
 
+.doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
+    font: $font-titre;
+}
+
 
 /*MEDIA-QUERIES*/
 
 @media screen and (min-width:1024px){
     .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
-        font-size:20px!important;
+        font-size:25px!important;
     }
     .h5footer{
-        font-size:25px;
+        font-size:30px;
     }
 }
 
 @media screen and (max-width:980px){
     .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
-        font-size:20px!important;
+        font-size:25px!important;
     }
     .h5footer{
-        font-size:25px;
+        font-size:30px;
     }
     .responsive-img{
         width: 75%;
@@ -47,10 +51,10 @@ footer.page-footer .footer-copyright{
 
 @media screen and (max-width:740px){
     .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
-        font-size:20px!important;
+        font-size:25px!important;
     }
     .h5footer{
-        font-size:25px;
+        font-size:30px;
     }
     .responsive-img{
         width: 30%;
@@ -63,10 +67,10 @@ footer.page-footer .footer-copyright{
 
 @media screen and (max-width:480px){
     .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
-        font-size:20px!important;
+        font-size:25px!important;
     }
     .h5footer{
-        font-size:25px;
+        font-size:30px;
     }
     .responsive-img{
         width: 30%;
@@ -82,10 +86,10 @@ footer.page-footer .footer-copyright{
 
 @media screen and (max-width:320px){
     .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
-        font-size:20px!important;
+        font-size:25px!important;
     }
     .h5footer{
-        font-size:25px;
+        font-size:30px;
     }
     .responsive-img{
         width: 30%;
@@ -103,37 +107,33 @@ footer.page-footer .footer-copyright{
 
 .doudousFooter{
     color: #E93255;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
+    //font: $font-body;
+    //font-size: 25px;
 }
 
+
 .bijouxFooter {
-    color: #724399;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
+    color: RGB(206,76,154);
+    //font: $font-body;
+    //font-size: 25px;
 }
 
 .accessoiresFooter {
     color: #468540;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
+    //font: $font-body;
+    //font-size: 25px;
 }
 
 .whoamiFooter {
     color:#B7483F;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
+    //font: $font-body;
+    //font-size: 25px;
 }
 
 .contactmeFooter {
     color:#3FBFC1;
-    font: $font-body;
-    font-size: 25px;
-    font-weight: bold;
+    //font: $font-body;
+    //font-size: 25px;
 }
 
 //.social {
