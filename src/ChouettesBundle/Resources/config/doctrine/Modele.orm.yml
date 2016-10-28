@@ -16,6 +16,7 @@ ChouettesBundle\Entity\Modele:
             type: text
         lien:
             type: text
+            nullable: true
         add_block:
             type: boolean
 
