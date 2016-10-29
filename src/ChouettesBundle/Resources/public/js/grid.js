@@ -353,7 +353,7 @@ var Grid = (function() {
             if (href == '')
                 this.$href = $( '' );
             else
-                this.$href = $( '<a href="#">Voir le tutoriel</a>' );
+                this.$href = $( '<a href="#" target="_blank">Voir le tutoriel</a>' );
 
             this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href);
 			this.$loading = $( '<div class="og-loading"></div>' );

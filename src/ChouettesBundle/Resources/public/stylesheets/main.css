@@ -6269,25 +6269,26 @@ blockquote em {
   letter-spacing: 2px;
   padding: 10px 20px;
   border: 3px solid #333;
+  border-radius: 25px;
   display: inline-block;
   margin: 30px 0 0;
   outline: none;
 }
 
-/* line 156, ../sass/_patchwork_page.scss */
+/* line 157, ../sass/_patchwork_page.scss */
 .og-details a::before {
   content: '\2192';
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 162, ../sass/_patchwork_page.scss */
+/* line 163, ../sass/_patchwork_page.scss */
 .og-details a:hover {
   border-color: #999;
   color: #999;
 }
 
-/* line 167, ../sass/_patchwork_page.scss */
+/* line 168, ../sass/_patchwork_page.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -6343,28 +6344,28 @@ blockquote em {
   }
 }
 @media screen and (max-width: 830px) {
-  /* line 202, ../sass/_patchwork_page.scss */
+  /* line 203, ../sass/_patchwork_page.scss */
   .og-expander h3 {
     font-size: 32px;
   }
 
-  /* line 203, ../sass/_patchwork_page.scss */
+  /* line 204, ../sass/_patchwork_page.scss */
   .og-expander p {
     font-size: 13px;
   }
 
-  /* line 204, ../sass/_patchwork_page.scss */
+  /* line 205, ../sass/_patchwork_page.scss */
   .og-expander a {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 210, ../sass/_patchwork_page.scss */
+  /* line 211, ../sass/_patchwork_page.scss */
   .og-fullimg {
     display: none;
   }
 
-  /* line 211, ../sass/_patchwork_page.scss */
+  /* line 212, ../sass/_patchwork_page.scss */
   .og-details {
     float: none;
     width: 100%;
