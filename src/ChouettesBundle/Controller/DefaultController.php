@@ -4,7 +4,6 @@ namespace ChouettesBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use Doctrine\ORM\Query\ResultSetMapping;
 
 class DefaultController extends Controller
 {
@@ -16,6 +15,11 @@ class DefaultController extends Controller
         $citations = $em->getRepository('ChouettesBundle:Citation')->findAll();
         // Recupération des données MODELE pour les images affichables sur la pages d'accueil
         $modeles = $em->getRepository('ChouettesBundle:Modele')->findBy(array('add_block' => true));
+
+
+        if (empty($modeles)) {
+            return $this->redirectToRoute('modele_new');
+        }
 
         // -----------------------------------------------------------------------------------------------------
         // Mise en place random pour afficher aléatoirement les CITATIONS sur la page
@@ -55,7 +59,7 @@ class DefaultController extends Controller
                 $accessoire[] = $modele;
             }
         }
-//        plop
+
         // Choix aléatoire des modèles à afficher
         $randomBijoux = $bijoux[array_rand($bijoux)];
         $indexElimine = array_rand($doudou);
@@ -83,8 +87,6 @@ class DefaultController extends Controller
     public function doudousAction()
     {
         $em = $this->getDoctrine()->getManager();
-//        $modeles = $em->getRepository("ChouettesBundle:Modele")->findBy(array('categorie' => 'Doudous'));
-//        $modeles = $em->('SELECT * FROM categorie LEFT JOIN modele ON categorie.id = modele.categorie_id WHERE nom = "Doudous"')->getResult();
         $modeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Doudous');
         return $this->render('@Chouettes/user/doudous.html.twig', array(
             'modeles' => $modeles

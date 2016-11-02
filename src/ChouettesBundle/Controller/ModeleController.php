@@ -65,6 +65,7 @@ class ModeleController extends Controller
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $em = $this->getDoctrine()->getManager();
+            $modele->preUpload();
             $em->persist($modele);
             $em->flush();
 
