@@ -59,12 +59,15 @@ class WhoamiController extends Controller
      */
     public function editAction(Request $request, Whoami $whoami)
     {
+        $em = $this->getDoctrine()->getEntityManager();
+        $image = $em->getRepository('ChouettesBundle:Image')->findOneById($whoami->getImage()->getId());
         $deleteForm = $this->createDeleteForm($whoami);
         $editForm = $this->createForm('ChouettesBundle\Form\WhoamiType', $whoami);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $em = $this->getDoctrine()->getManager();
+            $image->preUpload();
             $em->persist($whoami);
             $em->flush();
 

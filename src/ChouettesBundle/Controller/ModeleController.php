@@ -60,11 +60,15 @@ class ModeleController extends Controller
      */
     public function editAction(Request $request, Modele $modele)
     {
+        $em = $this->getDoctrine()->getEntityManager();
+        $image = $em->getRepository('ChouettesBundle:Image')->findOneById($modele->getImage()->getId());
         $editForm = $this->createForm('ChouettesBundle\Form\ModeleType', $modele);
         $editForm->handleRequest($request);
 
+
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $em = $this->getDoctrine()->getManager();
+            $image->preUpload();
             $em->persist($modele);
             $em->flush();
 
