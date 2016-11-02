@@ -1,8 +1,9 @@
 # Learn more about services, parameters and containers at
 # http://symfony.com/doc/current/book/service_container.html
 parameters:
-#    parameter_name: value
+# parameter_name: value
 
+# Route to external links
 services:
     external_link:
         class: ChouettesBundle\Services\ExternalLinkFilter

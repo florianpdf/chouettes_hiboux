@@ -10,38 +10,38 @@ use Doctrine\ORM\Mapping as ORM;
 class Whoami
 {
   
-    /**
-     * @var integer
-     */
+/**
+ * @var integer
+ */
     private $id;
 
-    /**
-     * @var string
-     */
+/**
+ * @var string
+ */
     private $text;
 
-    /**
-     * @var \ChouettesBundle\Entity\Image
-     */
+/**
+ * @var \ChouettesBundle\Entity\Image
+ */
     private $image;
 
 
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
+/**
+ * Get id
+ *
+ * @return integer
+ */
     public function getId()
     {
         return $this->id;
     }
 
-    /**
-     * Set text
-     *
-     * @param string $text
-     * @return Whoami
-     */
+/**
+ * Set text
+ *
+ * @param string $text
+ * @return Whoami
+ */
     public function setText($text)
     {
         $this->text = $text;
@@ -49,22 +49,22 @@ class Whoami
         return $this;
     }
 
-    /**
-     * Get text
-     *
-     * @return string 
-     */
+/**
+ * Get text
+ *
+ * @return string
+ */
     public function getText()
     {
         return $this->text;
     }
 
-    /**
-     * Set image
-     *
-     * @param \ChouettesBundle\Entity\Image $image
-     * @return Whoami
-     */
+/**
+ * Set image
+ *
+ * @param \ChouettesBundle\Entity\Image $image
+ * @return Whoami
+ */
     public function setImage(\ChouettesBundle\Entity\Image $image = null)
     {
         $this->image = $image;
@@ -72,11 +72,11 @@ class Whoami
         return $this;
     }
 
-    /**
-     * Get image
-     *
-     * @return \ChouettesBundle\Entity\Image 
-     */
+/**
+ * Get image
+ *
+ * @return \ChouettesBundle\Entity\Image
+ */
     public function getImage()
     {
         return $this->image;

@@ -8,19 +8,19 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class ImageType extends AbstractType
 {
-    /**
-     * {@inheritdoc}
-     */
+/**
+ * {@inheritdoc}
+ */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-        ->add('file', 'file', array('label' => 'Image', 'required' => false))
+        ->add('file', 'file', array('label' => 'Image', 'required' => false, 'attr' => array('accept' => 'image')))
         ->add('alt');
     }
     
-    /**
-     * {@inheritdoc}
-     */
+/**
+ * {@inheritdoc}
+ */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
@@ -28,9 +28,9 @@ class ImageType extends AbstractType
         ));
     }
 
-    /**
-     * {@inheritdoc}
-     */
+/**
+ * {@inheritdoc}
+ */
     public function getBlockPrefix()
     {
         return 'chouettesbundle_image';

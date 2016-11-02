@@ -15,10 +15,12 @@ use ChouettesBundle\Form\ModeleType;
  */
 class ModeleController extends Controller
 {
-    /**
-     * Lists all Modele entities.
-     *
-     */
+
+
+/**
+ * Lists all Modele entities.
+ *
+ */
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -30,10 +32,10 @@ class ModeleController extends Controller
         ));
     }
 
-    /**
-     * Creates a new Modele entity.
-     *
-     */
+/**
+ * Creates a new Modele entity.
+ *
+ */
     public function newAction(Request $request)
     {
         $modele = new Modele();
@@ -42,7 +44,9 @@ class ModeleController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+// Tells Doctrine you want to (eventually) save the Product (no queries yet). It utilizes cached prepared statement to slightly improve the performance.
             $em->persist($modele);
+// Actually executes the queries (i.e. the INSERT query).
             $em->flush();
 
             return $this->redirectToRoute('modele_index', array('id' => $modele->getId()));
@@ -54,10 +58,10 @@ class ModeleController extends Controller
         ));
     }
 
-    /**
-     * Displays a form to edit an existing Modele entity.
-     *
-     */
+/**
+ * Displays a form to edit an existing Modele entity.
+ *
+ */
     public function editAction(Request $request, Modele $modele)
     {
         $em = $this->getDoctrine()->getEntityManager();
@@ -82,19 +86,23 @@ class ModeleController extends Controller
     }
 
 
-    /**
-     * Deletes a Modele entity.
-     *
-     */
+/**
+ * Deletes a Modele entity.
+ *
+ */
 
     public function deleteAction($id)
     {
         if ($id) {
             $em = $this->getDoctrine()->getEntityManager();
+// Recherche LE MODELE à supprimer parmi LES MODELES
             $modele = $em->getRepository('ChouettesBundle:Modele')->findOneById($id);
+// Recherche L'IMAGE DU MODELE visé
             $image = $em->getRepository('ChouettesBundle:Image')->findOneById($modele->getImage()->getId());
+// Supprime LE MODELE et SON IMAGE associée
             $em->remove($modele);
             $em->remove($image);
+// Envoie la requête à la BDD
             $em->flush();
 
             return $this->redirectToRoute('modele_index');

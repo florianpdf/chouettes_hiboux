@@ -14,10 +14,12 @@ use ChouettesBundle\Form\CitationType;
  */
 class CitationController extends Controller
 {
-    /**
-     * Lists all Citation entities.
-     *
-     */
+
+
+/**
+ * Lists all Citation entities.
+ *
+ */
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -29,10 +31,11 @@ class CitationController extends Controller
         ));
     }
 
-    /**
-     * Creates a new Citation entity.
-     *
-     */
+
+/**
+ * Creates a new Citation entity.
+ *
+ */
     public function newAction(Request $request)
     {
         $citation = new Citation();
@@ -53,10 +56,11 @@ class CitationController extends Controller
         ));
     }
 
-    /**
-     * Displays a form to edit an existing Citation entity.
-     * 
-     */
+
+/**
+ * Displays a form to edit an existing Citation entity.
+ *
+ */
     public function editAction(Request $request, Citation $citation)
     {
         $deleteForm = $this->createDeleteForm($citation);
@@ -78,10 +82,11 @@ class CitationController extends Controller
         ));
     }
 
-    /**
-     * Deletes a Citation entity.
-     *
-     */
+
+/**
+ * Deletes a Citation entity.
+ *
+ */
     public function deleteAction($id)
     {
         if ($id) {
@@ -95,13 +100,14 @@ class CitationController extends Controller
             return $this->redirectToRoute('citation_index');
     }
 
-    /**
-     * Creates a form to delete a Citation entity.
-     *
-     * @param Citation $citation The Citation entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
+
+/**
+ * Creates a form to delete a Citation entity.
+ *
+ * @param Citation $citation The Citation entity
+ *
+ * @return \Symfony\Component\Form\Form The form
+ */
     private function createDeleteForm(Citation $citation)
     {
         return $this->createFormBuilder()

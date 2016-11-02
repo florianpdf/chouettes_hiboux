@@ -14,10 +14,12 @@ use ChouettesBundle\Form\WhoamiType;
  */
 class WhoamiController extends Controller
 {
-    /**
-     * Lists all Whoami entities.
-     *
-     */
+
+
+/**
+ * Lists all Whoami entities.
+ *
+ */
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -29,10 +31,11 @@ class WhoamiController extends Controller
         ));
     }
 
-    /**
-     * Creates a new Whoami entity.
-     *
-     */
+
+/**
+ * Creates a new Whoami entity.
+ *
+ */
     public function newAction(Request $request)
     {
         $whoami = new Whoami();
@@ -53,20 +56,23 @@ class WhoamiController extends Controller
         ));
     }
 
-    /**
-     * Displays a form to edit an existing Whoami entity.
-     *
-     */
+
+/**
+ * Displays a form to edit an existing Whoami entity.
+ *
+ */
     public function editAction(Request $request, Whoami $whoami)
     {
         $em = $this->getDoctrine()->getEntityManager();
         $image = $em->getRepository('ChouettesBundle:Image')->findOneById($whoami->getImage()->getId());
+// Création de la possibilité de DELETE lors de l'édition
         $deleteForm = $this->createDeleteForm($whoami);
         $editForm = $this->createForm('ChouettesBundle\Form\WhoamiType', $whoami);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $em = $this->getDoctrine()->getManager();
+// PreUpload de l'image pour que l'IMAGE sélectionnée avant l'edition PERSISTE
             $image->preUpload();
             $em->persist($whoami);
             $em->flush();
@@ -81,10 +87,11 @@ class WhoamiController extends Controller
         ));
     }
 
-    /**
-     * Deletes a Whoami entity.
-     *
-     */
+
+/**
+ * Deletes a Whoami entity.
+ *
+ */
     public function deleteAction($id)
     {
         if ($id) {
@@ -98,13 +105,14 @@ class WhoamiController extends Controller
             return $this->redirectToRoute('whoami_index');
     }
 
-    /**
-     * Creates a form to delete a Whoami entity.
-     *
-     * @param Whoami $whoami The Whoami entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
+
+/**
+ * Creates a form to delete a Whoami entity.
+ *
+ * @param Whoami $whoami The Whoami entity
+ *
+ * @return \Symfony\Component\Form\Form The form
+ */
     private function createDeleteForm(Whoami $whoami)
     {
         return $this->createFormBuilder()

@@ -1,3 +1,4 @@
+#Routing de base
 chouettes:
     resource: "@ChouettesBundle/Resources/config/routing.yml"
     prefix:   /
