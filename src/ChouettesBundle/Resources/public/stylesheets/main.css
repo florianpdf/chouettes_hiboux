@@ -204,6 +204,11 @@ button {
   background-color: RGBA(63, 191, 193, 0.3) !important;
 }
 
+<<<<<<< HEAD
+/* line 222, ../sass/_general.scss */
+.errorlog {
+  color: red;
+=======
 /*-----------------------------------------------------*\
        ERROR      ERROR      ERROR     ERROR
 \*-----------------------------------------------------*/
@@ -243,6 +248,7 @@ img.error {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
+>>>>>>> dev
 }
 
 /* line 3, ../sass/_navbar.scss */
@@ -441,8 +447,8 @@ blockquote em {
 /****************************/
 /* line 6, ../sass/_index.scss */
 .nb_navbar_logo {
-  width: 50% !important;
-  height: 50% !important;
+  width: 80% !important;
+  height: 80% !important;
   min-width: 300px;
 }
 
@@ -6409,6 +6415,17 @@ blockquote em {
 .expression {
   font-style: italic;
   font-weight: bold;
+}
+
+/* line 36, ../sass/_about.scss */
+.thumbsabout {
+  height: 250px;
+  width: auto;
+}
+
+/* line 41, ../sass/_about.scss */
+.materialboxed {
+  display: initial;
 }
 
 /* line 1, ../sass/_form.scss */

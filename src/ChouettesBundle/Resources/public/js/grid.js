@@ -350,10 +350,10 @@ var Grid = (function() {
 			this.$description = $( '<p></p>' );
 
             // On masque ou affiche 'voir le tutoriel' en fonction du lien
-            if (href == '')
-                this.$href = $( '' );
-            else
-                this.$href = $( '<a href="#" target="_blank">Voir le tutoriel</a>' );
+            // if (href == '')
+            //     this.$href = $( '' );
+            // else
+                this.$href = $( '<a href="contact" target="_blank">Je le veux</a>' );
 
             this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href);
 			this.$loading = $( '<div class="og-loading"></div>' );
@@ -389,7 +389,7 @@ var Grid = (function() {
 			// update preview´s content
 			var $itemEl = this.$item.children( 'a' ),
 				eldata = {
-					href : $itemEl.data( 'link' ),
+					href : $itemEl.data( 'href' ),
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
 					description : $itemEl.data( 'description' )
