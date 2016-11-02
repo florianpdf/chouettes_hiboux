@@ -1,4 +1,5 @@
 /*FOOTER*/
+
 footer.page-footer{
     background-color: RGBA(255,255,255,0.6);
     margin-bottom:0px;
@@ -23,7 +24,7 @@ footer.page-footer .footer-copyright{
 }
 
 
-/*MEDIA-QUERIES*/
+/* MEDIA-QUERIES */
 
 @media screen and (min-width:1024px){
     .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
@@ -103,7 +104,8 @@ footer.page-footer .footer-copyright{
     }
 }
 
-/*FIN MEDIA-QUERIES*/
+/* FIN MEDIA-QUERIES */
+
 
 .doudousFooter{
     color: #E93255;
@@ -136,19 +138,11 @@ footer.page-footer .footer-copyright{
     //font-size: 25px;
 }
 
-//.social {
-//    width: 100% !important;
-//    height: 100% !important;
-//}
-
-//.contactme:hover {
-//    background-color: RGBA(63, 191, 193, 0.3) !important;
-//}
+/* FIN FOOTER */
 
 
-/*FIN FOOTER*/
+/* RETOUR EN HAUT */
 
-/*RETOUR EN HAUT*/
 a.back-to-top {
     display: none;
     width: 60px;
@@ -163,4 +157,4 @@ a.back-to-top {
     -moz-border-radius: 30px;
     border-radius: 30px;
 }
-/*FIN RETOUR EN HAUT*/
+/* FIN RETOUR EN HAUT */

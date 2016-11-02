@@ -16,6 +16,7 @@ modele_edit:
 modele_delete:
     path:     /{id}/delete
     defaults: { _controller: "ChouettesBundle:Modele:delete" }
+# Indique que la valeur du MODELE à récupérer est un NOMBRE
     requirements:
       id: \d+
 

@@ -36,36 +36,40 @@ class Image
         return null === $this->url ? null : $this->getUploadRootDir().'/'.$this->url;
     }
 
-    /**
-     * @ORM\PrePersist
-     */
+
+/**
+ * @ORM\PrePersist
+ */
     public function preUpload()
     {
         if (null !== $this->file) {
-            // do whatever you want to generate a unique name
+// "uniquid()" permet de créer une id de manière aléatoire
+// Récupère l'extension du fichier
             $this->url = uniqid().'.'.$this->file->guessExtension();
         }
     }
 
-    /**
-     * @ORM\PostPersist
-     */
+
+/**
+ * @ORM\PostPersist
+ */
     public function upload()
     {
         if (null === $this->file) {
             return;
         }
-        // if there is an error when moving the file, an exception will
-        // be automatically thrown by move(). This will properly prevent
-        // the entity from being persisted to the database on error
+// If there is an error when moving the file, an exception will
+// be automatically thrown by move(). This will properly prevent
+// the entity from being persisted to the database on error
         $this->file->move($this->getUploadRootDir(), $this->url);
 
         unset($this->file);
     }
 
-    /**
-     * @ORM\PostRemove
-     */
+
+/**
+ * @ORM\PostRemove
+ */
     public function removeUpload()
     {
         if ($file = $this->getAbsolutePath()) {
@@ -73,41 +77,40 @@ class Image
         }
     }
 
-    //generated code
+    // GENERATED CODE //
 
-    /**
-     * @var integer
-     */
+/**
+ * @var integer
+ */
     private $id;
 
-    /**
-     * @var string
-     */
+/**
+ * @var string
+ */
     private $url;
 
-    /**
-     * @var string
-     */
+/**
+ * @var string
+ */
     private $alt;
 
-
-    /**
-     * Get id
-     *
-     * @return integer
-     */
+/**
+ * Get id
+ *
+ * @return integer
+ */
     public function getId()
     {
         return $this->id;
     }
 
-    /**
-     * Set url
-     *
-     * @param string $url
-     *
-     * @return Image
-     */
+/**
+ * Set url
+ *
+ * @param string $url
+ *
+ * @return Image
+ */
     public function setUrl($url)
     {
         $this->url = $url;
@@ -115,23 +118,23 @@ class Image
         return $this;
     }
 
-    /**
-     * Get url
-     *
-     * @return string
-     */
+/**
+ * Get url
+ *
+ * @return string
+ */
     public function getUrl()
     {
         return $this->url;
     }
 
-    /**
-     * Set alt
-     *
-     * @param string $alt
-     *
-     * @return Image
-     */
+/**
+ * Set alt
+ *
+ * @param string $alt
+ *
+ * @return Image
+ */
     public function setAlt($alt)
     {
         $this->alt = $alt;
@@ -139,11 +142,11 @@ class Image
         return $this;
     }
 
-    /**
-     * Get alt
-     *
-     * @return string
-     */
+/**
+ * Get alt
+ *
+ * @return string
+ */
     public function getAlt()
     {
         return $this->alt;

@@ -8,9 +8,9 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class ImageType extends AbstractType
 {
-    /**
-     * {@inheritdoc}
-     */
+/**
+ * {@inheritdoc}
+ */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
@@ -18,9 +18,9 @@ class ImageType extends AbstractType
         ->add('alt');
     }
     
-    /**
-     * {@inheritdoc}
-     */
+/**
+ * {@inheritdoc}
+ */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
@@ -28,9 +28,9 @@ class ImageType extends AbstractType
         ));
     }
 
-    /**
-     * {@inheritdoc}
-     */
+/**
+ * {@inheritdoc}
+ */
     public function getBlockPrefix()
     {
         return 'chouettesbundle_image';

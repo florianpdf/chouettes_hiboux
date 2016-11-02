@@ -11,33 +11,33 @@ class Citation
 {
 
     
-    /**
-     * @var integer
-     */
+/**
+ * @var integer
+ */
     private $id;
 
-    /**
-     * @var string
-     */
+/**
+ * @var string
+ */
     private $text;
 
 
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
+/**
+ * Get id
+ *
+ * @return integer
+ */
     public function getId()
     {
         return $this->id;
     }
 
-    /**
-     * Set text
-     *
-     * @param string $text
-     * @return Citation
-     */
+/**
+ * Set text
+ *
+ * @param string $text
+ * @return Citation
+ */
     public function setText($text)
     {
         $this->text = $text;
@@ -45,11 +45,11 @@ class Citation
         return $this;
     }
 
-    /**
-     * Get text
-     *
-     * @return string 
-     */
+/**
+ * Get text
+ *
+ * @return string
+ */
     public function getText()
     {
         return $this->text;

@@ -19,9 +19,9 @@
     </div>
 
 
-    {#--------- CITATION ------------------------------------------------------#}
-    {# Si pas de citation dans la base de données le blockquote n'est pas affiché #}
-    {# cf. DefaultController.php #}
+{#--------- CITATION ------------------------------------------------------#}
+{# Si pas de citation dans la base de données le blockquote n'est pas affiché #}
+{# cf. DefaultController.php #}
     {% if citation == "" %}
         <br>
     {% else %}
@@ -30,17 +30,17 @@
         </blockquote>
     {% endif %}
 
-    {#---------  CITATION -----------------------------------------------------#}
+{#---------  CITATION -----------------------------------------------------#}
 
 
-    {#---------  BLOCK 9 images   ---------------------------------------------#}
-    <!-- DEBUT Block 9 images -->
+{#---------  BLOCK 9 images   ---------------------------------------------#}
+<!-- DEBUT Block 9 images -->
     <div class="container bckground">
-        <!-- DEBUT PREMIERE LIGNE -->
+<!-- DEBUT PREMIERE LIGNE -->
 
-        {#{{ dump(doudous) }}#}
-        {#{{ dump(doudous2) }}#}
-        {#{{ index }}#}
+{#{{ dump(doudous) }}#}
+{#{{ dump(doudous2) }}#}
+{#{{ index }}#}
         <div class="row rowCustom">
             <!-Ligne 1 cube 1 -->
             <div class="col l4 m4 s12 colCustom center li_doudous">
@@ -52,9 +52,10 @@
                         </div>
                     </div>
                 </a>
-            </div> <!-- End col l4 m3 s1-->
+            </div>
+<!-- End col l4 m3 s1-->
 
-            <!- Ligne 1 cube 2 -->
+<!- Ligne 1 cube 2 -->
             <div class="col l4
             {#Bloc photo categorie#} m4 s12 colCustom">
                 <div class="ih-item square effect13 top_to_bottom">
@@ -66,10 +67,11 @@
                             <h3> {{ doudous.titre }}</h3>
                         </div>
                     </a>
-                </div> <!-- End h-item square effect15 top_to_bottom -->
+                </div>
+<!-- End h-item square effect15 top_to_bottom -->
             </div>
 
-            <!- Ligne 1 cube 3 -->
+<!- Ligne 1 cube 3 -->
             <div class="col l4 m4 s12 colCustom center li_bijoux">
                 <a href="{{ path ('chouettes_bijoux') }}">
                     <div class="boxMenu">
@@ -79,12 +81,13 @@
                         </div>
                     </div>
                 </a>
-            </div> <!-- End col l4 m3 s1-->
+            </div>
+<!-- End col l4 m3 s1-->
+        </div>
+<!-- End ROW -->
+<!-- FIN PREMIERE LIGNE -->
 
-        </div> <!-- End ROW -->
-        <!-- FIN PREMIERE LIGNE -->
-
-        <!-- DEBUT DEUXIEME LIGNE -->
+<!-- DEBUT DEUXIEME LIGNE -->
         <div class="row rowCustom">
 
             <div class="col l4 m4 s12 colCustom">
@@ -99,7 +102,8 @@
                             <h3> {{ doudous2.titre }}</h3>
                         </div>
                     </a>
-                </div> <!-- End h-item square effect15 top_to_bottom -->
+                </div>
+<!-- End h-item square effect15 top_to_bottom -->
             </div>
 
             <div class="col l4 m4 s12 colCustom center li_accessoires">
@@ -111,7 +115,8 @@
                         </div>
                     </div>
                 </a>
-            </div> <!-- End col l4 m3 s1-->
+            </div>
+<!-- End col l4 m3 s1-->
 
             <div class="col l4 m4 s12 colCustom">
                 <div class="ih-item square effect13 top_to_bottom">
@@ -123,13 +128,14 @@
                             <h3> {{ bijoux.titre }}</h3>
                         </div>
                     </a>
-                </div> <!-- End h-item square effect15 top_to_bottom -->
+                </div>
+<!-- End h-item square effect15 top_to_bottom -->
             </div>
+        </div>
+<!-- End ROW -->
+<!-- FIN DEUXIEME LIGNE -->
 
-        </div> <!-- End ROW -->
-        <!-- FIN DEUXIEME LIGNE -->
-
-        <!-- DEBUT TROISIEME LIGNE -->
+<!-- DEBUT TROISIEME LIGNE -->
         <div class="row rowCustom">
 
             <div class="col l4 m4 s12 colCustom center li_contact">
@@ -141,7 +147,8 @@
                         </div>
                     </div>
                 </a>
-            </div> <!-- End col l4 m3 s1-->
+            </div>
+<!-- End col l4 m3 s1-->
 
             <div class="col l4 m4 s12 colCustom">
                 <div class="ih-item square effect13 top_to_bottom">
@@ -153,7 +160,8 @@
                             <h3> {{ accessoire.titre }}</h3>
                         </div>
                     </a>
-                </div> <!-- End h-item square effect15 top_to_bottom -->
+                </div>
+<!-- End h-item square effect15 top_to_bottom -->
             </div>
 
             <div class="col l4 m4 s12 colCustom center li_whoami">
@@ -165,10 +173,12 @@
                         </div>
                     </div>
                 </a>
-            </div> <!-- End col l4 m3 s1-->
-
-        </div> <!-- End ROW -->
-        <!-- FIN TROISIEME LIGNE -->
-    </div>  <!-- End container -->
-    <!-- FIN Block 9 images -->
+            </div>
+<!-- End col l4 m3 s1-->
+        </div>
+<!-- End ROW -->
+<!-- FIN TROISIEME LIGNE -->
+    </div>
+<!-- End container -->
+<!-- FIN Block 9 images -->
 {% endblock %}

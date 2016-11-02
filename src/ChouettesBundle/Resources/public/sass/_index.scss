@@ -1,8 +1,7 @@
 /****************************/
+/*  Logo & navBar Accueil   */
 /****************************/
-/*  Logo & navBar accueil   */
-/****************************/
-/****************************/
+
 .nb_navbar_logo {
     width: 80% !important;
     height: 80% !important;
@@ -23,11 +22,11 @@
     color: grey;
 }
 
-/****************************/
+
 /****************************/
 /*        row  & col        */
 /****************************/
-/****************************/
+
 .rowCustom {
     padding: 0px !important;
     margin: 0px !important;
@@ -36,14 +35,13 @@
 .colCustom {
     padding:0px !important;
     margin:0px;
-    /*background-color:#dedede;*/
 }
 
-/***************************/
+
 /***************************/
 /* BLOCK avec texte = menu */
 /***************************/
-/***************************/
+
 .colCustom:hover .iMasque {
     display: inline;
 }
@@ -51,6 +49,7 @@
 .iMasque {
     display: none;
 }
+
 
 /* Zone element cliquable*/
 /* non survole */
@@ -62,6 +61,7 @@
     outline: none;
 }
 
+
 /* Zone element cliquable*/
 /* survole */
 .iMasque:hover {
@@ -71,6 +71,7 @@
 .boxMenu {
     padding-top: 15%;
 }
+
 
 /* Titre de la box */
 .h3BoxMenu {
@@ -121,11 +122,12 @@
 .imgChouetteAnimeeSmall {
      width: 50%;
 }
-/****************************/
+
+
 /****************************/
 /* BLOCK avec photo + effet */
 /****************************/
-/****************************/
+
 /* SURCHARGE framework ihover */
 
 .ih-item.square {
@@ -146,12 +148,8 @@
     //background-color: #ddddff !important;
     background: rgba(41, 146, 80, 0.6) !important;
 }
-// Zone titre
+/* Zone titre */
 .ih-item.square.effect13 .info h3 {
     //background-color: #1ad280 !important;
     background-color: rgba(26, 210, 128, 0.8) !important;
 }
-/*.ih-item.square.effect13.colored .info {
-  background: #1a4a72;
-  background: rgba(26, 74, 114, 0.6);
-}*/

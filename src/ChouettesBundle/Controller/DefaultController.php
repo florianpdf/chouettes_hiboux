@@ -9,11 +9,11 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        // Connexion à la BdD
+// Connexion à la BdD
         $em = $this->getDoctrine()->getManager();
-        // Recupération des données CITATIONS
+// Recupération des données CITATIONS
         $citations = $em->getRepository('ChouettesBundle:Citation')->findAll();
-        // Recupération des données MODELE pour les images affichables sur la pages d'accueil
+// Recupération des données MODELE pour les images affichables sur la pages d'accueil
         $modeles = $em->getRepository('ChouettesBundle:Modele')->findBy(array('add_block' => true));
 
 
@@ -21,57 +21,61 @@ class DefaultController extends Controller
             return $this->redirectToRoute('modele_new');
         }
 
-        // -----------------------------------------------------------------------------------------------------
-        // Mise en place random pour afficher aléatoirement les CITATIONS sur la page
-        // d'accueil. Si aucune citation existe dans la base de données on renvoi comme contenu un chaine vide
-        // Dans Default/index.html.twig
-        // -----------------------------------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------------------------------
+// Mise en place random pour afficher aléatoirement les CITATIONS sur la page
+// d'accueil. Si aucune citation existe dans la base de données on renvoi comme contenu un chaine vide
+// Dans Default/index.html.twig
+// -----------------------------------------------------------------------------------------------------
         if (!empty($citations)) {
             $randomcitation = $citations[array_rand($citations)]->getText();
         } else {
             $randomcitation = '';
         }
 
-        // -----------------------------------------------------------------------------------------------------
-        // Mise en place random pour afficher aléatoirement les PHOTOS par CATEGORIES sur la page
-        // d'accueil.
-        // -----------------------------------------------------------------------------------------------------
-        // 1 - Bijoux
-        // 2 - Doudous
-        // 3 - Accessoires
-        // Récuperation des champs contenus dans la variable $modeles
 
-        // Initialisation des variables
+// -----------------------------------------------------------------------------------------------------
+// Mise en place random pour afficher aléatoirement les PHOTOS par CATEGORIES sur la page
+// d'accueil.
+// -----------------------------------------------------------------------------------------------------
+// 1 - Bijoux
+// 2 - Doudous
+// 3 - Accessoires
+// Récuperation des champs contenus dans la variable $modeles
+
+// Initialisation des variables
         $bijoux = array();
         $doudou = array();
         $accessoire = array();
 
-        // Parcours de l'objet modeles
+// Parcours de l'objet modeles
         foreach ($modeles as $modele) {
-            // Isole les modeles catgorie bijoux
+// Isole les modeles catgorie bijoux
             if ($modele->getCategorie()->getNom() == 'Bijoux') {
                 $bijoux[] = $modele;
-            } // Isole les modeles catgorie doudou
+            }
+// Isole les modeles catgorie doudou
             elseif ($modele->getCategorie()->getNom() == 'Doudous') {
                 $doudou[] = $modele;
-            } // Isole les modeles catgorie accessoire
+            }
+// Isole les modeles catgorie accessoire
             else {
                 $accessoire[] = $modele;
             }
         }
 
-        // Choix aléatoire des modèles à afficher
+
+// Choix aléatoire des modèles à afficher
         $randomBijoux = $bijoux[array_rand($bijoux)];
         $indexElimine = array_rand($doudou);
         $randomDoudou = $doudou[$indexElimine];
-        // Attention si un seul elt dans $doudou dans le tableau ou tabl vide
         unset($doudou[$indexElimine]);
         $randomDoudou2 = $doudou[array_rand($doudou)];
         $randomAccessoire = $accessoire[array_rand($accessoire)];
 
-        // -----------------------------------------------------------------------------------------------------
-        // retourne citation et images dans Default/index.html.twig
-        // -----------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------
+// retourne citation et images dans Default/index.html.twig
+// -----------------------------------------------------------------------------------------------------
         return $this->render('@Chouettes/Default/index.html.twig', array(
             'bijoux' => $randomBijoux,
             'doudous' => $randomDoudou,
@@ -80,9 +84,6 @@ class DefaultController extends Controller
             'citation' => $randomcitation
         ));
     }
-
-
-
 
     public function doudousAction()
     {
@@ -128,11 +129,13 @@ class DefaultController extends Controller
     public function sendAction(Request $request)
     {
         $from = $this->getParameter('mailer_user');
+// Instanciation des variables name, firstname, mail, sujet, msg pour récupérer la data
         $name = $request->request->get('nom');
         $firstname = $request->request->get('prenom');
         $mail = $request->request->get('mail');
         $sujet = $request->request->get('Sujet');
         $msg = $request->request->get('msg');
+// Instanciation d'un nouveau message vers l'administrateur avec la prise en compte des variables
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Chouettes')
             ->setFrom(array($from => 'ChouettesHiboux'))
@@ -151,6 +154,7 @@ class DefaultController extends Controller
                 'text/html'
             );
 
+// Instanciation d'un nouveau message vers l'utilisateur avec la prise en compte des variables
         $message2 = \Swift_Message::newInstance()
             ->setSubject('Copie Contact Chouettes')
             ->setFrom(array($from => 'ChouettesHiboux'))
