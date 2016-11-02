@@ -204,6 +204,11 @@ button {
   background-color: RGBA(63, 191, 193, 0.3) !important;
 }
 
+/* line 222, ../sass/_general.scss */
+.errorlog {
+  color: red;
+}
+
 /* line 3, ../sass/_navbar.scss */
 nav {
   height: 120px !important;
@@ -6365,6 +6370,17 @@ blockquote em {
 .expression {
   font-style: italic;
   font-weight: bold;
+}
+
+/* line 36, ../sass/_about.scss */
+.thumbsabout {
+  height: 250px;
+  width: auto;
+}
+
+/* line 41, ../sass/_about.scss */
+.materialboxed {
+  display: initial;
 }
 
 /* line 1, ../sass/_form.scss */
