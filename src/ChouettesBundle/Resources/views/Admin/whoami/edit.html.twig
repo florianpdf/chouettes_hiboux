@@ -25,6 +25,7 @@
                 {{ form_widget(edit_form.image.file) }}
             </div>
             <div class="file-path-wrapper">
+                <img class="responsive-img" src="{{ asset('uploads/images/') }}{{ whoami.image.url }}" alt="{{ whoami.image.alt }}">
                 <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image">
             </div>
             {{ form_errors(edit_form.image.file) }}
