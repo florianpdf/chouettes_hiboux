@@ -22,4 +22,4 @@ class CategorieRepository extends EntityRepository
 
     }
 }
-//SELECT * FROM categorie LEFT JOIN modele ON categorie.id = modele.categorie_id WHERE nom = "Doudous"
+
