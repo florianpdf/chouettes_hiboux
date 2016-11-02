@@ -45,7 +45,7 @@
                 {{ form_widget(form.image.file) }}
             </div>
             <div class="file-path-wrapper">
-                <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image">
+                <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image" required>
             </div>
             {{ form_errors(form.image.file) }}
         </div>
