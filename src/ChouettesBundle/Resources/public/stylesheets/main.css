@@ -204,37 +204,37 @@ button {
   background-color: RGBA(63, 191, 193, 0.3) !important;
 }
 
-<<<<<<< HEAD
 /* line 222, ../sass/_general.scss */
 .errorlog {
   color: red;
-=======
+}
+
 /*-----------------------------------------------------*\
        ERROR      ERROR      ERROR     ERROR
 \*-----------------------------------------------------*/
-/* line 226, ../sass/_general.scss */
+/* line 230, ../sass/_general.scss */
 .error {
   text-align: center;
   font: 16px "Didact Gothic";
   font-size: 20px;
 }
 
-/* line 232, ../sass/_general.scss */
+/* line 236, ../sass/_general.scss */
 .error404 {
   margin-top: 15%;
 }
 
-/* line 236, ../sass/_general.scss */
+/* line 240, ../sass/_general.scss */
 .error403 {
   margin-top: 10%;
 }
 
-/* line 240, ../sass/_general.scss */
+/* line 244, ../sass/_general.scss */
 .error500 {
   margin-top: 15%;
 }
 
-/* line 244, ../sass/_general.scss */
+/* line 248, ../sass/_general.scss */
 .errordiv {
   max-height: 600px;
   float: right;
@@ -242,13 +242,12 @@ button {
   border-radius: 15px;
 }
 
-/* line 251, ../sass/_general.scss */
+/* line 255, ../sass/_general.scss */
 img.error {
   text-align: center;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
->>>>>>> dev
 }
 
 /* line 3, ../sass/_navbar.scss */

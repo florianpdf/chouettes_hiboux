@@ -44,8 +44,8 @@
                 {{ form_widget(edit_form.image.file) }}
             </div>
             <div class="file-path-wrapper">
-                <img class="responsive-img" src="{{ asset('uploads/images/') }}{{ modele.image.url }}" alt="{{ modele.image.alt }}">
-                <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image">
+                <img class="responsive-img thumbs" src="{{ asset('uploads/images/') }}{{ modele.image.url }}" alt="{{ modele.image.alt }}">
+                <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image.">
             </div>
             {{ form_errors(edit_form.image.file) }}
         </div>
