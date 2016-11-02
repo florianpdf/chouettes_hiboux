@@ -447,8 +447,8 @@ blockquote em {
 /****************************/
 /* line 6, ../sass/_index.scss */
 .nb_navbar_logo {
-  width: 50% !important;
-  height: 50% !important;
+  width: 80% !important;
+  height: 80% !important;
   min-width: 300px;
 }
 
