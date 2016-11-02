@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block header %}
+    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% endblock %}
+
+{% block body %}
+
+    <div class="container admin">
+        <div class="row">
+            <div class="col l7 center">
+                <img class="error" src="http://i2.mirror.co.uk/incoming/article6670198.ece/ALTERNATES/s615b/GettyImages-124770990.jpg" />
+            </div>
+            <div class="col l5 center error403">
+                <h1 class="accessoiresindex">Erreur</h1>
+                <div class="error">
+                    <p>Il semble que vous n'ayez pas le droit d'accéder à cette page...</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+{%  endblock %}
+

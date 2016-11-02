@@ -1,15 +1,16 @@
 .imglg {
-  display: block;
-  max-width:500px;
-  max-height:500px;
-  width: auto;
-  height: auto;
+	display: block;
+	max-width:500px;
+	max-height:500px;
+	width: auto;
+	height: auto;
 }
 
 .thumbs {
 	height: 250px;
 	max-height: 250px;
 	width: auto;
+	border-radius: 15px;
 }
 
 .og-grid {
@@ -120,6 +121,7 @@
 	display: inline-block !important;
 	max-height: 100%;
 	max-width: 100%;
+	border-radius: 15px;
 }
 
 .og-details h3 {
@@ -146,6 +148,7 @@
 	letter-spacing: 2px;
 	padding: 10px 20px;
 	border: 3px solid #333;
+	border-radius: 25px;
 	display: inline-block;
 	margin: 30px 0 0;
 	outline: none;

@@ -348,15 +348,14 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
-			this.$href = $( '<a href="#">Voir le tutoriel</a>' );
 
-			var detail_modele = this.$title + this.$description;
-			if (href !=null){
-				detail_modele += this.$href
-			}
+            // On masque ou affiche 'voir le tutoriel' en fonction du lien
+            if (href == '')
+                this.$href = $( '' );
+            else
+                this.$href = $( '<a href="#" target="_blank">Voir le tutoriel</a>' );
 
-
-			this.$details = $( '<div class="og-details"></div>' ).append( detail_modele );
+            this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href);
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );

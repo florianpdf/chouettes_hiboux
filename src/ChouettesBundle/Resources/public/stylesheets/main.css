@@ -204,9 +204,51 @@ button {
   background-color: RGBA(63, 191, 193, 0.3) !important;
 }
 
+<<<<<<< HEAD
 /* line 222, ../sass/_general.scss */
 .errorlog {
   color: red;
+=======
+/*-----------------------------------------------------*\
+       ERROR      ERROR      ERROR     ERROR
+\*-----------------------------------------------------*/
+/* line 226, ../sass/_general.scss */
+.error {
+  text-align: center;
+  font: 16px "Didact Gothic";
+  font-size: 20px;
+}
+
+/* line 232, ../sass/_general.scss */
+.error404 {
+  margin-top: 15%;
+}
+
+/* line 236, ../sass/_general.scss */
+.error403 {
+  margin-top: 10%;
+}
+
+/* line 240, ../sass/_general.scss */
+.error500 {
+  margin-top: 15%;
+}
+
+/* line 244, ../sass/_general.scss */
+.errordiv {
+  max-height: 600px;
+  float: right;
+  padding-right: 0;
+  border-radius: 15px;
+}
+
+/* line 251, ../sass/_general.scss */
+img.error {
+  text-align: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+>>>>>>> dev
 }
 
 /* line 3, ../sass/_navbar.scss */
@@ -261,7 +303,7 @@ nav ul a:hover {
 
 /* line 45, ../sass/_navbar.scss */
 .bijoux {
-  color: #724399;
+  color: #CE4C9A;
   font: 16px "Didact Gothic";
   font-size: 25px;
   font-weight: bold;
@@ -6079,9 +6121,10 @@ blockquote em {
   height: 250px;
   max-height: 250px;
   width: auto;
+  border-radius: 15px;
 }
 
-/* line 15, ../sass/_patchwork_page.scss */
+/* line 16, ../sass/_patchwork_page.scss */
 .og-grid {
   list-style: none;
   padding: 20px 0;
@@ -6090,7 +6133,7 @@ blockquote em {
   width: 100%;
 }
 
-/* line 23, ../sass/_patchwork_page.scss */
+/* line 24, ../sass/_patchwork_page.scss */
 .og-grid li {
   display: inline-block;
   margin: 10px 5px 0 5px;
@@ -6098,7 +6141,7 @@ blockquote em {
   height: 250px;
 }
 
-/* line 30, ../sass/_patchwork_page.scss */
+/* line 31, ../sass/_patchwork_page.scss */
 .og-grid li > a,
 .og-grid li > a img {
   border: none;
@@ -6107,7 +6150,7 @@ blockquote em {
   position: relative;
 }
 
-/* line 38, ../sass/_patchwork_page.scss */
+/* line 39, ../sass/_patchwork_page.scss */
 .og-grid li.og-expanded > a::after {
   top: auto;
   border: solid transparent;
@@ -6122,7 +6165,7 @@ blockquote em {
   margin: -20px 0 0 -15px;
 }
 
-/* line 52, ../sass/_patchwork_page.scss */
+/* line 53, ../sass/_patchwork_page.scss */
 .og-expander {
   position: absolute;
   background: #ddd;
@@ -6135,13 +6178,13 @@ blockquote em {
   overflow: hidden;
 }
 
-/* line 64, ../sass/_patchwork_page.scss */
+/* line 65, ../sass/_patchwork_page.scss */
 .og-expander-inner {
   padding: 50px 30px;
   height: 100%;
 }
 
-/* line 69, ../sass/_patchwork_page.scss */
+/* line 70, ../sass/_patchwork_page.scss */
 .og-close {
   position: absolute;
   width: 40px;
@@ -6151,7 +6194,7 @@ blockquote em {
   cursor: pointer;
 }
 
-/* line 78, ../sass/_patchwork_page.scss */
+/* line 79, ../sass/_patchwork_page.scss */
 .og-close::before,
 .og-close::after {
   content: '';
@@ -6165,20 +6208,20 @@ blockquote em {
   transform: rotate(45deg);
 }
 
-/* line 91, ../sass/_patchwork_page.scss */
+/* line 92, ../sass/_patchwork_page.scss */
 .og-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-/* line 97, ../sass/_patchwork_page.scss */
+/* line 98, ../sass/_patchwork_page.scss */
 .og-close:hover::before,
 .og-close:hover::after {
   background: #333;
 }
 
-/* line 102, ../sass/_patchwork_page.scss */
+/* line 103, ../sass/_patchwork_page.scss */
 .og-fullimg,
 .og-details {
   width: 50%;
@@ -6188,24 +6231,25 @@ blockquote em {
   position: relative;
 }
 
-/* line 111, ../sass/_patchwork_page.scss */
+/* line 112, ../sass/_patchwork_page.scss */
 .og-details {
   padding: 0 40px 0 20px;
 }
 
-/* line 115, ../sass/_patchwork_page.scss */
+/* line 116, ../sass/_patchwork_page.scss */
 .og-fullimg {
   text-align: center;
 }
 
-/* line 119, ../sass/_patchwork_page.scss */
+/* line 120, ../sass/_patchwork_page.scss */
 .og-fullimg img {
   display: inline-block !important;
   max-height: 100%;
   max-width: 100%;
+  border-radius: 15px;
 }
 
-/* line 125, ../sass/_patchwork_page.scss */
+/* line 127, ../sass/_patchwork_page.scss */
 .og-details h3 {
   font: 2vw "butterfly";
   letter-spacing: 3px;
@@ -6215,14 +6259,14 @@ blockquote em {
   color: #3FBFC1;
 }
 
-/* line 134, ../sass/_patchwork_page.scss */
+/* line 136, ../sass/_patchwork_page.scss */
 .og-details p {
   font: 16px "Didact Gothic";
   font-size: 20px;
   color: #999;
 }
 
-/* line 141, ../sass/_patchwork_page.scss */
+/* line 143, ../sass/_patchwork_page.scss */
 .og-details a {
   font-weight: 700;
   font-size: 16px;
@@ -6231,25 +6275,26 @@ blockquote em {
   letter-spacing: 2px;
   padding: 10px 20px;
   border: 3px solid #333;
+  border-radius: 25px;
   display: inline-block;
   margin: 30px 0 0;
   outline: none;
 }
 
-/* line 154, ../sass/_patchwork_page.scss */
+/* line 157, ../sass/_patchwork_page.scss */
 .og-details a::before {
   content: '\2192';
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 160, ../sass/_patchwork_page.scss */
+/* line 163, ../sass/_patchwork_page.scss */
 .og-details a:hover {
   border-color: #999;
   color: #999;
 }
 
-/* line 165, ../sass/_patchwork_page.scss */
+/* line 168, ../sass/_patchwork_page.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -6305,28 +6350,28 @@ blockquote em {
   }
 }
 @media screen and (max-width: 830px) {
-  /* line 200, ../sass/_patchwork_page.scss */
+  /* line 203, ../sass/_patchwork_page.scss */
   .og-expander h3 {
     font-size: 32px;
   }
 
-  /* line 201, ../sass/_patchwork_page.scss */
+  /* line 204, ../sass/_patchwork_page.scss */
   .og-expander p {
     font-size: 13px;
   }
 
-  /* line 202, ../sass/_patchwork_page.scss */
+  /* line 205, ../sass/_patchwork_page.scss */
   .og-expander a {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 208, ../sass/_patchwork_page.scss */
+  /* line 211, ../sass/_patchwork_page.scss */
   .og-fullimg {
     display: none;
   }
 
-  /* line 209, ../sass/_patchwork_page.scss */
+  /* line 212, ../sass/_patchwork_page.scss */
   .og-details {
     float: none;
     width: 100%;
@@ -6502,23 +6547,23 @@ footer.page-footer .footer-copyright {
 @media screen and (min-width: 1024px) {
   /* line 29, ../sass/_footer.scss */
   .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
-    font-size: 25px !important;
+    font-size: 27px !important;
   }
 
   /* line 32, ../sass/_footer.scss */
   .h5footer {
-    font-size: 30px;
+    font-size: 33px;
   }
 }
 @media screen and (max-width: 980px) {
   /* line 38, ../sass/_footer.scss */
   .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
-    font-size: 25px !important;
+    font-size: 27px !important;
   }
 
   /* line 41, ../sass/_footer.scss */
   .h5footer {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   /* line 44, ../sass/_footer.scss */

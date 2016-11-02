@@ -222,3 +222,39 @@ button {
 .errorlog {
 	color: red;
 }
+
+/*-----------------------------------------------------*\
+       ERROR      ERROR      ERROR     ERROR
+\*-----------------------------------------------------*/
+
+.error {
+	text-align: center;
+	font: $font-body;
+	font-size: 20px;
+}
+
+.error404 {
+	margin-top: 15%;
+}
+
+.error403 {
+	margin-top: 10%;
+}
+
+.error500 {
+	margin-top: 15%;
+}
+
+.errordiv {
+	max-height: 600px;
+	float: right;
+	padding-right: 0;
+	border-radius: 15px;
+}
+
+img.error {
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
