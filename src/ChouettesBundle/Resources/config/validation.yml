@@ -1,5 +1,8 @@
 ChouettesBundle\Entity\Image:
     properties:
-        # ...
         file:
-            - Image: ~
+            - Image:
+                maxSize: 1k
+                mimeTypes: [image/*]
+                maxSizeMessage: "The maxmimum allowed file size is 1MB."
+                mimeTypesMessage: "Please upload a valid Image."

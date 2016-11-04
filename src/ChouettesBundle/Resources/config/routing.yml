@@ -6,6 +6,7 @@ user_routing:
     resource: routing/user.yml
     prefix:   /
 
+
 #-----------------------------------------------------------------------------------------------------
 #Appel route admin
 #-----------------------------------------------------------------------------------------------------
@@ -22,6 +23,7 @@ chouettes_citation:
     resource: "@ChouettesBundle/Resources/config/routing/citation.yml"
     prefix:   /admin/citation
 
+
 #-----------------------------------------------------------------------------------------------------
 #Route accueil admin
 #-----------------------------------------------------------------------------------------------------
@@ -29,6 +31,7 @@ chouettes_citation:
 admin_homepage:
     path:     /admin/
     defaults: { _controller: ChouettesBundle:Default:admin }
+
 
 #-----------------------------------------------------------------------------------------------------
 #Route send mail
@@ -38,6 +41,7 @@ send_mail:
     path:     /mail
     defaults: { _controller: ChouettesBundle:Default:send }
     methods: [GET, POST]
+
 
 #-----------------------------------------------------------------------------------------------------
 #Route FosUserBundle

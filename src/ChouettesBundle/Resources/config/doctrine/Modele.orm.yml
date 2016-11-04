@@ -14,9 +14,9 @@ ChouettesBundle\Entity\Modele:
             length: 255
         contenu:
             type: text
-        lien:
-            type: text
-            nullable: true
+#        lien:
+#            type: text
+#            nullable: true
         add_block:
             type: boolean
 

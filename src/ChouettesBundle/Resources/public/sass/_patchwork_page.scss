@@ -1,3 +1,5 @@
+// PATCHWORK PAGES
+
 .imglg {
 	display: block;
 	max-width:500px;
@@ -148,6 +150,7 @@
 	letter-spacing: 2px;
 	padding: 10px 20px;
 	border: 3px solid #333;
+	border-radius: 25px;
 	display: inline-block;
 	margin: 30px 0 0;
 	outline: none;
@@ -196,6 +199,8 @@
 	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
 	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
 }
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 830px) {
 

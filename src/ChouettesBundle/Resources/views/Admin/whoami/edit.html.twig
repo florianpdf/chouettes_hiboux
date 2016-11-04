@@ -13,28 +13,42 @@
     <h1 class="whoadmin">Modifier "Qui suis-je?"</h1>
 
     {{ form_start(edit_form) }}
-        <div class="row textarea tinymce">
-            {{ form_label(edit_form.text) }}
-            {{ form_widget(edit_form.text) }}
-            {{ form_errors(edit_form.text) }}
+
+        <div class="row">
+            <div class="col l12 m12 s12">
+                <div class="row textarea tinymce">
+                    <label for="whoami_text" class="required active">Contenu</label>
+                    {{ form_widget(edit_form.text) }}
+                    {{ form_errors(edit_form.text) }}
+                </div>
+            </div>
         </div>
 
-        <div class="row file-field input-field">
-            <div class="btn">
-                <span>Image</span>
-                {{ form_widget(edit_form.image.file) }}
+        <div class="row">
+            <div class="col l4 m4 s12 center">
+                <img class="responsive-img thumbs" src="{{ asset('uploads/images/') }}{{ whoami.image.url }}" alt="{{ whoami.image.alt }}">
             </div>
-            <div class="file-path-wrapper">
-                <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image">
+
+            <div class="col l8 m8 s12">
+                <div class="row file-field input-field">
+                    <div class="btn">
+                        <span>Image</span>
+                        {{ form_widget(edit_form.image.file) }}
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image">
+                    </div>
+                    {{ form_errors(edit_form.image.file) }}
+                </div>
+                <div class="row input-field">
+                    {{ form_label(edit_form.image.alt) }}
+                    {{ form_widget(edit_form.image.alt) }}
+                    {{ form_errors(edit_form.image.alt) }}
+                </div>
             </div>
-            {{ form_errors(edit_form.image.file) }}
         </div>
 
-        <div class="row input-field">
-            {{ form_label(edit_form.image.alt) }}
-            {{ form_widget(edit_form.image.alt) }}
-            {{ form_errors(edit_form.image.alt) }}
-        </div>
+
 
     <div class="boutons">
         <div class="row">

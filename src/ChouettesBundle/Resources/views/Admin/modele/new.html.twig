@@ -26,14 +26,13 @@
             {{ form_errors(form.contenu) }}
         </div>
 
-        <div class="row textarea">
-            {{ form_label(form.lien) }}
-            {{ form_widget(form.lien) }}
-            {{ form_errors(form.lien) }}
-        </div>
+        {#<div class="row textarea">#}
+            {#{{ form_label(form.lien) }}#}
+            {#{{ form_widget(form.lien) }}#}
+            {#{{ form_errors(form.lien) }}#}
+        {#</div>#}
 
         <div class="row">
-            {#{{ form_label(form.categorie) }}#}
             <label>Catégorie :</label>
             {{ form_widget(form.categorie) }}
             {{ form_errors(form.categorie) }}
@@ -45,7 +44,7 @@
                 {{ form_widget(form.image.file) }}
             </div>
             <div class="file-path-wrapper">
-                <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image">
+                <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image" required>
             </div>
             {{ form_errors(form.image.file) }}
         </div>
@@ -58,21 +57,16 @@
 
         <div class="row input-field">
             {{ form_widget(form.add_block) }}
-            {{ form_label(form.add_block) }}
+            <label for="modele_add_block">Ajouter à l'accueil</label>
             {{ form_errors(form.add_block) }}
         </div>
 
-        <div class="row">
-            <button type="submit" title="Valider"><i class="material-icons contactme">done</i></button>
-        </div>
-
-    {{ form_end(form) }}
-
         <div class="boutons">
-
+            <button type="submit" title="Valider"><i class="material-icons contactme">done</i></button>
             <a href="{{ path('modele_index') }}" title="Revenir à l'accueil"><i class="material-icons contactme">arrow_back</i></a>
             <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons contactme">dashboard</i></a>
-
         </div>
+        {{ form_end(form) }}
+
     </div>
 {% endblock %}

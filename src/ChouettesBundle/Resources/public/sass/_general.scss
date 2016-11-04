@@ -1,5 +1,6 @@
-/*---------------------------------------*\
-            SOMMAIRE
+/*-----------------------------------------------------*\
+	SOMMAIRE	SOMMAIRE	SOMMAIRE	SOMMAIRE
+/*-----------------------------------------------------*\
 FONT______________ Font of website
 GENERAL___________ style general
 MENU______________ Style of NavBar (include)
@@ -10,9 +11,9 @@ CONTACT____________Style page : Formulaire
 ABOUT ____________ Style page : About
 
 
-\*-----------------------------------------*/
-
-       // PALLETTE DE COULEUR             
+/*-----------------------------------------------------*\
+	PALLETTE DE COULEUR		PALLETTE DE COULEUR
+\*-----------------------------------------------------*/
 
 $brown:rgb(185,71,59);
 $red:rgb(236,46,82);
@@ -23,30 +24,20 @@ $yellow:rgb(235,216,29);
 $green:rgb(68,134,60);
 $blue-title:rgb(8,148,175);
 $grey-text:rgb(66,66,66);
-// $filter-gradient:filter-gradient(#f0f9ff, #a1dbff, vertical);
 
-
-
-// @mixin blue-gradient(){
-// 	background-color: rgb(240,249,255); // Old browsers
-// 	@include filter-gradient(#f0f9ff, #a1dbff, vertical); // IE6-9
-// 	@include background-image(linear-gradient(top, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%));
-// }
 
 /*-----------------------------------------------------*\
-       $FONT         FONT        FONT        FONT  
+       FONT         FONT        FONT        FONT
 \*-----------------------------------------------------*/
 
 
 @font-face {
-font-family: 'butterfly';
-src: local('butterfly'), url('../fonts/DK-Butterfly-Ball.otf') format('opentype');
-font-weight: normal;
-font-style: normal;
+	font-family: 'butterfly';
+	src: local('butterfly'), url('../fonts/DK-Butterfly-Ball.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
-// @import "compass/css3/";
-// @include font-face('butterfly', font-files('DK-Butterfly-Ball.otf'));
 $font-body: 16px 'Didact Gothic';
 $font-titre: 2vw 'butterfly';
 
@@ -56,8 +47,6 @@ $font-titre: 2vw 'butterfly';
 	font-size:18px;
 	line-height:22px;
 }
-
-
 
 h1{
 	font: $font-titre;
@@ -77,8 +66,9 @@ h5{
 	color: rgba(87, 73, 73, 0.8);
 }
 
+
 /*-----------------------------------------------------*\
-       GENERAL      GENERAL      GENERAL     GENERAL  
+      GENERAL      GENERAL      GENERAL     GENERAL
 \*-----------------------------------------------------*/
 
 body{
@@ -102,6 +92,7 @@ section{
 	padding: 5px;
 }
 
+
 /*-----------------------------------------------------*\
        ADMIN      ADMIN      ADMIN     ADMIN
 \*-----------------------------------------------------*/
@@ -116,6 +107,11 @@ section{
 .adminmodele {
 	width: 90%;
 	max-width: none;
+}
+
+.bigtxt{
+	max-height: 150px;
+	overflow: auto;
 }
 
 .boutons {
@@ -218,6 +214,11 @@ button {
 .contactindex:hover {
 	background-color: RGBA(63, 191, 193, 0.3) !important;
 }
+
+.errorlog {
+	color: red;
+}
+
 
 /*-----------------------------------------------------*\
        ERROR      ERROR      ERROR     ERROR
