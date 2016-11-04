@@ -64,6 +64,15 @@ class DefaultController extends Controller
             }
         }
 
+// -----------------------------------------------------------------------------------------------------
+// Test si la base de données est suffisament remplie
+// si pas assez de modele dans chaque catégorie redirection vers création
+// nouveau modèle
+// -----------------------------------------------------------------------------------------------------
+        if(empty($accessoire) or empty($bijoux) or count($doudou)<2) {
+            return $this->redirectToRoute('modele_new');
+        }
+
 
 // Choix aléatoire des modèles à afficher
         $randomBijoux = $bijoux[array_rand($bijoux)];
