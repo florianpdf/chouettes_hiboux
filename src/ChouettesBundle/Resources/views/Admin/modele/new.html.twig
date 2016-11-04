@@ -5,12 +5,21 @@
 {% endblock %}
 
 {% block body %}
+
     {{ tinymce_init({'theme': {'simple': {'menubar': false}}}) }}
 
 
 
     <div class="container admin">
     <h1>Création de modèle</h1>
+
+        {#--------- DEBUT Message quand base de données pas assez remplie -------------------------------------#}
+        {% for flash_message in app.session.flashBag.get('notice') %}
+            <div class="flash-notice center">
+                {{ flash_message }}
+            </div>
+        {% endfor %}
+        {#--------- FIN Message quand base de données pas assez remplie -------------------------------------#}
 
     {{ form_start(form) }}
 
