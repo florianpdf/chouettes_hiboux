@@ -30,8 +30,13 @@
         </blockquote>
     {% endif %}
 
-{#---------  CITATION -----------------------------------------------------#}
+{#---------  Message envoi mail OK -----------------------------------------------------#}
 
+    {% for flash_message in app.session.flashBag.get('notice') %}
+        <div class="flash-notice center">
+            {{ flash_message }}
+        </div>
+    {% endfor %}
 
 {#---------  BLOCK 9 images   ---------------------------------------------#}
 <!-- DEBUT Block 9 images -->
