@@ -13,11 +13,21 @@
 
     {{ form_start(edit_form) }}
 
-        <div class="row input-field">
-            {{ form_label(edit_form.titre) }}
-            {{ form_widget(edit_form.titre) }}
-            {{ form_errors(edit_form.titre) }}
+        <div class="row">
+            <div class="col l6 m6 s12">
+                <div class="row input-field">
+                    {{ form_label(edit_form.titre) }}
+                    {{ form_widget(edit_form.titre) }}
+                    {{ form_errors(edit_form.titre) }}
+                </div>
+            </div>
+            <div class="col l6 m6 s12">
+                <label>Catégorie :</label>
+                {{ form_widget(edit_form.categorie) }}
+                {{ form_errors(edit_form.categorie) }}
+            </div>
         </div>
+
 
         <div class="row textarea tinymce">
             {{ form_label(edit_form.contenu) }}
@@ -25,41 +35,44 @@
             {{ form_errors(edit_form.contenu) }}
         </div>
 
-        <div class="row textarea">
-            {{ form_label(edit_form.lien) }}
-            {{ form_widget(edit_form.lien) }}
-            {{ form_errors(edit_form.lien) }}
-        </div>
+        {#<div class="row textarea">#}
+            {#{{ form_label(edit_form.lien) }}#}
+            {#{{ form_widget(edit_form.lien) }}#}
+            {#{{ form_errors(edit_form.lien) }}#}
+        {#</div>#}
+
+
+
 
         <div class="row">
-            {#{{ form_label(form.categorie) }}#}
-            <label>Catégorie :</label>
-            {{ form_widget(edit_form.categorie) }}
-            {{ form_errors(edit_form.categorie) }}
-        </div>
-
-        <div class="row file-field input-field">
-            <div class="btn">
-                <span>Image</span>
-                {{ form_widget(edit_form.image.file) }}
-            </div>
-            <div class="file-path-wrapper">
+            <div class="col l4 m4 s12 center">
                 <img class="responsive-img thumbs" src="{{ asset('uploads/images/') }}{{ modele.image.url }}" alt="{{ modele.image.alt }}">
-                <input class="file-path validate" type="text" placeholder="Cliquez pour ajouter votre image.">
             </div>
-            {{ form_errors(edit_form.image.file) }}
-        </div>
 
-        <div class="row input-field">
-            {{ form_label(edit_form.image.alt) }}
-            {{ form_widget(edit_form.image.alt) }}
-            {{ form_errors(edit_form.image.alt) }}
-        </div>
+            <div class="col l8 m8 s12">
+                <div class="row file-field input-field">
+                    <div class="btn">
+                        <span>Changer l'image</span>
+                        {{ form_widget(edit_form.image.file) }}
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Cliquez pour modifier votre image.">
+                    </div>
+                    {{ form_errors(edit_form.image.file) }}
+                </div>
 
-        <div class="row input-field">
-            {{ form_widget(edit_form.add_block) }}
-            {{ form_label(edit_form.add_block) }}
-            {{ form_errors(edit_form.add_block) }}
+                <div class="row input-field">
+                    {{ form_label(edit_form.image.alt) }}
+                    {{ form_widget(edit_form.image.alt) }}
+                    {{ form_errors(edit_form.image.alt) }}
+                </div>
+
+                <div class="row input-field">
+                    {{ form_widget(edit_form.add_block) }}
+                    <label for="modele_add_block">Ajouter à l'accueil</label>
+                    {{ form_errors(edit_form.add_block) }}
+                </div>
+            </div>
         </div>
         
         {{ form_widget(edit_form) }}
