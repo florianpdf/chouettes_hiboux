@@ -16,12 +16,6 @@ class DefaultController extends Controller
 // Recupération des données MODELE pour les images affichables sur la pages d'accueil
         $modeles = $em->getRepository('ChouettesBundle:Modele')->findBy(array('add_block' => true));
 
-
-        if (empty($modeles)) {
-            return $this->redirectToRoute('modele_new');
-        }
-
-
 // -----------------------------------------------------------------------------------------------------
 // Mise en place random pour afficher aléatoirement les CITATIONS sur la page
 // d'accueil. Si aucune citation existe dans la base de données on renvoi comme contenu un chaine vide
@@ -62,6 +56,23 @@ class DefaultController extends Controller
             else {
                 $accessoire[] = $modele;
             }
+        }
+
+// -----------------------------------------------------------------------------------------------------
+// Test si la base de données est suffisament remplie
+// si pas assez de modele dans chaque catégorie redirection vers création
+// nouveau modèle
+// -----------------------------------------------------------------------------------------------------
+        if(empty($accessoire) or empty($bijoux) or count($doudou)<2) {
+
+// Ajout message pour inviter l'admin à completer sa base de données
+            $this->addFlash(
+                'notice',
+                'Il faut remplir au minimum, 1 modèle bijoux, 1 modèle accessoire et 2 modèles doudous'
+            );
+
+            return $this->redirectToRoute('modele_new');
+
         }
 
 
@@ -174,6 +185,11 @@ class DefaultController extends Controller
             );
         $this->get('mailer')->send($message);
         $this->get('mailer')->send($message2);
+// Ajout message sur page d'accueil pour informé de l'envoi du mail
+        $this->addFlash(
+            'notice',
+            'Votre message a bien été envoyé'
+        );
         return $this->redirectToRoute('chouettes_homepage');
 
     }

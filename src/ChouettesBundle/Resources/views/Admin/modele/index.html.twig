@@ -23,7 +23,7 @@
         <tbody>
         {% for modele in modeles %}
             <tr>
-                <td><img src="{{ asset('uploads/images/') }}{{ modele.image }}" alt="{{ modele.image.alt }}"></td>
+                <td><img class="thumbsindex" src="{{ asset('uploads/images/') }}{{ modele.image }}" alt="{{ modele.image.alt }}"></td>
                 <td>{{ modele.titre }}</td>
                 <td>{{ modele.categorie|raw }}</td>
                 <td><div class="bigtxt">{{ modele.contenu|raw }}</div></td>

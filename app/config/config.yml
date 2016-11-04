@@ -75,7 +75,7 @@ stfalcon_tinymce:
         ## Simple theme: same as default theme
         simple:
             theme: "modern"
-            toolbar1: "insertfile undo redo  | bold italic underline | bullist numlist outdent indent | link image"
+            toolbar1: "insertfile undo redo  | bold italic underline | bullist numlist outdent indent removeformat | link image"
 
 # FOSUser Configuration
 fos_user:
