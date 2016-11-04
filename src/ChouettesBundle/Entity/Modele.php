@@ -28,10 +28,10 @@ class Modele
  */
     private $contenu;
 
-/**
- * @var string
- */
-    private $lien;
+///**
+// * @var string
+// */
+//    private $lien;
 
 /**
  * @var boolean
@@ -107,29 +107,29 @@ class Modele
         return $this->contenu;
     }
 
-/**
- * Set lien
- *
- * @param string $lien
- *
- * @return Modele
- */
-    public function setLien($lien)
-    {
-        $this->lien = $lien;
-
-        return $this;
-    }
-
-/**
- * Get lien
- *
- * @return string
- */
-    public function getLien()
-    {
-        return $this->lien;
-    }
+///**
+// * Set lien
+// *
+// * @param string $lien
+// *
+// * @return Modele
+// */
+//    public function setLien($lien)
+//    {
+//        $this->lien = $lien;
+//
+//        return $this;
+//    }
+//
+///**
+// * Get lien
+// *
+// * @return string
+// */
+//    public function getLien()
+//    {
+//        return $this->lien;
+//    }
 
 /**
  * Set addBlock

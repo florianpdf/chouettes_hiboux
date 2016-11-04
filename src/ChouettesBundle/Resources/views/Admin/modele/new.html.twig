@@ -26,14 +26,13 @@
             {{ form_errors(form.contenu) }}
         </div>
 
-        <div class="row textarea">
-            {{ form_label(form.lien) }}
-            {{ form_widget(form.lien) }}
-            {{ form_errors(form.lien) }}
-        </div>
+        {#<div class="row textarea">#}
+            {#{{ form_label(form.lien) }}#}
+            {#{{ form_widget(form.lien) }}#}
+            {#{{ form_errors(form.lien) }}#}
+        {#</div>#}
 
         <div class="row">
-            {#{{ form_label(form.categorie) }}#}
             <label>Catégorie :</label>
             {{ form_widget(form.categorie) }}
             {{ form_errors(form.categorie) }}
@@ -58,7 +57,7 @@
 
         <div class="row input-field">
             {{ form_widget(form.add_block) }}
-            {{ form_label(form.add_block) }}
+            <label for="modele_add_block">Ajouter à l'accueil</label>
             {{ form_errors(form.add_block) }}
         </div>
 
