@@ -21,7 +21,7 @@
         <tbody>
         {% for whoami in whoamis %}
             <tr>
-                <td><img src="{{ asset('uploads/images/') }}{{ whoami.image }}" alt="{{ whoami.image.alt }}"></td>
+                <td><img class="thumbsindex" src="{{ asset('uploads/images/') }}{{ whoami.image }}" alt="{{ whoami.image.alt }}"></td>
                 <td>{{ whoami.text|raw  }}</td>
                 <td><a href="{{ path('whoami_edit', { 'id': whoami.id }) }}" title="Editer"><i class="material-icons accessoires">edit</i></a></td>
             </tr>

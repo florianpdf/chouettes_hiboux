@@ -218,32 +218,39 @@ button {
   color: red;
 }
 
+/* line 222, ../sass/_general.scss */
+.thumbsindex {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
 /*-----------------------------------------------------*\
        ERROR      ERROR      ERROR     ERROR
 \*-----------------------------------------------------*/
-/* line 227, ../sass/_general.scss */
+/* line 232, ../sass/_general.scss */
 .error {
   text-align: center;
   font: 16px "Didact Gothic";
   font-size: 20px;
 }
 
-/* line 233, ../sass/_general.scss */
+/* line 238, ../sass/_general.scss */
 .error404 {
   margin-top: 15%;
 }
 
-/* line 237, ../sass/_general.scss */
+/* line 242, ../sass/_general.scss */
 .error403 {
   margin-top: 10%;
 }
 
-/* line 241, ../sass/_general.scss */
+/* line 246, ../sass/_general.scss */
 .error500 {
   margin-top: 15%;
 }
 
-/* line 245, ../sass/_general.scss */
+/* line 250, ../sass/_general.scss */
 .errordiv {
   max-height: 600px;
   float: right;
@@ -251,7 +258,7 @@ button {
   border-radius: 15px;
 }
 
-/* line 252, ../sass/_general.scss */
+/* line 257, ../sass/_general.scss */
 img.error {
   text-align: center;
   -webkit-border-radius: 15px;
@@ -6418,9 +6425,10 @@ blockquote em {
 .thumbsabout {
   height: 250px;
   width: auto;
+  border-radius: 15px;
 }
 
-/* line 41, ../sass/_about.scss */
+/* line 42, ../sass/_about.scss */
 .materialboxed {
   display: initial;
 }
