@@ -3,6 +3,7 @@
 namespace ChouettesBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Image
@@ -14,6 +15,13 @@ class Image
         return $this->url;
     }
 
+    /**
+     * @Assert\Image(
+     *     maxSize = '1k',
+     *     mimeTypes = {"image/*"},
+     *     maxSizeMessage = "The maxmimum allowed file size is 1MB.",
+     *     mimeTypesMessage = "Please upload a valid Image.")
+     */
     public $file;
 
     protected function getUploadDir()
