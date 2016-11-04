@@ -71,10 +71,21 @@ section {
   padding: 5px;
 }
 
+/* line 95, ../sass/_general.scss */
+.flash-notice {
+  color: red !important;
+  font: 16px "Didact Gothic";
+  font-size: 20px;
+  background: RGBA(255, 255, 255, 0.6) !important;
+  padding: 15px 0px 15px 0px;
+  margin: 20px 0px;
+  border: 1px solid;
+}
+
 /*-----------------------------------------------------*\
        ADMIN      ADMIN      ADMIN     ADMIN
 \*-----------------------------------------------------*/
-/* line 100, ../sass/_general.scss */
+/* line 110, ../sass/_general.scss */
 .admin {
   background-color: RGBA(255, 255, 255, 0.8);
   margin-top: 15px;
@@ -82,24 +93,24 @@ section {
   border-radius: 15px;
 }
 
-/* line 107, ../sass/_general.scss */
+/* line 117, ../sass/_general.scss */
 .adminmodele {
   width: 90%;
   max-width: none;
 }
 
-/* line 112, ../sass/_general.scss */
+/* line 122, ../sass/_general.scss */
 .bigtxt {
   max-height: 150px;
   overflow: auto;
 }
 
-/* line 117, ../sass/_general.scss */
+/* line 127, ../sass/_general.scss */
 .boutons {
   text-align: center;
 }
 
-/* line 121, ../sass/_general.scss */
+/* line 131, ../sass/_general.scss */
 table {
   font: 16px "Didact Gothic";
   font-size: 18px;
@@ -107,118 +118,118 @@ table {
   table-layout: fixed;
 }
 
-/* line 128, ../sass/_general.scss */
+/* line 138, ../sass/_general.scss */
 tbody tr td {
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* line 134, ../sass/_general.scss */
+/* line 144, ../sass/_general.scss */
 thead th {
   text-align: center;
 }
 
-/* line 140, ../sass/_general.scss */
+/* line 150, ../sass/_general.scss */
 td > img {
   max-height: 200px;
   max-width: 100%;
 }
 
-/* line 145, ../sass/_general.scss */
+/* line 155, ../sass/_general.scss */
 td {
   word-wrap: break-word;
 }
 
-/* line 149, ../sass/_general.scss */
+/* line 159, ../sass/_general.scss */
 button {
   background: none;
   border: none;
 }
 
-/* line 154, ../sass/_general.scss */
+/* line 164, ../sass/_general.scss */
 .citationadmin {
   color: #E93255;
   font: 2vw "butterfly";
 }
 
-/* line 159, ../sass/_general.scss */
+/* line 169, ../sass/_general.scss */
 .catdmin {
   color: #724399;
   font: 2vw "butterfly";
 }
 
-/* line 164, ../sass/_general.scss */
+/* line 174, ../sass/_general.scss */
 .whoadmin {
   color: #468540;
   font: 2vw "butterfly";
 }
 
-/* line 169, ../sass/_general.scss */
+/* line 179, ../sass/_general.scss */
 .fa {
   font-size: medium !important;
 }
 
-/* line 173, ../sass/_general.scss */
+/* line 183, ../sass/_general.scss */
 .card {
   box-shadow: none;
   background-color: transparent;
 }
 
-/* line 178, ../sass/_general.scss */
+/* line 188, ../sass/_general.scss */
 .contactmeadmin {
   font: 2vw "butterfly";
   color: #3FBFC1;
 }
 
-/* line 183, ../sass/_general.scss */
+/* line 193, ../sass/_general.scss */
 .bijouxadmin {
   font: 2vw "butterfly";
   color: #724399;
 }
 
-/* line 188, ../sass/_general.scss */
+/* line 198, ../sass/_general.scss */
 .doudousadmin {
   font: 2vw "butterfly";
   color: #E93255;
 }
 
-/* line 193, ../sass/_general.scss */
+/* line 203, ../sass/_general.scss */
 .accessoiresadmin {
   font: 2vw "butterfly";
   color: #468540;
 }
 
-/* line 198, ../sass/_general.scss */
+/* line 208, ../sass/_general.scss */
 .card.small {
   padding-top: 100px;
 }
 
-/* line 202, ../sass/_general.scss */
+/* line 212, ../sass/_general.scss */
 .login {
   font-size: 20px;
 }
 
-/* line 206, ../sass/_general.scss */
+/* line 216, ../sass/_general.scss */
 .adminlog {
   color: #003E5E;
 }
 
-/* line 210, ../sass/_general.scss */
+/* line 220, ../sass/_general.scss */
 .li_admin:hover {
   background-color: RGBA(0, 62, 94, 0.3) !important;
 }
 
-/* line 214, ../sass/_general.scss */
+/* line 224, ../sass/_general.scss */
 .contactindex:hover {
   background-color: RGBA(63, 191, 193, 0.3) !important;
 }
 
-/* line 218, ../sass/_general.scss */
+/* line 228, ../sass/_general.scss */
 .errorlog {
   color: red;
 }
 
-/* line 222, ../sass/_general.scss */
+/* line 232, ../sass/_general.scss */
 .thumbsindex {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -228,29 +239,29 @@ button {
 /*-----------------------------------------------------*\
        ERROR      ERROR      ERROR     ERROR
 \*-----------------------------------------------------*/
-/* line 232, ../sass/_general.scss */
+/* line 242, ../sass/_general.scss */
 .error {
   text-align: center;
   font: 16px "Didact Gothic";
   font-size: 20px;
 }
 
-/* line 238, ../sass/_general.scss */
+/* line 248, ../sass/_general.scss */
 .error404 {
   margin-top: 15%;
 }
 
-/* line 242, ../sass/_general.scss */
+/* line 252, ../sass/_general.scss */
 .error403 {
   margin-top: 10%;
 }
 
-/* line 246, ../sass/_general.scss */
+/* line 256, ../sass/_general.scss */
 .error500 {
   margin-top: 15%;
 }
 
-/* line 250, ../sass/_general.scss */
+/* line 260, ../sass/_general.scss */
 .errordiv {
   max-height: 600px;
   float: right;
@@ -258,7 +269,7 @@ button {
   border-radius: 15px;
 }
 
-/* line 257, ../sass/_general.scss */
+/* line 267, ../sass/_general.scss */
 img.error {
   text-align: center;
   -webkit-border-radius: 15px;

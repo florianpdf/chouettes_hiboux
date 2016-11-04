@@ -33,9 +33,12 @@
 {#---------  Message envoi mail OK -----------------------------------------------------#}
 
     {% for flash_message in app.session.flashBag.get('notice') %}
-        <div class="flash-notice center">
-            {{ flash_message }}
+        <div class="row container">
+                <div class="flash-notice center">
+                    {{ flash_message }}
+                </div>
         </div>
+
     {% endfor %}
 
 {#---------  BLOCK 9 images   ---------------------------------------------#}
@@ -43,9 +46,6 @@
     <div class="container bckground">
 <!-- DEBUT PREMIERE LIGNE -->
 
-{#{{ dump(doudous) }}#}
-{#{{ dump(doudous2) }}#}
-{#{{ index }}#}
         <div class="row rowCustom">
             <!-Ligne 1 cube 1 -->
             <div class="col l4 m4 s12 colCustom center li_doudous">
@@ -61,8 +61,7 @@
 <!-- End col l4 m3 s1-->
 
 <!- Ligne 1 cube 2 -->
-            <div class="col l4
-            {#Bloc photo categorie#} m4 s12 colCustom">
+            <div class="col l4 m4 s12 colCustom">
                 <div class="ih-item square effect13 top_to_bottom">
                     <a href="{{ path('chouettes_doudous', {'id': doudous.id}) }}">
                         <div>
