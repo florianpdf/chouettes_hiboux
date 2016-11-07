@@ -2,7 +2,7 @@
 
 namespace ChouettesBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
+
 
 /**
  * Modele
@@ -106,30 +106,6 @@ class Modele
     {
         return $this->contenu;
     }
-
-///**
-// * Set lien
-// *
-// * @param string $lien
-// *
-// * @return Modele
-// */
-//    public function setLien($lien)
-//    {
-//        $this->lien = $lien;
-//
-//        return $this;
-//    }
-//
-///**
-// * Get lien
-// *
-// * @return string
-// */
-//    public function getLien()
-//    {
-//        return $this->lien;
-//    }
 
 /**
  * Set addBlock
