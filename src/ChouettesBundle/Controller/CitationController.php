@@ -6,7 +6,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 use ChouettesBundle\Entity\Citation;
-use ChouettesBundle\Form\CitationType;
 
 /**
  * Citation controller.

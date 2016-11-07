@@ -2,8 +2,6 @@
 
 namespace ChouettesBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
 /**
  * Whoami
  */

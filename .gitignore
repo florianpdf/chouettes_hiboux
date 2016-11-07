@@ -7,8 +7,6 @@ app/logs/dev.log
 bin/
 vendor/
 web/bundles/
-.idea
 /composer.lock
 /web/config.php
 /web/uploads/
-
