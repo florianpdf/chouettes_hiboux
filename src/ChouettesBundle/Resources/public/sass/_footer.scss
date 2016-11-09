@@ -14,6 +14,7 @@ footer.page-footer .footer-copyright{
     color:RGBA(87, 73, 73, 0.8);
 }
 
+
 .h5footer{
     font: $font-titre;
     color:#724399;
@@ -50,19 +51,25 @@ footer.page-footer .footer-copyright{
     }
 }
 
-@media screen and (max-width:740px){
-    .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter{
-        font-size:25px!important;
+@media screen and (max-width:740px) {
+    .doudousFooter, .bijouxFooter, .accessoiresFooter, .whoamiFooter, .contactmeFooter {
+        font-size: 25px !important;
     }
-    .h5footer{
-        font-size:30px;
+    .h5footer {
+        font-size: 30px;
     }
-    .responsive-img{
+    .responsive-img {
         width: 30%;
         min-width: 50px;
     }
-    .social{
+    .social {
         width: 100%;
+    }
+    footer.page-footer .footer-copyright {
+        line-height: 20px;
+    }
+    a.back-to-top {
+        display: none !important;
     }
 }
 
@@ -80,9 +87,7 @@ footer.page-footer .footer-copyright{
     .social{
         width: 100%;
     }
-    .chouette2{
-        margin-left:-100px;
-    }
+
 }
 
 @media screen and (max-width:320px){
@@ -98,9 +103,6 @@ footer.page-footer .footer-copyright{
     }
     .social{
         width: 100%;
-    }
-    .chouette2{
-        margin-left:-50px;
     }
 }
 
