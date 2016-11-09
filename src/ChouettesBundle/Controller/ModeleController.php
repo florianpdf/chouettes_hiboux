@@ -64,7 +64,7 @@ class ModeleController extends Controller
  */
     public function editAction(Request $request, Modele $modele)
     {
-        $em = $this->getDoctrine()->getEntityManager();
+        $em = $this->getDoctrine()->getManager();
         $image = $em->getRepository('ChouettesBundle:Image')->findOneById($modele->getImage()->getId());
         $editForm = $this->createForm('ChouettesBundle\Form\ModeleType', $modele);
         $editForm->handleRequest($request);
@@ -85,7 +85,6 @@ class ModeleController extends Controller
         ));
     }
 
-
 /**
  * Deletes a Modele entity.
  *
@@ -94,7 +93,7 @@ class ModeleController extends Controller
     public function deleteAction($id)
     {
         if ($id) {
-            $em = $this->getDoctrine()->getEntityManager();
+            $em = $this->getDoctrine()->getManager();
 // Recherche LE MODELE à supprimer parmi LES MODELES
             $modele = $em->getRepository('ChouettesBundle:Modele')->findOneById($id);
 // Recherche L'IMAGE DU MODELE visé

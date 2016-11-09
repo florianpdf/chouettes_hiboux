@@ -6623,7 +6623,7 @@ footer.page-footer .footer-copyright {
 
   /* line 71, ../sass/_footer.scss */
   a.back-to-top {
-    display: none !important;
+    bottom: 50px !important;
   }
 }
 @media screen and (max-width: 480px) {

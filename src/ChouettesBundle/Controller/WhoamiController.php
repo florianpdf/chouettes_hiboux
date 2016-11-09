@@ -63,7 +63,7 @@ class WhoamiController extends Controller
  */
     public function editAction(Request $request, Whoami $whoami)
     {
-        $em = $this->getDoctrine()->getEntityManager();
+        $em = $this->getDoctrine()->getManager();
         $image = $em->getRepository('ChouettesBundle:Image')->findOneById($whoami->getImage()->getId());
 // Création de la possibilité de DELETE lors de l'édition
         $deleteForm = $this->createDeleteForm($whoami);
@@ -95,7 +95,7 @@ class WhoamiController extends Controller
     public function deleteAction($id)
     {
         if ($id) {
-            $em = $this->getDoctrine()->getEntityManager();
+            $em = $this->getDoctrine()->getManager();
             $whoami = $em->getRepository('ChouettesBundle:Choami')->findOneById($id);
             $em->remove($whoami);
             $em->flush();

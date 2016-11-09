@@ -90,7 +90,7 @@ class CitationController extends Controller
     public function deleteAction($id)
     {
         if ($id) {
-            $em = $this->getDoctrine()->getEntityManager();
+            $em = $this->getDoctrine()->getManager();
             $citation = $em->getRepository('ChouettesBundle:Citation')->findOneById($id);
             $em->remove($citation);
             $em->flush();
