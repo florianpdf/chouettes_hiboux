@@ -2,12 +2,10 @@
 
 namespace ChouettesBundle\Controller;
 
-use ChouettesBundle\Entity\Image;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 use ChouettesBundle\Entity\Modele;
-use ChouettesBundle\Form\ModeleType;
 
 /**
  * Modele controller.
