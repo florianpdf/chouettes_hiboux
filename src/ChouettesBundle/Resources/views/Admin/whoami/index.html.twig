@@ -30,6 +30,11 @@
     </table>
 
         <div class="boutons">
+            {% if whoamis == null %}
+                <a href="{{ path('whoami_new') }}" title="Ajouter un qui suis je"><i class="material-icons accessoires">add_circle</i></a>
+            {% else %}
+
+            {% endif %}
             <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons accessoires">dashboard</i></a>
         </div>
     </div>

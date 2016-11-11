@@ -3,6 +3,12 @@ whoami_index:
     defaults: { _controller: "ChouettesBundle:Whoami:index" }
     methods:  GET
 
+whoami_new:
+    path:     /new
+    defaults: { _controller: "ChouettesBundle:Whoami:new" }
+    methods:  [GET, POST]
+
+
 whoami_edit:
     path:     /{id}/edit
     defaults: { _controller: "ChouettesBundle:Whoami:edit" }
