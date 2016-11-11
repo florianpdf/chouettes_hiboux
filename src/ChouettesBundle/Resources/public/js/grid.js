@@ -353,7 +353,7 @@ var Grid = (function() {
             // if (href == '')
             //     this.$href = $( '' );
             // else
-                this.$href = $( '<a href="contact" target="_blank">Je le veux</a>' );
+                this.$href = $( '<a href="/contact" target="_blank">Je le veux</a>' );
 
             this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href);
 			this.$loading = $( '<div class="og-loading"></div>' );
