@@ -86,8 +86,8 @@ fos_user:
 #lexik maintenance configuration
 lexik_maintenance:
     authorized:
-        path: /                                                         # Optional. Authorized path, accepts regexs
-        ips: ['78.205.106.82']                                 # Optional. Authorized ip addresses
+        path: /                                                                    # Optional. Authorized path, accepts regexs
+        ips: ['78.205.106.82']                                                     # Optional. Authorized ip addresses
 
     driver:
 
@@ -106,10 +106,8 @@ lexik_maintenance:
         class: 'Lexik\Bundle\MaintenanceBundle\Drivers\DatabaseDriver'             # class for database driver
 
         # Option 1 : for doctrine
-        options: {connection: custom}                                            # Optional. You can choice an other connection. Without option it's the doctrine default connection who will be used
+        options: {connection: custom}                                              # Optional. You can choice an other connection. Without option it's the doctrine default connection who will be used
 
-        # Option 2 : for dsn, you must have a column ttl type datetime in your table.
-        options: {dsn: "mysql:dbname=chouettes;host:localhost", table: maintenance, user: root, password: root}  # the dsn configuration, name of table, user/password
 
     #Optional. response code and status of the maintenance page
     response:
