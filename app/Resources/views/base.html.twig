@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html {{ sonata_seo_html_attributes() }} lang="fr">
 
 <!-- Website made by Nathalie Barenghi, Aurore David, Aylin DeVillechenous && Anthony Menet -->
 
-<head>
+<head {{ sonata_seo_head_attributes() }}>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ sonata_seo_title() }}
+
+    {{ sonata_seo_metadatas() }}
+
 
     {% block stylesheets %}
         <link href="{{ asset('favicon.ico')}}" rel="icon" type="image/x-icon" />
@@ -18,12 +20,9 @@
         <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-        <!-- <link href="http://www.fontspace.com/david-kerkhoff/dk-butterfly-ball?text=" rel="stylesheet"> -->
-
         <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     {% endblock %}
 
-    <title>{% block title %}Chouettes Hiboux et Bijoux{% endblock %}</title>
 </head>
 
 

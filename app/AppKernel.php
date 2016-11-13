@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new ChouettesBundle\ChouettesBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Lexik\Bundle\MaintenanceBundle\LexikMaintenanceBundle(),
+            new Sonata\SeoBundle\SonataSeoBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
