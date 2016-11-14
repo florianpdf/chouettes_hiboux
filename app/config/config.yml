@@ -88,8 +88,9 @@ fos_user:
 lexik_maintenance:
     authorized:
 #        path: /                                                                    # Optional. Authorized path, accepts regexs
-        ips: ['78.205.106.82', '82.251.11.246', '176.134.90.40']                                                     # Optional. Authorized ip addresses
+        ips: ['78.205.106.82', '82.251.11.246', '176.134.90.40', '193.251.63.39']
 
+        # 1 ==> Anthony / 2 ==> Sophie / 3 ==> Florian home / 4 ==> wvc
     driver:
 
          # File driver
