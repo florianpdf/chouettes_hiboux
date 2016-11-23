@@ -2,9 +2,12 @@
 
 namespace ChouettesBundle\Form;
 
+use ChouettesBundle\ChouettesBundle;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Serializer\Tests\Model;
 
 
 class ModeleType extends AbstractType
@@ -20,7 +23,12 @@ class ModeleType extends AbstractType
             ->add('contenu', 'textarea', array('attr' => array('class' => 'tinymce')))
 //            ->add('lien')
             ->add('add_block')
-            ->add('categorie')
+            ->add('categorie', EntityType::class, array(
+                'class' => 'ChouettesBundle:Categorie',
+                'choice_label' => 'nom',
+                'placeholder' => 'Selectionnez une categorie',
+                'required' => true
+            ))
             ->add('image', ImageType::class)
         ;
     }
