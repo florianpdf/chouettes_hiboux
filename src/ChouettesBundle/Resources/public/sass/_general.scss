@@ -119,6 +119,10 @@ section{
 	max-width: none;
 }
 
+select{
+	display: block;
+}
+
 .bigtxt{
 	max-height: 150px;
 	overflow: auto;
