@@ -124,8 +124,8 @@ sonata_seo:
         default:          sonata.seo.page.default
         metas:
             name:
-                keywords:             foo bar
-                description:          The description
+                keywords:             bijoux, doudou, laine, peluche
+                description:          Garde toujours dans ta main ton âme d'enfant. Bijoux et Doudous fait main
                 robots:               index, follow
 
             property:
@@ -136,7 +136,7 @@ sonata_seo:
                 # Open Graph information
                 # see http://developers.facebook.com/docs/opengraphprotocol/#types or http://ogp.me/
                 'og:site_name':       Chouettes Hiboux et Bijoux
-                'og:description':     A demo of the some rich bundles for your Symfony2 projects
+                'og:description':     Garde toujours dans ta main ton âme d'enfant. Bijoux et Doudous fait main
 
             http-equiv:
                 'Content-Type':         text/html; charset=utf-8; name=viewport; content=width=device-width, initial-scale=1
