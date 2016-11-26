@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://chouetteshiboux.com/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://chouetteshiboux.com/doudous</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://chouetteshiboux.com/doudous/51</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://chouetteshiboux.com/bijoux</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://chouetteshiboux.com/accessoires</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://chouetteshiboux.com/contact</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://chouetteshiboux.com/about</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://chouetteshiboux.com/login</loc>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>
