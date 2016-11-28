@@ -14,7 +14,7 @@
         <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons contactme">dashboard</i></a>
     </div>
 
-    <table class="responsive-table bordered striped">
+    <table class="responsive-table bordered striped" id="table_id">
         <thead>
             <tr>
                 <th>Image</th>
@@ -45,5 +45,19 @@
     </table>
 
     </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+{{ parent() }}
+
+<script>
+$(document).ready( function () {
+$('#table_id').DataTable();
+} );
+</script>
+
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
 
 {% endblock %}
