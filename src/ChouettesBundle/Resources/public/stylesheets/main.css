@@ -100,7 +100,7 @@ section {
 }
 
 /* line 122, ../sass/_general.scss */
-select {
+#table_id_length select {
   display: block;
 }
 
