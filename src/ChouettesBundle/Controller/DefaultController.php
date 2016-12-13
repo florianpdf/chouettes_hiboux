@@ -106,7 +106,7 @@ class DefaultController extends Controller
 
         $FindModeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Doudous');
         $paginator  = $this->get('knp_paginator');
-        $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 10);
+        $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 20);
 
         return $this->render('@Chouettes/user/doudous.html.twig', array(
             'modeles' => $modeles
@@ -124,7 +124,7 @@ class DefaultController extends Controller
 
         $FindModeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Bijoux');
         $paginator  = $this->get('knp_paginator');
-        $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 10);
+        $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 20);
 
 
         return $this->render('@Chouettes/user/bijoux.html.twig', array(
@@ -137,13 +137,13 @@ class DefaultController extends Controller
 // Ajout PaginatorBundle dans accessoiresAction
 // -----------------------------------------------------------------------------------------------------
 
-    public function accessoiresAction()
+    public function accessoiresAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
         $FindModeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Accessoires');
         $paginator  = $this->get('knp_paginator');
-        $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 10);
+        $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 20);
 
 
         return $this->render('@Chouettes/user/accessoires.html.twig', array(

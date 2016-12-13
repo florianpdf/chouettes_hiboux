@@ -2,12 +2,12 @@
     <ul class="pagination">
         {% if previous is defined %}
             <li class="arrow waves-effect">
-                <a href="{{ path(route, query|merge({(pageParameterName): previous})) }}"><i class="material-icons">chevron_left</i></a>
+                <a href="{{ path(route, query|merge({(pageParameterName): previous})) }}"><i class="material-icons chevron">chevron_left</i></a>
             </li>
         {% else %}
             <li class="arrow waves-effect unavailable">
                 <a>
-                    <i class="material-icons">chevron_left</i>
+                    <i class="material-icons chevron">chevron_left</i>
                 </a>
             </li>
         {% endif %}
@@ -21,20 +21,20 @@
                 </li>
             {% elseif startPage != 2 %}
                 <li class="waves-effect unavailable">
-                    <a>…</a>
+                    <a class="waves-effect">…</a>
                 </li>
             {% endif %}
         {% endif %}
         {% for page in pagesInRange %}
             {% if page != current %}
                 <li>
-                    <a href="{{ path(route, query|merge({(pageParameterName): page})) }}">
+                    <a class="waves-effect unavailable" href={{ path(route, query|merge({(pageParameterName): page})) }}">
                         {{ page }}
                     </a>
                 </li>
             {% else %}
-                <li class="active current">
-                    <a>{{ page }}</a>
+                <li class="active current nextpage">
+                    <a class="waves-effect unavailable">{{ page }}</a>
                 </li>
             {% endif %}
 
@@ -44,7 +44,7 @@
             {% if pageCount > (endPage + 1) %}
                 {% if pageCount > (endPage + 2) %}
                     <li class="waves-effect unavailable">
-                        <a>&hellip;</a>
+                        <a class="waves-effect unavailable">&hellip;</a>
                     </li>
                 {% else %}
                     <li>
@@ -60,15 +60,15 @@
         {% endif %}
 
         {% if next is defined %}
-            <li class="waves-effect arrow">
+            <li class="waves-effect arrow unavailable">
                 <a href="{{ path(route, query|merge({(pageParameterName): next})) }}">
-                    <i class="material-icons">chevron_right</i>
+                    <i class="material-icons chevron">chevron_right</i>
                 </a>
             </li>
         {% else %}
             <li class="arrow waves-effect unavailable">
                 <a>
-                    <i class="material-icons">chevron_right</i>
+                    <i class="material-icons chevron">chevron_right</i>
                 </a>
             </li>
         {% endif %}
