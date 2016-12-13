@@ -6398,6 +6398,12 @@ blockquote em {
     width: 100%;
   }
 }
+/* PAGINATOR - PAGINATION */
+/* line 222, ../sass/_patchwork_page.scss */
+.material-icons {
+  line-height: 30px !important;
+}
+
 /* line 3, ../sass/_about.scss */
 .about_page {
   background-color: RGBA(255, 255, 255, 0.8);
