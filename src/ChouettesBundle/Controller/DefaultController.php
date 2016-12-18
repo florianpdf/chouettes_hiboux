@@ -96,28 +96,56 @@ class DefaultController extends Controller
         ));
     }
 
-    public function doudousAction()
+// -----------------------------------------------------------------------------------------------------
+// Ajout PaginatorBundle dans doudousAction
+// -----------------------------------------------------------------------------------------------------
+
+    public function doudousAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $modeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Doudous');
+
+        $FindModeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Doudous');
+        $paginator  = $this->get('knp_paginator');
+        $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 20);
+
         return $this->render('@Chouettes/user/doudous.html.twig', array(
             'modeles' => $modeles
         ));
     }
 
-    public function bijouxAction()
+
+// -----------------------------------------------------------------------------------------------------
+// Ajout PaginatorBundle dans bijouxAction
+// -----------------------------------------------------------------------------------------------------
+
+    public function bijouxAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $modeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Bijoux');
+
+        $FindModeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Bijoux');
+        $paginator  = $this->get('knp_paginator');
+        $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 20);
+
+
         return $this->render('@Chouettes/user/bijoux.html.twig', array(
             'modeles' => $modeles
         ));
     }
 
-    public function accessoiresAction()
+
+// -----------------------------------------------------------------------------------------------------
+// Ajout PaginatorBundle dans accessoiresAction
+// -----------------------------------------------------------------------------------------------------
+
+    public function accessoiresAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $modeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Accessoires');
+
+        $FindModeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Accessoires');
+        $paginator  = $this->get('knp_paginator');
+        $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 20);
+
+
         return $this->render('@Chouettes/user/accessoires.html.twig', array(
             'modeles' => $modeles
         ));

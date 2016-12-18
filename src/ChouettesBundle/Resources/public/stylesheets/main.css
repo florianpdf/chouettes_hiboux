@@ -6398,6 +6398,29 @@ blockquote em {
     width: 100%;
   }
 }
+/* PAGINATOR - PAGINATION */
+/* line 222, ../sass/_patchwork_page.scss */
+.chevron {
+  line-height: 30px !important;
+  font-size: 55px;
+}
+
+/* line 228, ../sass/_patchwork_page.scss */
+.pagination li {
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 233, ../sass/_patchwork_page.scss */
+.pagination li a {
+  font-size: 2.2rem;
+}
+
+/* line 237, ../sass/_patchwork_page.scss */
+.pagination li.active {
+  height: 31px;
+}
+
 /* line 3, ../sass/_about.scss */
 .about_page {
   background-color: RGBA(255, 255, 255, 0.8);

@@ -216,3 +216,24 @@
 	.og-details { float: none; width: 100%; }
 	
 }
+
+/* PAGINATOR - PAGINATION */
+
+.chevron{
+	line-height: 30px !important;
+	font-size:55px;
+}
+
+
+.pagination li{
+	border-radius: 6px;
+	background-color: rgba(255,255,255,0.6);
+}
+
+.pagination li a{
+	font-size: 2.2rem;
+}
+
+.pagination li.active{
+	height: 31px;
+}
