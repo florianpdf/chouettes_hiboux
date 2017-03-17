@@ -32,7 +32,7 @@
 {% block header %}
 {% endblock %}
 
-
+<body>
 {% block body %}
 {%  endblock %}
 
@@ -80,12 +80,13 @@
         <div class="footer-copyright">
                 © 2016 All Rights Reserved Chouettes Hiboux Doudous | Design by <a href="http://www.wildcodeschool.fr/" target="_blank">WCS</a> | {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
             {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
-            <a href="{{ path('fos_user_security_logout') }}"><i class="fa fa-sign-out"" aria-hidden="true"></i>
+            <a href="{{ path('fos_user_security_logout') }}"><i class="fa fa-sign-out" aria-hidden="true"></i>
             </a>
         {% else %}
             <a href="{{ path('admin_homepage') }}"><i class="fa fa-key" aria-hidden="true"></i></a>
             {% endif %}
         </div>
+    </div>
 </footer>
 
 {% block javascripts %}
@@ -98,7 +99,16 @@
     <script src="{{ asset ('bundles/chouettes/js/grid.js') }}"></script>
     <script src="{{ asset ('bundles/chouettes/js/chouettesHiboux.js') }}"></script>
 
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+        ga('create', 'UA-93951126-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 {% endblock %}
 
 
