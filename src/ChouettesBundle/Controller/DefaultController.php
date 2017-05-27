@@ -104,7 +104,7 @@ class DefaultController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $FindModeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Doudous');
+        $FindModeles = $em->getRepository('ChouettesBundle:Modele')->getDoudouByCateg('Doudous');
         $paginator  = $this->get('knp_paginator');
         $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 20);
 

@@ -12,4 +12,15 @@ use Doctrine\ORM\EntityRepository;
  */
 class ModeleRepository extends EntityRepository
 {
+    public function getDoudouByCateg($categ){
+        $qb = $this->createQueryBuilder('d');
+        $qb->select('d.contenu', 'd.id', 'd.titre')
+            ->join('d.categorie', 'c')
+            ->where('c.nom = :categ')
+            ->join('d.image', 'i')
+            ->addSelect('i.alt as imageAlt', 'i.url as imageUrl')
+            ->orderBy('d.id', 'DESC')
+            ->setParameter('categ', $categ);
+        return $qb->getQuery()->getResult();
+    }
 }
