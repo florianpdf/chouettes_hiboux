@@ -12,7 +12,7 @@
             {% for modele in modeles %}
                 <li>
                     <a href="#" data-largesrc="{{ asset('uploads/images/' ~ modele.imageUrl) }}" class="imglg" data-title="{{ modele.titre }}" data-description="{{ modele.contenu|raw }}">
-                        <img src="{{ asset('uploads/images/' ~ modele.imageUrl) }}" class="thumbs" alt="{{ modele.imageAlt }}"/>
+                        <img src="{{ modele.imageUrl | imagine_filter('my_thumb') }}" class="thumbs" alt="{{ modele.imageAlt }}"/>
                     </a>
                 </li>
             {% endfor %}

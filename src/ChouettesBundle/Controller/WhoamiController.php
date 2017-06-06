@@ -2,10 +2,10 @@
 
 namespace ChouettesBundle\Controller;
 
-use Symfony\Component\HttpFoundation\Request;
+use ChouettesBundle\Entity\Whoami;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-use ChouettesBundle\Entity\Whoami;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Whoami controller.

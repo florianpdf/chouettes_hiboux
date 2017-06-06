@@ -5,6 +5,7 @@ namespace ChouettesBundle\Form;
 use ChouettesBundle\ChouettesBundle;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Serializer\Tests\Model;
@@ -20,7 +21,7 @@ class ModeleType extends AbstractType
     {
         $builder
             ->add('titre')
-            ->add('contenu', 'textarea', array('attr' => array('class' => 'tinymce')))
+            ->add('contenu', TextareaType::class, array('attr' => array('class' => 'tinymce')))
 //            ->add('lien')
             ->add('add_block')
             ->add('categorie', EntityType::class, array(

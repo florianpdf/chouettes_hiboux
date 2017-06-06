@@ -2,10 +2,10 @@
 
 namespace ChouettesBundle\Controller;
 
-use Symfony\Component\HttpFoundation\Request;
+use ChouettesBundle\Entity\Citation;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-use ChouettesBundle\Entity\Citation;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Citation controller.

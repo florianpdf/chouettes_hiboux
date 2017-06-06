@@ -65,7 +65,7 @@
                 <div class="ih-item square effect13 top_to_bottom">
                     <a href="{{ path('chouettes_doudous', {'id': doudous.id}) }}">
                         <div>
-                            <img class='imgDamier' src="{{asset('uploads/images/')}}{{ doudous.image.url }}" alt="{{ doudous.image.alt }}">
+                            <img class='imgDamier' src="{{ doudous.image.url | imagine_filter('my_thumb') }}" alt="{{ doudous.image.alt }}">
                         </div>
                         <div class="info">
                             <h3> {{ doudous.titre }}</h3>
@@ -99,7 +99,7 @@
 
                     <a href="{{ path ('chouettes_doudous') }}">
                         <div>
-                            <img class='imgDamier' src="{{asset('uploads/images/')}}{{doudous2.image.url }}" alt="{{ doudous2.image.alt }}">
+                            <img class='imgDamier' src="{{ doudous2.image.url | imagine_filter('my_thumb') }}" alt="{{ doudous2.image.alt }}">
                         </div>
                         <div class="info">
                             {#<h3>Grands doudous</h3>#}
@@ -126,7 +126,7 @@
                 <div class="ih-item square effect13 top_to_bottom">
                     <a href="{{ path ('chouettes_bijoux') }}">
                         <div>
-                            <img class='imgDamier' src="{{asset('uploads/images/')}}{{bijoux.image.url }}" alt="{{ bijoux.image.alt }}">
+                            <img class='imgDamier' src="{{ bijoux.image.url | imagine_filter('my_thumb') }}" alt="{{ bijoux.image.alt }}">
                         </div>
                         <div class="info">
                             <h3> {{ bijoux.titre }}</h3>
