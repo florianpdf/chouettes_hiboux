@@ -7,35 +7,147 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://chouetteshiboux.com/</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://chouetteshiboux.com/</loc>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://chouetteshiboux.com/doudous</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://chouetteshiboux.com/doudous</loc>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://chouetteshiboux.com/doudous/51</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://chouetteshiboux.com/bijoux</loc>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://chouetteshiboux.com/bijoux</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://chouetteshiboux.com/accessoires</loc>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://chouetteshiboux.com/accessoires</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://chouetteshiboux.com/contact</loc>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://chouetteshiboux.com/contact</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://chouetteshiboux.com/about</loc>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://chouetteshiboux.com/about</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://chouetteshiboux.com/doudous?page=2"</loc>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://chouetteshiboux.com/login</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://chouetteshiboux.com/doudous?page=3"</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/doudous?page=4"</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/doudous?page=5"</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/doudous?page=6</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/doudous?page=2</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=2"</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=3"</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=4"</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=5"</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=6</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=7</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=2</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/accessoires?page=2"</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/accessoires?page=2</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/doudous?page=1</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/doudous?page=1"</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/doudous?page=3</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/doudous?page=4</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/doudous?page=6"</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/doudous?page=5</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=1</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=1"</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=3</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=4</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=6"</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=5</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/bijoux?page=7"</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/accessoires?page=1</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chouetteshiboux.com/accessoires?page=1"</loc>
+  <priority>0.51</priority>
 </url>
 </urlset>
