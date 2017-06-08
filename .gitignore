@@ -5,7 +5,7 @@ app/cache/dev/
 app/config/parameters.yml
 app/logs/dev.log
 bin/
-vendor/
+/vendor/
 web/bundles/
 /composer.lock
 /web/config.php

@@ -1,3 +1,16 @@
+@charset "UTF-8";
+
+
+/////
+/// MATERIALIZE
+//////
+
+@import "../vendor/_materialize.scss";
+
+///////
+/// Personnal style
+///////
+
 @import "_general.scss";
 @import "_navbar.scss";
 @import "_citation.scss";
