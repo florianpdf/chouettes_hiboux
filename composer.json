@@ -26,7 +26,6 @@
         "stfalcon/tinymce-bundle": "2.0",
         "lexik/maintenance-bundle": "dev-master",
         "friendsofsymfony/user-bundle": "~2.0",
-        "sonata-project/seo-bundle": "^2.0",
         "knplabs/knp-paginator-bundle": "^2.5",
         "liip/imagine-bundle": "^1.8"
     },
