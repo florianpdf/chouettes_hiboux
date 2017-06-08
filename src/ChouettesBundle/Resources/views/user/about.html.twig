@@ -1,24 +1,18 @@
 {% extends 'base.html.twig' %}
 
-{% block header %}
-    {% include '@Chouettes/Default/navbar.html.twig' %}
+{% block title %}
+    About me -
 {% endblock %}
 
 {% block body %}
-
 <div class="container about_page">
     <h2>Qui suis-je?</h2>
     <div class="row">
         <div class="col l12 m12 s12 center">
-                {% for whoami in whoamis %}
-                    <img src="{{ asset('uploads/images/') }}{{ whoami.image }}" class="thumbsabout materialboxed"  alt="{{ whoami.image.alt }}"/>
+            <img src="{{ asset('uploads/images/' ~ whoami.image) }}" class="thumbsabout materialboxed"  alt="{{ whoami.alt }}"/>
         </div>
-
         <div class="col l12 m12 s12">
-            <p>
-                {{ whoami.text|raw }}
-            </p>
-                {% endfor %}
+            {{ whoami.text|raw }}
         </div>
     </div>
 </div>

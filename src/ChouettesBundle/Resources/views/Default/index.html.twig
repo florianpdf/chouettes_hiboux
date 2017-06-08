@@ -1,7 +1,8 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-    <div>
+{% block header %}
+
+    <header>
         <nav>
             <div class="nav-wrapper">
                 <a href="{{ path ('chouettes_homepage') }}" class="brand-logo center">
@@ -9,15 +10,18 @@
                 </a>
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     <div class="logadmin">
-                   <a href="{{ path('admin_homepage') }}" class="adminlog"><i class="fa fa-th fa-3x" aria-hidden="true" title="Accéder à l'administration"></i></a>
+                        <a href="{{ path('admin_homepage') }}" class="adminlog"><i class="fa fa-th fa-3x" aria-hidden="true" title="Accéder à l'administration"></i></a>
                     </div>
                 {% else %}
 
                 {% endif %}
             </div>
         </nav>
-    </div>
+    </header>
 
+{% endblock %}
+
+{% block body %}
 
 {#--------- CITATION ------------------------------------------------------#}
 {# Si pas de citation dans la base de données le blockquote n'est pas affiché #}
@@ -34,9 +38,9 @@
 
     {% for flash_message in app.session.flashBag.get('notice') %}
         <div class="row container">
-                <div class="flash-notice center">
-                    {{ flash_message }}
-                </div>
+            <div class="flash-notice center">
+                {{ flash_message }}
+            </div>
         </div>
 
     {% endfor %}
@@ -47,20 +51,20 @@
 <!-- DEBUT PREMIERE LIGNE -->
 
         <div class="row rowCustom">
-            <!-Ligne 1 cube 1 -->
+            <!-- Ligne 1 cube 1 -->
             <div class="col l4 m4 s12 colCustom center li_doudous">
                 <a href="{{ path('chouettes_doudous') }}">
                     <div class="boxMenu">
-                        <h3 class="h3BoxMenu doudousindex">Doudous</h3>
+                        <h1 class="h3BoxMenu doudousindex">Doudous</h1>
                         <div class="center notForSmall">
-                            <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/doudous-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/doudoux-chouette1.png') }}"/>
+                            <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/doudous-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/doudoux-chouette1.png') }}" alt="chouette_doudous"/>
                         </div>
                     </div>
                 </a>
             </div>
 <!-- End col l4 m3 s1-->
 
-<!- Ligne 1 cube 2 -->
+<!-- Ligne 1 cube 2 -->
             <div class="col l4 m4 s12 colCustom">
                 <div class="ih-item square effect13 top_to_bottom">
                     <a href="{{ path('chouettes_doudous', {'id': doudous.id}) }}">
@@ -75,13 +79,13 @@
 <!-- End h-item square effect15 top_to_bottom -->
             </div>
 
-<!- Ligne 1 cube 3 -->
+<!-- Ligne 1 cube 3 -->
             <div class="col l4 m4 s12 colCustom center li_bijoux">
                 <a href="{{ path ('chouettes_bijoux') }}">
                     <div class="boxMenu">
-                        <h3 class="h3BoxMenu bijouxindex">Bijoux</h3>
+                        <h1 class="h3BoxMenu bijouxindex">Bijoux</h1>
                         <div class="center notForSmall">
-                            <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/bijoux-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/bijoux-chouette1.png') }}"/>
+                            <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/bijoux-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/bijoux-chouette1.png') }}" alt="chouette_bijoux"/>
                         </div>
                     </div>
                 </a>
@@ -113,9 +117,9 @@
             <div class="col l4 m4 s12 colCustom center li_accessoires">
                 <a href="{{ path ('chouettes_accessoires') }}">
                     <div class="boxMenu">
-                        <h3 class="h3BoxMenu accessoiresindex">Accessoires</h3>
+                        <h1 class="h3BoxMenu accessoiresindex">Accessoires</h1>
                         <div class="center notForSmall">
-                            <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/accessoires-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/accessoires-chouette1.png') }}"/>
+                            <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/accessoires-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/accessoires-chouette1.png') }}" alt="chouette_accessoires"/>
                         </div>
                     </div>
                 </a>
@@ -145,9 +149,9 @@
             <div class="col l4 m4 s12 colCustom center li_contact">
                 <a href="{{ path ('chouettes_contact') }}">
                     <div class="boxMenu">
-                        <h3 class="h3BoxMenu contactindex">Contact</h3>
+                        <h1 class="h3BoxMenu contactindex">Contact</h1>
                         <div class="center notForSmall">
-                            <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/contact-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/contact-chouette1.png') }}"/>
+                            <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/contact-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/contact-chouette1.png') }}" alt="chouette_contact"/>
                         </div>
                     </div>
                 </a>
@@ -171,9 +175,9 @@
             <div class="col l4 m4 s12 colCustom center li_whoami">
                 <a href="{{ path ('chouettes_about') }}">
                     <div class="boxMenu">
-                        <h3 class="h3BoxMenu whoamiindex">Qui suis-je</h3>
+                        <h1 class="h3BoxMenu whoamiindex">Qui suis-je</h1>
                         <div class="center notForSmall">
-                            <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/whoiam-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/whoiam-chouette1.png') }}"/>
+                            <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/whoiam-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/whoiam-chouette1.png') }}" alt="chouette_about"/>
                         </div>
                     </div>
                 </a>

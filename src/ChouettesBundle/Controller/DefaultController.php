@@ -154,9 +154,9 @@ class DefaultController extends Controller
     public function aboutAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $whoamis = $em->getRepository("ChouettesBundle:Whoami")->findAll();
+        $whoamis = $em->getRepository("ChouettesBundle:Whoami")->getProfilInfo();
         return $this->render('@Chouettes/user/about.html.twig', array(
-            'whoamis'=>$whoamis
+            'whoami'=>$whoamis
         ));
     }
 

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html {{ sonata_seo_html_attributes() }} lang="fr">
+<html lang="fr">
 
 <!-- Website made by Nathalie Barenghi, Aurore David, Aylin DeVillechenous && Anthony Menet -->
 
-<head {{ sonata_seo_head_attributes() }}>
+<head>
 
-    {{ sonata_seo_title() }}
-
-    {{ sonata_seo_metadatas() }}
+    <meta name="description" content="Garde toujours dans ta main ton âme d'enfant. Bijoux et Doudous fait main" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
 
     <meta name="google-site-verification" content="aN3yR8AveXHqYpYIgz70GFTQZLOCmGO_Nx_MIHKDsyA" />
+
+    <title>{% block title %}{% endblock %} Chouettes, Hiboux et Doudous</title>
+
     {% block stylesheets %}
         <link href="{{ asset('favicon.ico')}}" rel="icon" type="image/x-icon" />
         <!-- Compiled and minified CSS -->
@@ -26,91 +29,120 @@
 
 </head>
 
-
-
-
-{% block header %}
-{% endblock %}
-
 <body>
-{% block body %}
-{%  endblock %}
 
+    {% block header %}
+        <header>
+            <div>
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="{{ path ('chouettes_homepage') }}" class="brand-logo chouetteHibouxLogo">
+                            <img src="{{ asset ('bundles/chouettes/images/logo2min.png') }}" alt="Chouettes Hiboux Doudous" class="navbar_logo">
+                        </a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse">
+                            <i class="large material-icons grey-text text-darken-3">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down full_nav">
+                            <li class="li_doudous"><a href="{{ path ('chouettes_doudous') }}" class="doudous">Doudous</a></li>
+                            <li class="li_bijoux"><a href="{{ path ('chouettes_bijoux') }}" class="bijoux">Bijoux</a></li>
+                            <li class="li_accessoires"><a href="{{ path ('chouettes_accessoires') }}" class="accessoires">Accessoires</a></li>
+                            <li class="li_whoami"><a href="{{ path ('chouettes_about') }}" class="whoami">Qui suis-je ?</a></li>
+                            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                                <li class="li_admin"><a href="{{ path('admin_homepage') }}" class="adminlog">Admin</a> </li>
+                            {% endif %}
+                        </ul>
 
-
-<footer class="page-footer">
-    <div class="container">
-        <div class="row" id="row-footer">
-            <div class="col l3 m3 s12 center">
-                <h5 class = "h5footer">Catégories</h5>
-                <ul>
-                    <li><a class="doudousFooter" href="{{ path ('chouettes_doudous') }}">Les doudous</a></li>
-                    <li><a class="bijouxFooter" href="{{ path ('chouettes_bijoux') }}">Les bijoux</a></li>
-                    <li><a class="accessoiresFooter" href="{{ path ('chouettes_accessoires') }}">Les accessoires</a></li>
-                </ul>
-            </div>
-            <div class="col l3 m3 s12 center">
-                <h5 class = "h5footer">A propos</h5>
-                <ul>
-                    <li><a class="whoamiFooter" href="{{ path ('chouettes_about') }}">Qui suis-je ?</a></li>
-                </ul>
-            </div>
-            <div class="col l3 m3 s12 center">
-                <h5 class = "h5footer">Contact</h5>
-                <ul>
-                    <li><a class="contactmeFooter" href="{{ path ('chouettes_contact') }}">M'écrire</a></li>
-                </ul>
-            </div>
-            <div class="col l3 m3 s12 center">
-                <h5 class = "h5footer">Me suivre </h5>
-                <div class="row">
-                    <div class="col l6 m6 s6 xs6 center">
-                        <a class="responsive-img social" href="https://www.facebook.com/leshibouxdesophie/" target = _blank><img class="responsive-img" data-alt-src="{{ asset ('bundles/chouettes/images/chouettefVerteOuvert.png') }}" src="{{ asset ('bundles/chouettes/images/chouettefVerteFerme.png') }}" /></a>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li class="li_accueil"><a href="{{ path ('chouettes_homepage') }}" class="accueil">Accueil</a></li>
+                            <li class="li_doudous"><a href="{{ path ('chouettes_doudous') }}" class="doudous">Doudous</a></li>
+                            <li class="li_bijoux"><a href="{{ path ('chouettes_bijoux') }}" class="bijoux">Bijoux</a></li>
+                            <li class="li_accessoires"><a href="{{ path ('chouettes_accessoires') }}" class="accessoires">Accessoires</a></li>
+                            <li class="li_whoami"><a href="{{ path ('chouettes_about') }}" class="whoami">Qui suis-je ?</a></li>
+                            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                                <li class="li_admin"><a href="{{ path('admin_homepage') }}" class="adminlog">Admin</a> </li>
+                            {% endif %}
+                        </ul>
                     </div>
-                    <div class="col l6 m6 s6 xs6 center">
-                        <a class="responsive-img social chouette2" href="https://www.instagram.com/sophiesandrine/" target = _blank><img class="responsive-img" data-alt-src="{{ asset ('bundles/chouettes/images/chouettefVioletOuvert.png') }}" src="{{ asset ('bundles/chouettes/images/chouettefVioletFerme.png') }}" /></a>
+                </nav>
+            </div>
+        </header>
+    {% endblock %}
+
+
+    {% block body %}
+    {% endblock %}
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row" id="row-footer">
+                <div class="col l3 m3 s12 center">
+                    <h5 class = "h5footer">Catégories</h5>
+                    <ul>
+                        <li><a class="doudousFooter" href="{{ path ('chouettes_doudous') }}">Les doudous</a></li>
+                        <li><a class="bijouxFooter" href="{{ path ('chouettes_bijoux') }}">Les bijoux</a></li>
+                        <li><a class="accessoiresFooter" href="{{ path ('chouettes_accessoires') }}">Les accessoires</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 m3 s12 center">
+                    <h5 class = "h5footer">A propos</h5>
+                    <ul>
+                        <li><a class="whoamiFooter" href="{{ path ('chouettes_about') }}">Qui suis-je ?</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 m3 s12 center">
+                    <h5 class = "h5footer">Contact</h5>
+                    <ul>
+                        <li><a class="contactmeFooter" href="{{ path ('chouettes_contact') }}">M'écrire</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 m3 s12 center">
+                    <h5 class = "h5footer">Me suivre </h5>
+                    <div class="row">
+                        <div class="col l6 m6 s6 xs6 center">
+                            <a class="responsive-img social" href="https://www.facebook.com/leshibouxdesophie/" target = _blank><img class="responsive-img" data-alt-src="{{ asset ('bundles/chouettes/images/chouettefVerteOuvert.png') }}" src="{{ asset ('bundles/chouettes/images/chouettefVerteFerme.png') }}" alt="facebook_logo"/></a>
+                        </div>
+                        <div class="col l6 m6 s6 xs6 center">
+                            <a class="responsive-img social chouette2" href="https://www.instagram.com/sophiesandrine/" target = _blank><img class="responsive-img" data-alt-src="{{ asset ('bundles/chouettes/images/chouettefVioletOuvert.png') }}" src="{{ asset ('bundles/chouettes/images/chouettefVioletFerme.png') }}" alt="instagram_logo" /></a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="connect">
+
+            </div>
+
+            <div class="footer-copyright">
+                    © 2016 All Rights Reserved Chouettes Hiboux Doudous | Design by <a href="http://www.wildcodeschool.fr/" target="_blank">WCS</a> | {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+                <a href="{{ path('fos_user_security_logout') }}"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                </a>
+            {% else %}
+                <a href="{{ path('admin_homepage') }}"><i class="fa fa-key" aria-hidden="true"></i></a>
+                {% endif %}
+            </div>
         </div>
-        <div class="connect">
+    </footer>
 
-        </div>
+    {% block javascripts %}
+        <!--  Scripts-->
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="{{ asset ('bundles/chouettes/js/materialize.js') }}"></script>
+        <script src="{{ asset ('bundles/chouettes/js/modernizr.custom.js') }}"></script>
+        <script src="{{ asset ('bundles/chouettes/js/grid.js') }}"></script>
+        <script src="{{ asset ('bundles/chouettes/js/chouettesHiboux.js') }}"></script>
 
-        <div class="footer-copyright">
-                © 2016 All Rights Reserved Chouettes Hiboux Doudous | Design by <a href="http://www.wildcodeschool.fr/" target="_blank">WCS</a> | {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-            {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
-            <a href="{{ path('fos_user_security_logout') }}"><i class="fa fa-sign-out" aria-hidden="true"></i>
-            </a>
-        {% else %}
-            <a href="{{ path('admin_homepage') }}"><i class="fa fa-key" aria-hidden="true"></i></a>
-            {% endif %}
-        </div>
-    </div>
-</footer>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-{% block javascripts %}
-    <!--  Scripts-->
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="{{ asset ('bundles/chouettes/js/materialize.js') }}"></script>
-    <script src="{{ asset ('bundles/chouettes/js/init.js') }}"></script>
-    <script src="{{ asset ('bundles/chouettes/js/modernizr.custom.js') }}"></script>
-    <script src="{{ asset ('bundles/chouettes/js/grid.js') }}"></script>
-    <script src="{{ asset ('bundles/chouettes/js/chouettesHiboux.js') }}"></script>
+            ga('create', 'UA-93951126-1', 'auto');
+            ga('send', 'pageview');
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-93951126-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-{% endblock %}
-
+        </script>
+    {% endblock %}
 
 </body>
 </html>

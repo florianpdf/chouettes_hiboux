@@ -80,7 +80,6 @@ $(document).ready(function(){
     $(".button-collapse").sideNav();}
 );
 
-
 //***********************************//
 //         GRID DROP DOWN            //
 //***********************************//

@@ -19,7 +19,6 @@ class AppKernel extends Kernel
             new ChouettesBundle\ChouettesBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Lexik\Bundle\MaintenanceBundle\LexikMaintenanceBundle(),
-            new Sonata\SeoBundle\SonataSeoBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
         );

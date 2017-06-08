@@ -12,4 +12,15 @@ use Doctrine\ORM\EntityRepository;
  */
 class WhoamiRepository extends EntityRepository
 {
+    /**
+     * Get profil and picture
+     * @return mixed
+     */
+    public function getProfilInfo(){
+        $qb = $this->createQueryBuilder('w');
+        $qb->select('w.text as text')
+            ->join('w.image', 'i')
+            ->addSelect('i.url as image', 'i.alt as alt');
+        return $qb->getQuery()->getSingleResult();
+    }
 }
