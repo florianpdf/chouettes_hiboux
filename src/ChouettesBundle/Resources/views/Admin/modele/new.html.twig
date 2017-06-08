@@ -55,6 +55,12 @@
         </div>
 
         <div class="row input-field">
+            {{ form_label(form.facebook_description) }}
+            {{ form_widget(form.facebook_description) }}
+            {{ form_errors(form.facebook_description) }}
+        </div>
+
+        <div class="row input-field">
             {{ form_widget(form.add_block) }}
             <label for="modele_add_block">Ajouter à l'accueil</label>
             {{ form_errors(form.add_block) }}

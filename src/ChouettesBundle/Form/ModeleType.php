@@ -6,6 +6,7 @@ use ChouettesBundle\ChouettesBundle;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Serializer\Tests\Model;
@@ -31,6 +32,10 @@ class ModeleType extends AbstractType
                 'required' => true
             ))
             ->add('image', ImageType::class)
+            ->add('facebook_description', TextType::class, array(
+                'mapped' => false,
+                'required' => true
+            ))
         ;
     }
     

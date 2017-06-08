@@ -27,7 +27,8 @@
         "lexik/maintenance-bundle": "dev-master",
         "friendsofsymfony/user-bundle": "~2.0",
         "knplabs/knp-paginator-bundle": "^2.5",
-        "liip/imagine-bundle": "^1.8"
+        "liip/imagine-bundle": "^1.8",
+        "facebook/graph-sdk": "^5.5"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",

@@ -47,6 +47,12 @@ class ModeleController extends Controller
 // Actually executes the queries (i.e. the INSERT query).
             $em->flush();
 
+            $picture = [
+                'caption' => $_REQUEST['modele']['facebook_description'] . "\n \n Retrouvez nous sur https://www.chouetteshiboux.com/",
+                'source' => $modele->getImage()->getAbsolutePath(),
+            ];
+            $this->get('app_core.facebook')->postPicture($picture);
+
             return $this->redirectToRoute('modele_index', array('id' => $modele->getId()));
         }
 

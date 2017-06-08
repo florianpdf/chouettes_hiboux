@@ -9,6 +9,10 @@ imports:
 parameters:
     locale: fr
     http_protocol: http
+    fb_app_id: "%facebook_app_id%"
+    fb_app_secret: "%facebook_app_secret%"
+    fb_page_id: "%facebook_page_id%"
+    fb_token: "%facebook_token%"
 
 framework:
     #esi:             ~
