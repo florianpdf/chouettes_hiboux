@@ -10,4 +10,4 @@ web/bundles/
 /composer.lock
 /web/config.php
 /web/uploads/
-/web/media/cache/my_thumb/*
+/web/media/cache/*
