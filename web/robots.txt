@@ -4,3 +4,9 @@
 User-agent: *
 Disallow: /admin
 Noindex: /admin
+Disallow: /doudous/*
+Noindex: /doudous/*
+Disallow: /bijoux/*
+Noindex: /bijoux/*
+Disallow: /accessoires/*
+Noindex: /accessoires/*
