@@ -9,7 +9,7 @@
     <h2>Qui suis-je?</h2>
     <div class="row">
         <div class="col l12 m12 s12 center">
-            <img src="{{ asset('uploads/images/' ~ whoami.image) }}" class="thumbsabout materialboxed"  alt="{{ whoami.alt }}"/>
+            <img src="{{ whoami.image | imagine_filter('my_thumb') }}" class="thumbsabout materialboxed"  alt="{{ whoami.alt }}"/>
         </div>
         <div class="col l12 m12 s12">
             {{ whoami.text|raw }}

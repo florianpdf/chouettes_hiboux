@@ -57,7 +57,7 @@
                     <div class="boxMenu">
                         <h1 class="h3BoxMenu doudousindex">Doudous</h1>
                         <div class="center notForSmall">
-                            <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/doudous-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/doudoux-chouette1.png') }}" alt="chouette_doudous"/>
+                            <img class="imgChouetteAnimee" data-alt-src="{{ 'doudous-chouette2.png' | imagine_filter('thumb_fixe') }}" src="{{ 'doudoux-chouette1.png' | imagine_filter('thumb_fixe') }}" alt="doudous fait main"/>
                         </div>
                     </div>
                 </a>
@@ -85,7 +85,7 @@
                     <div class="boxMenu">
                         <h1 class="h3BoxMenu bijouxindex">Bijoux</h1>
                         <div class="center notForSmall">
-                            <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/bijoux-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/bijoux-chouette1.png') }}" alt="chouette_bijoux"/>
+                            <img  class="imgChouetteAnimee" data-alt-src="{{ 'bijoux-chouette2.png' | imagine_filter('thumb_fixe') }}" src="{{ 'bijoux-chouette1.png' | imagine_filter('thumb_fixe') }}" alt="bijoux fait main"/>
                         </div>
                     </div>
                 </a>
@@ -119,7 +119,7 @@
                     <div class="boxMenu">
                         <h1 class="h3BoxMenu accessoiresindex">Accessoires</h1>
                         <div class="center notForSmall">
-                            <img  class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/accessoires-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/accessoires-chouette1.png') }}" alt="chouette_accessoires"/>
+                            <img  class="imgChouetteAnimee" data-alt-src="{{ 'accessoires-chouette2.png' | imagine_filter('thumb_fixe') }}" src="{{ 'accessoires-chouette1.png' | imagine_filter('thumb_fixe') }}" alt="accessoires fait main"/>
                         </div>
                     </div>
                 </a>
@@ -151,7 +151,7 @@
                     <div class="boxMenu">
                         <h1 class="h3BoxMenu contactindex">Contact</h1>
                         <div class="center notForSmall">
-                            <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/contact-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/contact-chouette1.png') }}" alt="chouette_contact"/>
+                            <img class="imgChouetteAnimee" data-alt-src="{{ 'contact-chouette2.png' | imagine_filter('thumb_fixe') }}" src="{{ 'contact-chouette1.png' | imagine_filter('thumb_fixe') }}" alt="contact chouettes hiboux doudous"/>
                         </div>
                     </div>
                 </a>
@@ -162,7 +162,7 @@
                 <div class="ih-item square effect13 top_to_bottom">
                     <a href="{{ path ('chouettes_accessoires') }}">
                         <div>
-                            <img class='imgDamier' src="{{asset('uploads/images/')}}{{accessoire.image.url }}" alt="{{ accessoire.image.alt }}">
+                            <img class='imgDamier' src="{{ accessoire.image.url | imagine_filter('my_thumb') }}" alt="{{ accessoire.image.alt }}">
                         </div>
                         <div class="info">
                             <h3> {{ accessoire.titre }}</h3>
@@ -177,7 +177,7 @@
                     <div class="boxMenu">
                         <h1 class="h3BoxMenu whoamiindex">Qui suis-je</h1>
                         <div class="center notForSmall">
-                            <img class="imgChouetteAnimee" data-alt-src="{{ asset ('bundles/chouettes/images/whoiam-chouette2.png') }}" src="{{ asset ('bundles/chouettes/images/whoiam-chouette1.png') }}" alt="chouette_about"/>
+                            <img class="imgChouetteAnimee" data-alt-src="{{ 'whoiam-chouette2.png' | imagine_filter('thumb_fixe') }}" src="{{ 'whoiam-chouette1.png' | imagine_filter('thumb_fixe') }}" alt="a propos de moi, chouettes hiboux, doudou"/>
                         </div>
                     </div>
                 </a>

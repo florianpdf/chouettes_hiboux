@@ -42,7 +42,7 @@
 
         <div class="row">
             <div class="col l4 m4 s12 center">
-                <img class="responsive-img thumbs" src="{{ asset('uploads/images/') }}{{ modele.image.url }}" alt="{{ modele.image.alt }}">
+                <img class="responsive-img thumbs" src="{{ modele.image.url | imagine_filter('my_thumb') }}" alt="{{ modele.image.alt }}">
             </div>
 
             <div class="col l8 m8 s12">
