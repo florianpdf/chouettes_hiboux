@@ -67,7 +67,6 @@ DirectoryIndex app.php
     </IfModule>
 </IfModule>
 
-
 <IfModule mod_expires.c>
 	ExpiresActive On
 	ExpiresDefault "access plus 7200 seconds"
@@ -106,6 +105,3 @@ DirectoryIndex app.php
         Header set Cache-Control "max-age=600, private, must-revalidate"
     </FilesMatch>
 </IfModule>
-
-Header unset Set-Cookie
-RequestHeader unset Cookie
