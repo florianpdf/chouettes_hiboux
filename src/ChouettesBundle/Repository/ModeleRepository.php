@@ -12,7 +12,7 @@ use Doctrine\ORM\EntityRepository;
  */
 class ModeleRepository extends EntityRepository
 {
-    public function getDoudouByCateg($categ){
+    public function getModeleByCateg($categ){
         $qb = $this->createQueryBuilder('d');
         $qb->select('d.contenu', 'd.id', 'd.titre')
             ->join('d.categorie', 'c')

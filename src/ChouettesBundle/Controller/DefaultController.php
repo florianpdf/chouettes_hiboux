@@ -104,7 +104,7 @@ class DefaultController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $FindModeles = $em->getRepository('ChouettesBundle:Modele')->getDoudouByCateg('Doudous');
+        $FindModeles = $em->getRepository('ChouettesBundle:Modele')->getModeleByCateg('Doudous');
         $paginator  = $this->get('knp_paginator');
         $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 20);
 
@@ -122,7 +122,7 @@ class DefaultController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $FindModeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Bijoux');
+        $FindModeles = $em->getRepository('ChouettesBundle:Modele')->getModeleByCateg('Bijoux');
         $paginator  = $this->get('knp_paginator');
         $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 20);
 
@@ -141,7 +141,7 @@ class DefaultController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $FindModeles = $em->getRepository('ChouettesBundle:Categorie')->getDoudouByCateg('Accessoires');
+        $FindModeles = $em->getRepository('ChouettesBundle:Modele')->getModeleByCateg('Accessoires');
         $paginator  = $this->get('knp_paginator');
         $modeles = $paginator->paginate($FindModeles, $request->query->getInt('page', 1), 20);
 
