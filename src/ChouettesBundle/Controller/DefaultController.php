@@ -176,8 +176,8 @@ class DefaultController extends Controller
         $msg = $request->request->get('msg');
 // Instanciation d'un nouveau message vers l'administrateur avec la prise en compte des variables
         $message = \Swift_Message::newInstance()
-            ->setSubject('Contact Chouettes')
-            ->setFrom(array($from => 'ChouettesHiboux'))
+            ->setSubject('Contact Chouettes Hiboux')
+            ->setFrom(array($mail => $name . ' ' . $firstname))
             ->setTo($from)
             ->setBody(
                 $this->renderView(
