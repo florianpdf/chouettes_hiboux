@@ -8,7 +8,6 @@
     <meta name="description" content="Garde toujours dans ta main ton âme d'enfant. Création et réalisation de doudous et articles en laine tricoté main" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
-    <link rel="alternate" hreflang="fr" href="https://chouetteshiboux.com/"/>
 
     <meta name="google-site-verification" content="aN3yR8AveXHqYpYIgz70GFTQZLOCmGO_Nx_MIHKDsyA" />
 
@@ -106,15 +105,18 @@
             <div class="connect">
 
             </div>
-
+            {{ render(controller('ChouettesBundle:Newsletter:inscription')) }}
             <div class="footer-copyright">
                     © 2016 All Rights Reserved Chouettes Hiboux Doudous | Design by <a href="http://www.wildcodeschool.fr/" target="_blank">WCS</a> | {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                 {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
-                <a href="{{ path('fos_user_security_logout') }}"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                <a href="{{ path('fos_user_security_logout') }}">
+                    <i style="font-size: 18px !important;" class="material-icons">exit_to_app</i>
                 </a>
             {% else %}
-                <a href="{{ path('admin_homepage') }}"><i class="fa fa-key" aria-hidden="true"></i></a>
-                {% endif %}
+                <a href="{{ path('admin_homepage') }}">
+                    <i style="font-size: 18px !important;" class="material-icons">lock</i>
+                </a>
+            {% endif %}
             </div>
         </div>
     </footer>
@@ -122,11 +124,17 @@
     {% block javascripts %}
         <!--  Scripts-->
         <!-- Compiled and minified JavaScript -->
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script
+                src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
         <script src="{{ asset ('bundles/chouettes/js/materialize.min.js') }}"></script>
         <script src="{{ asset ('bundles/chouettes/js/modernizr.custom.js') }}"></script>
         <script src="{{ asset ('bundles/chouettes/js/grid.js') }}"></script>
         <script src="{{ asset ('bundles/chouettes/js/chouettesHiboux.js') }}"></script>
+        <script>
+            ajaxForm('#newsletterForm', '#newsletter_email');
+        </script>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

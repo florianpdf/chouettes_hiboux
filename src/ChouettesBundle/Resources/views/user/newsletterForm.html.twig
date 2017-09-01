@@ -1,0 +1,27 @@
+<div class="row newsletter">
+    <div class="row">
+        <p>S'inscrire à la newsletter</p>
+    </div>
+    <div class="row">
+        {{ form_start(formNews, {'attr': {'id': 'newsletterForm'}}) }}
+        <div class="col m6 offset-m2 s12">
+            {{ form_widget(formNews.email) }}
+        </div>
+        <div class="col m2 s12">
+            <button class="btn waves-effect waves-light" type="submit">Envoyer
+                <i class="material-icons right contactme send">send</i>
+            </button>
+        </div>
+        {{ form_end(formNews) }}
+    </div>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <img src="{{ asset ('bundles/chouettes/images/logo2min.png') }}" alt="Chouettes Hiboux Doudous" class="navbar_logo">
+            <p>Inscription à la Newsletter confirmé. Merci</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fermer</a>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chouettes Hiboux</title>
+	<style type="text/css">
+		@font-face {
+			font-family: 'butterfly';
+			src: local('butterfly'), url('https://chouetteshiboux.com/bundles/chouettes/fonts/DK-Butterfly-Ball.otf') format('opentype');
+			font-weight: normal;
+			font-style: normal;
+		}
+	</style>
+</head>
+<body style="text-align: center; font-family: 'butterfly'; background-image: url('https://chouetteshiboux.com/bundles/chouettes/images/wood.jpg');">
+	<div style="background-color: RGBA(255, 255, 255, 0.6); padding-bottom: 25px;">
+		<div>
+			<a href="https://www.chouetteshiboux.com"><img src="https://chouetteshiboux.com/bundles/chouettes/images/logo2min.png"></a>
+		</div>
+
+		{% if modele.categorie == 'Doudous' %}
+			{% set color = '#E93255' %}
+		{% elseif modele.categorie == 'Bijoux' %}
+        	{% set color = '#CE4C9A' %}
+		{% elseif modele.categorie == 'Accessoires' %}
+        	{% set color = '#468540' %}
+		{% endif %}
+		<div>
+			<h1 style="
+					color: {{ color }};
+					font-size: 40px;
+					"
+			>
+				Un nouveau {{ modele.categorie }} est la
+			</h1>
+			<h3 style="
+					font-size: 30px;
+					letter-spacing: 3px;
+					padding: 40px 0 10px;
+					margin-bottom: 10px;
+					text-transform: uppercase;
+					color: #3FBFC1;
+					"
+			>
+				Je vous présente {{ modele.titre }}
+			</h3>
+		</div>
+		<div>
+			<img style="border-radius: 70px; text-align: center;" src="{{ modele.image.url | imagine_filter('newsletter') }}" alt="doudou">
+		</div>
+		<div style="margin-top: 15px; font-size: 20px;">
+			{{ modele.contenu|raw }}
+		</div>
+		<div>
+			<p>Retrouvez tout l'univers de Chouettes Hiboux à l'adresse suivante : <a href="https://www.chouetteshiboux.com">https://www.chouetteshiboux.com</a></p>
+			<a href="https://www.facebook.com/leshibouxdesophie/" target = _blank>
+				<img width="60" src="https://chouetteshiboux.com/bundles/chouettes/images/chouettefVerteOuvert.png" alt="facebook_logo"/>
+			</a>
+			<a href="https://www.instagram.com/sophiesandrine/" target = _blank>
+				<img width="60" src="https://chouetteshiboux.com/bundles/chouettes/images/chouettefVioletOuvert.png" alt="instagram_logo" />
+			</a>
+		</div>
+		<div>
+			<p>Pour vous désinscrire, cliquez sur le lien suivant : <a href="{{ url("unscribe_newsletter", {token : token} ) }}"> Me désabonner</a></p>
+		</div>
+	</div>
+</body>
+</html>

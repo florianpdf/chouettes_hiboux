@@ -47,11 +47,32 @@ class ModeleController extends Controller
 // Actually executes the queries (i.e. the INSERT query).
             $em->flush();
 
-            $picture = [
-                'caption' => $_REQUEST['modele']['facebook_description'] . "\n \n Retrouvez nous sur https://www.chouetteshiboux.com/",
-                'source' => $modele->getImage()->getAbsolutePath(),
-            ];
-            $this->get('app_core.facebook')->postPicture($picture);
+//            $picture = [
+//                'caption' => $_REQUEST['modele']['facebook_description'] . "\n \n Retrouvez nous sur https://www.chouetteshiboux.com/",
+//                'source' => $modele->getImage()->getAbsolutePath(),
+//            ];
+//            $this->get('app_core.facebook')->postPicture($picture);
+
+	        $users = $em->getRepository('ChouettesBundle:Newsletter')->findAll();
+            $from = $this->getParameter('mailer_user');
+
+            foreach ($users as $user){
+                $message = \Swift_Message::newInstance()
+                    ->setSubject('Les news de Chouettes Hiboux')
+                    ->setFrom(array($from => 'ChouettesHiboux'))
+                    ->setTo($user->getEmail())
+                    ->setBody(
+                        $this->renderView(
+                            '@Chouettes/user/newsletter.html.twig',
+                            array(
+                                'modele' => $modele,
+	                            'token' => $user->getToken()
+                            )
+                        ),
+                        'text/html'
+                    );
+                $this->get('mailer')->send($message);
+            }
 
             return $this->redirectToRoute('modele_index', array('id' => $modele->getId()));
         }

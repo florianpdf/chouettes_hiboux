@@ -42,6 +42,11 @@ send_mail:
     defaults: { _controller: ChouettesBundle:Default:send }
     methods: [GET, POST]
 
+unscribe_newsletter:
+    path:     /{token}/unscribe
+    defaults: { _controller: ChouettesBundle:Newsletter:unscribe }
+    methods: [GET, POST]
+
 
 #-----------------------------------------------------------------------------------------------------
 #Route FosUserBundle

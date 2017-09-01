@@ -7,7 +7,7 @@
     <h1>Connexion à l'administration</h1>
         <div class="row login">
             {% if error %}
-                <div class="center errorlog">{{ error|trim('.')|trans({}, 'FOSUserBundle') }}</div>
+                <div class="center errorlog">Vérifier vos identifiants</div>
             {% endif %}
 
             <form class="formlog" action="{{ path("fos_user_security_check") }}" method="post">

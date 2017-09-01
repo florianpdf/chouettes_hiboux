@@ -153,3 +153,28 @@
     //background-color: #1ad280 !important;
     background-color: rgba(26, 210, 128, 0.8) !important;
 }
+
+/****************************/
+/* Newsletter */
+/****************************/
+.newsletter{
+    @include fontandline();
+    color: $purple;
+    text-align: center;
+    p{
+        font-size: 33px;
+        font-weight: bold;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $purple;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: $purple;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: $purple;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        color: $purple;
+    }
+}

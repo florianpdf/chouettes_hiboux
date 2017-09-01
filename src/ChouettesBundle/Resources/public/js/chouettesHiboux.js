@@ -47,9 +47,9 @@ var sourceSwap = function () {
 }
 $(document).ready(function() {
     $(function() {
-        $('img[data-alt-src]').each(function() { 
-            new Image().src = $(this).data('alt-src'); 
-        }).hover(sourceSwap, sourceSwap); 
+        $('img[data-alt-src]').each(function() {
+            new Image().src = $(this).data('alt-src');
+        }).hover(sourceSwap, sourceSwap);
     });
 });
 
@@ -77,7 +77,10 @@ $('a.back-to-top, a.simple-back-to-top').click(function() {
 });
 
 $(document).ready(function(){
-    $(".button-collapse").sideNav();}
+    $(".button-collapse").sideNav();
+    $('.modal').modal();
+
+    }
 );
 
 //***********************************//
@@ -96,4 +99,39 @@ $(document).ready(function() {
     $('select').material_select();
 });
 
+//***************************************************//
+//    AJAX          //
+//***************************************************//
 
+function ajaxForm(selector, idInput) {
+    //quand le formulaire est soumi
+    $(selector).submit(function (event) {
+        // Eviter le comportement par défaut (soumettre le formulaire)
+        event.preventDefault();
+        var $this = $(this);
+        var form = $this.serialize();
+        //Ici on peut ajouter un loader...
+        $.ajax({
+            url: $this.attr('action'),
+            type: 'post',
+            data: form,
+            statusCode: {
+                //traitement en cas de succès
+                200: function (response) {
+                    var successMessage = response.successMessage;
+                    //on vide les champs formulaires ou on le supprime ou ...
+                    $(selector).trigger("reset");
+                    $('#modal1').modal('open');
+
+                    //on prévient l'utilistateur du bonne envoi...
+
+                },
+                //traitement en cas d'erreur (on peut aussi traiter le cas erreur 500...)
+                412: function (response) {
+                    var errorsForm = response.responseJSON.formErrors;
+                    //on affiche les erreurs...
+                }
+            }
+        })
+    });
+}

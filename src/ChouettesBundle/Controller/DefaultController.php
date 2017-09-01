@@ -2,6 +2,8 @@
 
 namespace ChouettesBundle\Controller;
 
+use ChouettesBundle\Entity\Newsletter;
+use ChouettesBundle\Form\NewsletterType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -92,7 +94,7 @@ class DefaultController extends Controller
             'doudous' => $randomDoudou,
             'doudous2' => $randomDoudou2,
             'accessoire' => $randomAccessoire,
-            'citation' => $randomcitation
+            'citation' => $randomcitation,
         ));
     }
 
