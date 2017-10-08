@@ -7,7 +7,6 @@ app/logs/dev.log
 bin/
 /vendor/
 web/bundles/
-/composer.lock
 /web/config.php
 /web/uploads/
 /web/media/cache/*
