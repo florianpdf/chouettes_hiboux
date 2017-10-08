@@ -42,13 +42,11 @@ class ModeleController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-// Tells Doctrine you want to (eventually) save the Product (no queries yet). It utilizes cached prepared statement to slightly improve the performance.
             $em->persist($modele);
-// Actually executes the queries (i.e. the INSERT query).
             $em->flush();
 
             $picture = [
-                'caption' => $_REQUEST['modele']['facebook_description'] . "\n \nRetrouvez nous sur https://www.chouetteshiboux.com/",
+                'caption' => $request->get('modele')['facebook_description'] . "\n \nRetrouvez nous sur https://www.chouetteshiboux.com/",
                 'source' => $modele->getImage()->getAbsolutePath(),
             ];
             $this->get('app_core.facebook')->postPicture($picture);

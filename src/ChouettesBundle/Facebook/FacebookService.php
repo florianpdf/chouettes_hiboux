@@ -33,7 +33,6 @@ class FacebookService
     {
         //cette array contendra les paramètres de notre requête, ici on se contente d'envoyer un texte, mais on pourrait envoyer également avec d'autre paramêtre un lien, une image, etc...
         $attachment['access_token'] = $this->token;
-//        $attachment['link'] = "http://www.lesjeuxdedames.com";
 
         // on poste sur notre page Facebook
         $this->connection->post('/'.$this->pageID.'/feed', $attachment, $this->token);
