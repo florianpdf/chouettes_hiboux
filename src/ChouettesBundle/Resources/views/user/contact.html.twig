@@ -5,9 +5,14 @@
 {% endblock %}
 
 {% block body %}
-
     <div class="container contact">
-        <h1>Contactez-moi</h1>
+
+        {% if modele is defined %}
+            <h1>Contactez-moi, vous en saurez plus sur "{{ modele.titre }}"</h1>
+        {% else %}
+            <h1>Contactez-moi</h1>
+        {% endif %}
+
         <div class="row">
 
             <form class="col s12" action="{{ path('send_mail') }}" method="post">
@@ -47,6 +52,12 @@
                     <i class="material-icons contactme prefix">mode_edit</i>
                     <textarea name="msg" id="textarea1" class="materialize-textarea" required="" aria-required="true"></textarea>
                     <label for="textarea1">Votre message :</label>
+                </div>
+
+                <div class="hide">
+                    <input type="text" name="nameModele" value="{{ modele.titre }}">
+                    <input type="text" name="urlImgModele" value="{{ modele.image.url }}">
+                    <input type="text" name="categModele" value="{{ modele.categorie.nom }}">
                 </div>
                 
                 <div class="row center">

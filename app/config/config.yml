@@ -13,6 +13,7 @@ parameters:
     fb_app_secret: "%facebook_app_secret%"
     fb_page_id: "%facebook_page_id%"
     fb_token: "%facebook_token%"
+    image_directory: '%kernel.root_dir%/../web/uploads/images/'
 
 framework:
     #esi:             ~

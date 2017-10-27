@@ -15,6 +15,10 @@ class Image
         return $this->url;
     }
 
+	static function getUploadRootDirectory(){
+		return 'uploads/images';
+	}
+
     /**
      * @Assert\Image(
      *     maxSize = '1k',

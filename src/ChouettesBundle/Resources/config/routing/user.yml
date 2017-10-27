@@ -19,6 +19,6 @@ chouettes_about:
     defaults: { _controller: ChouettesBundle:Default:about }
 
 chouettes_contact:
-    path:     /contact
-    defaults: { _controller: ChouettesBundle:Default:contact }
+    path:     /{id}/contact
+    defaults: { _controller: ChouettesBundle:Default:contact, id: 0 }
 

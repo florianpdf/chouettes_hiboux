@@ -2,6 +2,7 @@
 
 namespace ChouettesBundle\Controller;
 
+use ChouettesBundle\Entity\Modele;
 use ChouettesBundle\Entity\Newsletter;
 use ChouettesBundle\Form\NewsletterType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -162,9 +163,19 @@ class DefaultController extends Controller
         ));
     }
 
-    public function contactAction()
+    public function contactAction($id)
     {
-        return $this->render('@Chouettes/user/contact.html.twig');
+    	if ($id != 0){
+    		$em = $this->getDoctrine()->getManager();
+		    $modele = $em->getRepository(Modele::class)->findOneById($id);
+		    return $this->render('@Chouettes/user/contact.html.twig', array(
+			    'modele' => $modele
+		    ));
+	    }
+	    else{
+		    return $this->render('@Chouettes/user/contact.html.twig');
+	    }
+
     }
 
     public function sendAction(Request $request)
@@ -176,6 +187,17 @@ class DefaultController extends Controller
         $mail = $request->request->get('mail');
         $sujet = $request->request->get('Sujet');
         $msg = $request->request->get('msg');
+
+	    $nameModele = $request->request->get('nameModele');
+	    $imgModele = $request->request->get('urlImgModele');
+	    $categModele = $request->request->get('categModele');
+
+	    $path = 'myfolder/myimage.png';
+	    $path = $this->getParameter('image_directory') . $imgModele;
+	    $type = pathinfo($path, PATHINFO_EXTENSION);
+	    $data = file_get_contents($path);
+	    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+
 // Instanciation d'un nouveau message vers l'administrateur avec la prise en compte des variables
         $message = \Swift_Message::newInstance()
             ->setSubject('Contact Chouettes Hiboux')
@@ -189,7 +211,10 @@ class DefaultController extends Controller
                         'prenom' => $firstname,
                         'mail' => $mail,
                         'sujet' => $sujet,
-                        'message' => $msg
+                        'message' => $msg,
+	                    'nameModele' => $nameModele,
+	                    'categModele' => $categModele,
+	                    'img' => $base64
                     )
                 ),
                 'text/html'

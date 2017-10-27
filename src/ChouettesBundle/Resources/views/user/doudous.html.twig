@@ -10,7 +10,7 @@
         <ul id="og-grid" class="og-grid">
             {% for modele in modeles %}
                 <li>
-                    <a href="#" data-largesrc="{{ asset('uploads/images/' ~ modele.imageUrl) }}" class="imglg" data-title="{{ modele.titre }}" data-description="{{ modele.contenu|raw }}">
+                    <a data-path="{{ path('chouettes_contact', { 'id': modele.id }) }}" href="#" data-largesrc="{{ asset('uploads/images/' ~ modele.imageUrl) }}" class="imglg" data-title="{{ modele.titre }}" data-description="{{ modele.contenu|raw }}">
                         <img src="{{ modele.imageUrl | imagine_filter('my_thumb') }}" class="thumbs" alt="{{ modele.imageAlt }}"/>
                     </a>
                 </li>
@@ -21,5 +21,7 @@
     <div class="pagination center">
         {{ knp_pagination_render(modeles) }}
     </div>
+
+
 
 {% endblock %}
