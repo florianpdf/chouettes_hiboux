@@ -14,6 +14,22 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class NewsletterController extends Controller
 {
+	public function listAllUserAction(){
+		$em = $this->getDoctrine()->getManager();
+		$users = $em->getRepository(Newsletter::class)->findAll();
+		return $this->render('@Chouettes/Admin/newsletter/listAllUser.html.twig', array(
+			'users' => $users
+		));
+	}
+
+	public function deleteUserAction(Newsletter $newsletter){
+		$em = $this->getDoctrine()->getManager();
+		$em->remove($newsletter);
+		$em->flush();
+
+		return $this->redirectToRoute('show_all_users');
+	}
+
     public function inscriptionAction(Request $request){
         $user = new Newsletter();
         $form = $this->createForm(NewsletterType::class, $user);
@@ -37,6 +53,7 @@ class NewsletterController extends Controller
 		$em = $this->getDoctrine()->getManager();
 	    $user = $em->getRepository(Newsletter::class)->findOneByToken($token);
 	    $em->remove($user);
+	    $em->flush();
 
 	    return $this->render('ChouettesBundle:user:newsletterUnscribe.html.twig');
     }

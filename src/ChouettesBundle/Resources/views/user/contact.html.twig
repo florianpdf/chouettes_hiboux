@@ -54,12 +54,14 @@
                     <label for="textarea1">Votre message :</label>
                 </div>
 
-                <div class="hide">
-                    <input type="text" name="nameModele" value="{{ modele.titre }}">
-                    <input type="text" name="urlImgModele" value="{{ modele.image.url }}">
-                    <input type="text" name="categModele" value="{{ modele.categorie.nom }}">
-                </div>
-                
+                {% if modele is defined %}
+                    <div class="hide">
+                        <input type="text" name="nameModele" value="{{ modele.titre }}">
+                        <input type="text" name="urlImgModele" value="{{ modele.image.url }}">
+                        <input type="text" name="categModele" value="{{ modele.categorie.nom }}">
+                    </div>
+                {% endif %}
+
                 <div class="row center">
                     <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
                         <i class="material-icons right contactme send">send</i>

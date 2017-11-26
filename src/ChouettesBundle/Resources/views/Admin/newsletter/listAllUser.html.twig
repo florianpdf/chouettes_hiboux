@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container admin">
+
+        <h1 class="citationadmin">Liste des users</h1>
+
+        <table class="responsive-table bordered striped">
+            <thead>
+            <tr>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.email }}</td>
+                    <td>
+                        <div class="boutons">
+                            <a href="{{ path('delete_users', { 'id': user.id }) }}" title="Effacer"><i class="material-icons li_doudous doudous">delete</i> </a>
+                        </div>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="boutons">
+            <a href="{{ path('admin_homepage') }}" title="Retourner à l'accueil de l'administration"><i class="material-icons doudous">dashboard</i></a>
+        </div>
+    </div>
+{% endblock %}

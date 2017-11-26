@@ -192,11 +192,17 @@ class DefaultController extends Controller
 	    $imgModele = $request->request->get('urlImgModele');
 	    $categModele = $request->request->get('categModele');
 
-	    $path = 'myfolder/myimage.png';
-	    $path = $this->getParameter('image_directory') . $imgModele;
-	    $type = pathinfo($path, PATHINFO_EXTENSION);
-	    $data = file_get_contents($path);
-	    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+	    if ($nameModele != null && $imgModele != null && $categModele != null){
+		    $path = $this->getParameter('image_directory') . $imgModele;
+		    $type = pathinfo($path, PATHINFO_EXTENSION);
+		    $data = file_get_contents($path);
+		    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+	    }
+	    else{
+	    	$nameModele = $imgModele = $categModele = 'Non spécifié';
+		    $base64 = null;
+	    }
+
 
 // Instanciation d'un nouveau message vers l'administrateur avec la prise en compte des variables
         $message = \Swift_Message::newInstance()

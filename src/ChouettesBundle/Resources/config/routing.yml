@@ -47,6 +47,13 @@ unscribe_newsletter:
     defaults: { _controller: ChouettesBundle:Newsletter:unscribe }
     methods: [GET, POST]
 
+show_all_users:
+    path: /admin/showAll
+    defaults: { _controller: ChouettesBundle:Newsletter:listAllUser }
+
+delete_users:
+    path: /admin/{id}/showAll
+    defaults: { _controller: ChouettesBundle:Newsletter:deleteUser }
 
 #-----------------------------------------------------------------------------------------------------
 #Route FosUserBundle

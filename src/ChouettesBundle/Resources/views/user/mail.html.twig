@@ -51,7 +51,9 @@
     <h1>Le modele concerné:</h1>
     <h3>Titre du doudou: {{ nameModele }}</h3>
     <h3>Catégorie du doudou: {{ categModele }}</h3>
-    <img width="400" src="{{ img }}" alt="doudouImg">
+    {% if img is not null %}
+    <img width="400" src="{{ img }}" alt="image du doudou">
+    {% endif %}
 </div>
 {% endblock body %}
 </html>

@@ -19,11 +19,11 @@
 		</div>
 
 		{% if modele.categorie == 'Doudous' %}
-			{% set color = '#E93255' %}
+			{% set color, categ, new = '#E93255', 'doudou', 'nouveau' %}
 		{% elseif modele.categorie == 'Bijoux' %}
-        	{% set color = '#CE4C9A' %}
+        	{% set color, categ, new = '#CE4C9A', 'bijou', 'nouveau' %}
 		{% elseif modele.categorie == 'Accessoires' %}
-        	{% set color = '#468540' %}
+        	{% set color, categ, new = '#468540', 'accessoire', 'nouvel' %}
 		{% endif %}
 		<div>
 			<h1 style="
@@ -31,7 +31,7 @@
 					font-size: 40px;
 					"
 			>
-				Un nouveau {{ modele.categorie }} est la
+				Un {{ new ~ ' ' ~ categ }} est la
 			</h1>
 			<h3 style="
 					font-size: 30px;
